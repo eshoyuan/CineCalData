@@ -1,0 +1,64 @@
+name: Enrich Douban links and editorial lines
+
+on:
+  schedule:
+    # Process a small cached increment every day; no work is repeated once verified.
+    - cron: "25 18 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum pending catalog items"
+        required: false
+        default: "40"
+        type: string
+      batch_size:
+        description: "Works researched per grounded model request"
+        required: false
+        default: "4"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-editorial-enrichment
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
+      CINECAL_MODEL: muse-spark-1.1
+      CINECAL_MODEL_TIMEOUT_SECONDS: "240"
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-agent.txt
+
+      - run: python -m pip install -r requirements-agent.txt
+
+      - name: Test editorial safeguards
+        run: python -m unittest discover -s scripts -p 'test_enrich_catalog_editorial.py'
+
+      - name: Resolve exact Douban subjects and write original lines
+        env:
+          LIMIT: ${{ inputs.limit || '40' }}
+          BATCH_SIZE: ${{ inputs.batch_size || '4' }}
+        run: python scripts/enrich_catalog_editorial.py --limit "$LIMIT" --batch-size "$BATCH_SIZE"
+
+      - name: Commit verified enrichment cache
+        run: |
+          git config user.name "CineCal Editorial Enricher"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/catalog.json
+          git commit -m "Enrich Douban links and editorial lines"
+          git pull --rebase origin main
+          git push

@@ -22,7 +22,7 @@ const formatFullDate = (date) => parseDate(date).toLocaleDateString("zh-CN", {
 });
 const hashDate = (value) => [...value].reduce((hash, character) => Math.imul(hash ^ character.charCodeAt(0), 16777619) >>> 0, 2166136261);
 const quoteFor = (item) => {
-  const source = (item?.overview || "光影抵达这里，故事也刚好开始。").trim();
+  const source = (item?.editorial?.quote || item?.quote || "文艺短句正在等待编辑 Agent 完成。 ").trim();
   return source.length > 42 ? `${source.slice(0, 41)}…` : source;
 };
 const resolveImageURL = (url) => {

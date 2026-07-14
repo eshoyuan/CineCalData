@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-14T04:55:00Z",
+  "updatedAt": "2026-07-14T08:06:45.904580Z",
   "entries": [
     {
       "date": "2026-07-13",
@@ -17,16 +17,29 @@
     },
     {
       "date": "2026-07-14",
-      "id": "in-the-mood-for-love",
-      "title": "花样年华",
-      "rating": "8.8",
-      "ratingSourceURL": "https://movie.douban.com/subject/1291557/",
-      "ratingRetrievedAt": "2026-07-14T05:00:00Z",
-      "quote": "有些时刻不会重来，但会在光影里一直停留。",
+      "id": "tmdb-tv-81224",
+      "title": "悲惨世界",
+      "rating": "8.7",
+      "ratingSourceURL": "https://www.douban.com/j/search_suggest?debug=true&q=%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C",
+      "ratingRetrievedAt": "2026-07-14T08:04:25.208656Z",
+      "quote": "世界从未温柔待他，他却把仅有的温柔还给了世界。",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageRightsStatus": "local_prototype_not_published",
-      "doubanURL": "https://movie.douban.com/subject/1291557/"
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/images/2026-07-14-tmdb-tv-81224-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/images/2026-07-14-tmdb-tv-81224-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/images/2026-07-14-tmdb-tv-81224-medium.jpg",
+      "imageSourcePageURL": "https://www.themoviedb.org/tv/81224",
+      "imageCredit": "The Movie Database (TMDB)",
+      "imageRightsHolder": "respective production/rightsholder",
+      "imageRightsStatus": "official_promotional",
+      "imageLicenseName": "TMDB-hosted promotional artwork; verify production rights",
+      "imageLicenseURL": "",
+      "editorReportURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/reports/2026-07-14-tmdb-tv-81224.json",
+      "doubanURL": "https://movie.douban.com/subject/6860160/",
+      "tmdbID": 81224,
+      "tmdbURL": "https://www.themoviedb.org/tv/81224",
+      "mediaType": "tv",
+      "releaseDate": "2018-12-30"
     },
     {
       "date": "2026-07-15",

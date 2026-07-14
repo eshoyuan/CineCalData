@@ -1,0 +1,96 @@
+{
+  "date": "2026-07-14",
+  "model": "muse-spark-1.1",
+  "researchSources": [
+    "https://en.wikipedia.org/wiki/Bastille_Day",
+    "https://www.themoviedb.org/tv/81224",
+    "https://www.douban.com/j/search_suggest?debug=true&q=%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C",
+    "https://movie.douban.com/subject/6860160/",
+    "https://image.tmdb.org/t/p/original/uyN1hL0T7bda47EpAtvCsCZfYX2.jpg",
+    "https://image.tmdb.org/t/p/original/45exme6h3yYFAnScri4Zke2yfZz.jpg",
+    "https://image.tmdb.org/t/p/original/bAtVHuvLxqa3o5QLQrksfyk9kPR.jpg",
+    "https://image.tmdb.org/t/p/original/godSf0FKWPH7veC7INZu06duOow.jpg",
+    "https://image.tmdb.org/t/p/original/i1TGWhfWQU7EMfBOHP8m5zKny88.jpg",
+    "https://image.tmdb.org/t/p/original/aO1wqT4duTGZBMvpIjrR3mIboJY.jpg",
+    "https://image.tmdb.org/t/p/original/A6kVPbVdJxnDnTavMVQq3nJJh5a.jpg",
+    "https://image.tmdb.org/t/p/original/xuL0DHa7NifMN0wWFxFRBFyCUzM.jpg",
+    "https://image.tmdb.org/t/p/original/jqYgLxRN7x7bhM092L5xq6myDpP.jpg",
+    "https://image.tmdb.org/t/p/original/8HxfV2N2MvmrcmeB0SzcaY7B0Vy.jpg",
+    "https://image.tmdb.org/t/p/original/byOlOTSxt6xo9P9yFdD1UOox2E.jpg",
+    "https://image.tmdb.org/t/p/original/yQBhXxmCX7Y2f89F9M7AIVBUono.jpg"
+  ],
+  "selectedImage": {
+    "imageURL": "https://image.tmdb.org/t/p/original/45exme6h3yYFAnScri4Zke2yfZz.jpg",
+    "sourcePageURL": "https://www.themoviedb.org/tv/81224",
+    "credit": "The Movie Database (TMDB)",
+    "rightsHolder": "respective production/rightsholder",
+    "rightsStatus": "official_promotional",
+    "licenseName": "TMDB-hosted promotional artwork; verify production rights",
+    "licenseURL": "",
+    "commercialUseAllowed": false,
+    "modificationAllowed": false,
+    "tmdbFilePath": "/45exme6h3yYFAnScri4Zke2yfZz.jpg",
+    "width": 3200,
+    "height": 1800
+  },
+  "cropPlan": {
+    "sourceAcceptable": true,
+    "workIdentityMatch": true,
+    "identityReason": "BBC 2018 Les Miserables TV adaptation recognizable by period costume: Ellie Bamber as Cosette in blue Empire velvet dress with fur collar and poke bonnet and Josh O'Connor as Marius Pontmercy in top hat, frock coat and cravat, Luxembourg Gardens fountain scene which is specific to this screen version",
+    "sourceReason": "High resolution official promotional still with cinematic natural light, shallow depth of field, no typography, watermark, collage or painting artifacts; clear cast in character",
+    "subjects": [
+      {
+        "label": "person",
+        "bbox": [
+          343,
+          12,
+          696,
+          998
+        ]
+      },
+      {
+        "label": "person",
+        "bbox": [
+          587,
+          86,
+          960,
+          998
+        ]
+      }
+    ],
+    "square": {
+      "crop": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "compositionScore": 8,
+      "reason": "Full frame preserves both faces and top hat. Fountain mist on left gives clean negative space for upper-left date. Both subjects' eyes at y~25-45% safely above lower 38% title/quote block. Balanced tension with couple offset right, gaze leading into mist."
+    },
+    "medium": {
+      "crop": [
+        0,
+        5,
+        1000,
+        474
+      ],
+      "compositionScore": 7,
+      "reason": "2.128:1 panoramic uses full width to keep fountain left for lower-left date and couple center-right. Crop height 469 ends at mid-chest, excluding hands cleanly without cutting through them. Eyes at y~45-60% of crop, kept as high as possible for ultra-wide ratio, leaving lower-middle for title/quote and lower-right for rating."
+    }
+  },
+  "finalReview": {
+    "small": {
+      "pass": true,
+      "score": 9,
+      "reason": "Square crop keeps both faces, eyes, and hats fully visible outside red zones. Top box overlaps empty background and hat brim only; bottom box covers lower torsos/hands but faces and dramatic focal point remain clear. No decapitation, watermarks, or embedded text."
+    },
+    "medium": {
+      "pass": true,
+      "score": 8,
+      "reason": "Medium crop keeps faces/eyes clear above text zones. Red boxes cover lower torso, fur collar and background only, not faces. Attractive framing retains story of the couple. No edge decapitation, watermarks, or embedded typography."
+    },
+    "overallPass": true
+  },
+  "generatedAt": "2026-07-14T08:06:34.451620Z"
+}

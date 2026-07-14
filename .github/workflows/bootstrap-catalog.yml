@@ -6,12 +6,17 @@ on:
       movie_pages:
         description: "TMDB high-score movie pages"
         required: false
-        default: "13"
+        default: "25"
         type: string
       tv_pages:
         description: "TMDB high-score TV pages"
         required: false
-        default: "10"
+        default: "25"
+        type: string
+      detail_limit:
+        description: "Maximum titles enriched with cast/crew/keywords"
+        required: false
+        default: "1100"
         type: string
 
 permissions:
@@ -43,7 +48,7 @@ jobs:
             --mode bootstrap \
             --movie-pages "${{ inputs.movie_pages }}" \
             --tv-pages "${{ inputs.tv_pages }}" \
-            --detail-limit 400 \
+            --detail-limit "${{ inputs.detail_limit }}" \
             --douban-enrich-limit 180
 
       - name: Commit catalog snapshot

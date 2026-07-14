@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="description" content="CineCal 电影日历小组件在线预览器">
+  <title>CineCal · Widget Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="CineCal 首页">
+      <span class="brand-mark" aria-hidden="true">13</span>
+      <span><strong>CineCal</strong><small>Widget Preview</small></span>
+    </a>
+    <a class="repo-link" href="https://github.com/eshoyuan/CineCalData" target="_blank" rel="noreferrer">Public data ↗</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">每天一帧电影</p>
+      <h1>在浏览器里，看见它<br>真正出现在 iPhone 上的样子。</h1>
+      <p class="lede">选择日期或随机漫游。网页直接读取 CineCal 的公开数据，并按真实 Widget 比例渲染。</p>
+    </section>
+
+    <section class="controls" aria-label="预览控制器">
+      <div class="date-controls">
+        <button id="previousDate" class="icon-button" type="button" aria-label="上一个有数据的日期">‹</button>
+        <label class="date-field">
+          <span>预览日期</span>
+          <input id="datePicker" type="date">
+        </label>
+        <button id="nextDate" class="icon-button" type="button" aria-label="下一个有数据的日期">›</button>
+      </div>
+      <button id="shuffleDate" class="shuffle-button" type="button"><span aria-hidden="true">↝</span> 随机一天</button>
+      <fieldset class="size-picker">
+        <legend>手机中的尺寸</legend>
+        <button type="button" data-size="small">小号</button>
+        <button type="button" data-size="medium" class="active">中号</button>
+      </fieldset>
+    </section>
+
+    <section class="preview-layout">
+      <div class="phone-wrap">
+        <div class="phone" aria-label="iPhone 主屏幕预览">
+          <div class="phone-screen">
+            <div class="wallpaper" aria-hidden="true"></div>
+            <div class="status-bar"><span id="statusTime">09:41</span><span class="island"></span><span class="status-icons">▮▮▮ ᯤ ▰</span></div>
+            <div id="phoneWidget" class="phone-widget-slot"></div>
+            <div class="app-grid" aria-hidden="true">
+              <div><i class="app-icon coral">♪</i><span>Music</span></div>
+              <div><i class="app-icon blue">☁</i><span>Weather</span></div>
+              <div><i class="app-icon violet">◎</i><span>Photos</span></div>
+              <div><i class="app-icon green">⌁</i><span>Maps</span></div>
+              <div><i class="app-icon ink">◐</i><span>Camera</span></div>
+              <div><i class="app-icon orange">☀</i><span>Home</span></div>
+              <div><i class="app-icon cyan">✦</i><span>Safari</span></div>
+              <div><i class="app-icon gray">⚙</i><span>Settings</span></div>
+            </div>
+            <div class="page-dots" aria-hidden="true"><b></b><i></i><i></i></div>
+            <div class="dock" aria-hidden="true">
+              <i class="app-icon green">✆</i><i class="app-icon blue">●</i><i class="app-icon cyan">✦</i><i class="app-icon coral">♫</i>
+            </div>
+          </div>
+        </div>
+        <p class="device-caption">iPhone · 主屏幕模拟</p>
+      </div>
+
+      <aside class="inspector">
+        <div class="availability"><span id="statusDot"></span><strong id="dataStatus">正在读取数据</strong></div>
+        <p id="selectionReason" class="reason">载入当天的选片依据…</p>
+        <dl>
+          <div><dt>影片</dt><dd id="metaTitle">—</dd></div>
+          <div><dt>豆瓣评分</dt><dd id="metaRating">—</dd></div>
+          <div><dt>图片来源</dt><dd id="metaSource">—</dd></div>
+          <div><dt>更新时间</dt><dd id="metaUpdated">—</dd></div>
+        </dl>
+        <a id="doubanLink" class="douban-link disabled" href="#" target="_blank" rel="noreferrer">在豆瓣打开 <span>↗</span></a>
+      </aside>
+    </section>
+
+    <section class="size-comparison">
+      <div class="section-heading">
+        <p class="eyebrow">Pixel-level comparison</p>
+        <h2>两种尺寸，同一份内容。</h2>
+      </div>
+      <div class="comparison-stage">
+        <figure><div id="smallWidget"></div><figcaption><strong>小号</strong><span>1:1 · 169 × 169 pt</span></figcaption></figure>
+        <figure><div id="mediumWidget"></div><figcaption><strong>中号</strong><span>2.13:1 · 360 × 169 pt</span></figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>CineCal Preview</span><span>数据与图片归各自权利人所有 · Prototype</span></footer>
+
+  <template id="widgetTemplate">
+    <a class="movie-widget" target="_blank" rel="noreferrer">
+      <img class="widget-image" alt="">
+      <span class="image-fallback" aria-hidden="true">▱</span>
+      <span class="widget-gradient" aria-hidden="true"></span>
+      <span class="small-copy">
+        <span class="small-day"></span>
+        <span class="small-spacer"></span>
+        <span class="small-title-row"><strong class="movie-title"></strong><b class="rating-badge"></b></span>
+        <span class="movie-quote"></span>
+      </span>
+      <span class="medium-copy">
+        <span class="date-lockup"><strong class="medium-day"></strong><small class="medium-subtitle"></small></span>
+        <span class="wide-text"><span class="wide-title-row"><strong class="book-title"></strong><b class="rating-badge"></b></span><span class="movie-quote"></span></span>
+      </span>
+    </a>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

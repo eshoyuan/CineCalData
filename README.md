@@ -16,6 +16,12 @@ short original editorial sentence and a link to its Douban subject page.
 - `TMDB_API_TOKEN` (v4) or `TMDB_API_KEY` (v3) is the encrypted credential used
   to resolve exact works, metadata, and stable landscape artwork.
 
+## Live preview
+
+[Open the interactive iPhone and Widget preview](https://eshoyuan.github.io/CineCalData/).
+The page reads the public JSON directly, supports date navigation and shuffle,
+and renders both the small and medium Widget layouts.
+
 ## Content and copyright
 
 The project does not treat a remote image URL or attribution as permission to

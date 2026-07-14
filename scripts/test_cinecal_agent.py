@@ -11,8 +11,10 @@ from cinecal_agent import (
     corrected_crop_box,
     enforce_grounded_provenance,
     parse_json_object,
+    passes_plan,
     render_crop,
 )
+from merge_cards import merge_cards
 from plan_calendar import build_matrix, merge_batches
 from publish_today import choose_entry, publish
 
@@ -33,6 +35,15 @@ class AgentTests(unittest.TestCase):
         image = Image.new("RGB", (1600, 900), "navy")
         crop = render_crop(image, [0, 100, 1000, 900], 349.67 / 164.33, (1080, 508))
         self.assertEqual(crop.size, (1080, 508))
+
+    def test_crop_plan_rejects_thematic_image_from_wrong_work(self):
+        plan = {
+            "sourceAcceptable": True,
+            "workIdentityMatch": False,
+            "square": {"compositionScore": 9},
+            "medium": {"compositionScore": 9},
+        }
+        self.assertFalse(passes_plan(plan))
 
     def test_rejects_hotlinked_image_without_explicit_license(self):
         item = {
@@ -162,6 +173,32 @@ class AgentTests(unittest.TestCase):
         entry, fallback = choose_entry(entries, "2026-01-02")
         self.assertEqual(entry["title"], "Today")
         self.assertFalse(fallback)
+
+    def test_card_merge_accepts_flat_downloaded_artifact_layout(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            data = root / "data"
+            data.mkdir()
+            calendar = data / "calendar.json"
+            calendar.write_text(json.dumps({
+                "schemaVersion": 1,
+                "entries": [{"date": "2026-01-01", "title": "Existing"}],
+            }), encoding="utf-8")
+            artifact = root / "artifacts" / "card-2026-01-02"
+            (artifact / "images").mkdir(parents=True)
+            (artifact / "reports").mkdir()
+            (artifact / "calendar.json").write_text(json.dumps({
+                "schemaVersion": 1,
+                "entries": [{"date": "2026-01-02", "title": "Generated"}],
+            }), encoding="utf-8")
+            (artifact / "images" / "2026-01-02-small.jpg").write_bytes(b"image")
+            (artifact / "reports" / "2026-01-02.json").write_text("{}", encoding="utf-8")
+
+            self.assertEqual(merge_cards(calendar, root / "artifacts"), 1)
+            merged = json.loads(calendar.read_text(encoding="utf-8"))
+            self.assertEqual([entry["title"] for entry in merged["entries"]], ["Existing", "Generated"])
+            self.assertTrue((data / "images" / "2026-01-02-small.jpg").exists())
+            self.assertTrue((data / "reports" / "2026-01-02.json").exists())
 
 
 if __name__ == "__main__":

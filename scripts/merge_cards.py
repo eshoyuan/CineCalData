@@ -21,7 +21,12 @@ def merge_cards(calendar_path: Path, artifact_root: Path) -> int:
     merged_count = 0
     for artifact in sorted(artifact_root.glob("card-*")):
         target_date = artifact.name.removeprefix("card-")
-        artifact_calendar = artifact / "data" / "calendar.json"
+        # upload-artifact preserves paths relative to their least common
+        # ancestor. With calendar.json, images/, and reports/ all under data/,
+        # downloaded artifacts are normally rooted directly at calendar.json.
+        # Accept the older data/ wrapper too so existing artifacts remain usable.
+        payload_root = artifact / "data" if (artifact / "data").is_dir() else artifact
+        artifact_calendar = payload_root / "calendar.json"
         if not artifact_calendar.exists():
             continue
         batch = json.loads(artifact_calendar.read_text(encoding="utf-8"))
@@ -31,7 +36,7 @@ def merge_cards(calendar_path: Path, artifact_root: Path) -> int:
         entries[target_date] = card
         merged_count += 1
         for folder in ("images", "reports"):
-            source_dir = artifact / "data" / folder
+            source_dir = payload_root / folder
             destination_dir = calendar_path.parent / folder
             if not source_dir.exists():
                 continue

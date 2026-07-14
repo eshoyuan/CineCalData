@@ -201,12 +201,16 @@ Return JSON only:
     return title, sources
 
 
-def research_title(client: OpenAI, title: str, target_date: str) -> tuple[dict[str, Any], list[str]]:
-    print(f"[1/5] Looking up Douban metadata for {title}...", flush=True)
+def lookup_metadata(
+    client: OpenAI, title: str, target_date: str, *, retry: bool = False
+) -> tuple[dict[str, Any], list[str]]:
+    phase = "Retrying" if retry else "Looking up"
+    print(f"[1/5] {phase} Douban metadata for {title}...", flush=True)
     metadata_prompt = f"""
 Find the exact Douban subject page and current Douban rating for “{title}” on {target_date}.
 Use live web search. This is a focused factual lookup. Never invent a rating; return "暂无" if the
-work is not rated. Return JSON only:
+work is not rated. ratingSourceURL must be an exact URL you actually found in this search's
+evidence; never normalize, guess, or synthesize it. Return JSON only:
 {{
   "id": "lowercase-ascii-slug",
   "title": "official Chinese title",
@@ -216,31 +220,30 @@ work is not rated. Return JSON only:
   "ratingRetrievedAt": "ISO-8601 timestamp"
 }}
 """.strip()
-    metadata, metadata_sources = grounded_json(
-        client, metadata_prompt, search_context_size="low"
-    )
+    return grounded_json(client, metadata_prompt, search_context_size="low")
 
-    print("[2/5] Writing original editorial copy...", flush=True)
-    quote_prompt = f"""
-Write one original CineCal editorial sentence in Chinese for “{title}”, under 42 Chinese
-characters. It should feel literary and emotionally specific, but must not quote or closely
-paraphrase dialogue, reviews, plot summaries, lyrics, subtitles, or marketing copy.
-Return JSON only:
-{{
-  "quote": "original short Chinese sentence",
-  "quoteType": "editorial",
-  "quoteAttribution": "CineCal 原创编辑文案"
-}}
-""".strip()
-    quote = text_json(client, quote_prompt)
 
+def search_image_candidates(
+    client: OpenAI,
+    title: str,
+    excluded_urls: list[str] | None = None,
+    douban_url: str = "",
+) -> tuple[dict[str, Any], list[str]]:
+    excluded = excluded_urls or []
     print("[3/5] Searching for grounded image candidates...", flush=True)
     image_prompt = f"""
-Find 3–6 landscape image candidates for a home-screen widget about “{title}”. Use live web search.
-Each candidate must have a direct HTTPS image URL, a real source page, credit, and rights holder.
-Prefer official promotional/press stills, public-domain material, or Creative Commons material;
+Find 4–8 different landscape images that are genuine stills or official promotional images from
+the exact screen work “{title}”, identified by this Douban subject: {douban_url}. Use live web
+search. Reject stage adaptations, remakes with a different subject, paintings, fan art, generic
+thematic images, title-word associations, and unrelated works with a similar name. Each candidate
+must have a direct HTTPS image URL that is stable and publicly
+downloadable without login or expiring query parameters, plus a real source page, credit, and
+rights holder. Do not return search-engine thumbnails. Prefer official promotional/press stills,
+Wikimedia Commons, stable public image CDNs, public-domain material, or Creative Commons material;
 avoid fan uploads, pirated-video screenshots, posters with typography, watermarks, collages, and
 logos. Report the actual rights basis honestly; never claim attribution is a license.
+Do not return any of these previously rejected URLs:
+{json.dumps(excluded, ensure_ascii=False)}
 Return JSON only:
 {{
   "imageCandidates": [
@@ -258,8 +261,28 @@ Return JSON only:
   ]
 }}
 """.strip()
-    images, image_sources = grounded_json(
-        client, image_prompt, search_context_size="medium"
+    return grounded_json(client, image_prompt, search_context_size="medium")
+
+
+def research_title(client: OpenAI, title: str, target_date: str) -> tuple[dict[str, Any], list[str]]:
+    metadata, metadata_sources = lookup_metadata(client, title, target_date)
+
+    print("[2/5] Writing original editorial copy...", flush=True)
+    quote_prompt = f"""
+Write one original CineCal editorial sentence in Chinese for “{title}”, under 42 Chinese
+characters. It should feel literary and emotionally specific, but must not quote or closely
+paraphrase dialogue, reviews, plot summaries, lyrics, subtitles, or marketing copy.
+Return JSON only:
+{{
+  "quote": "original short Chinese sentence",
+  "quoteType": "editorial",
+  "quoteAttribution": "CineCal 原创编辑文案"
+}}
+""".strip()
+    quote = text_json(client, quote_prompt)
+
+    images, image_sources = search_image_candidates(
+        client, title, douban_url=str(metadata.get("doubanURL", ""))
     )
     research = {**metadata, **quote, **images}
     return research, list(dict.fromkeys(metadata_sources + image_sources))
@@ -432,6 +455,10 @@ def crop_plan(client: OpenAI, image: Image.Image, title: str) -> dict[str, Any]:
 You are the photo editor for an iPhone movie-calendar widget. Analyze this still for “{title}”.
 Return crop rectangles on the normalized 0–1000 coordinate grid of the exact image supplied.
 
+First verify that the supplied image is visibly a genuine still or official promotional image
+from the exact film/series. Reject stage adaptations, paintings, fan art, generic thematic images,
+title-word associations, and images whose connection to the screen work cannot be established.
+
 Design two crops:
 - square: 1:1. The date occupies the upper-left; title, rating, and quote occupy the lower 38%.
 - medium: 2.128:1. Date occupies lower-left; title/quote occupy lower-middle; rating is lower-right.
@@ -443,6 +470,8 @@ Reject typography-heavy, watermarked, collage, or visually incoherent source ima
 Return JSON only:
 {{
   "sourceAcceptable": true,
+  "workIdentityMatch": true,
+  "identityReason": "visual reason this belongs to the exact screen work",
   "sourceReason": "...",
   "subjects": [{{"label": "person", "bbox": [x1, y1, x2, y2]}}],
   "square": {{"crop": [x1, y1, x2, y2], "compositionScore": 0, "reason": "..."}},
@@ -555,7 +584,7 @@ Use a strict 0–10 score. Both scores must be at least 7 to pass.
 
 def passes_plan(plan: dict[str, Any]) -> bool:
     try:
-        return bool(plan["sourceAcceptable"]) and all(
+        return bool(plan["sourceAcceptable"]) and bool(plan["workIdentityMatch"]) and all(
             float(plan[name]["compositionScore"]) >= 7 for name in ("square", "medium")
         )
     except (KeyError, TypeError, ValueError):
@@ -708,8 +737,44 @@ def main() -> int:
 
     research, research_sources = research_title(client, title, target_date)
     validate_research(research)
-    enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
-    small, medium, candidate, plan, review = select_and_crop_image(client, research)
+    try:
+        enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
+    except PublicationError as error:
+        if "ratingSourceURL" not in str(error):
+            raise
+        metadata, metadata_sources = lookup_metadata(client, title, target_date, retry=True)
+        research.update(metadata)
+        research_sources = list(dict.fromkeys(research_sources + metadata_sources))
+        validate_research(research)
+        enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
+    try:
+        small, medium, candidate, plan, review = select_and_crop_image(client, research)
+    except PublicationError as first_image_error:
+        rejected_urls = [
+            str(item.get("imageURL", ""))
+            for item in research.get("imageCandidates", [])
+            if isinstance(item, dict)
+        ]
+        print(
+            "[3/5] First image set failed; searching once for different candidates...",
+            flush=True,
+        )
+        images, retry_sources = search_image_candidates(
+            client,
+            title,
+            rejected_urls,
+            douban_url=str(research.get("doubanURL", "")),
+        )
+        research.update(images)
+        research_sources = list(dict.fromkeys(research_sources + retry_sources))
+        validate_research(research)
+        try:
+            enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
+            small, medium, candidate, plan, review = select_and_crop_image(client, research)
+        except PublicationError as retry_error:
+            raise PublicationError(
+                f"Both image searches failed. First: {first_image_error}\nRetry: {retry_error}"
+            ) from retry_error
     publish(
         feed,
         target_date,

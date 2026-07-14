@@ -1,0 +1,78 @@
+name: Update movie calendar
+
+on:
+  schedule:
+    # 00:15 in Asia/Shanghai. GitHub cron is UTC.
+    - cron: "15 16 * * *"
+  workflow_dispatch:
+    inputs:
+      movie:
+        description: "Optional exact movie or series title"
+        required: false
+        type: string
+      date:
+        description: "Optional calendar date (YYYY-MM-DD)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-daily-editor
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
+      CINECAL_MODEL: muse-spark-1.1
+      CINECAL_RIGHTS_MODE: prototype
+      CINECAL_MOVIE: ${{ inputs.movie }}
+      CINECAL_REPOSITORY: ${{ github.repository }}
+      CINECAL_BRANCH: ${{ github.ref_name }}
+      TZ: Asia/Shanghai
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install editorial agent
+        run: python -m pip install -r requirements-agent.txt
+
+      - name: Test crop and parser safeguards
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+
+      - name: Choose calendar date
+        id: calendar-date
+        env:
+          REQUESTED_DATE: ${{ inputs.date }}
+        run: |
+          if [ -n "$REQUESTED_DATE" ]; then
+            echo "date=$REQUESTED_DATE" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(date +%F)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Research, crop, review, and update
+        run: python scripts/cinecal_agent.py --date "${{ steps.calendar-date.outputs.date }}"
+
+      - name: Validate generated feed
+        run: |
+          python -m json.tool data/calendar.json >/dev/null
+          test -n "$(git status --short data/calendar.json data/images data/reports)"
+
+      - name: Commit approved calendar entry
+        run: |
+          git config user.name "CineCal Editorial Agent"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/calendar.json data/images data/reports
+          git commit -m "Update movie calendar for ${{ steps.calendar-date.outputs.date }}"
+          git push

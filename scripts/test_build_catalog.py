@@ -1,6 +1,6 @@
 import unittest
 
-from build_catalog import finalize, merge_douban_top250, parse_douban_top250_page
+from build_catalog import finalize, merge_douban_top250, merge_existing, parse_douban_top250_page
 
 
 class CatalogBuilderTests(unittest.TestCase):
@@ -80,6 +80,35 @@ class CatalogBuilderTests(unittest.TestCase):
             "lastSeenAt": "2026-07-14T00:00:00Z",
         }
         self.assertEqual(finalize([item], "2026-07-14T00:00:00Z"), [])
+
+    def test_incremental_merge_preserves_top250_authority(self):
+        previous = {
+            "key": "tmdb:movie:278",
+            "tmdbID": 278,
+            "doubanSubjectID": "1292052",
+            "mediaType": "movie",
+            "sourceRanks": {"douban_top250": 1},
+            "ratings": {
+                "tmdb": {"score": 8.7, "count": 30000, "url": ""},
+                "douban": {"score": 9.7, "count": 3300000, "url": "https://movie.douban.com/subject/1292052/", "top250Rank": 1},
+            },
+            "firstSeenAt": "2026-07-01T00:00:00Z",
+        }
+        refreshed = {
+            "key": "tmdb:movie:278",
+            "tmdbID": 278,
+            "doubanSubjectID": "1292052",
+            "mediaType": "movie",
+            "sourceRanks": {"popular": 20},
+            "ratings": {
+                "tmdb": {"score": 8.7, "count": 30100, "url": ""},
+                "douban": {"score": 9.7, "count": None, "url": "https://movie.douban.com/subject/1292052/", "top250Rank": None},
+            },
+        }
+        merged = merge_existing([refreshed], [previous], "2026-07-14T00:00:00Z")
+        self.assertEqual(merged[0]["ratings"]["douban"]["top250Rank"], 1)
+        self.assertEqual(merged[0]["ratings"]["douban"]["count"], 3300000)
+        self.assertEqual(merged[0]["sourceRanks"]["popular"], 20)
 
 
 if __name__ == "__main__":

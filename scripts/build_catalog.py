@@ -317,9 +317,16 @@ def merge_existing(new_items: list[dict[str, Any]], existing_items: Iterable[dic
             old_ranks = previous.get("sourceRanks", {})
             item["sourceRanks"] = {**old_ranks, **item.get("sourceRanks", {})}
             old_douban = previous.get("ratings", {}).get("douban", {})
-            if not item.get("doubanSubjectID") and previous.get("doubanSubjectID"):
+            new_douban = item.get("ratings", {}).get("douban", {})
+            if old_douban.get("top250Rank") is not None:
                 item["doubanSubjectID"] = previous["doubanSubjectID"]
                 item["ratings"]["douban"] = old_douban
+            elif not item.get("doubanSubjectID") and previous.get("doubanSubjectID"):
+                item["doubanSubjectID"] = previous["doubanSubjectID"]
+                item["ratings"]["douban"] = old_douban
+            elif item.get("doubanSubjectID") == previous.get("doubanSubjectID"):
+                if new_douban.get("count") is None and old_douban.get("count") is not None:
+                    new_douban["count"] = old_douban["count"]
         merged[key] = item
     return list(merged.values())
 

@@ -105,7 +105,15 @@ def normalize_result(
         return "agent marked unresolved"
     url = str(result.get("doubanURL", ""))
     match = DOUBAN_SUBJECT.fullmatch(url)
-    if not match or not is_grounded_url(url, grounded_urls):
+    known_douban = item.get("ratings", {}).get("douban", {})
+    known_url = str(known_douban.get("url", ""))
+    known_score = known_douban.get("score")
+    link_was_already_verified = (
+        url == known_url
+        and DOUBAN_SUBJECT.fullmatch(known_url) is not None
+        and isinstance(known_score, (int, float))
+    )
+    if not match or (not link_was_already_verified and not is_grounded_url(url, grounded_urls)):
         return "Douban subject was not present in grounded evidence"
     try:
         score = float(result.get("doubanScore"))

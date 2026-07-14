@@ -116,6 +116,7 @@ def grounded_json(
         model=MODEL,
         input=prompt,
         tools=[{"type": "web_search"}],
+        include=["web_search_call.results"],
     )
     payload = response_payload(response)
     urls = collect_urls(payload)

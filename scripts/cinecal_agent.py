@@ -15,6 +15,7 @@ import os
 import re
 import socket
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date, datetime, timezone
@@ -371,22 +372,50 @@ def validate_public_https_url(raw_url: str) -> None:
             raise PublicationError("Image URL resolved to a non-public network address.")
 
 
-def download_image(raw_url: str) -> Image.Image:
+def download_image(raw_url: str, source_page_url: str = "") -> Image.Image:
     validate_public_https_url(raw_url)
-    request = urllib.request.Request(
-        raw_url,
-        headers={"User-Agent": "CineCalEditorialBot/1.0 (+https://github.com/)"},
-    )
-    with urllib.request.urlopen(request, timeout=25) as response:
-        final_url = response.geturl()
-        validate_public_https_url(final_url)
-        content_type = response.headers.get_content_type()
-        if not content_type.startswith("image/"):
-            raise PublicationError(f"Candidate returned {content_type}, not an image.")
-        declared = response.headers.get("Content-Length")
-        if declared and int(declared) > MAX_DOWNLOAD_BYTES:
-            raise PublicationError("Candidate image exceeds the download limit.")
-        data = response.read(MAX_DOWNLOAD_BYTES + 1)
+    parsed = urllib.parse.urlparse(raw_url)
+    referers = []
+    if source_page_url.startswith("https://"):
+        referers.append(source_page_url)
+    referers.extend([f"{parsed.scheme}://{parsed.netloc}/", ""])
+    data: bytes | None = None
+    last_error: Exception | None = None
+    for referer in dict.fromkeys(referers):
+        headers = {
+            # Image CDNs commonly reject non-browser agents or require a
+            # source-page Referer even for public promotional stills.
+            "User-Agent": (
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/126.0 Safari/537.36"
+            ),
+            "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+        if referer:
+            headers["Referer"] = referer
+        request = urllib.request.Request(raw_url, headers=headers)
+        try:
+            with urllib.request.urlopen(request, timeout=25) as response:
+                final_url = response.geturl()
+                validate_public_https_url(final_url)
+                content_type = response.headers.get_content_type()
+                if not content_type.startswith("image/"):
+                    raise PublicationError(f"Candidate returned {content_type}, not an image.")
+                declared = response.headers.get("Content-Length")
+                if declared and int(declared) > MAX_DOWNLOAD_BYTES:
+                    raise PublicationError("Candidate image exceeds the download limit.")
+                data = response.read(MAX_DOWNLOAD_BYTES + 1)
+            break
+        except urllib.error.HTTPError as error:
+            last_error = error
+            if error.code not in {401, 403, 429}:
+                raise
+    if data is None:
+        if last_error is not None:
+            raise last_error
+        raise PublicationError("Candidate image could not be downloaded.")
     if len(data) > MAX_DOWNLOAD_BYTES:
         raise PublicationError("Candidate image exceeds the download limit.")
     try:
@@ -554,7 +583,7 @@ def select_and_crop_image(
         try:
             print(f"[4/5] Reviewing image candidate {index}...", flush=True)
             image_url = str(candidate["imageURL"])
-            image = download_image(image_url)
+            image = download_image(image_url, str(candidate.get("sourcePageURL", "")))
             plan = crop_plan(client, image, str(research["title"]))
             if not passes_plan(plan):
                 raise PublicationError("AI crop plan scored below the publication threshold.")

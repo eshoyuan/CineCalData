@@ -13,8 +13,8 @@ short original editorial sentence and a link to its Douban subject page.
 - `.github/workflows/update-calendar.yml` is the manual one-card editor/debug workflow.
 - `META_AI_API_KEY` is stored only as an encrypted GitHub Actions secret and
   is never included in this repository or its generated JSON.
-- `TMDB_API_TOKEN` is the encrypted read-only API token used to resolve exact
-  works, metadata, and stable landscape artwork.
+- `TMDB_API_TOKEN` (v4) or `TMDB_API_KEY` (v3) is the encrypted credential used
+  to resolve exact works, metadata, and stable landscape artwork.
 
 ## Content and copyright
 

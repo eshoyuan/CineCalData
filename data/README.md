@@ -45,9 +45,9 @@ If grounding is absent, a source cannot be verified, an image is invalid, or eit
 the workflow exits before modifying `calendar.json`. Approved outputs are written to `data/images`,
 and the research/crop report is written to `data/reports`.
 
-Create GitHub Actions repository secrets named `META_AI_API_KEY` and `TMDB_API_TOKEN`. The workflow
-exposes the former as `MODEL_API_KEY`; never put either credential in source code, workflow YAML,
-issue text, or logs. The editorial/vision steps use `muse-spark-1.1` and
+Create `META_AI_API_KEY` plus either `TMDB_API_TOKEN` (v4 Read Access Token) or `TMDB_API_KEY`
+(v3 key) as encrypted GitHub Actions repository secrets. The workflow exposes the Meta secret as
+`MODEL_API_KEY`; never put credentials in source code, workflow YAML, issue text, or logs. The editorial/vision steps use `muse-spark-1.1` and
 `https://api.meta.ai/v1`.
 
 Prototype mode requires grounded provenance and records the rights basis. Production mode also

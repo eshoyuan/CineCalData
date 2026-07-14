@@ -76,16 +76,23 @@ def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]
 
 
 class TMDBProvider:
-    def __init__(self, token: str | None = None):
+    def __init__(self, token: str | None = None, api_key: str | None = None):
         self.token = (token or os.environ.get("TMDB_API_TOKEN", "")).strip()
-        if not self.token:
+        self.api_key = (api_key or os.environ.get("TMDB_API_KEY", "")).strip()
+        if not self.token and not self.api_key:
             raise MediaProviderError(
-                "TMDB_API_TOKEN is required for stable metadata and image retrieval."
+                "TMDB_API_TOKEN or TMDB_API_KEY is required for stable metadata and image retrieval."
             )
 
     @property
     def headers(self) -> dict[str, str]:
-        return {"Authorization": f"Bearer {self.token}"}
+        return {"Authorization": f"Bearer {self.token}"} if self.token else {}
+
+    def request(self, url: str) -> dict[str, Any]:
+        if self.api_key and not self.token:
+            separator = "&" if "?" in url else "?"
+            url = f"{url}{separator}{urllib.parse.urlencode({'api_key': self.api_key})}"
+        return request_json(url, self.headers)
 
     def resolve(
         self,
@@ -99,7 +106,7 @@ class TMDBProvider:
         params = urllib.parse.urlencode(
             {"query": query_title, "language": "zh-CN", "include_adult": "false"}
         )
-        search = request_json(f"{TMDB_API}/search/multi?{params}", self.headers)
+        search = self.request(f"{TMDB_API}/search/multi?{params}")
         results = [
             item for item in search.get("results", [])
             if item.get("media_type") in {"movie", "tv"}
@@ -108,7 +115,7 @@ class TMDBProvider:
             params = urllib.parse.urlencode(
                 {"query": original_title, "language": "zh-CN", "include_adult": "false"}
             )
-            search = request_json(f"{TMDB_API}/search/multi?{params}", self.headers)
+            search = self.request(f"{TMDB_API}/search/multi?{params}")
             results = [
                 item for item in search.get("results", [])
                 if item.get("media_type") in {"movie", "tv"}
@@ -148,7 +155,7 @@ class TMDBProvider:
                 "include_image_language": "zh,en,null",
             }
         )
-        detail = request_json(f"{TMDB_API}/{kind}/{tmdb_id}?{detail_params}", self.headers)
+        detail = self.request(f"{TMDB_API}/{kind}/{tmdb_id}?{detail_params}")
         backdrops = [
             image for image in detail.get("images", {}).get("backdrops", [])
             if image.get("file_path") and int(image.get("width", 0)) >= 900

@@ -34,9 +34,10 @@ jobs:
       - name: Verify structured media source
         env:
           TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: |
-          if [ -z "$TMDB_API_TOKEN" ]; then
-            echo "Missing repository secret: TMDB_API_TOKEN" >&2
+          if [ -z "$TMDB_API_TOKEN" ] && [ -z "$TMDB_API_KEY" ]; then
+            echo "Missing repository secret: TMDB_API_TOKEN or TMDB_API_KEY" >&2
             exit 1
           fi
 
@@ -73,6 +74,7 @@ jobs:
     env:
       MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
       TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       CINECAL_MODEL: muse-spark-1.1
       CINECAL_RIGHTS_MODE: prototype
       CINECAL_REPOSITORY: ${{ github.repository }}

@@ -63,9 +63,10 @@ class AgentTests(unittest.TestCase):
                 ]},
             },
         ]
-        result = TMDBProvider("test-token").resolve("花样年华", release_year=2000)
+        result = TMDBProvider(api_key="test-key").resolve("花样年华", release_year=2000)
         self.assertEqual(result["tmdbID"], 123)
         self.assertEqual(result["imageCandidates"][0]["imageURL"], "https://image.tmdb.org/t/p/original/best.jpg")
+        self.assertIn("api_key=test-key", request.call_args_list[0].args[0])
 
     def test_extracts_fenced_json(self):
         self.assertEqual(parse_json_object('```json\n{"ok": true}\n```'), {"ok": True})

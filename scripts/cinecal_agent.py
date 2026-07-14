@@ -35,6 +35,7 @@ PLAN_PATH = ROOT / "data" / "plan.json"
 IMAGE_DIR = ROOT / "data" / "images"
 REPORT_DIR = ROOT / "data" / "reports"
 MODEL = os.environ.get("CINECAL_MODEL", "muse-spark-1.1")
+MODEL_TIMEOUT_SECONDS = float(os.environ.get("CINECAL_MODEL_TIMEOUT_SECONDS", "150"))
 MAX_DOWNLOAD_BYTES = 18_000_000
 MEDIUM_ASPECT = 349.67 / 164.33
 ALLOWED_IMAGE_RIGHTS = {
@@ -677,8 +678,10 @@ def main() -> int:
     client = OpenAI(
         base_url="https://api.meta.ai/v1",
         api_key=api_key,
-        timeout=600.0,
-        max_retries=1,
+        timeout=MODEL_TIMEOUT_SECONDS,
+        # A slow candidate should be skipped, not retried for another full
+        # timeout while the remaining API-provided backdrops wait.
+        max_retries=0,
     )
     if args.movie:
         title = args.movie

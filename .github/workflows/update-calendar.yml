@@ -28,6 +28,7 @@ jobs:
       TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
       TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       CINECAL_MODEL: muse-spark-1.1
+      CINECAL_MODEL_TIMEOUT_SECONDS: "150"
       CINECAL_RIGHTS_MODE: prototype
       CINECAL_MOVIE: ${{ inputs.movie }}
       CINECAL_REPOSITORY: ${{ github.repository }}

@@ -25,7 +25,6 @@ const quoteFor = (item) => {
   const source = (item?.overview || "光影抵达这里，故事也刚好开始。").trim();
   return source.length > 42 ? `${source.slice(0, 41)}…` : source;
 };
-const doubanSearchURL = (item) => `https://search.douban.com/movie/subject_search?search_text=${encodeURIComponent(`${item.title} ${item.year || ""}`)}`;
 const resolveImageURL = (url) => {
   if (!["localhost", "127.0.0.1"].includes(location.hostname) || !url) return url;
   const marker = "/main/data/";
@@ -47,15 +46,13 @@ function currentItem() {
 
 function previewEntry(item) {
   const douban = item?.ratings?.douban;
-  const tmdb = item?.ratings?.tmdb;
-  const hasDouban = Number.isFinite(douban?.score);
   return {
     title: item?.title || "当日尚未生成",
-    ratingLabel: hasDouban ? `豆瓣 ${douban.score.toFixed(1)}` : `TMDB ${(tmdb?.score || 0).toFixed(1)}`,
+    ratingLabel: `豆瓣 ${douban.score.toFixed(1)}`,
     quote: quoteFor(item),
     imageURLSmall: resolveImageURL(item?.images?.small),
     imageURLMedium: resolveImageURL(item?.images?.medium),
-    link: douban?.url || doubanSearchURL(item),
+    link: douban.url,
   };
 }
 
@@ -108,7 +105,12 @@ async function loadData() {
     const response = await fetch(`${DATA_ROOT}/catalog.json`, { cache: "no-store" });
     if (!response.ok) throw new Error(`catalog ${response.status}`);
     const catalog = await response.json();
-    state.items = (catalog.items || []).filter((item) => item.images?.small && item.images?.medium);
+    state.items = (catalog.items || []).filter((item) => (
+      item.images?.small
+      && item.images?.medium
+      && /^https:\/\/movie\.douban\.com\/subject\/\d+\/$/.test(item.ratings?.douban?.url || "")
+      && Number.isFinite(item.ratings?.douban?.score)
+    ));
     const params = new URLSearchParams(location.search);
     state.selectedDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get("date") || "") ? params.get("date") : localDateKey();
     state.candidateIndex = Math.min(CANDIDATES_PER_DAY - 1, Math.max(0, Number(params.get("candidate") || 1) - 1));

@@ -1,5 +1,6 @@
 const state = { entries: [], selectedDate: "" };
 const $ = (id) => document.getElementById(id);
+const DATA_ROOT = "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data";
 
 const formatDay = (date) => String(new Date(`${date}T12:00:00`).getDate());
 const formatSubtitle = (date) => {
@@ -59,7 +60,7 @@ function moveDate(offset) {
 
 async function loadData() {
   try {
-    const calendarResponse = await fetch("data/calendar.json", { cache: "no-store" });
+    const calendarResponse = await fetch(`${DATA_ROOT}/calendar.json`, { cache: "no-store" });
     if (!calendarResponse.ok) throw new Error(`calendar ${calendarResponse.status}`);
     const calendar = await calendarResponse.json();
     state.entries = (calendar.entries || []).sort((a, b) => a.date.localeCompare(b.date));

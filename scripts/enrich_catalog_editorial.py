@@ -278,8 +278,13 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    if not os.environ.get("MODEL_API_KEY"):
-        raise SystemExit("MODEL_API_KEY is required")
+    from local_secrets import read_secret
+
+    model_api_key = read_secret("MODEL_API_KEY")
+    if not model_api_key:
+        raise SystemExit(
+            "MODEL_API_KEY is required (environment or macOS Keychain service CineCalMetaAI)"
+        )
     from openai import OpenAI
     from cinecal_agent import MODEL, grounded_json
 
@@ -290,7 +295,7 @@ def main() -> None:
         pending = pending[: args.limit]
     client = OpenAI(
         base_url="https://api.meta.ai/v1",
-        api_key=os.environ["MODEL_API_KEY"],
+        api_key=model_api_key,
         timeout=float(os.environ.get("CINECAL_MODEL_TIMEOUT_SECONDS", "240")),
     )
     generated_at = utc_now()

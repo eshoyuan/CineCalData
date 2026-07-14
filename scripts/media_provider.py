@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import json
-import os
 import re
 import urllib.parse
 import urllib.request
@@ -102,11 +101,13 @@ def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]
 
 class TMDBProvider:
     def __init__(self, token: str | None = None, api_key: str | None = None):
-        self.token = (token or os.environ.get("TMDB_API_TOKEN", "")).strip()
-        self.api_key = (api_key or os.environ.get("TMDB_API_KEY", "")).strip()
+        from local_secrets import read_secret
+
+        self.token = (token or read_secret("TMDB_API_TOKEN")).strip()
+        self.api_key = (api_key or read_secret("TMDB_API_KEY")).strip()
         if not self.token and not self.api_key:
             raise MediaProviderError(
-                "TMDB_API_TOKEN or TMDB_API_KEY is required for stable metadata and image retrieval."
+                "TMDB_API_TOKEN or TMDB_API_KEY is required (environment or CineCal macOS Keychain)."
             )
 
     @property

@@ -1,4 +1,4 @@
-const state = { entries: [], plans: [], selectedDate: "", phoneSize: "medium" };
+const state = { entries: [], selectedDate: "" };
 const $ = (id) => document.getElementById(id);
 
 const formatDay = (date) => String(new Date(`${date}T12:00:00`).getDate());
@@ -6,7 +6,12 @@ const formatSubtitle = (date) => {
   const value = new Date(`${date}T12:00:00`);
   return `${value.toLocaleDateString("en-US", { month: "short" })} ${value.toLocaleDateString("en-US", { weekday: "short" })}`.toUpperCase();
 };
-const isComplete = (entry) => Boolean(entry?.imageURLSmall && entry?.imageURLMedium);
+const formatFullDate = (date) => new Date(`${date}T12:00:00`).toLocaleDateString("zh-CN", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  weekday: "long",
+});
 
 function createWidget(entry, date, size) {
   const widget = $("widgetTemplate").content.firstElementChild.cloneNode(true);
@@ -32,31 +37,16 @@ function createWidget(entry, date, size) {
 }
 
 function currentEntry() { return state.entries.find((entry) => entry.date === state.selectedDate); }
-function currentPlan() { return state.plans.find((entry) => entry.date === state.selectedDate); }
-
 function render() {
   const entry = currentEntry();
-  const plan = currentPlan();
   $("datePicker").value = state.selectedDate;
-  const phone = $("phoneWidget");
-  phone.replaceChildren(createWidget(entry, state.selectedDate, state.phoneSize));
-  phone.classList.toggle("small-slot", state.phoneSize === "small");
   $("smallWidget").replaceChildren(createWidget(entry, state.selectedDate, "small"));
   $("mediumWidget").replaceChildren(createWidget(entry, state.selectedDate, "medium"));
-  document.querySelectorAll("[data-size]").forEach((button) => button.classList.toggle("active", button.dataset.size === state.phoneSize));
-
-  const complete = isComplete(entry);
-  $("statusDot").className = complete ? "ready" : entry ? "missing" : "missing";
-  $("dataStatus").textContent = complete ? "完整卡片已缓存" : entry ? "已有文字，图片待生成" : "该日期尚无数据";
-  $("selectionReason").textContent = plan?.reason || (entry ? "这是一条已有的日历卡片；长期选片依据尚未写入计划。" : "选择另一个日期，或点击“随机一天”浏览已有卡片。");
-  $("metaTitle").textContent = entry?.title || "—";
-  $("metaRating").textContent = entry?.rating ? `${entry.rating} / 10` : "—";
-  $("metaSource").textContent = entry?.imageSourcePageURL ? new URL(entry.imageSourcePageURL).hostname.replace("www.", "") : "—";
-  $("metaUpdated").textContent = entry?.ratingRetrievedAt ? new Date(entry.ratingRetrievedAt).toLocaleString("zh-CN", { dateStyle: "medium", timeStyle: "short" }) : "—";
-  const link = $("doubanLink");
-  link.href = entry?.doubanURL || "#";
-  link.classList.toggle("disabled", !entry?.doubanURL);
-  const url = new URL(location.href); url.searchParams.set("date", state.selectedDate); url.searchParams.set("size", state.phoneSize); history.replaceState(null, "", url);
+  $("selectedDateLabel").textContent = entry ? `${formatFullDate(state.selectedDate)} · ${entry.title}` : `${formatFullDate(state.selectedDate)} · 尚未生成`;
+  const url = new URL(location.href);
+  url.searchParams.set("date", state.selectedDate);
+  url.searchParams.delete("size");
+  history.replaceState(null, "", url);
 }
 
 function moveDate(offset) {
@@ -69,24 +59,18 @@ function moveDate(offset) {
 
 async function loadData() {
   try {
-    const [calendarResponse, planResponse] = await Promise.all([fetch("data/calendar.json", { cache: "no-store" }), fetch("data/plan.json", { cache: "no-store" })]);
+    const calendarResponse = await fetch("data/calendar.json", { cache: "no-store" });
     if (!calendarResponse.ok) throw new Error(`calendar ${calendarResponse.status}`);
     const calendar = await calendarResponse.json();
-    const plan = planResponse.ok ? await planResponse.json() : { entries: [] };
     state.entries = (calendar.entries || []).sort((a, b) => a.date.localeCompare(b.date));
-    state.plans = plan.entries || [];
     const requested = new URLSearchParams(location.search).get("date");
-    const requestedSize = new URLSearchParams(location.search).get("size");
     const today = new Date().toLocaleDateString("en-CA");
     state.selectedDate = state.entries.some((entry) => entry.date === requested) ? requested : state.entries.some((entry) => entry.date === today) ? today : state.entries.at(-1)?.date;
-    state.phoneSize = requestedSize === "small" ? "small" : "medium";
     const dates = state.entries.map((entry) => entry.date);
     $("datePicker").min = dates[0] || ""; $("datePicker").max = dates.at(-1) || "";
     render();
   } catch (error) {
-    $("dataStatus").textContent = "公开数据暂时无法读取";
-    $("statusDot").className = "missing";
-    $("selectionReason").textContent = `请稍后刷新。${error.message}`;
+    $("selectedDateLabel").textContent = `公开数据暂时无法读取 · ${error.message}`;
   }
 }
 
@@ -99,8 +83,6 @@ $("shuffleDate").addEventListener("click", () => {
   render();
 });
 $("datePicker").addEventListener("change", (event) => { state.selectedDate = event.target.value; render(); });
-document.querySelectorAll("[data-size]").forEach((button) => button.addEventListener("click", () => { state.phoneSize = button.dataset.size; render(); }));
 document.addEventListener("keydown", (event) => { if (event.key === "ArrowLeft") moveDate(-1); if (event.key === "ArrowRight") moveDate(1); });
 
-const updateClock = () => $("statusTime").textContent = new Date().toLocaleTimeString("zh-CN", { hour: "2-digit", minute: "2-digit", hour12: false });
-updateClock(); setInterval(updateClock, 30_000); loadData();
+loadData();

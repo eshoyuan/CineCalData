@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c10">
   <meta name="description" content="CineCal 电影日历小组件在线预览器">
   <title>CineCal · Widget Preview</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="topbar">
@@ -17,14 +17,16 @@
     <a class="repo-link" href="https://github.com/eshoyuan/CineCalData" target="_blank" rel="noreferrer">Public data ↗</a>
   </header>
 
-  <main>
-    <section class="intro">
-      <p class="eyebrow">每天一帧电影</p>
-      <h1>在浏览器里，看见它<br>真正出现在 iPhone 上的样子。</h1>
-      <p class="lede">选择日期或随机漫游。网页直接读取 CineCal 的公开数据，并按真实 Widget 比例渲染。</p>
+  <main class="preview-page">
+    <section class="preview-heading">
+      <div>
+        <p class="eyebrow">每天一帧电影</p>
+        <h1>电影日历小组件</h1>
+      </div>
+      <p>选择日期或随机漫游，查看当天的小号与中号组件。</p>
     </section>
 
-    <section class="controls" aria-label="预览控制器">
+    <section class="controls" aria-label="日期控制器">
       <div class="date-controls">
         <button id="previousDate" class="icon-button" type="button" aria-label="上一个有数据的日期">‹</button>
         <label class="date-field">
@@ -34,55 +36,11 @@
         <button id="nextDate" class="icon-button" type="button" aria-label="下一个有数据的日期">›</button>
       </div>
       <button id="shuffleDate" class="shuffle-button" type="button"><span aria-hidden="true">↝</span> 随机一天</button>
-      <fieldset class="size-picker">
-        <legend>手机中的尺寸</legend>
-        <button type="button" data-size="small">小号</button>
-        <button type="button" data-size="medium" class="active">中号</button>
-      </fieldset>
-    </section>
-
-    <section class="preview-layout">
-      <div class="phone-wrap">
-        <div class="phone" aria-label="iPhone 主屏幕预览">
-          <div class="phone-screen">
-            <div class="wallpaper" aria-hidden="true"></div>
-            <div class="status-bar"><span id="statusTime">09:41</span><span class="island"></span><span class="status-icons">▮▮▮ ᯤ ▰</span></div>
-            <div id="phoneWidget" class="phone-widget-slot"></div>
-            <div class="app-grid" aria-hidden="true">
-              <div><i class="app-icon coral">♪</i><span>Music</span></div>
-              <div><i class="app-icon blue">☁</i><span>Weather</span></div>
-              <div><i class="app-icon violet">◎</i><span>Photos</span></div>
-              <div><i class="app-icon green">⌁</i><span>Maps</span></div>
-              <div><i class="app-icon ink">◐</i><span>Camera</span></div>
-              <div><i class="app-icon orange">☀</i><span>Home</span></div>
-              <div><i class="app-icon cyan">✦</i><span>Safari</span></div>
-              <div><i class="app-icon gray">⚙</i><span>Settings</span></div>
-            </div>
-            <div class="page-dots" aria-hidden="true"><b></b><i></i><i></i></div>
-            <div class="dock" aria-hidden="true">
-              <i class="app-icon green">✆</i><i class="app-icon blue">●</i><i class="app-icon cyan">✦</i><i class="app-icon coral">♫</i>
-            </div>
-          </div>
-        </div>
-        <p class="device-caption">iPhone · 主屏幕模拟</p>
-      </div>
-
-      <aside class="inspector">
-        <div class="availability"><span id="statusDot"></span><strong id="dataStatus">正在读取数据</strong></div>
-        <p id="selectionReason" class="reason">载入当天的选片依据…</p>
-        <dl>
-          <div><dt>影片</dt><dd id="metaTitle">—</dd></div>
-          <div><dt>豆瓣评分</dt><dd id="metaRating">—</dd></div>
-          <div><dt>图片来源</dt><dd id="metaSource">—</dd></div>
-          <div><dt>更新时间</dt><dd id="metaUpdated">—</dd></div>
-        </dl>
-        <a id="doubanLink" class="douban-link disabled" href="#" target="_blank" rel="noreferrer">在豆瓣打开 <span>↗</span></a>
-      </aside>
     </section>
 
     <section class="size-comparison">
       <div class="section-heading">
-        <p class="eyebrow">Pixel-level comparison</p>
+        <p id="selectedDateLabel" class="eyebrow">正在读取公开数据</p>
         <h2>两种尺寸，同一份内容。</h2>
       </div>
       <div class="comparison-stage">
@@ -112,6 +70,6 @@
     </a>
   </template>
 
-  <script src="app.js?v=1" defer></script>
+  <script src="app.js?v=2" defer></script>
 </body>
 </html>

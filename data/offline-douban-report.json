@@ -5,7 +5,6 @@
   "resolved": 710,
   "failed": 208,
   "directDoubanTotal": 965,
-  "belowSevenTotal": 58,
   "failures": {
     "tmdb:movie:1339713": "Douban returned no 2026 match for 痴迷; refusing a cross-version rating.",
     "tmdb:tv:37854": "Douban returned no exact-title match for 航海王; refusing an ambiguous subject.",
@@ -215,5 +214,7 @@
     "tmdb:movie:160885": "Douban suggestion API returned no match for Tel chi el telùn.",
     "tmdb:movie:976912": "Douban suggestion API returned no match for 平面设计.",
     "tmdb:movie:1477317": "Douban suggestion API returned no match for 是你的错：伦敦."
-  }
+  },
+  "belowSixTotal": 13,
+  "minimumDoubanScore": 6.0
 }

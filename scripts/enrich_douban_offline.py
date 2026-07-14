@@ -17,6 +17,7 @@ from media_provider import MediaProviderError, douban_lookup
 
 
 DOUBAN_SUBJECT = re.compile(r"^https://movie\.douban\.com/subject/(\d+)/$")
+MIN_DOUBAN_SCORE = 6.0
 
 
 def utc_now() -> str:
@@ -98,8 +99,10 @@ def apply_result(item: dict[str, Any], result: dict[str, Any]) -> None:
     }
     item["qualityScore"] = result["score"]
     item["qualityScoreSource"] = "douban"
-    if result["score"] < 7:
+    if result["score"] < MIN_DOUBAN_SCORE:
         item["recommendationEligible"] = False
+    elif item.get("images", {}).get("small") and item.get("images", {}).get("medium"):
+        item["recommendationEligible"] = True
 
 
 def parse_args() -> argparse.Namespace:
@@ -147,7 +150,7 @@ def main() -> None:
     direct_total = sum(not needs_douban(item) for item in catalog["items"])
     below_threshold = sum(
         isinstance(item.get("ratings", {}).get("douban", {}).get("score"), (int, float))
-        and float(item["ratings"]["douban"]["score"]) < 7
+        and float(item["ratings"]["douban"]["score"]) < MIN_DOUBAN_SCORE
         for item in catalog["items"]
     )
     summary = {
@@ -157,7 +160,7 @@ def main() -> None:
         "resolved": resolved,
         "failed": len(failures),
         "directDoubanTotal": direct_total,
-        "belowSevenTotal": below_threshold,
+        "belowSixTotal": below_threshold,
         "failures": failures,
     }
     catalog["offlineDoubanEnrichment"] = {key: value for key, value in summary.items() if key != "failures"}

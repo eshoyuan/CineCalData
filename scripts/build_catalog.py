@@ -22,6 +22,7 @@ from media_provider import MediaProviderError, TMDB_API, TMDB_IMAGE, TMDBProvide
 DOUBAN_TOP250 = "https://movie.douban.com/top250"
 USER_AGENT = "CineCalCatalog/1.0 (+https://github.com/eshoyuan/CineCalData)"
 MIN_SCORE = 7.0
+MIN_DOUBAN_SCORE = 6.0
 MIN_MOVIE_VOTES = 100
 MIN_TV_VOTES = 50
 
@@ -353,10 +354,11 @@ def finalize(items: list[dict[str, Any]], generated_at: str) -> list[dict[str, A
     final: list[dict[str, Any]] = []
     for item in items:
         score, source = quality_score(item)
-        if score < MIN_SCORE:
+        source_floor = MIN_DOUBAN_SCORE if source == "douban" else MIN_SCORE
+        if score < source_floor:
             continue
         douban_score = item.get("ratings", {}).get("douban", {}).get("score")
-        if isinstance(douban_score, (int, float)) and float(douban_score) < MIN_SCORE:
+        if isinstance(douban_score, (int, float)) and float(douban_score) < MIN_DOUBAN_SCORE:
             continue
         item["qualityScore"] = round(score, 1)
         item["qualityScoreSource"] = source
@@ -450,7 +452,12 @@ def build_catalog(args: argparse.Namespace) -> dict[str, Any]:
         "schemaVersion": 1,
         "generatedAt": generated_at,
         "mode": args.mode,
-        "filters": {"minimumScore": MIN_SCORE, "minimumMovieVotes": MIN_MOVIE_VOTES, "minimumTVVotes": MIN_TV_VOTES},
+        "filters": {
+            "minimumScore": MIN_SCORE,
+            "minimumDoubanScore": MIN_DOUBAN_SCORE,
+            "minimumMovieVotes": MIN_MOVIE_VOTES,
+            "minimumTVVotes": MIN_TV_VOTES,
+        },
         "sources": [
             "https://movie.douban.com/top250",
             "https://api.themoviedb.org/3/movie/top_rated",

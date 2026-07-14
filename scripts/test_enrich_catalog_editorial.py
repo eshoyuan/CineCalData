@@ -2,6 +2,7 @@ import unittest
 
 from enrich_catalog_editorial import (
     DOUBAN_SUBJECT,
+    MIN_DOUBAN_SCORE,
     PROMPT_VERSION,
     build_prompt,
     build_review_prompt,
@@ -35,6 +36,9 @@ class EditorialEnrichmentTests(unittest.TestCase):
         }
         self.assertEqual(PROMPT_VERSION, "catalog-editorial-v2")
         self.assertTrue(needs_enrichment(item))
+
+    def test_douban_floor_is_six(self):
+        self.assertEqual(MIN_DOUBAN_SCORE, 6.0)
 
     def test_review_prompt_batches_and_preserves_keys(self):
         items = [

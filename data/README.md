@@ -14,7 +14,8 @@ window so volatile ratings and topical context do not go stale.
 `catalog.json` is the larger model-free recommendation pool. It merges high-quality stable titles
 with recent popularity signals, deduplicates primarily by TMDB ID and secondarily by normalized
 title plus year, and keeps a precomposed `searchableText` field for future embedding generation.
-Known Douban ratings below 7.0 are excluded.
+Known Douban ratings below 6.0 are excluded. The general structured-source quality floor remains
+7.0, so lowering the Douban-specific floor does not admit low-signal catalog entries by itself.
 
 `catalog-images/` contains the materialized small and medium crops referenced by each catalog
 record. Crops are generated locally with Apple Vision face and attention-saliency boxes, so the

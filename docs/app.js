@@ -110,6 +110,7 @@ async function loadData() {
       && item.images?.medium
       && /^https:\/\/movie\.douban\.com\/subject\/\d+\/$/.test(item.ratings?.douban?.url || "")
       && Number.isFinite(item.ratings?.douban?.score)
+      && item.ratings.douban.score >= 6
     ));
     const params = new URLSearchParams(location.search);
     state.selectedDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get("date") || "") ? params.get("date") : localDateKey();

@@ -14,6 +14,7 @@ from typing import Any
 
 
 PROMPT_VERSION = "catalog-editorial-v2"
+MIN_DOUBAN_SCORE = 6.0
 DOUBAN_SUBJECT = re.compile(r"^https://movie\.douban\.com/subject/(\d+)/$")
 WEAK_CONTEXT_HOSTS = {"play.google.com", "tv.apple.com", "www.amazon.com", "amazon.com"}
 
@@ -131,7 +132,7 @@ def normalize_result(
         confidence = float(result.get("confidence"))
     except (TypeError, ValueError):
         return "invalid score or confidence"
-    if not 7.0 <= score <= 10.0:
+    if not MIN_DOUBAN_SCORE <= score <= 10.0:
         return "Douban score is missing or below the catalog threshold"
     if confidence < 0.85:
         return "confidence below 0.85"

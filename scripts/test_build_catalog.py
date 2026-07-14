@@ -57,7 +57,7 @@ class CatalogBuilderTests(unittest.TestCase):
         self.assertEqual(merged[0]["doubanSubjectID"], "1292052")
         self.assertEqual(merged[0]["ratings"]["douban"]["top250Rank"], 1)
 
-    def test_final_filter_rejects_known_douban_score_below_seven(self):
+    def test_final_filter_accepts_known_douban_score_between_six_and_seven(self):
         item = {
             "title": "Example",
             "originalTitle": "",
@@ -73,6 +73,30 @@ class CatalogBuilderTests(unittest.TestCase):
             "ratings": {
                 "tmdb": {"score": 8.0, "count": 1000, "url": ""},
                 "douban": {"score": 6.9, "count": 100, "url": "", "top250Rank": None},
+            },
+            "popularity": {"tmdb": 50},
+            "sourceRanks": {"popular": 1},
+            "images": {"backdrop": "", "poster": ""},
+            "lastSeenAt": "2026-07-14T00:00:00Z",
+        }
+        self.assertEqual(len(finalize([item], "2026-07-14T00:00:00Z")), 1)
+
+    def test_final_filter_rejects_known_douban_score_below_six(self):
+        item = {
+            "title": "Example",
+            "originalTitle": "",
+            "alternateTitles": [],
+            "year": 2026,
+            "mediaType": "movie",
+            "overview": "",
+            "genres": [],
+            "countries": [],
+            "creators": [],
+            "cast": [],
+            "keywords": [],
+            "ratings": {
+                "tmdb": {"score": 8.0, "count": 1000, "url": ""},
+                "douban": {"score": 5.9, "count": 100, "url": "", "top250Rank": None},
             },
             "popularity": {"tmdb": 50},
             "sourceRanks": {"popular": 1},

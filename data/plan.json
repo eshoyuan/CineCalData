@@ -1,8 +1,46 @@
 {
   "schemaVersion": 1,
   "horizonDays": 730,
-  "updatedAt": "2026-07-14T06:56:33.743444Z",
+  "updatedAt": "2026-07-14T07:12:33.258191Z",
   "entries": [
+    {
+      "date": "2026-07-14",
+      "title": "悲惨世界",
+      "originalTitle": "Les Misérables",
+      "selectionScore": 90,
+      "reason": "法国国庆巴士底日，重温雨果笔下关于自由、平等、博爱的革命史诗，呼应大革命精神",
+      "signals": [
+        {
+          "type": "holiday",
+          "label": "法国国庆日巴士底日，7月14日为法国国家节日",
+          "sourceURL": "https://en.wikipedia.org/wiki/Bastille_Day"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Bastille_Day"
+      ],
+      "locked": false,
+      "generatedAt": "2026-07-14T07:11:30.568233Z"
+    },
+    {
+      "date": "2026-07-15",
+      "title": "他人的脸",
+      "originalTitle": "The Face of Another",
+      "selectionScore": 90,
+      "reason": "日本新浪潮经典60周年面具寓言，拷问身份异化与现代疏离，契合仲夏深度选片",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "1966年7月15日日本首映，2026年迎来60周年",
+          "sourceURL": "https://en.wikipedia.org/wiki/The_Face_of_Another_(film)"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/The_Face_of_Another_(film)"
+      ],
+      "locked": false,
+      "generatedAt": "2026-07-14T07:11:00.930529Z"
+    },
     {
       "date": "2026-07-16",
       "title": "盗梦空间",
@@ -21,6 +59,88 @@
       ],
       "locked": false,
       "generatedAt": "2026-07-14T06:56:10.145983Z"
+    },
+    {
+      "date": "2026-07-17",
+      "title": "花样年华",
+      "originalTitle": "In the Mood for Love",
+      "selectionScore": 92,
+      "reason": "王家卫导演1958年7月17日诞辰，盛夏重温《花样年华》，以旗袍、梅雨与留声机定格港式浪漫的巅峰美学。",
+      "signals": [
+        {
+          "type": "person_anniversary",
+          "label": "王家卫导演诞辰纪念 1958年7月17日上海出生",
+          "sourceURL": "https://en.wikipedia.org/wiki/Wong_Kar-wai"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Wong_Kar-wai"
+      ],
+      "locked": false,
+      "generatedAt": "2026-07-14T07:11:15.801985Z"
+    },
+    {
+      "date": "2026-07-18",
+      "title": "成事在人",
+      "originalTitle": "Invictus",
+      "selectionScore": 88,
+      "reason": "联合国纳尔逊·曼德拉国际日，借橄榄球世界杯真实往事致敬曼德拉以体育弥合种族裂痕的和解精神",
+      "signals": [
+        {
+          "type": "holiday",
+          "label": "联合国纳尔逊·曼德拉国际日，每年7月18日为曼德拉诞辰，联合国大会宣布设立",
+          "sourceURL": "https://www.un.org/en/events/mandeladay/"
+        },
+        {
+          "type": "cultural_moment",
+          "label": "影片改编自曼德拉执政初期历史，讲述其借1995年橄榄球世界杯团结南非的真实故事",
+          "sourceURL": "https://en.wikipedia.org/wiki/Invictus_(film)"
+        }
+      ],
+      "researchSources": [
+        "https://www.un.org/en/events/mandeladay/",
+        "https://en.wikipedia.org/wiki/Invictus_(film)"
+      ],
+      "locked": false,
+      "generatedAt": "2026-07-14T07:11:40.723232Z"
+    },
+    {
+      "date": "2026-07-19",
+      "title": "狮子王",
+      "originalTitle": "The Lion King",
+      "selectionScore": 88,
+      "reason": "迪士尼真人版2019年7月19日北美公映周年，草原史诗契合盛夏合家欢观影仪式",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "影片于2019年7月19日在美国上映，恰逢北美首映7周年",
+          "sourceURL": "https://en.wikipedia.org/wiki/The_Lion_King_(2019_film)"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/The_Lion_King_(2019_film)"
+      ],
+      "locked": false,
+      "generatedAt": "2026-07-14T07:11:29.978088Z"
+    },
+    {
+      "date": "2026-07-20",
+      "title": "崖上的波妞",
+      "originalTitle": "Gake no Ue no Ponyo",
+      "selectionScore": 93,
+      "reason": "2026年日本海之日恰逢7月20日，正是该节日最初的法定日期，以宫崎骏笔下向往人类世界的海之女儿呼应感恩海洋、祈愿繁荣的初心，绚烂清凉适配盛夏亲海仪式。",
+      "signals": [
+        {
+          "type": "holiday",
+          "label": "2026年日本海之日为7月20日周一国民祝日",
+          "sourceURL": "https://www.timeanddate.com/holidays/japan/sea-day"
+        }
+      ],
+      "researchSources": [
+        "https://www.timeanddate.com/holidays/japan/sea-day"
+      ],
+      "locked": false,
+      "generatedAt": "2026-07-14T07:12:07.349820Z"
     }
   ]
 }

@@ -7,10 +7,15 @@ short original editorial sentence and a link to its Douban subject page.
 - `data/calendar.json` is the public feed read by the app and widget.
 - `data/plan.json` is the 365–730 day date-specific editorial plan.
 - `data/today.json` is the tiny pointer published each day without calling a model.
+- `data/catalog.json` is the model-free, deduplicated recommendation pool used for
+  future search and embedding-based personalization.
 - `.github/workflows/precache-plan.yml` builds the long-range plan in parallel batches.
 - `.github/workflows/precache-cards.yml` prepares complete cards 30+ days ahead.
 - `.github/workflows/publish-today.yml` performs the lightweight daily publish.
 - `.github/workflows/update-calendar.yml` is the manual one-card editor/debug workflow.
+- `.github/workflows/bootstrap-catalog.yml` builds the initial high-quality movie and
+  television catalog from Douban Top 250 plus TMDB rating/popularity lists.
+- `.github/workflows/refresh-catalog.yml` performs the daily model-free incremental merge.
 - `META_AI_API_KEY` is stored only as an encrypted GitHub Actions secret and
   is never included in this repository or its generated JSON.
 - `TMDB_API_TOKEN` (v4) or `TMDB_API_KEY` (v3) is the encrypted credential used
@@ -53,3 +58,16 @@ runs separately and ahead of time:
    The model only writes original copy and judges the two crops.
 3. At 00:05 Asia/Shanghai, the daily publisher only points `today.json` at the
    already cached card and records whether it is complete.
+
+## Recommendation catalog
+
+The catalog builder does not call Meta or any other LLM. Bootstrap mode combines
+Douban Top 250, TMDB top-rated movies and series, popular titles, and weekly
+trending titles. Incremental mode checks stable TMDB IDs before merging popular,
+trending, and recently released titles into the existing snapshot.
+
+Every recommendation has a quality score of at least 7.0. A known Douban score
+below 7.0 always excludes the title, even when its TMDB score is higher. Rich
+records retain genres, creators, cast, keywords, overview, rating counts,
+popularity signals, images, source ranks, and a normalized `searchableText` field
+that can be embedded later without changing the catalog contract.

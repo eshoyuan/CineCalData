@@ -1,0 +1,56 @@
+name: Bootstrap recommendation catalog
+
+on:
+  workflow_dispatch:
+    inputs:
+      movie_pages:
+        description: "TMDB high-score movie pages"
+        required: false
+        default: "13"
+        type: string
+      tv_pages:
+        description: "TMDB high-score TV pages"
+        required: false
+        default: "10"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-catalog
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build model-free catalog
+        run: |
+          python scripts/build_catalog.py \
+            --mode bootstrap \
+            --movie-pages "${{ inputs.movie_pages }}" \
+            --tv-pages "${{ inputs.tv_pages }}" \
+            --detail-limit 400 \
+            --douban-enrich-limit 180
+
+      - name: Commit catalog snapshot
+        run: |
+          git config user.name "CineCal Catalog Builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/catalog.json
+          git commit -m "Bootstrap recommendation catalog"
+          git pull --rebase origin main
+          git push

@@ -1,0 +1,53 @@
+name: Refresh recommendation catalog
+
+on:
+  schedule:
+    # 01:45 Asia/Shanghai: refresh popularity without calling a model.
+    - cron: "45 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-catalog
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
+      TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Merge recent and popular titles
+        run: |
+          python scripts/build_catalog.py \
+            --mode incremental \
+            --movie-pages 3 \
+            --tv-pages 3 \
+            --detail-limit 120 \
+            --douban-enrich-limit 80 \
+            --skip-douban-top250
+
+      - name: Commit catalog refresh
+        run: |
+          git config user.name "CineCal Catalog Builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/catalog.json
+          if git diff --cached --quiet; then
+            echo "Catalog is unchanged"
+            exit 0
+          fi
+          git commit -m "Refresh recommendation catalog"
+          git pull --rebase origin main
+          git push

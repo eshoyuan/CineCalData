@@ -11,6 +11,11 @@ window so volatile ratings and topical context do not go stale.
 `today.json` is generated from the already cached card by a model-free daily workflow. It exposes
 `complete`, `usedFallback`, and `missingFields` for operational health checks.
 
+`catalog.json` is the larger model-free recommendation pool. It merges high-quality stable titles
+with recent popularity signals, deduplicates primarily by TMDB ID and secondarily by normalized
+title plus year, and keeps a precomposed `searchableText` field for future embedding generation.
+Known Douban ratings below 7.0 are excluded.
+
 - Keep `schemaVersion` at `1` until the client model changes.
 - Use local calendar dates in `YYYY-MM-DD` format.
 - Store final movie images in this GitHub repository. New entries provide `imageURLSmall` and

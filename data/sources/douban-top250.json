@@ -1,0 +1,3204 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-14T10:04:27.138791Z",
+  "source": "https://movie.douban.com/top250",
+  "count": 250,
+  "items": [
+    {
+      "rank": 1,
+      "title": "肖申克的救赎",
+      "alternateTitles": [
+        "/ The Shawshank Redemption"
+      ],
+      "year": 1994,
+      "rating": 9.7,
+      "ratingCount": 3303600,
+      "url": "https://movie.douban.com/subject/1292052/",
+      "subjectID": "1292052",
+      "metadataText": "导演: 弗兰克·德拉邦特 Frank Darabont 主演: 蒂姆·罗宾斯 Tim Robbins /... 1994 / 美国 / 犯罪 剧情"
+    },
+    {
+      "rank": 2,
+      "title": "霸王别姬",
+      "alternateTitles": [],
+      "year": 1993,
+      "rating": 9.6,
+      "ratingCount": 2437690,
+      "url": "https://movie.douban.com/subject/1291546/",
+      "subjectID": "1291546",
+      "metadataText": "导演: 陈凯歌 Kaige Chen 主演: 张国荣 Leslie Cheung / 张丰毅 Fengyi Zha... 1993 / 中国大陆 中国香港 / 剧情 爱情 同性"
+    },
+    {
+      "rank": 3,
+      "title": "泰坦尼克号",
+      "alternateTitles": [
+        "/ Titanic"
+      ],
+      "year": 1997,
+      "rating": 9.5,
+      "ratingCount": 2513739,
+      "url": "https://movie.douban.com/subject/1292722/",
+      "subjectID": "1292722",
+      "metadataText": "导演: 詹姆斯·卡梅隆 James Cameron 主演: 莱昂纳多·迪卡普里奥 Leonardo... 1997 / 美国 / 剧情 爱情 灾难"
+    },
+    {
+      "rank": 4,
+      "title": "阿甘正传",
+      "alternateTitles": [
+        "/ Forrest Gump"
+      ],
+      "year": 1994,
+      "rating": 9.5,
+      "ratingCount": 2442939,
+      "url": "https://movie.douban.com/subject/1292720/",
+      "subjectID": "1292720",
+      "metadataText": "导演: 罗伯特·泽米吉斯 Robert Zemeckis 主演: 汤姆·汉克斯 Tom Hanks / ... 1994 / 美国 / 剧情 爱情"
+    },
+    {
+      "rank": 5,
+      "title": "千与千寻",
+      "alternateTitles": [
+        "/ 千と千尋の神隠し"
+      ],
+      "year": 2001,
+      "rating": 9.4,
+      "ratingCount": 2552204,
+      "url": "https://movie.douban.com/subject/1291561/",
+      "subjectID": "1291561",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 柊瑠美 Rumi Hîragi / 入野自由 Miy... 2001 / 日本 / 剧情 动画 奇幻"
+    },
+    {
+      "rank": 6,
+      "title": "星际穿越",
+      "alternateTitles": [
+        "/ Interstellar"
+      ],
+      "year": 2014,
+      "rating": 9.4,
+      "ratingCount": 2200840,
+      "url": "https://movie.douban.com/subject/1889243/",
+      "subjectID": "1889243",
+      "metadataText": "导演: 克里斯托弗·诺兰 Christopher Nolan 主演: 马修·麦康纳 Matthew Mc... 2014 / 美国 英国 加拿大 / 剧情 科幻 冒险"
+    },
+    {
+      "rank": 7,
+      "title": "美丽人生",
+      "alternateTitles": [
+        "/ La vita è bella"
+      ],
+      "year": 1997,
+      "rating": 9.5,
+      "ratingCount": 1489920,
+      "url": "https://movie.douban.com/subject/1292063/",
+      "subjectID": "1292063",
+      "metadataText": "导演: 罗伯托·贝尼尼 Roberto Benigni 主演: 罗伯托·贝尼尼 Roberto Beni... 1997 / 意大利 / 剧情 喜剧 爱情 战争"
+    },
+    {
+      "rank": 8,
+      "title": "这个杀手不太冷",
+      "alternateTitles": [
+        "/ Léon"
+      ],
+      "year": 1994,
+      "rating": 9.4,
+      "ratingCount": 2563656,
+      "url": "https://movie.douban.com/subject/1295644/",
+      "subjectID": "1295644",
+      "metadataText": "导演: 吕克·贝松 Luc Besson 主演: 让·雷诺 Jean Reno / 娜塔莉·波特曼 ... 1994 / 法国 美国 / 剧情 动作 犯罪"
+    },
+    {
+      "rank": 9,
+      "title": "盗梦空间",
+      "alternateTitles": [
+        "/ Inception"
+      ],
+      "year": 2010,
+      "rating": 9.4,
+      "ratingCount": 2338038,
+      "url": "https://movie.douban.com/subject/3541415/",
+      "subjectID": "3541415",
+      "metadataText": "导演: 克里斯托弗·诺兰 Christopher Nolan 主演: 莱昂纳多·迪卡普里奥 Le... 2010 / 美国 英国 / 剧情 科幻 悬疑 冒险"
+    },
+    {
+      "rank": 10,
+      "title": "楚门的世界",
+      "alternateTitles": [
+        "/ The Truman Show"
+      ],
+      "year": 1998,
+      "rating": 9.4,
+      "ratingCount": 2033579,
+      "url": "https://movie.douban.com/subject/1292064/",
+      "subjectID": "1292064",
+      "metadataText": "导演: 彼得·威尔 Peter Weir 主演: 金·凯瑞 Jim Carrey / 劳拉·琳妮 Lau... 1998 / 美国 / 剧情 科幻"
+    },
+    {
+      "rank": 11,
+      "title": "辛德勒的名单",
+      "alternateTitles": [
+        "/ Schindler's List"
+      ],
+      "year": 1993,
+      "rating": 9.5,
+      "ratingCount": 1253327,
+      "url": "https://movie.douban.com/subject/1295124/",
+      "subjectID": "1295124",
+      "metadataText": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg 主演: 连姆·尼森 Liam Neeson... 1993 / 美国 / 剧情 历史 战争"
+    },
+    {
+      "rank": 12,
+      "title": "忠犬八公的故事",
+      "alternateTitles": [
+        "/ Hachi: A Dog's Tale"
+      ],
+      "year": 2009,
+      "rating": 9.4,
+      "ratingCount": 1550689,
+      "url": "https://movie.douban.com/subject/3011091/",
+      "subjectID": "3011091",
+      "metadataText": "导演: 莱塞·霍尔斯道姆 Lasse Hallström 主演: 理查·基尔 Richard Ger... 2009 / 美国 英国 / 剧情"
+    },
+    {
+      "rank": 13,
+      "title": "海上钢琴师",
+      "alternateTitles": [
+        "/ La leggenda del pianista sull'oceano"
+      ],
+      "year": 1998,
+      "rating": 9.3,
+      "ratingCount": 1889199,
+      "url": "https://movie.douban.com/subject/1292001/",
+      "subjectID": "1292001",
+      "metadataText": "导演: 朱塞佩·托纳多雷 Giuseppe Tornatore 主演: 蒂姆·罗斯 Tim Roth / ... 1998 / 意大利 / 剧情 音乐"
+    },
+    {
+      "rank": 14,
+      "title": "疯狂动物城",
+      "alternateTitles": [
+        "/ Zootopia"
+      ],
+      "year": 2016,
+      "rating": 9.3,
+      "ratingCount": 2336796,
+      "url": "https://movie.douban.com/subject/25662329/",
+      "subjectID": "25662329",
+      "metadataText": "导演: 拜伦·霍华德 Byron Howard / 瑞奇·摩尔 Rich Moore 主演: 金妮弗·... 2016 / 美国 / 喜剧 动画 冒险"
+    },
+    {
+      "rank": 15,
+      "title": "三傻大闹宝莱坞",
+      "alternateTitles": [
+        "/ 3 Idiots"
+      ],
+      "year": 2009,
+      "rating": 9.2,
+      "ratingCount": 2089314,
+      "url": "https://movie.douban.com/subject/3793023/",
+      "subjectID": "3793023",
+      "metadataText": "导演: 拉库马·希拉尼 Rajkumar Hirani 主演: 阿米尔·汗 Aamir Khan / 卡... 2009 / 印度 / 剧情 喜剧 爱情 歌舞"
+    },
+    {
+      "rank": 16,
+      "title": "机器人总动员",
+      "alternateTitles": [
+        "/ WALL·E"
+      ],
+      "year": 2008,
+      "rating": 9.3,
+      "ratingCount": 1503235,
+      "url": "https://movie.douban.com/subject/2131459/",
+      "subjectID": "2131459",
+      "metadataText": "导演: 安德鲁·斯坦顿 Andrew Stanton 主演: 本·贝尔特 Ben Burtt / 艾丽... 2008 / 美国 / 科幻 动画 冒险"
+    },
+    {
+      "rank": 17,
+      "title": "放牛班的春天",
+      "alternateTitles": [
+        "/ Les choristes"
+      ],
+      "year": 2004,
+      "rating": 9.3,
+      "ratingCount": 1481861,
+      "url": "https://movie.douban.com/subject/1291549/",
+      "subjectID": "1291549",
+      "metadataText": "导演: 克里斯托夫·巴拉蒂 Christophe Barratier 主演: 让-巴蒂斯特·莫尼... 2004 / 法国 瑞士 德国 / 剧情 音乐"
+    },
+    {
+      "rank": 18,
+      "title": "无间道",
+      "alternateTitles": [
+        "/ 無間道"
+      ],
+      "year": 2002,
+      "rating": 9.3,
+      "ratingCount": 1575357,
+      "url": "https://movie.douban.com/subject/1307914/",
+      "subjectID": "1307914",
+      "metadataText": "导演: 刘伟强 / 麦兆辉 主演: 刘德华 Andy Lau / 梁朝伟 Tony Leung Chiu W... 2002 / 中国香港 / 剧情 犯罪 惊悚"
+    },
+    {
+      "rank": 19,
+      "title": "控方证人",
+      "alternateTitles": [
+        "/ Witness for the Prosecution"
+      ],
+      "year": 1957,
+      "rating": 9.6,
+      "ratingCount": 751925,
+      "url": "https://movie.douban.com/subject/1296141/",
+      "subjectID": "1296141",
+      "metadataText": "导演: 比利·怀尔德 Billy Wilder 主演: 泰隆·鲍华 Tyrone Power / 玛琳·... 1957 / 美国 / 剧情 犯罪 悬疑 惊悚"
+    },
+    {
+      "rank": 20,
+      "title": "寻梦环游记",
+      "alternateTitles": [
+        "/ Coco"
+      ],
+      "year": 2017,
+      "rating": 9.1,
+      "ratingCount": 2006088,
+      "url": "https://movie.douban.com/subject/20495023/",
+      "subjectID": "20495023",
+      "metadataText": "导演: 李·昂克里奇 Lee Unkrich / 阿德里安·莫利纳 Adrian Molina 主演: ... 2017 / 美国 / 喜剧 动画 奇幻 音乐"
+    },
+    {
+      "rank": 21,
+      "title": "大话西游之大圣娶亲",
+      "alternateTitles": [
+        "/ 西遊記大結局之仙履奇緣"
+      ],
+      "year": 1995,
+      "rating": 9.2,
+      "ratingCount": 1718478,
+      "url": "https://movie.douban.com/subject/1292213/",
+      "subjectID": "1292213",
+      "metadataText": "导演: 刘镇伟 Jeffrey Lau 主演: 周星驰 Stephen Chow / 吴孟达 Man Tat Ng... 1995 / 中国香港 中国大陆 / 喜剧 爱情 奇幻 古装"
+    },
+    {
+      "rank": 22,
+      "title": "熔炉",
+      "alternateTitles": [
+        "/ 도가니"
+      ],
+      "year": 2011,
+      "rating": 9.3,
+      "ratingCount": 1040953,
+      "url": "https://movie.douban.com/subject/5912992/",
+      "subjectID": "5912992",
+      "metadataText": "导演: 黄东赫 Dong-hyuk Hwang 主演: 孔侑 Yoo Gong / 郑有美 Yu-mi Jung /... 2011 / 韩国 / 剧情"
+    },
+    {
+      "rank": 23,
+      "title": "触不可及",
+      "alternateTitles": [
+        "/ Intouchables"
+      ],
+      "year": 2011,
+      "rating": 9.3,
+      "ratingCount": 1304220,
+      "url": "https://movie.douban.com/subject/6786002/",
+      "subjectID": "6786002",
+      "metadataText": "导演: 奥利维·那卡什 Olivier Nakache / 艾力克·托兰达 Eric Toledano 主... 2011 / 法国 / 剧情 喜剧"
+    },
+    {
+      "rank": 24,
+      "title": "教父",
+      "alternateTitles": [
+        "/ The Godfather"
+      ],
+      "year": 1972,
+      "rating": 9.3,
+      "ratingCount": 1114817,
+      "url": "https://movie.douban.com/subject/1291841/",
+      "subjectID": "1291841",
+      "metadataText": "导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola 主演: 马龙·白兰度 M... 1972 / 美国 / 剧情 犯罪"
+    },
+    {
+      "rank": 25,
+      "title": "末代皇帝",
+      "alternateTitles": [
+        "/ The Last Emperor"
+      ],
+      "year": 1987,
+      "rating": 9.3,
+      "ratingCount": 1035877,
+      "url": "https://movie.douban.com/subject/1293172/",
+      "subjectID": "1293172",
+      "metadataText": "导演: 贝纳尔多·贝托鲁奇 Bernardo Bertolucci 主演: 尊龙 John Lone / 陈... 1987 / 英国 意大利 中国大陆 法国 / 剧情 传记 历史"
+    },
+    {
+      "rank": 26,
+      "title": "哈利·波特与魔法石",
+      "alternateTitles": [
+        "/ Harry Potter and the Sorcerer's Stone"
+      ],
+      "year": 2001,
+      "rating": 9.2,
+      "ratingCount": 1433520,
+      "url": "https://movie.douban.com/subject/1295038/",
+      "subjectID": "1295038",
+      "metadataText": "导演: Chris Columbus 主演: Daniel Radcliffe / Emma Watson / Rupert Grint 2001 / 美国 英国 / 奇幻 冒险"
+    },
+    {
+      "rank": 27,
+      "title": "当幸福来敲门",
+      "alternateTitles": [
+        "/ The Pursuit of Happyness"
+      ],
+      "year": 2006,
+      "rating": 9.1,
+      "ratingCount": 1696917,
+      "url": "https://movie.douban.com/subject/1849031/",
+      "subjectID": "1849031",
+      "metadataText": "导演: 加布里尔·穆奇诺 Gabriele Muccino 主演: 威尔·史密斯 Will Smith ... 2006 / 美国 / 剧情 传记 家庭"
+    },
+    {
+      "rank": 28,
+      "title": "龙猫",
+      "alternateTitles": [
+        "/ となりのトトロ"
+      ],
+      "year": 1988,
+      "rating": 9.2,
+      "ratingCount": 1418891,
+      "url": "https://movie.douban.com/subject/1291560/",
+      "subjectID": "1291560",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 日高法子 Noriko Hidaka / 坂本千夏 Ch... 1988 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 29,
+      "title": "活着",
+      "alternateTitles": [],
+      "year": 1994,
+      "rating": 9.3,
+      "ratingCount": 977012,
+      "url": "https://movie.douban.com/subject/1292365/",
+      "subjectID": "1292365",
+      "metadataText": "导演: 张艺谋 Yimou Zhang 主演: 葛优 You Ge / 巩俐 Li Gong / 姜武 Wu Jiang 1994 / 中国大陆 中国香港 / 剧情 历史 家庭"
+    },
+    {
+      "rank": 30,
+      "title": "怦然心动",
+      "alternateTitles": [
+        "/ Flipped"
+      ],
+      "year": 2010,
+      "rating": 9.1,
+      "ratingCount": 2062675,
+      "url": "https://movie.douban.com/subject/3319755/",
+      "subjectID": "3319755",
+      "metadataText": "导演: 罗伯·莱纳 Rob Reiner 主演: 玛德琳·卡罗尔 Madeline Carroll / 卡... 2010 / 美国 / 剧情 喜剧 爱情"
+    },
+    {
+      "rank": 31,
+      "title": "蝙蝠侠：黑暗骑士",
+      "alternateTitles": [
+        "/ The Dark Knight"
+      ],
+      "year": 2008,
+      "rating": 9.2,
+      "ratingCount": 1199977,
+      "url": "https://movie.douban.com/subject/1851857/",
+      "subjectID": "1851857",
+      "metadataText": "导演: 克里斯托弗·诺兰 Christopher Nolan 主演: 克里斯蒂安·贝尔 Christ... 2008 / 美国 英国 / 剧情 动作 科幻 犯罪 惊悚"
+    },
+    {
+      "rank": 32,
+      "title": "指环王3：王者无敌",
+      "alternateTitles": [
+        "/ The Lord of the Rings: The Return of the King"
+      ],
+      "year": 2003,
+      "rating": 9.3,
+      "ratingCount": 916510,
+      "url": "https://movie.douban.com/subject/1291552/",
+      "subjectID": "1291552",
+      "metadataText": "导演: 彼得·杰克逊 Peter Jackson 主演: 伊利亚·伍德 Elijah Wood / 西恩... 2003 / 美国 新西兰 / 剧情 动作 奇幻 冒险"
+    },
+    {
+      "rank": 33,
+      "title": "我不是药神",
+      "alternateTitles": [],
+      "year": 2018,
+      "rating": 9.0,
+      "ratingCount": 2363102,
+      "url": "https://movie.douban.com/subject/26752088/",
+      "subjectID": "26752088",
+      "metadataText": "导演: 文牧野 Muye Wen 主演: 徐峥 Zheng Xu / 王传君 Chuanjun Wang / 周... 2018 / 中国大陆 / 剧情 喜剧"
+    },
+    {
+      "rank": 34,
+      "title": "乱世佳人",
+      "alternateTitles": [
+        "/ Gone with the Wind"
+      ],
+      "year": 1939,
+      "rating": 9.3,
+      "ratingCount": 802022,
+      "url": "https://movie.douban.com/subject/1300267/",
+      "subjectID": "1300267",
+      "metadataText": "导演: 维克多·弗莱明 Victor Fleming / 乔治·库克 George Cukor 主演: 费... 1939 / 美国 / 剧情 历史 爱情 战争"
+    },
+    {
+      "rank": 35,
+      "title": "让子弹飞",
+      "alternateTitles": [],
+      "year": 2010,
+      "rating": 9.0,
+      "ratingCount": 1931075,
+      "url": "https://movie.douban.com/subject/3742360/",
+      "subjectID": "3742360",
+      "metadataText": "导演: 姜文 Wen Jiang 主演: 姜文 Wen Jiang / 葛优 You Ge / 周润发 Yun-F... 2010 / 中国大陆 中国香港 / 剧情 喜剧 动作 西部"
+    },
+    {
+      "rank": 36,
+      "title": "飞屋环游记",
+      "alternateTitles": [
+        "/ Up"
+      ],
+      "year": 2009,
+      "rating": 9.1,
+      "ratingCount": 1510643,
+      "url": "https://movie.douban.com/subject/2129039/",
+      "subjectID": "2129039",
+      "metadataText": "导演: 彼特·道格特 Pete Docter / 鲍勃·彼德森 Bob Peterson 主演: 爱德... 2009 / 美国 / 剧情 喜剧 动画 冒险"
+    },
+    {
+      "rank": 37,
+      "title": "哈尔的移动城堡",
+      "alternateTitles": [
+        "/ ハウルの動く城"
+      ],
+      "year": 2004,
+      "rating": 9.1,
+      "ratingCount": 1302139,
+      "url": "https://movie.douban.com/subject/1308807/",
+      "subjectID": "1308807",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 倍赏千惠子 Chieko Baishô / 木村拓... 2004 / 日本 / 爱情 动画 奇幻 冒险"
+    },
+    {
+      "rank": 38,
+      "title": "十二怒汉",
+      "alternateTitles": [
+        "/ 12 Angry Men"
+      ],
+      "year": 1957,
+      "rating": 9.4,
+      "ratingCount": 583730,
+      "url": "https://movie.douban.com/subject/1293182/",
+      "subjectID": "1293182",
+      "metadataText": "导演: 西德尼·吕美特 Sidney Lumet 主演: 亨利·方达 Henry Fonda / 马丁... 1957 / 美国 / 剧情"
+    },
+    {
+      "rank": 39,
+      "title": "海蒂和爷爷",
+      "alternateTitles": [
+        "/ Heidi"
+      ],
+      "year": 2015,
+      "rating": 9.3,
+      "ratingCount": 791711,
+      "url": "https://movie.douban.com/subject/25958717/",
+      "subjectID": "25958717",
+      "metadataText": "导演: 阿兰·葛斯彭纳 Alain Gsponer 主演: 阿努克·斯特芬 Anuk Steffen /... 2015 / 德国 瑞士 / 剧情 冒险 家庭"
+    },
+    {
+      "rank": 40,
+      "title": "素媛",
+      "alternateTitles": [
+        "/ 소원"
+      ],
+      "year": 2013,
+      "rating": 9.3,
+      "ratingCount": 781120,
+      "url": "https://movie.douban.com/subject/21937452/",
+      "subjectID": "21937452",
+      "metadataText": "导演: 李濬益 Jun-ik Lee 主演: 薛景求 Kyung-gu Sol / 严志媛 Ji-won Uhm ... 2013 / 韩国 / 剧情"
+    },
+    {
+      "rank": 41,
+      "title": "猫鼠游戏",
+      "alternateTitles": [
+        "/ Catch Me If You Can"
+      ],
+      "year": 2002,
+      "rating": 9.1,
+      "ratingCount": 1220777,
+      "url": "https://movie.douban.com/subject/1305487/",
+      "subjectID": "1305487",
+      "metadataText": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg 主演: 莱昂纳多·迪卡普里奥 L... 2002 / 美国 加拿大 / 传记 犯罪 剧情"
+    },
+    {
+      "rank": 42,
+      "title": "天空之城",
+      "alternateTitles": [
+        "/ 天空の城ラピュタ"
+      ],
+      "year": 1986,
+      "rating": 9.2,
+      "ratingCount": 1015296,
+      "url": "https://movie.douban.com/subject/1291583/",
+      "subjectID": "1291583",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 田中真弓 Mayumi Tanaka / 横泽启子 Ke... 1986 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 43,
+      "title": "鬼子来了",
+      "alternateTitles": [],
+      "year": 2000,
+      "rating": 9.3,
+      "ratingCount": 720293,
+      "url": "https://movie.douban.com/subject/1291858/",
+      "subjectID": "1291858",
+      "metadataText": "导演: 姜文 Wen Jiang 主演: 姜文 Wen Jiang / 香川照之 Teruyuki Kagawa /... 2000 / 中国大陆 / 剧情 喜剧"
+    },
+    {
+      "rank": 44,
+      "title": "摔跤吧！爸爸",
+      "alternateTitles": [
+        "/ Dangal"
+      ],
+      "year": 2016,
+      "rating": 9.0,
+      "ratingCount": 1755968,
+      "url": "https://movie.douban.com/subject/26387939/",
+      "subjectID": "26387939",
+      "metadataText": "导演: 涅提·蒂瓦里 Nitesh Tiwari 主演: 阿米尔·汗 Aamir Khan / 法缇玛... 2016 / 印度 / 剧情 传记 运动 家庭"
+    },
+    {
+      "rank": 45,
+      "title": "少年派的奇幻漂流",
+      "alternateTitles": [
+        "/ Life of Pi"
+      ],
+      "year": 2012,
+      "rating": 9.1,
+      "ratingCount": 1497173,
+      "url": "https://movie.douban.com/subject/1929463/",
+      "subjectID": "1929463",
+      "metadataText": "导演: 李安 Ang Lee 主演: 苏拉·沙玛 Suraj Sharma / 伊尔凡·可汗 Irrfan... 2012 / 美国 中国台湾 英国 加拿大 / 剧情 奇幻 冒险"
+    },
+    {
+      "rank": 46,
+      "title": "钢琴家",
+      "alternateTitles": [
+        "/ The Pianist"
+      ],
+      "year": 2002,
+      "rating": 9.3,
+      "ratingCount": 755382,
+      "url": "https://movie.douban.com/subject/1296736/",
+      "subjectID": "1296736",
+      "metadataText": "导演: 罗曼·波兰斯基 Roman Polanski 主演: 艾德里安·布洛迪 Adrien Brod... 2002 / 英国 法国 波兰 德国 美国 / 剧情 传记 战争 音乐"
+    },
+    {
+      "rank": 47,
+      "title": "死亡诗社",
+      "alternateTitles": [
+        "/ Dead Poets Society"
+      ],
+      "year": 1989,
+      "rating": 9.2,
+      "ratingCount": 892091,
+      "url": "https://movie.douban.com/subject/1291548/",
+      "subjectID": "1291548",
+      "metadataText": "导演: 彼得·威尔 Peter Weir 主演: 罗宾·威廉姆斯 Robin Williams / 罗伯... 1989 / 美国 / 剧情"
+    },
+    {
+      "rank": 48,
+      "title": "指环王2：双塔奇兵",
+      "alternateTitles": [
+        "/ The Lord of the Rings: The Two Towers"
+      ],
+      "year": 2002,
+      "rating": 9.2,
+      "ratingCount": 863397,
+      "url": "https://movie.douban.com/subject/1291572/",
+      "subjectID": "1291572",
+      "metadataText": "导演: 彼得·杰克逊 Peter Jackson 主演: 伊利亚·伍德 Elijah Wood / 西恩... 2002 / 美国 新西兰 / 剧情 动作 奇幻 冒险"
+    },
+    {
+      "rank": 49,
+      "title": "大话西游之月光宝盒",
+      "alternateTitles": [
+        "/ 西遊記第壹佰零壹回之月光寶盒"
+      ],
+      "year": 1995,
+      "rating": 9.0,
+      "ratingCount": 1374150,
+      "url": "https://movie.douban.com/subject/1299398/",
+      "subjectID": "1299398",
+      "metadataText": "导演: 刘镇伟 Jeffrey Lau 主演: 周星驰 Stephen Chow / 吴孟达 Man Tat Ng... 1995 / 中国香港 中国大陆 / 喜剧 爱情 奇幻 古装"
+    },
+    {
+      "rank": 50,
+      "title": "绿皮书",
+      "alternateTitles": [
+        "/ Green Book"
+      ],
+      "year": 2018,
+      "rating": 8.9,
+      "ratingCount": 1905945,
+      "url": "https://movie.douban.com/subject/27060077/",
+      "subjectID": "27060077",
+      "metadataText": "导演: 彼得·法雷里 Peter Farrelly 主演: 维果·莫腾森 Viggo Mortensen /... 2018 / 美国 中国大陆 / 剧情 喜剧 传记 音乐"
+    },
+    {
+      "rank": 51,
+      "title": "何以为家",
+      "alternateTitles": [
+        "/ كفرناحوم"
+      ],
+      "year": 2018,
+      "rating": 9.1,
+      "ratingCount": 1168153,
+      "url": "https://movie.douban.com/subject/30170448/",
+      "subjectID": "30170448",
+      "metadataText": "导演: 娜丁·拉巴基 Nadine Labaki 主演: 扎因·拉费阿 Zain al-Rafeea / ... 2018 / 黎巴嫩 美国 法国 塞浦路斯 卡塔尔 英国 / 剧情"
+    },
+    {
+      "rank": 52,
+      "title": "闻香识女人",
+      "alternateTitles": [
+        "/ Scent of a Woman"
+      ],
+      "year": 1992,
+      "rating": 9.1,
+      "ratingCount": 1030146,
+      "url": "https://movie.douban.com/subject/1298624/",
+      "subjectID": "1298624",
+      "metadataText": "导演: 马丁·布莱斯 Martin Brest 主演: 阿尔·帕西诺 Al Pacino / 克里斯... 1992 / 美国 / 剧情"
+    },
+    {
+      "rank": 53,
+      "title": "大闹天宫",
+      "alternateTitles": [],
+      "year": null,
+      "rating": 9.4,
+      "ratingCount": 513869,
+      "url": "https://movie.douban.com/subject/1418019/",
+      "subjectID": "1418019",
+      "metadataText": "导演: 万籁鸣 Laiming Wan 主演: 邱岳峰 Yuefeng Qiu / 富润生 Runsheng Fu... 1961(中国大陆) / 1964(中国大陆) / 1978(中国大陆) / 中国大陆 / 剧情 动画 奇幻 古装"
+    },
+    {
+      "rank": 54,
+      "title": "黑客帝国",
+      "alternateTitles": [
+        "/ The Matrix"
+      ],
+      "year": 1999,
+      "rating": 9.1,
+      "ratingCount": 957583,
+      "url": "https://movie.douban.com/subject/1291843/",
+      "subjectID": "1291843",
+      "metadataText": "导演: 安迪·沃卓斯基 Andy Wachowski / 拉娜·沃卓斯基 Lana Wachowski 主... 1999 / 美国 / 动作 科幻"
+    },
+    {
+      "rank": 55,
+      "title": "指环王1：护戒使者",
+      "alternateTitles": [
+        "/ The Lord of the Rings: The Fellowship of the Ring"
+      ],
+      "year": 2001,
+      "rating": 9.1,
+      "ratingCount": 966943,
+      "url": "https://movie.douban.com/subject/1291571/",
+      "subjectID": "1291571",
+      "metadataText": "导演: 彼得·杰克逊 Peter Jackson 主演: 伊利亚·伍德 Elijah Wood / 西恩... 2001 / 新西兰 美国 英国 / 剧情 动作 奇幻 冒险"
+    },
+    {
+      "rank": 56,
+      "title": "罗马假日",
+      "alternateTitles": [
+        "/ Roman Holiday"
+      ],
+      "year": 1953,
+      "rating": 9.1,
+      "ratingCount": 1053829,
+      "url": "https://movie.douban.com/subject/1293839/",
+      "subjectID": "1293839",
+      "metadataText": "导演: 威廉·惠勒 William Wyler 主演: 奥黛丽·赫本 Audrey Hepburn / 格... 1953 / 美国 / 喜剧 剧情 爱情"
+    },
+    {
+      "rank": 57,
+      "title": "教父2",
+      "alternateTitles": [
+        "/ The Godfather: Part II"
+      ],
+      "year": 1974,
+      "rating": 9.3,
+      "ratingCount": 645521,
+      "url": "https://movie.douban.com/subject/1299131/",
+      "subjectID": "1299131",
+      "metadataText": "导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola 主演: 阿尔·帕西诺 A... 1974 / 美国 / 剧情 犯罪"
+    },
+    {
+      "rank": 58,
+      "title": "狮子王",
+      "alternateTitles": [
+        "/ The Lion King"
+      ],
+      "year": 1994,
+      "rating": 9.1,
+      "ratingCount": 967497,
+      "url": "https://movie.douban.com/subject/1301753/",
+      "subjectID": "1301753",
+      "metadataText": "导演: Roger Allers / 罗伯·明可夫 Rob Minkoff 主演: 乔纳森·泰勒·托马... 1994 / 美国 / 动画 冒险 歌舞"
+    },
+    {
+      "rank": 59,
+      "title": "天堂电影院",
+      "alternateTitles": [
+        "/ Nuovo Cinema Paradiso"
+      ],
+      "year": 1988,
+      "rating": 9.2,
+      "ratingCount": 745913,
+      "url": "https://movie.douban.com/subject/1291828/",
+      "subjectID": "1291828",
+      "metadataText": "导演: 朱塞佩·托纳多雷 Giuseppe Tornatore 主演: 菲利普·努瓦雷 Philipp... 1988 / 意大利 法国 / 剧情 爱情"
+    },
+    {
+      "rank": 60,
+      "title": "饮食男女",
+      "alternateTitles": [
+        "/ 飲食男女"
+      ],
+      "year": 1994,
+      "rating": 9.2,
+      "ratingCount": 732313,
+      "url": "https://movie.douban.com/subject/1291818/",
+      "subjectID": "1291818",
+      "metadataText": "导演: 李安 Ang Lee 主演: 郎雄 Sihung Lung / 杨贵媚 Kuei-Mei Yang / 吴... 1994 / 中国台湾 美国 / 剧情 家庭"
+    },
+    {
+      "rank": 61,
+      "title": "辩护人",
+      "alternateTitles": [
+        "/ 변호인"
+      ],
+      "year": 2013,
+      "rating": 9.2,
+      "ratingCount": 661303,
+      "url": "https://movie.douban.com/subject/21937445/",
+      "subjectID": "21937445",
+      "metadataText": "导演: 杨宇硕 Woo-seok Yang 主演: 宋康昊 Kang-ho Song / 金英爱 Yeong-ae... 2013 / 韩国 / 剧情"
+    },
+    {
+      "rank": 62,
+      "title": "本杰明·巴顿奇事",
+      "alternateTitles": [
+        "/ The Curious Case of Benjamin Button"
+      ],
+      "year": 2008,
+      "rating": 9.0,
+      "ratingCount": 1112084,
+      "url": "https://movie.douban.com/subject/1485260/",
+      "subjectID": "1485260",
+      "metadataText": "导演: 大卫·芬奇 David Fincher 主演: 布拉德·皮特 Brad Pitt / 凯特·布... 2008 / 美国 / 剧情 爱情 奇幻"
+    },
+    {
+      "rank": 63,
+      "title": "搏击俱乐部",
+      "alternateTitles": [
+        "/ Fight Club"
+      ],
+      "year": 1999,
+      "rating": 9.0,
+      "ratingCount": 984372,
+      "url": "https://movie.douban.com/subject/1292000/",
+      "subjectID": "1292000",
+      "metadataText": "导演: 大卫·芬奇 David Fincher 主演: 爱德华·诺顿 Edward Norton / 布拉... 1999 / 美国 / 剧情 动作 悬疑 惊悚"
+    },
+    {
+      "rank": 64,
+      "title": "美丽心灵",
+      "alternateTitles": [
+        "/ A Beautiful Mind"
+      ],
+      "year": 2001,
+      "rating": 9.1,
+      "ratingCount": 857915,
+      "url": "https://movie.douban.com/subject/1306029/",
+      "subjectID": "1306029",
+      "metadataText": "导演: 朗·霍华德 Ron Howard 主演: 罗素·克劳 Russell Crowe / 艾德·哈... 2001 / 美国 / 传记 剧情"
+    },
+    {
+      "rank": 65,
+      "title": "穿条纹睡衣的男孩",
+      "alternateTitles": [
+        "/ The Boy in the Striped Pajamas"
+      ],
+      "year": 2008,
+      "rating": 9.2,
+      "ratingCount": 646007,
+      "url": "https://movie.douban.com/subject/3008247/",
+      "subjectID": "3008247",
+      "metadataText": "导演: 马克·赫尔曼 Mark Herman 主演: 阿萨·巴特菲尔德 Asa Butterfield ... 2008 / 英国 美国 / 剧情 战争"
+    },
+    {
+      "rank": 66,
+      "title": "哈利·波特与死亡圣器(下)",
+      "alternateTitles": [
+        "/ Harry Potter and the Deathly Hallows: Part 2"
+      ],
+      "year": 2011,
+      "rating": 9.0,
+      "ratingCount": 978022,
+      "url": "https://movie.douban.com/subject/3011235/",
+      "subjectID": "3011235",
+      "metadataText": "导演: 大卫·叶茨 David Yates 主演: 丹尼尔·雷德克里夫 Daniel Radcliffe... 2011 / 美国 英国 / 奇幻 冒险"
+    },
+    {
+      "rank": 67,
+      "title": "两杆大烟枪",
+      "alternateTitles": [
+        "/ Lock, Stock and Two Smoking Barrels"
+      ],
+      "year": 1998,
+      "rating": 9.1,
+      "ratingCount": 683316,
+      "url": "https://movie.douban.com/subject/1293350/",
+      "subjectID": "1293350",
+      "metadataText": "导演: 盖·里奇 Guy Ritchie 主演: 杰森·弗莱明 Jason Flemyng / 德克斯特... 1998 / 英国 / 剧情 喜剧 犯罪"
+    },
+    {
+      "rank": 68,
+      "title": "情书",
+      "alternateTitles": [
+        "/ Love Letter"
+      ],
+      "year": 1995,
+      "rating": 8.9,
+      "ratingCount": 1335915,
+      "url": "https://movie.douban.com/subject/1292220/",
+      "subjectID": "1292220",
+      "metadataText": "导演: 岩井俊二 Shunji Iwai 主演: 中山美穗 Miho Nakayama / 丰川悦司 Ets... 1995 / 日本 / 剧情 爱情"
+    },
+    {
+      "rank": 69,
+      "title": "功夫",
+      "alternateTitles": [],
+      "year": 2004,
+      "rating": 8.9,
+      "ratingCount": 1349528,
+      "url": "https://movie.douban.com/subject/1291543/",
+      "subjectID": "1291543",
+      "metadataText": "导演: 周星驰 Stephen Chow 主演: 周星驰 Stephen Chow / 元秋 Qiu Yuen / ... 2004 / 中国大陆 中国香港 / 动作 喜剧 犯罪 奇幻"
+    },
+    {
+      "rank": 70,
+      "title": "窃听风暴",
+      "alternateTitles": [
+        "/ Das Leben der Anderen"
+      ],
+      "year": 2006,
+      "rating": 9.2,
+      "ratingCount": 636228,
+      "url": "https://movie.douban.com/subject/1900841/",
+      "subjectID": "1900841",
+      "metadataText": "导演: 弗洛里安·亨克尔·冯·多纳斯马尔克 Florian Henckel von Donnersmarck &n... 2006 / 德国 / 剧情 悬疑"
+    },
+    {
+      "rank": 71,
+      "title": "音乐之声",
+      "alternateTitles": [
+        "/ The Sound of Music"
+      ],
+      "year": 1965,
+      "rating": 9.1,
+      "ratingCount": 688936,
+      "url": "https://movie.douban.com/subject/1294408/",
+      "subjectID": "1294408",
+      "metadataText": "导演: 罗伯特·怀斯 Robert Wise 主演: 朱莉·安德鲁斯 Julie Andrews / 克... 1965 / 美国 / 剧情 传记 爱情 歌舞"
+    },
+    {
+      "rank": 72,
+      "title": "哈利·波特与阿兹卡班的囚徒",
+      "alternateTitles": [
+        "/ Harry Potter and the Prisoner of Azkaban"
+      ],
+      "year": 2004,
+      "rating": 9.0,
+      "ratingCount": 898863,
+      "url": "https://movie.douban.com/subject/1291544/",
+      "subjectID": "1291544",
+      "metadataText": "导演: 阿方索·卡隆 Alfonso Cuarón 主演: 丹尼尔·雷德克里夫 Daniel Rad... 2004 / 英国 美国 / 奇幻 冒险"
+    },
+    {
+      "rank": 73,
+      "title": "阿凡达",
+      "alternateTitles": [
+        "/ Avatar"
+      ],
+      "year": 2009,
+      "rating": 8.8,
+      "ratingCount": 1595169,
+      "url": "https://movie.douban.com/subject/1652587/",
+      "subjectID": "1652587",
+      "metadataText": "导演: 詹姆斯·卡梅隆 James Cameron 主演: 萨姆·沃辛顿 Sam Worthington ... 2009 / 美国 / 动作 科幻 冒险"
+    },
+    {
+      "rank": 74,
+      "title": "西西里的美丽传说",
+      "alternateTitles": [
+        "/ Malèna"
+      ],
+      "year": 2000,
+      "rating": 8.9,
+      "ratingCount": 1099834,
+      "url": "https://movie.douban.com/subject/1292402/",
+      "subjectID": "1292402",
+      "metadataText": "导演: 朱塞佩·托纳多雷 Giuseppe Tornatore 主演: 莫妮卡·贝鲁奇 Monica ... 2000 / 意大利 美国 / 剧情 战争 情色"
+    },
+    {
+      "rank": 75,
+      "title": "看不见的客人",
+      "alternateTitles": [
+        "/ Contratiempo"
+      ],
+      "year": 2016,
+      "rating": 8.8,
+      "ratingCount": 1451027,
+      "url": "https://movie.douban.com/subject/26580232/",
+      "subjectID": "26580232",
+      "metadataText": "导演: 奥里奥尔·保罗 Oriol Paulo 主演: 马里奥·卡萨斯 Mario Casas / 阿... 2016 / 西班牙 / 剧情 犯罪 悬疑 惊悚"
+    },
+    {
+      "rank": 76,
+      "title": "拯救大兵瑞恩",
+      "alternateTitles": [
+        "/ Saving Private Ryan"
+      ],
+      "year": 1998,
+      "rating": 9.1,
+      "ratingCount": 731131,
+      "url": "https://movie.douban.com/subject/1292849/",
+      "subjectID": "1292849",
+      "metadataText": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg 主演: 汤姆·汉克斯 Tom Hanks... 1998 / 美国 / 剧情 战争"
+    },
+    {
+      "rank": 77,
+      "title": "沉默的羔羊",
+      "alternateTitles": [
+        "/ The Silence of the Lambs"
+      ],
+      "year": 1991,
+      "rating": 8.9,
+      "ratingCount": 1023827,
+      "url": "https://movie.douban.com/subject/1293544/",
+      "subjectID": "1293544",
+      "metadataText": "导演: 乔纳森·戴米 Jonathan Demme 主演: 朱迪·福斯特 Jodie Foster / 安... 1991 / 美国 / 剧情 犯罪 惊悚"
+    },
+    {
+      "rank": 78,
+      "title": "小鞋子",
+      "alternateTitles": [
+        "/ بچه های آسمان"
+      ],
+      "year": 1997,
+      "rating": 9.2,
+      "ratingCount": 471118,
+      "url": "https://movie.douban.com/subject/1303021/",
+      "subjectID": "1303021",
+      "metadataText": "导演: 马基德·马基迪 Majid Majidi 主演: 默罕默德·阿米尔·纳吉 Mohamma... 1997 / 伊朗 / 剧情 儿童 家庭"
+    },
+    {
+      "rank": 79,
+      "title": "蝴蝶效应",
+      "alternateTitles": [
+        "/ The Butterfly Effect"
+      ],
+      "year": 2004,
+      "rating": 8.9,
+      "ratingCount": 1076644,
+      "url": "https://movie.douban.com/subject/1292343/",
+      "subjectID": "1292343",
+      "metadataText": "导演: 埃里克·布雷斯 Eric Bress / J·麦基·格鲁伯 J. Mackye Gruber 主... 2004 / 美国 加拿大 / 剧情 悬疑 科幻 惊悚"
+    },
+    {
+      "rank": 80,
+      "title": "布达佩斯大饭店",
+      "alternateTitles": [
+        "/ The Grand Budapest Hotel"
+      ],
+      "year": 2014,
+      "rating": 8.9,
+      "ratingCount": 1093778,
+      "url": "https://movie.douban.com/subject/11525673/",
+      "subjectID": "11525673",
+      "metadataText": "导演: 韦斯·安德森 Wes Anderson 主演: 拉尔夫·费因斯 Ralph Fiennes / ... 2014 / 美国 德国 英国 / 剧情 喜剧 冒险"
+    },
+    {
+      "rank": 81,
+      "title": "还有明天",
+      "alternateTitles": [
+        "/ C'è ancora domani"
+      ],
+      "year": 2023,
+      "rating": 9.3,
+      "ratingCount": 382392,
+      "url": "https://movie.douban.com/subject/36445098/",
+      "subjectID": "36445098",
+      "metadataText": "导演: 宝拉·柯特莱西 Paola Cortellesi 主演: 宝拉·柯特莱西 Paola Corte... 2023 / 意大利 / 剧情 喜剧 历史"
+    },
+    {
+      "rank": 82,
+      "title": "飞越疯人院",
+      "alternateTitles": [
+        "/ One Flew Over the Cuckoo's Nest"
+      ],
+      "year": 1975,
+      "rating": 9.1,
+      "ratingCount": 609381,
+      "url": "https://movie.douban.com/subject/1292224/",
+      "subjectID": "1292224",
+      "metadataText": "导演: 米洛斯·福尔曼 Miloš Forman 主演: 杰克·尼科尔森 Jack Nichols... 1975 / 美国 / 剧情"
+    },
+    {
+      "rank": 83,
+      "title": "禁闭岛",
+      "alternateTitles": [
+        "/ Shutter Island"
+      ],
+      "year": 2010,
+      "rating": 8.9,
+      "ratingCount": 1123073,
+      "url": "https://movie.douban.com/subject/2334904/",
+      "subjectID": "2334904",
+      "metadataText": "导演: Martin Scorsese 主演: 莱昂纳多·迪卡普里奥 Leonardo DiCaprio / ... 2010 / 美国 / 剧情 悬疑 惊悚"
+    },
+    {
+      "rank": 84,
+      "title": "心灵捕手",
+      "alternateTitles": [
+        "/ Good Will Hunting"
+      ],
+      "year": 1997,
+      "rating": 9.0,
+      "ratingCount": 821091,
+      "url": "https://movie.douban.com/subject/1292656/",
+      "subjectID": "1292656",
+      "metadataText": "导演: 格斯·范·桑特 Gus Van Sant 主演: 马特·达蒙 Matt Damon / 罗宾·... 1997 / 美国 / 剧情"
+    },
+    {
+      "rank": 85,
+      "title": "致命魔术",
+      "alternateTitles": [
+        "/ The Prestige"
+      ],
+      "year": 2006,
+      "rating": 8.9,
+      "ratingCount": 970847,
+      "url": "https://movie.douban.com/subject/1780330/",
+      "subjectID": "1780330",
+      "metadataText": "导演: 克里斯托弗·诺兰 Christopher Nolan 主演: 休·杰克曼 Hugh Jackman... 2006 / 英国 美国 / 剧情 悬疑 惊悚"
+    },
+    {
+      "rank": 86,
+      "title": "低俗小说",
+      "alternateTitles": [
+        "/ Pulp Fiction"
+      ],
+      "year": 1994,
+      "rating": 8.9,
+      "ratingCount": 967553,
+      "url": "https://movie.douban.com/subject/1291832/",
+      "subjectID": "1291832",
+      "metadataText": "导演: 昆汀·塔伦蒂诺 Quentin Tarantino 主演: 约翰·特拉沃尔塔 John Tra... 1994 / 美国 / 剧情 喜剧 犯罪"
+    },
+    {
+      "rank": 87,
+      "title": "哈利·波特与密室",
+      "alternateTitles": [
+        "/ Harry Potter and the Chamber of Secrets"
+      ],
+      "year": 2002,
+      "rating": 8.9,
+      "ratingCount": 925653,
+      "url": "https://movie.douban.com/subject/1296996/",
+      "subjectID": "1296996",
+      "metadataText": "导演: Chris Columbus 主演: 丹尼尔·雷德克里夫 Daniel Radcliffe / 艾玛... 2002 / 英国 美国 / 奇幻 冒险"
+    },
+    {
+      "rank": 88,
+      "title": "一一",
+      "alternateTitles": [],
+      "year": 2000,
+      "rating": 9.1,
+      "ratingCount": 520907,
+      "url": "https://movie.douban.com/subject/1292434/",
+      "subjectID": "1292434",
+      "metadataText": "导演: 杨德昌 Edward Yang 主演: 吴念真 / 李凯莉 Kelly Lee / 金燕玲 Elai... 2000 / 中国台湾 日本 / 剧情 爱情 家庭"
+    },
+    {
+      "rank": 89,
+      "title": "超脱",
+      "alternateTitles": [
+        "/ Detachment"
+      ],
+      "year": 2011,
+      "rating": 9.0,
+      "ratingCount": 729957,
+      "url": "https://movie.douban.com/subject/5322596/",
+      "subjectID": "5322596",
+      "metadataText": "导演: 托尼·凯耶 Tony Kaye 主演: 艾德里安·布洛迪 Adrien Brody / 马西... 2011 / 美国 / 剧情"
+    },
+    {
+      "rank": 90,
+      "title": "喜剧之王",
+      "alternateTitles": [
+        "/ 喜劇之王"
+      ],
+      "year": 1999,
+      "rating": 8.8,
+      "ratingCount": 1105358,
+      "url": "https://movie.douban.com/subject/1302425/",
+      "subjectID": "1302425",
+      "metadataText": "导演: 周星驰 Stephen Chow / 李力持 Lik-Chi Lee 主演: 周星驰 Stephen Ch... 1999 / 中国香港 / 喜剧 剧情 爱情"
+    },
+    {
+      "rank": 91,
+      "title": "致命ID",
+      "alternateTitles": [
+        "/ Identity"
+      ],
+      "year": 2003,
+      "rating": 8.9,
+      "ratingCount": 959268,
+      "url": "https://movie.douban.com/subject/1297192/",
+      "subjectID": "1297192",
+      "metadataText": "导演: 詹姆斯·曼高德 James Mangold 主演: 约翰·库萨克 John Cusack / 雷... 2003 / 美国 / 剧情 悬疑 惊悚"
+    },
+    {
+      "rank": 92,
+      "title": "杀人回忆",
+      "alternateTitles": [
+        "/ 살인의 추억"
+      ],
+      "year": 2003,
+      "rating": 8.9,
+      "ratingCount": 845839,
+      "url": "https://movie.douban.com/subject/1300299/",
+      "subjectID": "1300299",
+      "metadataText": "导演: 奉俊昊 Joon-ho Bong 主演: 宋康昊 Kang-ho Song / 金相庆 Sang-kyun... 2003 / 韩国 / 剧情 动作 犯罪 悬疑 惊悚"
+    },
+    {
+      "rank": 93,
+      "title": "摩登时代",
+      "alternateTitles": [
+        "/ Modern Times"
+      ],
+      "year": 1936,
+      "rating": 9.3,
+      "ratingCount": 350342,
+      "url": "https://movie.douban.com/subject/1294371/",
+      "subjectID": "1294371",
+      "metadataText": "导演: 查理·卓别林 Charles Chaplin 主演: 查理·卓别林 Charles Chaplin ... 1936 / 美国 / 剧情 喜剧 爱情"
+    },
+    {
+      "rank": 94,
+      "title": "春光乍泄",
+      "alternateTitles": [
+        "/ 春光乍洩"
+      ],
+      "year": 1997,
+      "rating": 9.0,
+      "ratingCount": 714388,
+      "url": "https://movie.douban.com/subject/1292679/",
+      "subjectID": "1292679",
+      "metadataText": "导演: 王家卫 Kar Wai Wong 主演: 张国荣 Leslie Cheung / 梁朝伟 Tony Leu... 1997 / 中国香港 日本 韩国 / 剧情 爱情 同性"
+    },
+    {
+      "rank": 95,
+      "title": "加勒比海盗",
+      "alternateTitles": [
+        "/ Pirates of the Caribbean: The Curse of the Black Pearl"
+      ],
+      "year": 2003,
+      "rating": 8.8,
+      "ratingCount": 977417,
+      "url": "https://movie.douban.com/subject/1298070/",
+      "subjectID": "1298070",
+      "metadataText": "导演: 戈尔·维宾斯基 Gore Verbinski 主演: 约翰尼·德普 Johnny Depp / ... 2003 / 美国 / 动作 冒险 奇幻"
+    },
+    {
+      "rank": 96,
+      "title": "海豚湾",
+      "alternateTitles": [
+        "/ The Cove"
+      ],
+      "year": 2009,
+      "rating": 9.3,
+      "ratingCount": 384144,
+      "url": "https://movie.douban.com/subject/3442220/",
+      "subjectID": "3442220",
+      "metadataText": "导演: 路易·西霍尤斯 Louie Psihoyos 主演: 路易·西霍尤斯 Louie Psihoyo... 2009 / 美国 / 纪录片"
+    },
+    {
+      "rank": 97,
+      "title": "美国往事",
+      "alternateTitles": [
+        "/ Once Upon a Time in America"
+      ],
+      "year": 1984,
+      "rating": 9.1,
+      "ratingCount": 476212,
+      "url": "https://movie.douban.com/subject/1292262/",
+      "subjectID": "1292262",
+      "metadataText": "导演: 赛尔乔·莱翁内 Sergio Leone 主演: 罗伯特·德尼罗 Robert De Niro ... 1984 / 美国 意大利 / 犯罪 剧情"
+    },
+    {
+      "rank": 98,
+      "title": "红辣椒",
+      "alternateTitles": [
+        "/ パプリカ"
+      ],
+      "year": 2006,
+      "rating": 9.0,
+      "ratingCount": 577139,
+      "url": "https://movie.douban.com/subject/1865703/",
+      "subjectID": "1865703",
+      "metadataText": "导演: 今敏 Satoshi Kon 主演: 林原惠美 Megumi Hayashibara / 江守彻 Toru... 2006 / 日本 / 动画 悬疑 科幻 惊悚"
+    },
+    {
+      "rank": 99,
+      "title": "七宗罪",
+      "alternateTitles": [
+        "/ Se7en"
+      ],
+      "year": 1995,
+      "rating": 8.8,
+      "ratingCount": 1072460,
+      "url": "https://movie.douban.com/subject/1292223/",
+      "subjectID": "1292223",
+      "metadataText": "导演: 大卫·芬奇 David Fincher 主演: 摩根·弗里曼 Morgan Freeman / 布... 1995 / 美国 / 剧情 犯罪 悬疑 惊悚"
+    },
+    {
+      "rank": 100,
+      "title": "唐伯虎点秋香",
+      "alternateTitles": [
+        "/ 唐伯虎點秋香"
+      ],
+      "year": 1993,
+      "rating": 8.8,
+      "ratingCount": 1235095,
+      "url": "https://movie.douban.com/subject/1306249/",
+      "subjectID": "1306249",
+      "metadataText": "导演: 李力持 Lik-Chi Lee 主演: 周星驰 Stephen Chow / 巩俐 Li Gong / 陈... 1993 / 中国香港 / 喜剧 爱情 古装"
+    },
+    {
+      "rank": 101,
+      "title": "狩猎",
+      "alternateTitles": [
+        "/ Jagten"
+      ],
+      "year": 2012,
+      "rating": 9.1,
+      "ratingCount": 476279,
+      "url": "https://movie.douban.com/subject/6985810/",
+      "subjectID": "6985810",
+      "metadataText": "导演: 托马斯·温特伯格 Thomas Vinterberg 主演: 麦斯·米科尔森 Mads Mik... 2012 / 丹麦 瑞典 / 剧情"
+    },
+    {
+      "rank": 102,
+      "title": "幽灵公主",
+      "alternateTitles": [
+        "/ もののけ姫"
+      ],
+      "year": 1997,
+      "rating": 8.9,
+      "ratingCount": 676213,
+      "url": "https://movie.douban.com/subject/1297359/",
+      "subjectID": "1297359",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 松田洋治 Yôji Matsuda / 石田百合... 1997 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 103,
+      "title": "寄生虫",
+      "alternateTitles": [
+        "/ 기생충"
+      ],
+      "year": 2019,
+      "rating": 8.8,
+      "ratingCount": 1560130,
+      "url": "https://movie.douban.com/subject/27010768/",
+      "subjectID": "27010768",
+      "metadataText": "导演: 奉俊昊 Joon-ho Bong 主演: 宋康昊 Kang-ho Song / 李善均 Seon-gyun... 2019 / 韩国 / 剧情"
+    },
+    {
+      "rank": 104,
+      "title": "甜蜜蜜",
+      "alternateTitles": [],
+      "year": 1996,
+      "rating": 8.9,
+      "ratingCount": 681135,
+      "url": "https://movie.douban.com/subject/1305164/",
+      "subjectID": "1305164",
+      "metadataText": "导演: 陈可辛 Peter Chan 主演: 黎明 Leon Lai / 张曼玉 Maggie Cheung / ... 1996 / 中国香港 / 剧情 爱情"
+    },
+    {
+      "rank": 105,
+      "title": "天书奇谭",
+      "alternateTitles": [],
+      "year": 2021,
+      "rating": 9.2,
+      "ratingCount": 340065,
+      "url": "https://movie.douban.com/subject/1428581/",
+      "subjectID": "1428581",
+      "metadataText": "导演: 王树忱 Shuchen Wang / 钱运达 Yunda Qian 主演: 丁建华 Jianhua Din... 1983(中国大陆) / 2021 / 中国大陆 / 动画 奇幻"
+    },
+    {
+      "rank": 106,
+      "title": "蝙蝠侠：黑暗骑士崛起",
+      "alternateTitles": [
+        "/ The Dark Knight Rises"
+      ],
+      "year": 2012,
+      "rating": 8.9,
+      "ratingCount": 821423,
+      "url": "https://movie.douban.com/subject/3395373/",
+      "subjectID": "3395373",
+      "metadataText": "导演: 克里斯托弗·诺兰 Christopher Nolan 主演: 克里斯蒂安·贝尔 Christ... 2012 / 美国 英国 / 剧情 动作 科幻 犯罪 惊悚"
+    },
+    {
+      "rank": 107,
+      "title": "超能陆战队",
+      "alternateTitles": [
+        "/ Big Hero 6"
+      ],
+      "year": 2014,
+      "rating": 8.8,
+      "ratingCount": 1155661,
+      "url": "https://movie.douban.com/subject/11026735/",
+      "subjectID": "11026735",
+      "metadataText": "导演: 唐·霍尔 Don Hall / 克里斯·威廉姆斯 Chris Williams 主演: 斯科特... 2014 / 美国 / 喜剧 动作 科幻 动画 冒险"
+    },
+    {
+      "rank": 108,
+      "title": "茶馆",
+      "alternateTitles": [],
+      "year": null,
+      "rating": 9.5,
+      "ratingCount": 214003,
+      "url": "https://movie.douban.com/subject/1461403/",
+      "subjectID": "1461403",
+      "metadataText": "导演: 谢添 Tian Xie 主演: 于是之 Shizhi Yu / 郑榕 Rong Zhen / 蓝天野 T... 1982(中国大陆) / 中国大陆 / 剧情 历史"
+    },
+    {
+      "rank": 109,
+      "title": "7号房的礼物",
+      "alternateTitles": [
+        "/ 7번방의 선물"
+      ],
+      "year": 2013,
+      "rating": 8.9,
+      "ratingCount": 627165,
+      "url": "https://movie.douban.com/subject/10777687/",
+      "subjectID": "10777687",
+      "metadataText": "导演: 李焕庆 Hwan-kyeong Lee 主演: 柳承龙 Seung-yong Ryoo / 朴信惠 Shi... 2013 / 韩国 / 剧情 喜剧 家庭"
+    },
+    {
+      "rank": 110,
+      "title": "第六感",
+      "alternateTitles": [
+        "/ The Sixth Sense"
+      ],
+      "year": 1999,
+      "rating": 8.9,
+      "ratingCount": 645640,
+      "url": "https://movie.douban.com/subject/1297630/",
+      "subjectID": "1297630",
+      "metadataText": "导演: M·奈特·沙马兰 M. Night Shyamalan 主演: 布鲁斯·威利斯 Bruce Wi... 1999 / 美国 / 剧情 悬疑 惊悚"
+    },
+    {
+      "rank": 111,
+      "title": "爱在黎明破晓前",
+      "alternateTitles": [
+        "/ Before Sunrise"
+      ],
+      "year": 1995,
+      "rating": 8.8,
+      "ratingCount": 811652,
+      "url": "https://movie.douban.com/subject/1296339/",
+      "subjectID": "1296339",
+      "metadataText": "导演: 理查德·林克莱特 Richard Linklater 主演: 伊桑·霍克 Ethan Hawke ... 1995 / 美国 奥地利 瑞士 / 剧情 爱情"
+    },
+    {
+      "rank": 112,
+      "title": "爱在日落黄昏时",
+      "alternateTitles": [
+        "/ Before Sunset"
+      ],
+      "year": 2004,
+      "rating": 8.9,
+      "ratingCount": 662454,
+      "url": "https://movie.douban.com/subject/1291990/",
+      "subjectID": "1291990",
+      "metadataText": "导演: 理查德·林克莱特 Richard Linklater 主演: 伊桑·霍克 Ethan Hawke ... 2004 / 美国 法国 / 剧情 爱情"
+    },
+    {
+      "rank": 113,
+      "title": "头脑特工队",
+      "alternateTitles": [
+        "/ Inside Out"
+      ],
+      "year": 2015,
+      "rating": 8.9,
+      "ratingCount": 817237,
+      "url": "https://movie.douban.com/subject/10533913/",
+      "subjectID": "10533913",
+      "metadataText": "导演: 彼特·道格特 Pete Docter / 罗纳尔多·德尔·卡门 Ronaldo Del Carmen &nb... 2015 / 美国 / 喜剧 动画 冒险"
+    },
+    {
+      "rank": 114,
+      "title": "哈利·波特与火焰杯",
+      "alternateTitles": [
+        "/ Harry Potter and the Goblet of Fire"
+      ],
+      "year": 2005,
+      "rating": 8.8,
+      "ratingCount": 811181,
+      "url": "https://movie.douban.com/subject/1309055/",
+      "subjectID": "1309055",
+      "metadataText": "导演: 迈克·内威尔 Mike Newell 主演: 丹尼尔·雷德克里夫 Daniel Radclif... 2005 / 英国 美国 / 悬疑 奇幻 冒险"
+    },
+    {
+      "rank": 115,
+      "title": "被嫌弃的松子的一生",
+      "alternateTitles": [
+        "/ 嫌われ松子の一生"
+      ],
+      "year": 2006,
+      "rating": 8.8,
+      "ratingCount": 780389,
+      "url": "https://movie.douban.com/subject/1787291/",
+      "subjectID": "1787291",
+      "metadataText": "导演: 中岛哲也 Tetsuya Nakashima 主演: 中谷美纪 Miki Nakatani / 瑛太 E... 2006 / 日本 / 剧情 歌舞"
+    },
+    {
+      "rank": 116,
+      "title": "未麻的部屋",
+      "alternateTitles": [
+        "/ Perfect Blue"
+      ],
+      "year": 1997,
+      "rating": 9.1,
+      "ratingCount": 431350,
+      "url": "https://movie.douban.com/subject/1395091/",
+      "subjectID": "1395091",
+      "metadataText": "导演: 今敏 Satoshi Kon 主演: 岩男润子 Junko Iwao / 松本梨香 Rica Matsu... 1997 / 日本 / 剧情 犯罪 动画 悬疑 惊悚"
+    },
+    {
+      "rank": 117,
+      "title": "重庆森林",
+      "alternateTitles": [
+        "/ 重慶森林"
+      ],
+      "year": 1994,
+      "rating": 8.8,
+      "ratingCount": 930995,
+      "url": "https://movie.douban.com/subject/1291999/",
+      "subjectID": "1291999",
+      "metadataText": "导演: 王家卫 Kar Wai Wong 主演: 林青霞 Brigitte Lin / 金城武 Takeshi K... 1994 / 中国香港 / 剧情 爱情"
+    },
+    {
+      "rank": 118,
+      "title": "借东西的小人阿莉埃蒂",
+      "alternateTitles": [
+        "/ 借りぐらしのアリエッティ"
+      ],
+      "year": 2010,
+      "rating": 8.9,
+      "ratingCount": 633890,
+      "url": "https://movie.douban.com/subject/4202302/",
+      "subjectID": "4202302",
+      "metadataText": "导演: 米林宏昌 Hiromasa Yonebayashi 主演: 志田未来 Mirai Shida / 神木... 2010 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 119,
+      "title": "菊次郎的夏天",
+      "alternateTitles": [
+        "/ 菊次郎の夏"
+      ],
+      "year": 1999,
+      "rating": 8.9,
+      "ratingCount": 679935,
+      "url": "https://movie.douban.com/subject/1293359/",
+      "subjectID": "1293359",
+      "metadataText": "导演: 北野武 Takeshi Kitano 主演: 北野武 Takeshi Kitano / 关口雄介 Yus... 1999 / 日本 / 剧情 喜剧"
+    },
+    {
+      "rank": 120,
+      "title": "入殓师",
+      "alternateTitles": [
+        "/ おくりびと"
+      ],
+      "year": 2008,
+      "rating": 8.9,
+      "ratingCount": 747605,
+      "url": "https://movie.douban.com/subject/2149806/",
+      "subjectID": "2149806",
+      "metadataText": "导演: 泷田洋二郎 Yôjirô Takita 主演: 本木雅弘 Masahiro Motoki / ... 2008 / 日本 / 剧情"
+    },
+    {
+      "rank": 121,
+      "title": "剪刀手爱德华",
+      "alternateTitles": [
+        "/ Edward Scissorhands"
+      ],
+      "year": 1990,
+      "rating": 8.7,
+      "ratingCount": 1127515,
+      "url": "https://movie.douban.com/subject/1292370/",
+      "subjectID": "1292370",
+      "metadataText": "导演: 蒂姆·波顿 Tim Burton 主演: 约翰尼·德普 Johnny Depp / 薇诺娜·... 1990 / 美国 / 剧情 爱情 奇幻"
+    },
+    {
+      "rank": 122,
+      "title": "断背山",
+      "alternateTitles": [
+        "/ Brokeback Mountain"
+      ],
+      "year": 2005,
+      "rating": 8.8,
+      "ratingCount": 789846,
+      "url": "https://movie.douban.com/subject/1418834/",
+      "subjectID": "1418834",
+      "metadataText": "导演: 李安 Ang Lee 主演: 希斯·莱杰 Heath Ledger / 杰克·吉伦哈尔 Jake... 2005 / 美国 加拿大 / 剧情 爱情 同性 家庭"
+    },
+    {
+      "rank": 123,
+      "title": "勇敢的心",
+      "alternateTitles": [
+        "/ Braveheart"
+      ],
+      "year": 1995,
+      "rating": 8.9,
+      "ratingCount": 609542,
+      "url": "https://movie.douban.com/subject/1294639/",
+      "subjectID": "1294639",
+      "metadataText": "导演: 梅尔·吉布森 Mel Gibson 主演: 梅尔·吉布森 Mel Gibson / 苏菲·玛... 1995 / 美国 / 动作 传记 剧情 历史 战争"
+    },
+    {
+      "rank": 124,
+      "title": "时空恋旅人",
+      "alternateTitles": [
+        "/ About Time"
+      ],
+      "year": 2013,
+      "rating": 8.8,
+      "ratingCount": 802911,
+      "url": "https://movie.douban.com/subject/10577869/",
+      "subjectID": "10577869",
+      "metadataText": "导演: 理查德·柯蒂斯 Richard Curtis 主演: 多姆纳尔·格里森 Domhnall Gl... 2013 / 英国 美国 / 喜剧 爱情 奇幻"
+    },
+    {
+      "rank": 125,
+      "title": "傲慢与偏见",
+      "alternateTitles": [
+        "/ Pride & Prejudice"
+      ],
+      "year": 2005,
+      "rating": 8.7,
+      "ratingCount": 950609,
+      "url": "https://movie.douban.com/subject/1418200/",
+      "subjectID": "1418200",
+      "metadataText": "导演: 乔·怀特 Joe Wright 主演: 凯拉·奈特莉 Keira Knightley / 马修·... 2005 / 法国 英国 美国 / 剧情 爱情"
+    },
+    {
+      "rank": 126,
+      "title": "驯龙高手",
+      "alternateTitles": [
+        "/ How to Train Your Dragon"
+      ],
+      "year": 2010,
+      "rating": 8.8,
+      "ratingCount": 874792,
+      "url": "https://movie.douban.com/subject/2353023/",
+      "subjectID": "2353023",
+      "metadataText": "导演: 迪恩·德布洛斯 Dean DeBlois / 克里斯·桑德斯 Chris Sanders 主演:... 2010 / 美国 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 127,
+      "title": "玩具总动员3",
+      "alternateTitles": [
+        "/ Toy Story 3"
+      ],
+      "year": 2010,
+      "rating": 8.9,
+      "ratingCount": 605355,
+      "url": "https://movie.douban.com/subject/1858711/",
+      "subjectID": "1858711",
+      "metadataText": "导演: 李·昂克里奇 Lee Unkrich 主演: 汤姆·汉克斯 Tom Hanks / 蒂姆·艾... 2010 / 美国 / 喜剧 动画 奇幻 冒险"
+    },
+    {
+      "rank": 128,
+      "title": "无人知晓",
+      "alternateTitles": [
+        "/ 誰も知らない"
+      ],
+      "year": 2004,
+      "rating": 9.1,
+      "ratingCount": 376951,
+      "url": "https://movie.douban.com/subject/1292337/",
+      "subjectID": "1292337",
+      "metadataText": "导演: 是枝裕和 Hirokazu Koreeda 主演: 柳乐优弥 Yûya Yagira / 北浦爱... 2004 / 日本 / 剧情"
+    },
+    {
+      "rank": 129,
+      "title": "消失的爱人",
+      "alternateTitles": [
+        "/ Gone Girl"
+      ],
+      "year": 2014,
+      "rating": 8.7,
+      "ratingCount": 1082619,
+      "url": "https://movie.douban.com/subject/21318488/",
+      "subjectID": "21318488",
+      "metadataText": "导演: 大卫·芬奇 David Fincher 主演: 本·阿弗莱克 Ben Affleck / 罗莎蒙... 2014 / 美国 / 剧情 犯罪 悬疑 惊悚"
+    },
+    {
+      "rank": 130,
+      "title": "倩女幽魂",
+      "alternateTitles": [],
+      "year": 1987,
+      "rating": 8.8,
+      "ratingCount": 842606,
+      "url": "https://movie.douban.com/subject/1297447/",
+      "subjectID": "1297447",
+      "metadataText": "导演: 程小东 Siu-Tung Ching 主演: 张国荣 Leslie Cheung / 王祖贤 Joey W... 1987 / 中国香港 / 爱情 奇幻 武侠 古装"
+    },
+    {
+      "rank": 131,
+      "title": "新世界",
+      "alternateTitles": [
+        "/ 신세계"
+      ],
+      "year": 2013,
+      "rating": 8.9,
+      "ratingCount": 535150,
+      "url": "https://movie.douban.com/subject/10437779/",
+      "subjectID": "10437779",
+      "metadataText": "导演: 朴勋政 Hoon-jung Park 主演: 李政宰 Jung-Jae Lee / 崔岷植 Min-sik... 2013 / 韩国 / 剧情 犯罪"
+    },
+    {
+      "rank": 132,
+      "title": "花样年华",
+      "alternateTitles": [
+        "/ 花樣年華"
+      ],
+      "year": 2000,
+      "rating": 8.8,
+      "ratingCount": 815536,
+      "url": "https://movie.douban.com/subject/1291557/",
+      "subjectID": "1291557",
+      "metadataText": "导演: 王家卫 Kar Wai Wong 主演: 张曼玉 Maggie Cheung / 梁朝伟 Tony Leu... 2000 / 中国香港 / 剧情 爱情"
+    },
+    {
+      "rank": 133,
+      "title": "一个叫欧维的男人决定去死",
+      "alternateTitles": [
+        "/ En man som heter Ove"
+      ],
+      "year": 2015,
+      "rating": 8.9,
+      "ratingCount": 576519,
+      "url": "https://movie.douban.com/subject/26628357/",
+      "subjectID": "26628357",
+      "metadataText": "导演: 汉内斯·赫尔姆 Hannes Holm 主演: 罗夫·拉斯加德 Rolf Lassgård... 2015 / 瑞典 / 剧情"
+    },
+    {
+      "rank": 134,
+      "title": "色，戒",
+      "alternateTitles": [],
+      "year": 2007,
+      "rating": 8.7,
+      "ratingCount": 973238,
+      "url": "https://movie.douban.com/subject/1828115/",
+      "subjectID": "1828115",
+      "metadataText": "导演: 李安 Ang Lee 主演: 梁朝伟 Tony Leung Chiu Wai / 汤唯 Wei Tang / ... 2007 / 中国台湾 中国大陆 美国 中国香港 / 剧情 爱情 情色"
+    },
+    {
+      "rank": 135,
+      "title": "完美的世界",
+      "alternateTitles": [
+        "/ A Perfect World"
+      ],
+      "year": 1993,
+      "rating": 9.1,
+      "ratingCount": 363758,
+      "url": "https://movie.douban.com/subject/1300992/",
+      "subjectID": "1300992",
+      "metadataText": "导演: 克林特·伊斯特伍德 Clint Eastwood 主演: 凯文·科斯特纳 Kevin Cos... 1993 / 美国 / 剧情 犯罪"
+    },
+    {
+      "rank": 136,
+      "title": "怪兽电力公司",
+      "alternateTitles": [
+        "/ Monsters, Inc."
+      ],
+      "year": 2001,
+      "rating": 8.8,
+      "ratingCount": 778379,
+      "url": "https://movie.douban.com/subject/1291579/",
+      "subjectID": "1291579",
+      "metadataText": "导演: 彼特·道格特 Pete Docter / 大卫·斯沃曼 David Silverman 主演: 约... 2001 / 美国 / 儿童 喜剧 动画 奇幻 冒险"
+    },
+    {
+      "rank": 137,
+      "title": "教父3",
+      "alternateTitles": [
+        "/ The Godfather: Part III"
+      ],
+      "year": 1990,
+      "rating": 9.0,
+      "ratingCount": 437771,
+      "url": "https://movie.douban.com/subject/1294240/",
+      "subjectID": "1294240",
+      "metadataText": "导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola 主演: 阿尔·帕西诺 A... 1990 / 美国 / 剧情 犯罪"
+    },
+    {
+      "rank": 138,
+      "title": "小森林 夏秋篇",
+      "alternateTitles": [
+        "/ リトル・フォレスト 夏・秋"
+      ],
+      "year": 2014,
+      "rating": 9.0,
+      "ratingCount": 478048,
+      "url": "https://movie.douban.com/subject/25814705/",
+      "subjectID": "25814705",
+      "metadataText": "导演: 森淳一 Junichi Mori 主演: 桥本爱 Ai Hashimoto / 三浦贵大 Takahir... 2014 / 日本 / 剧情"
+    },
+    {
+      "rank": 139,
+      "title": "阳光灿烂的日子",
+      "alternateTitles": [],
+      "year": 1994,
+      "rating": 8.8,
+      "ratingCount": 701936,
+      "url": "https://movie.douban.com/subject/1291875/",
+      "subjectID": "1291875",
+      "metadataText": "导演: 姜文 Wen Jiang 主演: 夏雨 Yu Xia / 宁静 Jing Ning / 陶虹 Hong Tao 1994 / 中国大陆 中国香港 / 剧情 爱情"
+    },
+    {
+      "rank": 140,
+      "title": "天使爱美丽",
+      "alternateTitles": [
+        "/ Le Fabuleux destin d'Amélie Poulain"
+      ],
+      "year": 2001,
+      "rating": 8.7,
+      "ratingCount": 1026618,
+      "url": "https://movie.douban.com/subject/1292215/",
+      "subjectID": "1292215",
+      "metadataText": "导演: 让-皮埃尔·热内 Jean-Pierre Jeunet 主演: 奥黛丽·塔图 Audrey Tau... 2001 / 法国 德国 / 剧情 喜剧 爱情"
+    },
+    {
+      "rank": 141,
+      "title": "侧耳倾听",
+      "alternateTitles": [
+        "/ 耳をすませば"
+      ],
+      "year": 1995,
+      "rating": 8.9,
+      "ratingCount": 525417,
+      "url": "https://movie.douban.com/subject/1297052/",
+      "subjectID": "1297052",
+      "metadataText": "导演: 近藤喜文 Yoshifumi Kondo 主演: 本名阳子 Youko Honna / 小林桂树 K... 1995 / 日本 / 剧情 爱情 动画"
+    },
+    {
+      "rank": 142,
+      "title": "哪吒闹海",
+      "alternateTitles": [],
+      "year": 1979,
+      "rating": 9.2,
+      "ratingCount": 311875,
+      "url": "https://movie.douban.com/subject/1307315/",
+      "subjectID": "1307315",
+      "metadataText": "导演: 王树忱 Shuchen Wang / 严定宪 Dingxian Yan 主演: 梁正晖 Zhenghui ... 1979 / 中国大陆 / 冒险 动画 奇幻"
+    },
+    {
+      "rank": 143,
+      "title": "九品芝麻官",
+      "alternateTitles": [],
+      "year": 1994,
+      "rating": 8.8,
+      "ratingCount": 804066,
+      "url": "https://movie.douban.com/subject/1297518/",
+      "subjectID": "1297518",
+      "metadataText": "导演: 王晶 Jing Wong 主演: 周星驰 Stephen Chow / 吴孟达 Man Tat Ng / ... 1994 / 中国香港 / 剧情 喜剧 古装"
+    },
+    {
+      "rank": 144,
+      "title": "被解救的姜戈",
+      "alternateTitles": [
+        "/ Django Unchained"
+      ],
+      "year": 2012,
+      "rating": 8.8,
+      "ratingCount": 700088,
+      "url": "https://movie.douban.com/subject/6307447/",
+      "subjectID": "6307447",
+      "metadataText": "导演: 昆汀·塔伦蒂诺 Quentin Tarantino 主演: 杰米·福克斯 Jamie Foxx /... 2012 / 美国 / 剧情 动作 西部 冒险"
+    },
+    {
+      "rank": 145,
+      "title": "请以你的名字呼唤我",
+      "alternateTitles": [
+        "/ Call Me by Your Name"
+      ],
+      "year": 2017,
+      "rating": 8.8,
+      "ratingCount": 833471,
+      "url": "https://movie.douban.com/subject/26799731/",
+      "subjectID": "26799731",
+      "metadataText": "导演: 卢卡·瓜达尼诺 Luca Guadagnino 主演: 艾米·汉莫 Armie Hammer / ... 2017 / 意大利 法国 巴西 美国 / 剧情 爱情 同性"
+    },
+    {
+      "rank": 146,
+      "title": "幸福终点站",
+      "alternateTitles": [
+        "/ The Terminal"
+      ],
+      "year": 2004,
+      "rating": 8.8,
+      "ratingCount": 648429,
+      "url": "https://movie.douban.com/subject/1292274/",
+      "subjectID": "1292274",
+      "metadataText": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg 主演: 汤姆·汉克斯 Tom Hanks... 2004 / 美国 / 喜剧 剧情 爱情"
+    },
+    {
+      "rank": 147,
+      "title": "釜山行",
+      "alternateTitles": [
+        "/ 부산행"
+      ],
+      "year": 2016,
+      "rating": 8.6,
+      "ratingCount": 1363085,
+      "url": "https://movie.douban.com/subject/25986180/",
+      "subjectID": "25986180",
+      "metadataText": "导演: 延尚昊 Sang-ho Yeon 主演: 孔刘 Yoo Gong / 郑有美 Yu-mi Jung / 马... 2016 / 韩国 / 动作 惊悚 灾难"
+    },
+    {
+      "rank": 148,
+      "title": "神偷奶爸",
+      "alternateTitles": [
+        "/ Despicable Me"
+      ],
+      "year": 2010,
+      "rating": 8.7,
+      "ratingCount": 1056138,
+      "url": "https://movie.douban.com/subject/3287562/",
+      "subjectID": "3287562",
+      "metadataText": "导演: 皮艾尔·柯芬 Pierre Coffin / 克里斯·雷纳德 Chris Renaud 主演: ... 2010 / 美国 法国 / 喜剧 动画 冒险"
+    },
+    {
+      "rank": 149,
+      "title": "小森林 冬春篇",
+      "alternateTitles": [
+        "/ リトル・フォレスト 冬・春"
+      ],
+      "year": 2015,
+      "rating": 9.0,
+      "ratingCount": 424434,
+      "url": "https://movie.douban.com/subject/25814707/",
+      "subjectID": "25814707",
+      "metadataText": "导演: 森淳一 Junichi Mori 主演: 桥本爱 Ai Hashimoto / 三浦贵大 Takahir... 2015 / 日本 / 剧情"
+    },
+    {
+      "rank": 150,
+      "title": "喜宴",
+      "alternateTitles": [
+        "/ 囍宴"
+      ],
+      "year": 1993,
+      "rating": 9.0,
+      "ratingCount": 438224,
+      "url": "https://movie.douban.com/subject/1303037/",
+      "subjectID": "1303037",
+      "metadataText": "导演: 李安 Ang Lee 主演: 赵文瑄 Winston Chao / 归亚蕾 Ya-lei Kuei / 郎... 1993 / 中国台湾 美国 / 剧情 喜剧 爱情 同性 家庭"
+    },
+    {
+      "rank": 151,
+      "title": "萤火之森",
+      "alternateTitles": [
+        "/ 蛍火の杜へ"
+      ],
+      "year": 2011,
+      "rating": 8.8,
+      "ratingCount": 618429,
+      "url": "https://movie.douban.com/subject/5989818/",
+      "subjectID": "5989818",
+      "metadataText": "导演: 大森贵弘 Takahiro Omori 主演: 佐仓绫音 Ayane Sakura / 内山昂辉 K... 2011 / 日本 / 剧情 爱情 动画 奇幻"
+    },
+    {
+      "rank": 152,
+      "title": "告白",
+      "alternateTitles": [],
+      "year": 2010,
+      "rating": 8.8,
+      "ratingCount": 750507,
+      "url": "https://movie.douban.com/subject/4268598/",
+      "subjectID": "4268598",
+      "metadataText": "导演: 中岛哲也 Tetsuya Nakashima 主演: 松隆子 Takako Matsu / 冈田将生 ... 2010 / 日本 / 剧情 悬疑"
+    },
+    {
+      "rank": 153,
+      "title": "七武士",
+      "alternateTitles": [
+        "/ 七人の侍"
+      ],
+      "year": 1954,
+      "rating": 9.3,
+      "ratingCount": 239207,
+      "url": "https://movie.douban.com/subject/1295399/",
+      "subjectID": "1295399",
+      "metadataText": "导演: 黑泽明 Akira Kurosawa 主演: 三船敏郎 Toshirô Mifune / 志村乔 ... 1954 / 日本 / 动作 冒险 剧情"
+    },
+    {
+      "rank": 154,
+      "title": "玛丽和麦克斯",
+      "alternateTitles": [
+        "/ Mary and Max"
+      ],
+      "year": 2009,
+      "rating": 9.0,
+      "ratingCount": 475237,
+      "url": "https://movie.douban.com/subject/3072124/",
+      "subjectID": "3072124",
+      "metadataText": "导演: 亚当·艾略特 Adam Elliot 主演: 托妮·科莱特 Toni Collette / 菲利... 2009 / 澳大利亚 美国 / 剧情 喜剧 动画"
+    },
+    {
+      "rank": 155,
+      "title": "头号玩家",
+      "alternateTitles": [
+        "/ Ready Player One"
+      ],
+      "year": 2018,
+      "rating": 8.6,
+      "ratingCount": 1530417,
+      "url": "https://movie.douban.com/subject/4920389/",
+      "subjectID": "4920389",
+      "metadataText": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg 主演: 泰伊·谢里丹 Tye Sheri... 2018 / 美国 / 动作 科幻 冒险"
+    },
+    {
+      "rank": 156,
+      "title": "机器人之梦",
+      "alternateTitles": [
+        "/ Robot Dreams"
+      ],
+      "year": 2023,
+      "rating": 9.1,
+      "ratingCount": 455852,
+      "url": "https://movie.douban.com/subject/35426925/",
+      "subjectID": "35426925",
+      "metadataText": "导演: 巴勃罗·贝格尔 Pablo Berger 主演: 伊万·拉班达 Ivan Labanda 2023 / 西班牙 法国 / 剧情 动画 音乐"
+    },
+    {
+      "rank": 157,
+      "title": "模仿游戏",
+      "alternateTitles": [
+        "/ The Imitation Game"
+      ],
+      "year": 2014,
+      "rating": 8.8,
+      "ratingCount": 726297,
+      "url": "https://movie.douban.com/subject/10463953/",
+      "subjectID": "10463953",
+      "metadataText": "导演: 莫滕·泰杜姆 Morten Tyldum 主演: 本尼迪克特·康伯巴奇 Benedict C... 2014 / 英国 美国 / 剧情 传记 战争 同性"
+    },
+    {
+      "rank": 158,
+      "title": "惊魂记",
+      "alternateTitles": [
+        "/ Psycho"
+      ],
+      "year": 1960,
+      "rating": 9.0,
+      "ratingCount": 361725,
+      "url": "https://movie.douban.com/subject/1293181/",
+      "subjectID": "1293181",
+      "metadataText": "导演: 阿尔弗雷德·希区柯克 Alfred Hitchcock 主演: 安东尼·博金斯 Antho... 1960 / 美国 / 悬疑 惊悚 恐怖"
+    },
+    {
+      "rank": 159,
+      "title": "心灵奇旅",
+      "alternateTitles": [
+        "/ Soul"
+      ],
+      "year": 2020,
+      "rating": 8.7,
+      "ratingCount": 1156099,
+      "url": "https://movie.douban.com/subject/24733428/",
+      "subjectID": "24733428",
+      "metadataText": "导演: 彼特·道格特 Pete Docter / 凯普·鲍尔斯 Kemp Powers 主演: 杰米·... 2020 / 美国 / 动画 奇幻 音乐"
+    },
+    {
+      "rank": 160,
+      "title": "大鱼",
+      "alternateTitles": [
+        "/ Big Fish"
+      ],
+      "year": 2003,
+      "rating": 8.8,
+      "ratingCount": 632144,
+      "url": "https://movie.douban.com/subject/1291545/",
+      "subjectID": "1291545",
+      "metadataText": "导演: 蒂姆·波顿 Tim Burton 主演: 伊万·麦克格雷格 Ewan McGregor / 阿... 2003 / 美国 / 剧情 爱情 奇幻 冒险"
+    },
+    {
+      "rank": 161,
+      "title": "背靠背，脸对脸",
+      "alternateTitles": [],
+      "year": 1994,
+      "rating": 9.5,
+      "ratingCount": 183815,
+      "url": "https://movie.douban.com/subject/1307856/",
+      "subjectID": "1307856",
+      "metadataText": "导演: 黄建新 Jianxin Huang / 杨亚洲 Yazhou Yang 主演: 牛振华 Zhenhua N... 1994 / 中国大陆 中国香港 / 剧情"
+    },
+    {
+      "rank": 162,
+      "title": "你的名字。",
+      "alternateTitles": [
+        "/ 君の名は。"
+      ],
+      "year": 2016,
+      "rating": 8.5,
+      "ratingCount": 1608675,
+      "url": "https://movie.douban.com/subject/26683290/",
+      "subjectID": "26683290",
+      "metadataText": "导演: 新海诚 Makoto Shinkai 主演: 神木隆之介 Ryûnosuke Kamiki / 上... 2016 / 日本 / 剧情 爱情 动画"
+    },
+    {
+      "rank": 163,
+      "title": "血战钢锯岭",
+      "alternateTitles": [
+        "/ Hacksaw Ridge"
+      ],
+      "year": 2016,
+      "rating": 8.7,
+      "ratingCount": 866514,
+      "url": "https://movie.douban.com/subject/26325320/",
+      "subjectID": "26325320",
+      "metadataText": "导演: 梅尔·吉布森 Mel Gibson 主演: 安德鲁·加菲尔德 Andrew Garfield /... 2016 / 澳大利亚 美国 / 剧情 传记 历史 战争"
+    },
+    {
+      "rank": 164,
+      "title": "射雕英雄传之东成西就",
+      "alternateTitles": [
+        "/ 射鵰英雄傳之東成西就"
+      ],
+      "year": 1993,
+      "rating": 8.7,
+      "ratingCount": 724322,
+      "url": "https://movie.douban.com/subject/1316510/",
+      "subjectID": "1316510",
+      "metadataText": "导演: 刘镇伟 Jeffrey Lau 主演: 梁朝伟 Tony Leung Chiu Wai / 林青霞 Bri... 1993 / 中国香港 / 喜剧 奇幻 武侠 古装"
+    },
+    {
+      "rank": 165,
+      "title": "末路狂花",
+      "alternateTitles": [
+        "/ Thelma & Louise"
+      ],
+      "year": 1991,
+      "rating": 9.0,
+      "ratingCount": 357630,
+      "url": "https://movie.douban.com/subject/1291992/",
+      "subjectID": "1291992",
+      "metadataText": "导演: 雷德利·斯科特 Ridley Scott 主演: 吉娜·戴维斯 Geena Davis / 苏... 1991 / 美国 英国 法国 / 犯罪 剧情 惊悚"
+    },
+    {
+      "rank": 166,
+      "title": "我是山姆",
+      "alternateTitles": [
+        "/ I Am Sam"
+      ],
+      "year": 2001,
+      "rating": 9.0,
+      "ratingCount": 380703,
+      "url": "https://movie.douban.com/subject/1306861/",
+      "subjectID": "1306861",
+      "metadataText": "导演: 杰茜·尼尔森 Jessie Nelson 主演: Sean Penn / Dakota Fanning / Mi... 2001 / 美国 / 剧情 家庭"
+    },
+    {
+      "rank": 167,
+      "title": "阳光姐妹淘",
+      "alternateTitles": [
+        "/ 써니"
+      ],
+      "year": 2011,
+      "rating": 8.8,
+      "ratingCount": 643705,
+      "url": "https://movie.douban.com/subject/4917726/",
+      "subjectID": "4917726",
+      "metadataText": "导演: 姜炯哲 Hyeong-Cheol Kang 主演: 沈恩京 Eun-kyung Shim / 闵孝琳 Hy... 2011 / 韩国 / 剧情 喜剧"
+    },
+    {
+      "rank": 168,
+      "title": "高山下的花环",
+      "alternateTitles": [],
+      "year": 1985,
+      "rating": 9.5,
+      "ratingCount": 164843,
+      "url": "https://movie.douban.com/subject/1422283/",
+      "subjectID": "1422283",
+      "metadataText": "导演: 谢晋 Jin Xie 主演: 吕晓禾 Xiaohe Lü / 唐国强 Guoqiang Tang / 何... 1984(中国大陆) / 1985 / 中国大陆 / 剧情 战争"
+    },
+    {
+      "rank": 169,
+      "title": "恐怖直播",
+      "alternateTitles": [
+        "/ 더 테러 라이브"
+      ],
+      "year": 2013,
+      "rating": 8.7,
+      "ratingCount": 735043,
+      "url": "https://movie.douban.com/subject/21360417/",
+      "subjectID": "21360417",
+      "metadataText": "导演: 金秉祐 Byeong-woo Kim 主演: 河正宇 Jung-woo Ha / 李璟荣 Kyeong-y... 2013 / 韩国 / 剧情 犯罪 悬疑"
+    },
+    {
+      "rank": 170,
+      "title": "黑客帝国3：矩阵革命",
+      "alternateTitles": [
+        "/ The Matrix Revolutions"
+      ],
+      "year": 2003,
+      "rating": 8.8,
+      "ratingCount": 502206,
+      "url": "https://movie.douban.com/subject/1302467/",
+      "subjectID": "1302467",
+      "metadataText": "导演: 拉娜·沃卓斯基 Lana Wachowski / 莉莉·沃卓斯基 Lilly Wachowski ... 2003 / 美国 / 动作 科幻"
+    },
+    {
+      "rank": 171,
+      "title": "小丑",
+      "alternateTitles": [
+        "/ Joker"
+      ],
+      "year": 2019,
+      "rating": 8.7,
+      "ratingCount": 1133321,
+      "url": "https://movie.douban.com/subject/27119724/",
+      "subjectID": "27119724",
+      "metadataText": "导演: 托德·菲利普斯 Todd Phillips 主演: 杰昆·菲尼克斯 Joaquin Phoeni... 2019 / 美国 加拿大 / 剧情 犯罪 惊悚"
+    },
+    {
+      "rank": 172,
+      "title": "谍影重重3",
+      "alternateTitles": [
+        "/ The Bourne Ultimatum"
+      ],
+      "year": 2007,
+      "rating": 8.9,
+      "ratingCount": 476248,
+      "url": "https://movie.douban.com/subject/1578507/",
+      "subjectID": "1578507",
+      "metadataText": "导演: 保罗·格林格拉斯 Paul Greengrass 主演: 马特·达蒙 Matt Damon / ... 2007 / 美国 德国 法国 英国 / 动作 悬疑 惊悚"
+    },
+    {
+      "rank": 173,
+      "title": "三块广告牌",
+      "alternateTitles": [
+        "/ Three Billboards Outside Ebbing, Missouri"
+      ],
+      "year": 2017,
+      "rating": 8.7,
+      "ratingCount": 928563,
+      "url": "https://movie.douban.com/subject/26611804/",
+      "subjectID": "26611804",
+      "metadataText": "导演: 马丁·麦克唐纳 Martin McDonagh 主演: 弗兰西斯·麦克多蒙德 France... 2017 / 英国 美国 / 剧情 犯罪"
+    },
+    {
+      "rank": 174,
+      "title": "无间道2",
+      "alternateTitles": [
+        "/ 無間道II"
+      ],
+      "year": 2003,
+      "rating": 8.8,
+      "ratingCount": 575447,
+      "url": "https://movie.douban.com/subject/1307106/",
+      "subjectID": "1307106",
+      "metadataText": "导演: 刘伟强 Andrew Lau / 麦兆辉 Alan Mak 主演: 陈冠希 Edison Chen / ... 2003 / 中国香港 / 剧情 犯罪 惊悚"
+    },
+    {
+      "rank": 175,
+      "title": "电锯惊魂",
+      "alternateTitles": [
+        "/ Saw"
+      ],
+      "year": 2004,
+      "rating": 8.7,
+      "ratingCount": 620551,
+      "url": "https://movie.douban.com/subject/1417598/",
+      "subjectID": "1417598",
+      "metadataText": "导演: 詹姆斯·温 James Wan 主演: 雷·沃纳尔 Leigh Whannell / 加利·艾... 2004 / 美国 / 悬疑 惊悚 恐怖"
+    },
+    {
+      "rank": 176,
+      "title": "达拉斯买家俱乐部",
+      "alternateTitles": [
+        "/ Dallas Buyers Club"
+      ],
+      "year": 2013,
+      "rating": 8.8,
+      "ratingCount": 511247,
+      "url": "https://movie.douban.com/subject/1793929/",
+      "subjectID": "1793929",
+      "metadataText": "导演: 让-马克·瓦雷 Jean-Marc Vallée 主演: 马修·麦康纳 Matthew McCon... 2013 / 美国 / 剧情 传记 同性"
+    },
+    {
+      "rank": 177,
+      "title": "疯狂原始人",
+      "alternateTitles": [
+        "/ The Croods"
+      ],
+      "year": 2013,
+      "rating": 8.7,
+      "ratingCount": 929081,
+      "url": "https://movie.douban.com/subject/1907966/",
+      "subjectID": "1907966",
+      "metadataText": "导演: 科克·德·米科 Kirk De Micco / 克里斯·桑德斯 Chris Sanders 主演... 2013 / 美国 / 喜剧 动画 冒险"
+    },
+    {
+      "rank": 178,
+      "title": "绿里奇迹",
+      "alternateTitles": [
+        "/ The Green Mile"
+      ],
+      "year": 1999,
+      "rating": 8.9,
+      "ratingCount": 393223,
+      "url": "https://movie.douban.com/subject/1300374/",
+      "subjectID": "1300374",
+      "metadataText": "导演: 弗兰克·德拉邦特 Frank Darabont 主演: 汤姆·汉克斯 Tom Hanks / ... 1999 / 美国 / 犯罪 剧情 奇幻 悬疑"
+    },
+    {
+      "rank": 179,
+      "title": "爱在午夜降临前",
+      "alternateTitles": [
+        "/ Before Midnight"
+      ],
+      "year": 2013,
+      "rating": 8.8,
+      "ratingCount": 481515,
+      "url": "https://movie.douban.com/subject/10808442/",
+      "subjectID": "10808442",
+      "metadataText": "导演: 理查德·林克莱特 Richard Linklater 主演: 伊桑·霍克 Ethan Hawke ... 2013 / 美国 希腊 / 剧情 爱情"
+    },
+    {
+      "rank": 180,
+      "title": "疯狂的石头",
+      "alternateTitles": [],
+      "year": 2006,
+      "rating": 8.6,
+      "ratingCount": 935414,
+      "url": "https://movie.douban.com/subject/1862151/",
+      "subjectID": "1862151",
+      "metadataText": "导演: 宁浩 Hao Ning 主演: 郭涛 Tao Guo / 刘桦 Hua Liu / 连晋 Teddy Lin 2006 / 中国大陆 中国香港 / 喜剧 犯罪"
+    },
+    {
+      "rank": 181,
+      "title": "雨中曲",
+      "alternateTitles": [
+        "/ Singin' in the Rain"
+      ],
+      "year": 1952,
+      "rating": 9.1,
+      "ratingCount": 272889,
+      "url": "https://movie.douban.com/subject/1293460/",
+      "subjectID": "1293460",
+      "metadataText": "导演: 斯坦利·多南 Stanley Donen / 吉恩·凯利 Gene Kelly 主演: 吉恩·... 1952 / 美国 / 喜剧 歌舞 爱情"
+    },
+    {
+      "rank": 182,
+      "title": "2001太空漫游",
+      "alternateTitles": [
+        "/ 2001: A Space Odyssey"
+      ],
+      "year": 1968,
+      "rating": 8.9,
+      "ratingCount": 403071,
+      "url": "https://movie.douban.com/subject/1292226/",
+      "subjectID": "1292226",
+      "metadataText": "导演: 斯坦利·库布里克 Stanley Kubrick 主演: 凯尔·杜拉 Keir Dullea / ... 1968 / 英国 美国 / 科幻 惊悚 冒险"
+    },
+    {
+      "rank": 183,
+      "title": "海街日记",
+      "alternateTitles": [
+        "/ 海街diary"
+      ],
+      "year": 2015,
+      "rating": 8.8,
+      "ratingCount": 529029,
+      "url": "https://movie.douban.com/subject/25895901/",
+      "subjectID": "25895901",
+      "metadataText": "导演: 是枝裕和 Hirokazu Koreeda 主演: 绫濑遥 Haruka Ayase / 长泽雅美 M... 2015 / 日本 / 剧情 家庭"
+    },
+    {
+      "rank": 184,
+      "title": "上帝之城",
+      "alternateTitles": [
+        "/ Cidade de Deus"
+      ],
+      "year": 2002,
+      "rating": 9.0,
+      "ratingCount": 336640,
+      "url": "https://movie.douban.com/subject/1292208/",
+      "subjectID": "1292208",
+      "metadataText": "导演: 费尔南多·梅里尔斯 Fernando Meirelles / 卡迪亚·兰德 Kátia Lund ... 2002 / 巴西 法国 / 犯罪 剧情"
+    },
+    {
+      "rank": 185,
+      "title": "心迷宫",
+      "alternateTitles": [],
+      "year": 2014,
+      "rating": 8.7,
+      "ratingCount": 625915,
+      "url": "https://movie.douban.com/subject/25917973/",
+      "subjectID": "25917973",
+      "metadataText": "导演: 忻钰坤 Yukun Xin 主演: 霍卫民 Weimin Huo / 王笑天 Xiaotian Wang ... 2014 / 中国大陆 / 剧情 犯罪 悬疑"
+    },
+    {
+      "rank": 186,
+      "title": "风之谷",
+      "alternateTitles": [
+        "/ 風の谷のナウシカ"
+      ],
+      "year": 1984,
+      "rating": 8.9,
+      "ratingCount": 397036,
+      "url": "https://movie.douban.com/subject/1291585/",
+      "subjectID": "1291585",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 岛本须美 Sumi Shimamoto / 松田洋治 Y... 1984 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 187,
+      "title": "英雄本色",
+      "alternateTitles": [],
+      "year": 1986,
+      "rating": 8.6,
+      "ratingCount": 612357,
+      "url": "https://movie.douban.com/subject/1297574/",
+      "subjectID": "1297574",
+      "metadataText": "导演: 吴宇森 John Woo 主演: 周润发 Yun-Fat Chow / 狄龙 Lung Ti / 张国... 1986 / 中国香港 / 剧情 动作 犯罪"
+    },
+    {
+      "rank": 188,
+      "title": "记忆碎片",
+      "alternateTitles": [
+        "/ Memento"
+      ],
+      "year": 2000,
+      "rating": 8.7,
+      "ratingCount": 712813,
+      "url": "https://movie.douban.com/subject/1304447/",
+      "subjectID": "1304447",
+      "metadataText": "导演: 克里斯托弗·诺兰 Christopher Nolan 主演: 盖·皮尔斯 Guy Pearce /... 2000 / 美国 / 犯罪 剧情 悬疑 惊悚"
+    },
+    {
+      "rank": 189,
+      "title": "纵横四海",
+      "alternateTitles": [
+        "/ 縱橫四海"
+      ],
+      "year": 1991,
+      "rating": 8.8,
+      "ratingCount": 493447,
+      "url": "https://movie.douban.com/subject/1295409/",
+      "subjectID": "1295409",
+      "metadataText": "导演: 吴宇森 John Woo 主演: 周润发 Yun-Fat Chow / 张国荣 Leslie Cheung... 1991 / 中国香港 / 剧情 喜剧 动作 犯罪"
+    },
+    {
+      "rank": 190,
+      "title": "无敌破坏王",
+      "alternateTitles": [
+        "/ Wreck-It Ralph"
+      ],
+      "year": 2012,
+      "rating": 8.7,
+      "ratingCount": 618239,
+      "url": "https://movie.douban.com/subject/6534248/",
+      "subjectID": "6534248",
+      "metadataText": "导演: 瑞奇·莫尔 Rich Moore 主演: 约翰·C·赖利 John C. Reilly / 萨拉... 2012 / 美国 / 喜剧 动画 奇幻 冒险"
+    },
+    {
+      "rank": 191,
+      "title": "恐怖游轮",
+      "alternateTitles": [
+        "/ Triangle"
+      ],
+      "year": 2009,
+      "rating": 8.5,
+      "ratingCount": 1005472,
+      "url": "https://movie.douban.com/subject/3011051/",
+      "subjectID": "3011051",
+      "metadataText": "导演: 克里斯托弗·史密斯 Christopher Smith 主演: 梅利莎·乔治 Melissa ... 2009 / 英国 澳大利亚 / 科幻 悬疑 奇幻 惊悚"
+    },
+    {
+      "rank": 192,
+      "title": "芙蓉镇",
+      "alternateTitles": [],
+      "year": 1987,
+      "rating": 9.3,
+      "ratingCount": 195143,
+      "url": "https://movie.douban.com/subject/1297880/",
+      "subjectID": "1297880",
+      "metadataText": "导演: 谢晋 Jin Xie 主演: 刘晓庆 Xiaoqing Liu / 姜文 Wen Jiang / 郑在石... 1987 / 中国大陆 / 剧情 爱情"
+    },
+    {
+      "rank": 193,
+      "title": "卢旺达饭店",
+      "alternateTitles": [
+        "/ Hotel Rwanda"
+      ],
+      "year": 2004,
+      "rating": 8.9,
+      "ratingCount": 370828,
+      "url": "https://movie.douban.com/subject/1291822/",
+      "subjectID": "1291822",
+      "metadataText": "导演: 特瑞·乔治 Terry George 主演: 唐·钱德尔 Don Cheadle / 苏菲·奥... 2004 / 英国 南非 意大利 美国 / 剧情 传记 历史 战争"
+    },
+    {
+      "rank": 194,
+      "title": "牯岭街少年杀人事件",
+      "alternateTitles": [
+        "/ 牯嶺街少年殺人事件"
+      ],
+      "year": 1991,
+      "rating": 8.9,
+      "ratingCount": 376403,
+      "url": "https://movie.douban.com/subject/1292329/",
+      "subjectID": "1292329",
+      "metadataText": "导演: 杨德昌 Edward Yang 主演: 张震 Chen Chang / 杨静怡 Lisa Yang / 张... 1991 / 中国台湾 / 剧情 犯罪"
+    },
+    {
+      "rank": 195,
+      "title": "东京教父",
+      "alternateTitles": [
+        "/ 東京ゴッドファーザーズ"
+      ],
+      "year": 2003,
+      "rating": 9.0,
+      "ratingCount": 296133,
+      "url": "https://movie.douban.com/subject/1310177/",
+      "subjectID": "1310177",
+      "metadataText": "导演: 今敏 Satoshi Kon 主演: 江守彻 Toru Emori / 梅垣义明 Yoshiaki Ume... 2003 / 日本 / 剧情 喜剧 动画"
+    },
+    {
+      "rank": 196,
+      "title": "小偷家族",
+      "alternateTitles": [
+        "/ 万引き家族"
+      ],
+      "year": 2018,
+      "rating": 8.7,
+      "ratingCount": 902651,
+      "url": "https://movie.douban.com/subject/27622447/",
+      "subjectID": "27622447",
+      "metadataText": "导演: 是枝裕和 Hirokazu Koreeda 主演: 中川雅也 Lily Franky / 安藤樱 Sa... 2018 / 日本 / 剧情 犯罪 家庭"
+    },
+    {
+      "rank": 197,
+      "title": "魔女宅急便",
+      "alternateTitles": [
+        "/ 魔女の宅急便"
+      ],
+      "year": 1989,
+      "rating": 8.7,
+      "ratingCount": 530880,
+      "url": "https://movie.douban.com/subject/1307811/",
+      "subjectID": "1307811",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 高山南 Minami Takayama / 佐久间玲 Re... 1989 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 198,
+      "title": "冰川时代",
+      "alternateTitles": [
+        "/ Ice Age"
+      ],
+      "year": 2002,
+      "rating": 8.7,
+      "ratingCount": 691971,
+      "url": "https://movie.douban.com/subject/1291578/",
+      "subjectID": "1291578",
+      "metadataText": "导演: 卡洛斯·沙尔丹哈 Carlos Saldanha / 克里斯·韦奇 Chris Wedge 主演... 2002 / 美国 / 喜剧 动画 冒险"
+    },
+    {
+      "rank": 199,
+      "title": "忠犬八公物语",
+      "alternateTitles": [
+        "/ ハチ公物語"
+      ],
+      "year": 1987,
+      "rating": 9.2,
+      "ratingCount": 221145,
+      "url": "https://movie.douban.com/subject/1959195/",
+      "subjectID": "1959195",
+      "metadataText": "导演: 神山征二郎 Seijirô Kôyama 主演: 仲代达矢 Tatsuya Nakadai /... 1987 / 日本 / 剧情"
+    },
+    {
+      "rank": 200,
+      "title": "岁月神偷",
+      "alternateTitles": [
+        "/ 歲月神偷"
+      ],
+      "year": 2010,
+      "rating": 8.7,
+      "ratingCount": 616257,
+      "url": "https://movie.douban.com/subject/3792799/",
+      "subjectID": "3792799",
+      "metadataText": "导演: 罗启锐 Alex Law 主演: 吴君如 Sandra Ng / 任达华 Simon Yam / 钟绍... 2010 / 中国香港 中国大陆 / 剧情 家庭"
+    },
+    {
+      "rank": 201,
+      "title": "遗愿清单",
+      "alternateTitles": [
+        "/ The Bucket List"
+      ],
+      "year": 2007,
+      "rating": 8.7,
+      "ratingCount": 547215,
+      "url": "https://movie.douban.com/subject/1867345/",
+      "subjectID": "1867345",
+      "metadataText": "导演: 罗伯·莱纳 Rob Reiner 主演: 杰克·尼科尔森 Jack Nicholson / 摩根... 2007 / 美国 / 冒险 喜剧 剧情"
+    },
+    {
+      "rank": 202,
+      "title": "大佛普拉斯",
+      "alternateTitles": [],
+      "year": 2017,
+      "rating": 8.7,
+      "ratingCount": 562331,
+      "url": "https://movie.douban.com/subject/27059130/",
+      "subjectID": "27059130",
+      "metadataText": "导演: 黄信尧 Hsin-yao Huang 主演: 庄益增 Yizeng Zhuang / 陈竹昇 Chu-sh... 2017 / 中国台湾 / 剧情 喜剧"
+    },
+    {
+      "rank": 203,
+      "title": "荒蛮故事",
+      "alternateTitles": [
+        "/ Relatos salvajes"
+      ],
+      "year": 2014,
+      "rating": 8.7,
+      "ratingCount": 524229,
+      "url": "https://movie.douban.com/subject/24750126/",
+      "subjectID": "24750126",
+      "metadataText": "导演: 达米安·斯兹弗隆 Damián Szifron 主演: 达里奥·葛兰帝内提 Darío... 2014 / 阿根廷 西班牙 / 剧情 喜剧 犯罪"
+    },
+    {
+      "rank": 204,
+      "title": "白日梦想家",
+      "alternateTitles": [
+        "/ The Secret Life of Walter Mitty"
+      ],
+      "year": 2013,
+      "rating": 8.6,
+      "ratingCount": 662786,
+      "url": "https://movie.douban.com/subject/2133323/",
+      "subjectID": "2133323",
+      "metadataText": "导演: 本·斯蒂勒 Ben Stiller 主演: 本·斯蒂勒 Ben Stiller / 克里斯汀·... 2013 / 美国 英国 / 剧情 喜剧 冒险"
+    },
+    {
+      "rank": 205,
+      "title": "源代码",
+      "alternateTitles": [
+        "/ Source Code"
+      ],
+      "year": 2011,
+      "rating": 8.6,
+      "ratingCount": 936034,
+      "url": "https://movie.douban.com/subject/3075287/",
+      "subjectID": "3075287",
+      "metadataText": "导演: 邓肯·琼斯 Duncan Jones 主演: 杰克·吉伦哈尔 Jake Gyllenhaal / ... 2011 / 美国 加拿大 / 科幻 悬疑 惊悚"
+    },
+    {
+      "rank": 206,
+      "title": "花束般的恋爱",
+      "alternateTitles": [
+        "/ 花束みたいな恋をした"
+      ],
+      "year": 2021,
+      "rating": 8.6,
+      "ratingCount": 844388,
+      "url": "https://movie.douban.com/subject/34874432/",
+      "subjectID": "34874432",
+      "metadataText": "导演: 土井裕泰 Nobuhiro Doi 主演: 菅田将晖 Masaki Suda / 有村架纯 Kasu... 2021 / 日本 / 剧情 爱情"
+    },
+    {
+      "rank": 207,
+      "title": "爱乐之城",
+      "alternateTitles": [
+        "/ La La Land"
+      ],
+      "year": 2016,
+      "rating": 8.4,
+      "ratingCount": 1137859,
+      "url": "https://movie.douban.com/subject/25934014/",
+      "subjectID": "25934014",
+      "metadataText": "导演: 达米恩·查泽雷 Damien Chazelle 主演: 瑞恩·高斯林 Ryan Gosling /... 2016 / 美国 / 剧情 爱情 歌舞"
+    },
+    {
+      "rank": 208,
+      "title": "疯狂的麦克斯4：狂暴之路",
+      "alternateTitles": [
+        "/ Mad Max: Fury Road"
+      ],
+      "year": 2015,
+      "rating": 8.7,
+      "ratingCount": 625211,
+      "url": "https://movie.douban.com/subject/3592854/",
+      "subjectID": "3592854",
+      "metadataText": "导演: 乔治·米勒 George Miller 主演: 汤姆·哈迪 Tom Hardy / 查理兹·塞... 2015 / 澳大利亚 美国 / 动作 科幻 冒险"
+    },
+    {
+      "rank": 209,
+      "title": "可可西里",
+      "alternateTitles": [],
+      "year": 2004,
+      "rating": 8.9,
+      "ratingCount": 350423,
+      "url": "https://movie.douban.com/subject/1308857/",
+      "subjectID": "1308857",
+      "metadataText": "导演: 陆川 Chuan Lu 主演: 多布杰 Duobujie / 张磊 Lei Zhang / 亓亮 Qi L... 2004 / 中国大陆 中国香港 / 剧情 犯罪"
+    },
+    {
+      "rank": 210,
+      "title": "你看起来好像很好吃",
+      "alternateTitles": [
+        "/ おまえうまそうだな"
+      ],
+      "year": 2010,
+      "rating": 8.9,
+      "ratingCount": 380064,
+      "url": "https://movie.douban.com/subject/4848115/",
+      "subjectID": "4848115",
+      "metadataText": "导演: 藤森雅也 Masaya Fujimori 主演: 山口胜平 Kappei Yamaguchi / 爱河... 2010 / 日本 / 剧情 动画 儿童"
+    },
+    {
+      "rank": 211,
+      "title": "波西米亚狂想曲",
+      "alternateTitles": [
+        "/ Bohemian Rhapsody"
+      ],
+      "year": 2018,
+      "rating": 8.6,
+      "ratingCount": 698568,
+      "url": "https://movie.douban.com/subject/5300054/",
+      "subjectID": "5300054",
+      "metadataText": "导演: 布莱恩·辛格 Bryan Singer 主演: 拉米·马雷克 Rami Malek / 本·哈... 2018 / 英国 美国 / 剧情 传记 同性 音乐"
+    },
+    {
+      "rank": 212,
+      "title": "贫民窟的百万富翁",
+      "alternateTitles": [
+        "/ Slumdog Millionaire"
+      ],
+      "year": 2008,
+      "rating": 8.6,
+      "ratingCount": 812231,
+      "url": "https://movie.douban.com/subject/2209573/",
+      "subjectID": "2209573",
+      "metadataText": "导演: 丹尼·鲍尔 Danny Boyle / 洛芙琳·坦丹 Loveleen Tandan 主演: 戴夫... 2008 / 英国 / 剧情 爱情"
+    },
+    {
+      "rank": 213,
+      "title": "城市之光",
+      "alternateTitles": [
+        "/ City Lights"
+      ],
+      "year": 1931,
+      "rating": 9.3,
+      "ratingCount": 175602,
+      "url": "https://movie.douban.com/subject/1293908/",
+      "subjectID": "1293908",
+      "metadataText": "导演: 查理·卓别林 Charles Chaplin 主演: 查理·卓别林 Charles Chaplin ... 1931 / 美国 / 喜剧 剧情 爱情"
+    },
+    {
+      "rank": 214,
+      "title": "爆裂鼓手",
+      "alternateTitles": [
+        "/ Whiplash"
+      ],
+      "year": 2014,
+      "rating": 8.6,
+      "ratingCount": 699780,
+      "url": "https://movie.douban.com/subject/25773932/",
+      "subjectID": "25773932",
+      "metadataText": "导演: 达米恩·查泽雷 Damien Chazelle 主演: 迈尔斯·特勒 Miles Teller /... 2014 / 美国 / 剧情 音乐"
+    },
+    {
+      "rank": 215,
+      "title": "大红灯笼高高挂",
+      "alternateTitles": [],
+      "year": 1991,
+      "rating": 8.8,
+      "ratingCount": 381358,
+      "url": "https://movie.douban.com/subject/1293323/",
+      "subjectID": "1293323",
+      "metadataText": "导演: 张艺谋 Yimou Zhang 主演: 巩俐 Li Gong / 马精武 Jingwu Ma / 何赛... 1991 / 中国大陆 中国香港 中国台湾 / 剧情"
+    },
+    {
+      "rank": 216,
+      "title": "哈利·波特与死亡圣器(上)",
+      "alternateTitles": [
+        "/ Harry Potter and the Deathly Hallows: Part 1"
+      ],
+      "year": 2010,
+      "rating": 8.6,
+      "ratingCount": 705508,
+      "url": "https://movie.douban.com/subject/2051007/",
+      "subjectID": "2051007",
+      "metadataText": "导演: 大卫·叶茨 David Yates 主演: 丹尼尔·雷德克里夫 Daniel Radcliffe... 2010 / 英国 美国 / 奇幻 冒险"
+    },
+    {
+      "rank": 217,
+      "title": "无耻混蛋",
+      "alternateTitles": [
+        "/ Inglourious Basterds"
+      ],
+      "year": 2009,
+      "rating": 8.7,
+      "ratingCount": 570913,
+      "url": "https://movie.douban.com/subject/1438652/",
+      "subjectID": "1438652",
+      "metadataText": "导演: 昆汀·塔伦蒂诺 Quentin Tarantino 主演: 布拉德·皮特 Brad Pitt / ... 2009 / 德国 美国 / 剧情 犯罪"
+    },
+    {
+      "rank": 218,
+      "title": "青蛇",
+      "alternateTitles": [],
+      "year": 1993,
+      "rating": 8.6,
+      "ratingCount": 606899,
+      "url": "https://movie.douban.com/subject/1303394/",
+      "subjectID": "1303394",
+      "metadataText": "导演: 徐克 Hark Tsui 主演: 张曼玉 Maggie Cheung / 王祖贤 Joey Wang / ... 1993 / 中国香港 中国大陆 / 剧情 爱情 奇幻 古装"
+    },
+    {
+      "rank": 219,
+      "title": "终结者2：审判日",
+      "alternateTitles": [
+        "/ Terminator 2: Judgment Day"
+      ],
+      "year": 1991,
+      "rating": 8.8,
+      "ratingCount": 391282,
+      "url": "https://movie.douban.com/subject/1291844/",
+      "subjectID": "1291844",
+      "metadataText": "导演: 詹姆斯·卡梅隆 James Cameron 主演: 阿诺·施瓦辛格 Arnold Schwarz... 1991 / 美国 法国 / 动作 科幻"
+    },
+    {
+      "rank": 220,
+      "title": "东邪西毒",
+      "alternateTitles": [
+        "/ 東邪西毒"
+      ],
+      "year": 1994,
+      "rating": 8.6,
+      "ratingCount": 640714,
+      "url": "https://movie.douban.com/subject/1292328/",
+      "subjectID": "1292328",
+      "metadataText": "导演: 王家卫 Kar Wai Wong 主演: 张国荣 Leslie Cheung / 林青霞 Brigitte... 1994 / 中国香港 中国台湾 / 剧情 动作 爱情 武侠 古装"
+    },
+    {
+      "rank": 221,
+      "title": "黑天鹅",
+      "alternateTitles": [
+        "/ Black Swan"
+      ],
+      "year": 2010,
+      "rating": 8.6,
+      "ratingCount": 853778,
+      "url": "https://movie.douban.com/subject/1978709/",
+      "subjectID": "1978709",
+      "metadataText": "导演: 达伦·阿罗诺夫斯基 Darren Aronofsky 主演: 娜塔莉·波特曼 Natalie... 2010 / 美国 / 剧情 惊悚"
+    },
+    {
+      "rank": 222,
+      "title": "新龙门客栈",
+      "alternateTitles": [
+        "/ 新龍門客棧"
+      ],
+      "year": 1992,
+      "rating": 8.7,
+      "ratingCount": 516495,
+      "url": "https://movie.douban.com/subject/1292287/",
+      "subjectID": "1292287",
+      "metadataText": "导演: 李惠民 Raymond Lee 主演: 张曼玉 Maggie Cheung / 林青霞 Brigitte ... 1992 / 中国香港 中国大陆 / 动作 爱情 武侠 古装"
+    },
+    {
+      "rank": 223,
+      "title": "初恋这件小事",
+      "alternateTitles": [
+        "/ สิ่งเล็กเล็กที่เรียกว่า...รัก"
+      ],
+      "year": 2010,
+      "rating": 8.5,
+      "ratingCount": 1058871,
+      "url": "https://movie.douban.com/subject/4739952/",
+      "subjectID": "4739952",
+      "metadataText": "导演: 普特鹏·普罗萨卡·那·萨克那卡林 Puttipong Promsaka Na Sakolnakorn / 华森·波克彭... 2010 / 泰国 / 剧情 喜剧 爱情"
+    },
+    {
+      "rank": 224,
+      "title": "千钧一发",
+      "alternateTitles": [
+        "/ Gattaca"
+      ],
+      "year": 1997,
+      "rating": 8.8,
+      "ratingCount": 357098,
+      "url": "https://movie.douban.com/subject/1300117/",
+      "subjectID": "1300117",
+      "metadataText": "导演: 安德鲁·尼科尔 Andrew Niccol 主演: 伊桑·霍克 Ethan Hawke / 乌玛... 1997 / 美国 / 剧情 科幻 惊悚"
+    },
+    {
+      "rank": 225,
+      "title": "人工智能",
+      "alternateTitles": [
+        "/ A.I. Artificial Intelligence"
+      ],
+      "year": 2001,
+      "rating": 8.7,
+      "ratingCount": 509907,
+      "url": "https://movie.douban.com/subject/1302827/",
+      "subjectID": "1302827",
+      "metadataText": "导演: 史蒂文·斯皮尔伯格 Steven Spielberg 主演: 海利·乔·奥斯蒙 Haley... 2001 / 美国 / 剧情 科幻"
+    },
+    {
+      "rank": 226,
+      "title": "崖上的波妞",
+      "alternateTitles": [
+        "/ 崖の上のポニョ"
+      ],
+      "year": 2008,
+      "rating": 8.6,
+      "ratingCount": 582527,
+      "url": "https://movie.douban.com/subject/1959877/",
+      "subjectID": "1959877",
+      "metadataText": "导演: 宫崎骏 Hayao Miyazaki 主演: 奈良柚莉爱 Yuria Nara / 土井洋辉 Hir... 2008 / 日本 / 动画 奇幻 冒险"
+    },
+    {
+      "rank": 227,
+      "title": "虎口脱险",
+      "alternateTitles": [
+        "/ La grande vadrouille"
+      ],
+      "year": 1966,
+      "rating": 8.9,
+      "ratingCount": 300137,
+      "url": "https://movie.douban.com/subject/1296909/",
+      "subjectID": "1296909",
+      "metadataText": "导演: 杰拉尔·乌里 Gérard Oury 主演: 路易·德·菲耐斯 Louis de Funès... 1966 / 法国 英国 / 喜剧 战争"
+    },
+    {
+      "rank": 228,
+      "title": "雨人",
+      "alternateTitles": [
+        "/ Rain Man"
+      ],
+      "year": 1988,
+      "rating": 8.7,
+      "ratingCount": 446855,
+      "url": "https://movie.douban.com/subject/1291870/",
+      "subjectID": "1291870",
+      "metadataText": "导演: 巴瑞·莱文森 Barry Levinson 主演: 达斯汀·霍夫曼 Dustin Hoffman ... 1988 / 美国 / 剧情"
+    },
+    {
+      "rank": 229,
+      "title": "彗星来的那一夜",
+      "alternateTitles": [
+        "/ Coherence"
+      ],
+      "year": 2013,
+      "rating": 8.6,
+      "ratingCount": 696181,
+      "url": "https://movie.douban.com/subject/25807345/",
+      "subjectID": "25807345",
+      "metadataText": "导演: 詹姆斯·沃德·布柯特 James Ward Byrkit 主演: 艾米丽·芭尔多尼 Em... 2013 / 美国 英国 / 科幻 悬疑 惊悚"
+    },
+    {
+      "rank": 230,
+      "title": "哈利·波特与凤凰社",
+      "alternateTitles": [
+        "/ Harry Potter and the Order of the Phoenix"
+      ],
+      "year": 2007,
+      "rating": 8.6,
+      "ratingCount": 705612,
+      "url": "https://movie.douban.com/subject/1457217/",
+      "subjectID": "1457217",
+      "metadataText": "导演: 大卫·叶茨 David Yates 主演: 丹尼尔·雷德克里夫 Daniel Radcliffe... 2007 / 英国 美国 / 奇幻 冒险"
+    },
+    {
+      "rank": 231,
+      "title": "罗生门",
+      "alternateTitles": [
+        "/ 羅生門"
+      ],
+      "year": 1950,
+      "rating": 8.8,
+      "ratingCount": 362732,
+      "url": "https://movie.douban.com/subject/1291879/",
+      "subjectID": "1291879",
+      "metadataText": "导演: 黑泽明 Akira Kurosawa 主演: 三船敏郎 Toshirô Mifune / 京町子 ... 1950 / 日本 / 剧情 犯罪 悬疑"
+    },
+    {
+      "rank": 232,
+      "title": "海边的曼彻斯特",
+      "alternateTitles": [
+        "/ Manchester by the Sea"
+      ],
+      "year": 2016,
+      "rating": 8.6,
+      "ratingCount": 663290,
+      "url": "https://movie.douban.com/subject/25980443/",
+      "subjectID": "25980443",
+      "metadataText": "导演: 肯尼斯·罗纳根 Kenneth Lonergan 主演: 卡西·阿弗莱克 Casey Affle... 2016 / 美国 / 剧情 家庭"
+    },
+    {
+      "rank": 233,
+      "title": "火星救援",
+      "alternateTitles": [
+        "/ The Martian"
+      ],
+      "year": 2015,
+      "rating": 8.5,
+      "ratingCount": 849292,
+      "url": "https://movie.douban.com/subject/25864085/",
+      "subjectID": "25864085",
+      "metadataText": "导演: 雷德利·斯科特 Ridley Scott 主演: 马特·达蒙 Matt Damon / 杰西卡... 2015 / 英国 美国 匈牙利 约旦 / 剧情 科幻 冒险"
+    },
+    {
+      "rank": 234,
+      "title": "恋恋笔记本",
+      "alternateTitles": [
+        "/ The Notebook"
+      ],
+      "year": 2004,
+      "rating": 8.5,
+      "ratingCount": 757663,
+      "url": "https://movie.douban.com/subject/1309163/",
+      "subjectID": "1309163",
+      "metadataText": "导演: 尼克·卡索维茨 Nick Cassavetes 主演: 瑞恩·高斯林 Ryan Gosling /... 2004 / 美国 / 剧情 爱情"
+    },
+    {
+      "rank": 235,
+      "title": "真爱至上",
+      "alternateTitles": [
+        "/ Love Actually"
+      ],
+      "year": 2003,
+      "rating": 8.5,
+      "ratingCount": 813846,
+      "url": "https://movie.douban.com/subject/1292401/",
+      "subjectID": "1292401",
+      "metadataText": "导演: 理查德·柯蒂斯 Richard Curtis 主演: 休·格兰特 Hugh Grant / 连姆... 2003 / 英国 美国 法国 / 喜剧 剧情 爱情"
+    },
+    {
+      "rank": 236,
+      "title": "黑客帝国2：重装上阵",
+      "alternateTitles": [
+        "/ The Matrix Reloaded"
+      ],
+      "year": 2003,
+      "rating": 8.7,
+      "ratingCount": 460964,
+      "url": "https://movie.douban.com/subject/1304141/",
+      "subjectID": "1304141",
+      "metadataText": "导演: 拉娜·沃卓斯基 Lana Wachowski / 莉莉·沃卓斯基 Lilly Wachowski ... 2003 / 美国 / 动作 科幻"
+    },
+    {
+      "rank": 237,
+      "title": "冰雪奇缘",
+      "alternateTitles": [
+        "/ Frozen"
+      ],
+      "year": 2013,
+      "rating": 8.5,
+      "ratingCount": 844923,
+      "url": "https://movie.douban.com/subject/4202982/",
+      "subjectID": "4202982",
+      "metadataText": "导演: 克里斯·巴克 Chris Buck / 珍妮弗·李 Jennifer Lee 主演: 克里斯汀... 2013 / 美国 / 喜剧 动画 奇幻 歌舞"
+    },
+    {
+      "rank": 238,
+      "title": "步履不停",
+      "alternateTitles": [
+        "/ 歩いても 歩いても"
+      ],
+      "year": 2008,
+      "rating": 8.8,
+      "ratingCount": 333246,
+      "url": "https://movie.douban.com/subject/2222996/",
+      "subjectID": "2222996",
+      "metadataText": "导演: 是枝裕和 Hirokazu Koreeda 主演: 阿部宽 Hiroshi Abe / 夏川结衣 Yu... 2008 / 日本 / 剧情 家庭"
+    },
+    {
+      "rank": 239,
+      "title": "千年女优",
+      "alternateTitles": [
+        "/ 千年女優"
+      ],
+      "year": 2001,
+      "rating": 8.8,
+      "ratingCount": 322449,
+      "url": "https://movie.douban.com/subject/1307394/",
+      "subjectID": "1307394",
+      "metadataText": "导演: 今敏 Satoshi Kon 主演: 庄司美代子 Miyoko Shôji / 小山茉美 Mam... 2001 / 日本 / 动画 剧情 爱情"
+    },
+    {
+      "rank": 240,
+      "title": "奇迹男孩",
+      "alternateTitles": [
+        "/ Wonder"
+      ],
+      "year": 2017,
+      "rating": 8.6,
+      "ratingCount": 605494,
+      "url": "https://movie.douban.com/subject/26787574/",
+      "subjectID": "26787574",
+      "metadataText": "导演: 斯蒂芬·卓博斯基 Stephen Chbosky 主演: 雅各布·特伦布莱 Jacob Tr... 2017 / 美国 中国香港 / 剧情 儿童 家庭"
+    },
+    {
+      "rank": 241,
+      "title": "蜘蛛侠：平行宇宙",
+      "alternateTitles": [
+        "/ Spider-Man: Into the Spider-Verse"
+      ],
+      "year": 2018,
+      "rating": 8.6,
+      "ratingCount": 765578,
+      "url": "https://movie.douban.com/subject/26374197/",
+      "subjectID": "26374197",
+      "metadataText": "导演: 鲍勃·佩尔西凯蒂 Bob Persichetti / 彼得·拉姆齐 Peter Ramsey 主... 2018 / 美国 / 动作 科幻 动画 冒险"
+    },
+    {
+      "rank": 242,
+      "title": "谍影重重2",
+      "alternateTitles": [
+        "/ The Bourne Supremacy"
+      ],
+      "year": 2004,
+      "rating": 8.7,
+      "ratingCount": 404959,
+      "url": "https://movie.douban.com/subject/1308767/",
+      "subjectID": "1308767",
+      "metadataText": "导演: 保罗·格林格拉斯 Paul Greengrass 主演: 马特·达蒙 Matt Damon / ... 2004 / 美国 德国 / 动作 悬疑 惊悚"
+    },
+    {
+      "rank": 243,
+      "title": "战争之王",
+      "alternateTitles": [
+        "/ Lord of War"
+      ],
+      "year": 2005,
+      "rating": 8.7,
+      "ratingCount": 420085,
+      "url": "https://movie.douban.com/subject/1419936/",
+      "subjectID": "1419936",
+      "metadataText": "导演: 安德鲁·尼科尔 Andrew Niccol 主演: 尼古拉斯·凯奇 Nicolas Cage /... 2005 / 美国 德国 / 剧情 犯罪"
+    },
+    {
+      "rank": 244,
+      "title": "攻壳机动队",
+      "alternateTitles": [
+        "/ 攻殻機動隊"
+      ],
+      "year": 1995,
+      "rating": 9.0,
+      "ratingCount": 222871,
+      "url": "https://movie.douban.com/subject/1291936/",
+      "subjectID": "1291936",
+      "metadataText": "导演: 押井守 Mamoru Oshii 主演: 田中敦子 Atsuko Tanaka / 大冢明夫 Akio... 1995 / 日本 / 动作 科幻 动画"
+    },
+    {
+      "rank": 245,
+      "title": "血钻",
+      "alternateTitles": [
+        "/ Blood Diamond"
+      ],
+      "year": 2006,
+      "rating": 8.7,
+      "ratingCount": 426056,
+      "url": "https://movie.douban.com/subject/1428175/",
+      "subjectID": "1428175",
+      "metadataText": "导演: 爱德华·兹威克 Edward Zwick 主演: 莱昂纳多·迪卡普里奥 Leonardo ... 2006 / 美国 德国 英国 / 剧情 惊悚 冒险"
+    },
+    {
+      "rank": 246,
+      "title": "小姐",
+      "alternateTitles": [
+        "/ 아가씨"
+      ],
+      "year": 2016,
+      "rating": 8.5,
+      "ratingCount": 587752,
+      "url": "https://movie.douban.com/subject/25977027/",
+      "subjectID": "25977027",
+      "metadataText": "导演: 朴赞郁 Chan-wook Park 主演: 金敏喜 Min-hee Kim / 金泰梨 Tae-ri K... 2016 / 韩国 / 剧情 悬疑 情色 同性"
+    },
+    {
+      "rank": 247,
+      "title": "血观音",
+      "alternateTitles": [
+        "/ 血觀音"
+      ],
+      "year": 2017,
+      "rating": 8.6,
+      "ratingCount": 576586,
+      "url": "https://movie.douban.com/subject/27113517/",
+      "subjectID": "27113517",
+      "metadataText": "导演: 杨雅喆 Ya-che Yang 主演: 惠英红 Kara Wai Ying Hung / 吴可熙 Wu K... 2017 / 中国台湾 / 剧情 悬疑"
+    },
+    {
+      "rank": 248,
+      "title": "隐藏人物",
+      "alternateTitles": [
+        "/ Hidden Figures"
+      ],
+      "year": 2016,
+      "rating": 8.9,
+      "ratingCount": 277960,
+      "url": "https://movie.douban.com/subject/26615208/",
+      "subjectID": "26615208",
+      "metadataText": "导演: 特奥多尔·梅尔菲 Theodore Melfi 主演: 塔拉吉·P·汉森 Taraji P. ... 2016 / 美国 / 剧情 传记 历史"
+    },
+    {
+      "rank": 249,
+      "title": "魂断蓝桥",
+      "alternateTitles": [
+        "/ Waterloo Bridge"
+      ],
+      "year": 1940,
+      "rating": 8.8,
+      "ratingCount": 313891,
+      "url": "https://movie.douban.com/subject/1293964/",
+      "subjectID": "1293964",
+      "metadataText": "导演: 茂文·勒鲁瓦 Mervyn LeRoy 主演: 费雯·丽 Vivien Leigh / 罗伯特·... 1940 / 美国 / 剧情 爱情 战争"
+    },
+    {
+      "rank": 250,
+      "title": "房间",
+      "alternateTitles": [
+        "/ Room"
+      ],
+      "year": 2015,
+      "rating": 8.7,
+      "ratingCount": 403176,
+      "url": "https://movie.douban.com/subject/25724855/",
+      "subjectID": "25724855",
+      "metadataText": "导演: 伦尼·阿伯拉罕森 Lenny Abrahamson 主演: 布丽·拉尔森 Brie Larson... 2015 / 爱尔兰 加拿大 英国 美国 / 剧情 家庭"
+    }
+  ]
+}

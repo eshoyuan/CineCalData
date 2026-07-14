@@ -87,11 +87,36 @@ def fetch_douban_top250() -> list[dict[str, Any]]:
     records: list[dict[str, Any]] = []
     for start in range(0, 250, 25):
         query = urllib.parse.urlencode({"start": start, "filter": ""})
-        records.extend(parse_douban_top250_page(f"{DOUBAN_TOP250}?{query}"))
+        page_records: list[dict[str, Any]] = []
+        for attempt in range(2):
+            page_records = parse_douban_top250_page(read_text(f"{DOUBAN_TOP250}?{query}"))
+            if page_records:
+                break
+            time.sleep(2 + attempt)
+        records.extend(page_records)
         if start < 225:
-            time.sleep(0.25)
+            time.sleep(1.25)
     unique = {record["subjectID"]: record for record in records if record["subjectID"]}
     return sorted(unique.values(), key=lambda item: item["rank"])
+
+
+def write_douban_top250_snapshot(path: Path, records: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schemaVersion": 1,
+        "generatedAt": utc_now(),
+        "source": DOUBAN_TOP250,
+        "count": len(records),
+        "items": records,
+    }
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+
+
+def read_douban_top250_snapshot(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text())
+    return list(payload.get("items", []))
 
 
 def source_rank_score(source_ranks: dict[str, int]) -> float:
@@ -384,11 +409,20 @@ def build_catalog(args: argparse.Namespace) -> dict[str, Any]:
 
     top250: list[dict[str, Any]] = []
     if not args.skip_douban_top250:
+        cache_path = Path(args.douban_top250_cache)
         try:
             top250 = fetch_douban_top250()
-            items = merge_douban_top250(items, top250, generated_at)
+            if len(top250) >= 200:
+                write_douban_top250_snapshot(cache_path, top250)
+            else:
+                top250 = read_douban_top250_snapshot(cache_path)
         except (OSError, ValueError) as error:
             print(f"warning: Douban Top 250 unavailable: {error}")
+            top250 = read_douban_top250_snapshot(cache_path)
+        if top250:
+            items = merge_douban_top250(items, top250, generated_at)
+        else:
+            print("warning: no Douban Top 250 live response or offline snapshot was available")
     enrich_douban(items, args.douban_enrich_limit)
 
     existing_items: list[dict[str, Any]] = []
@@ -433,11 +467,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--detail-limit", type=int, default=400)
     parser.add_argument("--douban-enrich-limit", type=int, default=180)
     parser.add_argument("--skip-douban-top250", action="store_true")
+    parser.add_argument("--douban-top250-cache", default="data/sources/douban-top250.json")
+    parser.add_argument("--snapshot-douban-top250", metavar="PATH")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    if args.snapshot_douban_top250:
+        records = fetch_douban_top250()
+        if len(records) != 250:
+            raise SystemExit(f"Expected 250 Douban records, received {len(records)}")
+        write_douban_top250_snapshot(Path(args.snapshot_douban_top250), records)
+        print(json.dumps({"doubanTop250": len(records)}, ensure_ascii=False))
+        return
     catalog = build_catalog(args)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)

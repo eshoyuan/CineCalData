@@ -16,6 +16,10 @@ with recent popularity signals, deduplicates primarily by TMDB ID and secondaril
 title plus year, and keeps a precomposed `searchableText` field for future embedding generation.
 Known Douban ratings below 7.0 are excluded.
 
+`sources/douban-top250.json` is an offline seed snapshot. GitHub-hosted runners may receive a
+challenge page instead of the public Top 250 listing, so bootstrap uses this checked-in snapshot
+when a complete live response is unavailable. The daily incremental job never re-scrapes it.
+
 - Keep `schemaVersion` at `1` until the client model changes.
 - Use local calendar dates in `YYYY-MM-DD` format.
 - Store final movie images in this GitHub repository. New entries provide `imageURLSmall` and

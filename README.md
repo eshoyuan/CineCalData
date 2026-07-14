@@ -23,9 +23,10 @@ short original editorial sentence and a link to its Douban subject page.
 
 ## Live preview
 
-[Open the interactive iPhone and Widget preview](https://eshoyuan.github.io/CineCalData/).
-The page reads the public JSON directly, supports date navigation and shuffle,
-and renders both the small and medium Widget layouts.
+[Open the interactive Widget preview](https://eshoyuan.github.io/CineCalData/).
+The page reads the full public catalog directly, maps every date to three stable
+candidates, supports date navigation and shuffle, and renders only the small and
+medium Widget layouts. It does not imitate the surrounding iPhone UI.
 
 ## Content and copyright
 
@@ -66,8 +67,26 @@ Douban Top 250, TMDB top-rated movies and series, popular titles, and weekly
 trending titles. Incremental mode checks stable TMDB IDs before merging popular,
 trending, and recently released titles into the existing snapshot.
 
-Every recommendation has a quality score of at least 7.0. A known Douban score
+The current offline snapshot contains 1,173 unique recommendations, including
+the complete Douban Top 250, and 1,043 titles with separate widget-ready small
+and medium images. Every recommendation has a quality score of at least 7.0. A known Douban score
 below 7.0 always excludes the title, even when its TMDB score is higher. Rich
 records retain genres, creators, cast, keywords, overview, rating counts,
 popularity signals, images, source ranks, and a normalized `searchableText` field
-that can be embedded later without changing the catalog contract.
+that is embedded locally with the 300M-parameter EmbeddingGemma MLX model. The
+first 128 Matryoshka dimensions are re-normalized and stored as compact float16
+rows for on-device cosine ranking.
+
+## Offline assets and embeddings
+
+Install `requirements-offline.txt` on an Apple Silicon Mac, then run:
+
+```sh
+python scripts/materialize_catalog_images.py
+python scripts/build_embeddings.py
+```
+
+The image job downloads each source backdrop once, uses Apple Vision face and
+attention saliency analysis, and writes independent 760×760 and 1080×508 JPEGs
+under `data/catalog-images`. The embedding job writes `data/embeddings.f16` plus
+`data/embeddings-index.json`; no model or image analysis runs on the iPhone.

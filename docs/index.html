@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b0c10">
   <meta name="description" content="CineCal 电影日历小组件在线预览器">
   <title>CineCal · Widget Preview</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="topbar">
@@ -23,7 +23,7 @@
         <p class="eyebrow">每天一帧电影</p>
         <h1>电影日历小组件</h1>
       </div>
-      <p>选择日期或随机漫游，查看当天的小号与中号组件。</p>
+      <p>选择日期并切换候选，直接检查本地裁切后的小号与中号成品图。</p>
     </section>
 
     <section class="controls" aria-label="日期控制器">
@@ -35,13 +35,15 @@
         </label>
         <button id="nextDate" class="icon-button" type="button" aria-label="下一个有数据的日期">›</button>
       </div>
-      <button id="shuffleDate" class="shuffle-button" type="button"><span aria-hidden="true">↝</span> 随机一天</button>
+      <button id="shuffleCandidate" class="shuffle-button" type="button"><span aria-hidden="true">↝</span> 换一部</button>
+      <button id="shuffleDate" class="shuffle-button secondary" type="button">随机一天</button>
     </section>
 
     <section class="size-comparison">
       <div class="section-heading">
-        <p id="selectedDateLabel" class="eyebrow">正在读取公开数据</p>
+        <p id="selectedDateLabel" class="eyebrow">正在读取公开目录</p>
         <h2>两种尺寸，同一份内容。</h2>
+        <span id="candidateLabel" class="candidate-label"></span>
       </div>
       <div class="comparison-stage">
         <figure><div id="smallWidget"></div><figcaption><strong>小号</strong><span>1:1 · 169 × 169 pt</span></figcaption></figure>
@@ -70,6 +72,6 @@
     </a>
   </template>
 
-  <script src="app.js?v=3" defer></script>
+  <script src="app.js?v=4" defer></script>
 </body>
 </html>

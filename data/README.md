@@ -16,6 +16,13 @@ with recent popularity signals, deduplicates primarily by TMDB ID and secondaril
 title plus year, and keeps a precomposed `searchableText` field for future embedding generation.
 Known Douban ratings below 7.0 are excluded.
 
+`catalog-images/` contains the materialized small and medium crops referenced by each catalog
+record. Crops are generated locally with Apple Vision face and attention-saliency boxes, so the
+web preview and iOS widget do not make runtime crop decisions.
+
+`embeddings.f16` is a little-endian, row-major float16 matrix. `embeddings-index.json` records the
+model, dimensions, checksum, and catalog-key order; each catalog item also stores its `embeddingRow`.
+
 `sources/douban-top250.json` is an offline seed snapshot. GitHub-hosted runners may receive a
 challenge page instead of the public Top 250 listing, so bootstrap uses this checked-in snapshot
 when a complete live response is unavailable. The daily incremental job never re-scrapes it.

@@ -100,11 +100,13 @@ h1 { margin: 0; font-size: clamp(38px, 5vw, 62px); line-height: 1; letter-spacin
   cursor: pointer;
 }
 .shuffle-button span { color: var(--orange); font-size: 18px; }
+.shuffle-button.secondary { border-color: var(--line); color: var(--muted); background: rgba(255, 255, 255, .045); }
 
 .size-comparison { padding: 34px 0 clamp(76px, 10vw, 120px); }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 24px; }
 .section-heading .eyebrow { margin: 0 0 4px; }
 .section-heading h2 { margin: 0; font-size: clamp(25px, 3.5vw, 42px); letter-spacing: -.04em; }
+.candidate-label { margin-left: auto; padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 10px; white-space: nowrap; }
 .comparison-stage {
   min-height: 450px;
   padding: clamp(32px, 6vw, 76px);
@@ -178,6 +180,8 @@ footer { padding: 26px clamp(20px, 5vw, 76px) 34px; display: flex; justify-conte
   .date-controls { width: 100%; }
   .date-field { min-width: 0; flex: 1; }
   .shuffle-button { width: 100%; height: 44px; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .candidate-label { margin-left: 0; }
   .section-heading h2 { font-size: 28px; }
   .comparison-stage { min-height: 0; padding: 34px 24px; border-radius: 24px; gap: 48px; }
   .comparison-stage figure { max-width: 100%; }

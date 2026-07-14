@@ -39,7 +39,8 @@ class AgentTests(unittest.TestCase):
         result = douban_lookup("花样年华", 2000)
         self.assertEqual(result["rating"], "8.8")
         self.assertEqual(result["doubanURL"], "https://movie.douban.com/subject/1291557/")
-        self.assertIn("%E8%8A%B1%E6%A0%B7%E5%B9%B4%E5%8D%8E+2000", request.call_args.args[0])
+        self.assertIn("q=%E8%8A%B1%E6%A0%B7%E5%B9%B4%E5%8D%8E", request.call_args.args[0])
+        self.assertNotIn("+2000", request.call_args.args[0])
 
     @patch("media_provider.request_json")
     def test_douban_rejects_rating_from_wrong_adaptation_year(self, request):

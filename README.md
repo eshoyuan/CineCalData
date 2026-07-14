@@ -67,9 +67,12 @@ Douban Top 250, TMDB top-rated movies and series, popular titles, and weekly
 trending titles. Incremental mode checks stable TMDB IDs before merging popular,
 trending, and recently released titles into the existing snapshot.
 
-The current offline snapshot contains 1,173 unique recommendations, including
-the complete Douban Top 250, and 1,165 titles with separate widget-ready small
-and medium images. Every recommendation has a source quality score of at least 7.0. A known Douban
+The current snapshot contains 1,183 unique recommendations, including the stable
+offline pool, the complete Douban Top 250, and the latest incremental additions.
+1,173 titles have separate widget-ready small and medium images; 1,002 complete
+public cards also have a canonical Douban subject,
+a Douban score of at least 6.0, and independently reviewed original editorial copy.
+Every recommendation has a source quality score of at least 7.0. A known Douban
 score below 6.0 always excludes the title, even when its TMDB score is higher. Rich
 records retain genres, creators, cast, keywords, overview, rating counts,
 popularity signals, images, source ranks, and a normalized `searchableText` field

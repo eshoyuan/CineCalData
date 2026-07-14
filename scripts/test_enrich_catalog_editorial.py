@@ -5,7 +5,9 @@ from enrich_catalog_editorial import (
     MIN_DOUBAN_SCORE,
     PROMPT_VERSION,
     build_prompt,
+    build_local_draft_prompt,
     build_review_prompt,
+    catalog_quality_summary,
     needs_enrichment,
 )
 
@@ -49,6 +51,39 @@ class EditorialEnrichmentTests(unittest.TestCase):
         self.assertIn('"key": "a"', prompt)
         self.assertIn('"key": "b"', prompt)
         self.assertIn("Never merge, omit, or change an input key", prompt)
+
+    def test_local_draft_prompt_does_not_change_verified_facts(self):
+        item = {
+            "key": "x",
+            "title": "霸王别姬",
+            "ratings": {"douban": {"score": 9.6, "url": "https://movie.douban.com/subject/1291546/"}},
+            "images": {},
+        }
+        prompt = build_local_draft_prompt([item])
+        self.assertIn("Do not search for or change those factual fields", prompt)
+        self.assertIn("based only on the supplied metadata", prompt)
+
+    def test_quality_summary_requires_complete_reviewed_cards(self):
+        complete = {
+            "ratings": {"douban": {"score": 8.8, "url": "https://movie.douban.com/subject/1295644/"}},
+            "images": {"small": "small.jpg", "medium": "medium.jpg"},
+            "editorial": {
+                "quote": "潮水退去以后，沉默仍替相遇保管余温",
+                "promptVersion": PROMPT_VERSION,
+                "review": {"scores": {
+                    "relevance": 8, "literary": 9, "specificity": 8,
+                    "spoilerSafety": 10, "widgetFit": 9,
+                }},
+            },
+        }
+        incomplete = {
+            **complete,
+            "editorial": {**complete["editorial"], "review": {"scores": {"relevance": 7}}},
+        }
+        summary = catalog_quality_summary([complete, incomplete])
+        self.assertEqual(summary["directDoubanAtLeastSixTotal"], 2)
+        self.assertEqual(summary["completeCardTotal"], 1)
+        self.assertEqual(summary["failedReviewTotal"], 1)
 
 
 if __name__ == "__main__":

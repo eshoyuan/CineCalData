@@ -111,6 +111,11 @@ async function loadData() {
       && /^https:\/\/movie\.douban\.com\/subject\/\d+\/$/.test(item.ratings?.douban?.url || "")
       && Number.isFinite(item.ratings?.douban?.score)
       && item.ratings.douban.score >= 6
+      && item.editorial?.promptVersion === "catalog-editorial-v2"
+      && Boolean(item.editorial?.quote)
+      && ["relevance", "literary", "specificity", "spoilerSafety", "widgetFit"].every(
+        (score) => Number(item.editorial?.review?.scores?.[score] || 0) >= 8,
+      )
     ));
     const params = new URLSearchParams(location.search);
     state.selectedDate = /^\d{4}-\d{2}-\d{2}$/.test(params.get("date") || "") ? params.get("date") : localDateKey();

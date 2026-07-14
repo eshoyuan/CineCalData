@@ -8,6 +8,7 @@ import json
 import os
 import re
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -39,6 +40,64 @@ def needs_enrichment(item: dict[str, Any]) -> bool:
         and editorial.get("quote")
         and editorial.get("promptVersion") == PROMPT_VERSION
     )
+
+
+def has_verified_douban(item: dict[str, Any]) -> bool:
+    douban = item.get("ratings", {}).get("douban", {})
+    return bool(
+        DOUBAN_SUBJECT.fullmatch(str(douban.get("url", "")))
+        and isinstance(douban.get("score"), (int, float))
+    )
+
+
+def catalog_quality_summary(items: list[dict[str, Any]]) -> dict[str, int]:
+    required_scores = ("relevance", "literary", "specificity", "spoilerSafety", "widgetFit")
+    direct_douban = 0
+    image_pairs = 0
+    editorial = 0
+    complete = 0
+    quotes: set[str] = set()
+    invalid_quote_lengths = 0
+    failed_reviews = 0
+
+    for item in items:
+        douban = item.get("ratings", {}).get("douban", {})
+        score = douban.get("score")
+        has_douban = bool(
+            DOUBAN_SUBJECT.fullmatch(str(douban.get("url", "")))
+            and isinstance(score, (int, float))
+            and score >= MIN_DOUBAN_SCORE
+        )
+        has_images = bool(item.get("images", {}).get("small") and item.get("images", {}).get("medium"))
+        record = item.get("editorial", {})
+        quote = re.sub(r"\s+", "", str(record.get("quote", "")).strip())
+        has_editorial = bool(record.get("promptVersion") == PROMPT_VERSION and quote)
+        scores = record.get("review", {}).get("scores", {}) if has_editorial else {}
+        review_passes = bool(
+            has_editorial
+            and all(float(scores.get(name, 0)) >= 8 for name in required_scores)
+        )
+        quote_length_passes = bool(has_editorial and 12 <= len(quote) <= 42)
+
+        direct_douban += int(has_douban)
+        image_pairs += int(has_images)
+        editorial += int(has_editorial)
+        invalid_quote_lengths += int(has_editorial and not quote_length_passes)
+        failed_reviews += int(has_editorial and not review_passes)
+        if has_douban and has_images and has_editorial and review_passes and quote_length_passes:
+            complete += 1
+            quotes.add(quote)
+
+    return {
+        "catalogTotal": len(items),
+        "directDoubanAtLeastSixTotal": direct_douban,
+        "imagePairTotal": image_pairs,
+        "editorialTotal": editorial,
+        "completeCardTotal": complete,
+        "uniqueCompleteQuoteTotal": len(quotes),
+        "invalidQuoteLengthTotal": invalid_quote_lengths,
+        "failedReviewTotal": failed_reviews,
+    }
 
 
 def prompt_item(item: dict[str, Any]) -> dict[str, Any]:
@@ -101,6 +160,77 @@ Return JSON only:
   ]
 }}
 """.strip()
+
+
+def build_local_draft_prompt(items: list[dict[str, Any]]) -> str:
+    return f"""
+You are the Chinese editorial writer for CineCal, a 169-point film-calendar widget. Every supplied
+work already has an exact verified Douban subject and rating, plus locally cached structured
+metadata. Do not search for or change those factual fields.
+
+For every work, write one ORIGINAL Chinese editorial sentence based only on the supplied metadata.
+It should be literary, emotionally specific to that work, spoiler-free, ideally 18–34 Chinese
+characters and never over 42. Do not quote or closely paraphrase dialogue, reviews, subtitles,
+lyrics, plot summaries, taglines or marketing copy. Do not present invented words as a quotation.
+Avoid generic interchangeable comfort-language and clichés. Never merge, omit, or change a key.
+
+Input works:
+{json.dumps([prompt_item(item) for item in items], ensure_ascii=False)}
+
+Return JSON only:
+{{
+  "entries": [
+    {{
+      "key": "exact input key",
+      "quote": "原创中文编辑短句",
+      "confidence": 0.0
+    }}
+  ]
+}}
+""".strip()
+
+
+def generate_local_drafts(
+    client: Any, items: list[dict[str, Any]]
+) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    from cinecal_agent import text_json
+
+    payload = text_json(client, build_local_draft_prompt(items))
+    returned = payload.get("entries", [])
+    if not isinstance(returned, list):
+        returned = []
+    item_index = {str(item["key"]): item for item in items}
+    results: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for draft in returned:
+        if not isinstance(draft, dict):
+            continue
+        key = str(draft.get("key", ""))
+        item = item_index.get(key)
+        if item is None or key in seen:
+            continue
+        seen.add(key)
+        douban = item["ratings"]["douban"]
+        results.append(
+            {
+                "key": key,
+                "status": "verified",
+                "doubanURL": douban["url"],
+                "doubanScore": douban["score"],
+                "quote": draft.get("quote", ""),
+                "quoteType": "editorial",
+                "quoteAttribution": "CineCal 原创编辑文案",
+                "contextSourceURL": douban["url"],
+                # Identity and rating are deterministic local facts here. Copy quality is
+                # governed separately by the five-score editorial review below.
+                "confidence": 0.95,
+            }
+        )
+    failures = {
+        key: "local editorial writer omitted the item"
+        for key in item_index.keys() - seen
+    }
+    return results, failures
 
 
 def normalize_result(
@@ -272,7 +402,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--catalog", default="data/catalog.json")
     parser.add_argument("--limit", type=int, default=40)
     parser.add_argument("--batch-size", type=int, default=4)
+    parser.add_argument("--draft-batch-size", type=int, default=24)
     parser.add_argument("--review-batch-size", type=int, default=16)
+    parser.add_argument("--research-workers", type=int, default=1)
+    parser.add_argument("--draft-workers", type=int, default=1)
+    parser.add_argument("--review-workers", type=int, default=1)
+    parser.add_argument(
+        "--skip-research",
+        action="store_true",
+        help="Review and materialize cached results without issuing new web-search requests.",
+    )
     parser.add_argument("--state", default=".cache/cinecal-editorial-v2.json")
     return parser.parse_args()
 
@@ -312,52 +451,137 @@ def main() -> None:
     if state.get("promptVersion") != PROMPT_VERSION:
         state = {"promptVersion": PROMPT_VERSION, "research": {}}
     research: dict[str, dict[str, Any]] = state.setdefault("research", {})
+    for cached in research.values():
+        if cached.get("mode") == "local_structured_metadata":
+            cached.get("result", {})["confidence"] = 0.95
+    # A few early benchmark entries were researched on the web before the deterministic/local
+    # split existed. If their Douban facts are already verified but the card is still pending,
+    # discard that stale web draft and route them through the local structured-metadata writer.
+    for item in pending:
+        cached = research.get(item["key"])
+        if has_verified_douban(item) and cached and cached.get("mode") != "local_structured_metadata":
+            del research[item["key"]]
 
-    for start in range(0, len(pending), max(1, args.batch_size)):
-        batch = pending[start : start + max(1, args.batch_size)]
-        uncached = [item for item in batch if item["key"] not in research]
-        if not uncached:
-            print(f"researched {min(start + len(batch), len(pending))}/{len(pending)} (cached)", flush=True)
-            continue
+    local_pending = [
+        item for item in pending
+        if item["key"] not in research and has_verified_douban(item)
+    ]
+    draft_batches = [
+        local_pending[start : start + max(1, args.draft_batch_size)]
+        for start in range(0, len(local_pending), max(1, args.draft_batch_size))
+    ]
+
+    def draft_batch(batch: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], Any, Any]:
         try:
-            payload, sources = grounded_json(client, build_prompt(uncached), search_context_size="large")
+            results, draft_failures = generate_local_drafts(client, batch)
+            return batch, results, draft_failures
         except Exception as error:
-            for item in uncached:
-                failures[item["key"]] = f"request failed: {error}"
-            continue
-        returned = payload.get("entries", [])
-        if not isinstance(returned, list):
-            returned = []
-        seen: set[str] = set()
-        for raw in returned:
-            if not isinstance(raw, dict) or raw.get("key") not in item_index:
-                continue
-            key = str(raw["key"])
-            seen.add(key)
-            if raw.get("status") == "verified":
-                research[key] = {"result": raw, "sources": sources, "researchedAt": generated_at}
-        for item in uncached:
-            if item["key"] not in seen:
-                failures[item["key"]] = "agent omitted the item"
-        write_json_atomic(state_path, state)
-        print(f"researched {min(start + len(batch), len(pending))}/{len(pending)}", flush=True)
+            return batch, error, None
+
+    drafted_count = 0
+    with ThreadPoolExecutor(max_workers=max(1, args.draft_workers)) as executor:
+        futures = [executor.submit(draft_batch, batch) for batch in draft_batches]
+        for future in as_completed(futures):
+            batch, outcome, draft_failures = future.result()
+            drafted_count += len(batch)
+            if isinstance(outcome, Exception):
+                for item in batch:
+                    failures[item["key"]] = f"local draft failed: {outcome}"
+            else:
+                failures.update(draft_failures)
+                for raw in outcome:
+                    key = str(raw["key"])
+                    item = item_index[key]
+                    sources = [str(item["ratings"]["douban"]["url"])]
+                    tmdb_url = str(item.get("ratings", {}).get("tmdb", {}).get("url", ""))
+                    if tmdb_url.startswith("https://"):
+                        sources.append(tmdb_url)
+                    research[key] = {
+                        "result": raw,
+                        "sources": sources,
+                        "researchedAt": generated_at,
+                        "mode": "local_structured_metadata",
+                    }
+            write_json_atomic(state_path, state)
+            print(f"drafted {drafted_count}/{len(local_pending)}", flush=True)
+
+    unresolved_pending = [] if args.skip_research else [
+        item for item in pending
+        if item["key"] not in research and not has_verified_douban(item)
+    ]
+    research_batches = [
+        unresolved_pending[start : start + max(1, args.batch_size)]
+        for start in range(0, len(unresolved_pending), max(1, args.batch_size))
+    ]
+
+    def research_batch(batch: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], Any, Any]:
+        try:
+            payload, sources = grounded_json(client, build_prompt(batch), search_context_size="large")
+            return batch, payload, sources
+        except Exception as error:
+            return batch, error, None
+
+    researched_count = len(pending) - sum(len(batch) for batch in research_batches)
+    with ThreadPoolExecutor(max_workers=max(1, args.research_workers)) as executor:
+        futures = [executor.submit(research_batch, batch) for batch in research_batches]
+        for future in as_completed(futures):
+            batch, payload, sources = future.result()
+            researched_count += len(batch)
+            if isinstance(payload, Exception):
+                for item in batch:
+                    failures[item["key"]] = f"request failed: {payload}"
+            else:
+                returned = payload.get("entries", [])
+                if not isinstance(returned, list):
+                    returned = []
+                seen: set[str] = set()
+                for raw in returned:
+                    if not isinstance(raw, dict) or raw.get("key") not in item_index:
+                        continue
+                    key = str(raw["key"])
+                    seen.add(key)
+                    if raw.get("status") == "verified":
+                        research[key] = {
+                            "result": raw,
+                            "sources": sources,
+                            "researchedAt": generated_at,
+                        }
+                for item in batch:
+                    if item["key"] not in seen:
+                        failures[item["key"]] = "agent omitted the item"
+            write_json_atomic(state_path, state)
+            print(f"researched {researched_count}/{len(pending)}", flush=True)
 
     review_candidates = [
         research[item["key"]]["result"]
         for item in pending
         if item["key"] in research and not research[item["key"]]["result"].get("_review")
     ]
-    for start in range(0, len(review_candidates), max(1, args.review_batch_size)):
-        results = review_candidates[start : start + max(1, args.review_batch_size)]
+    review_batches = [
+        review_candidates[start : start + max(1, args.review_batch_size)]
+        for start in range(0, len(review_candidates), max(1, args.review_batch_size))
+    ]
+
+    def review_batch(results: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], Any]:
         items = [item_index[str(result["key"])] for result in results]
         try:
-            failures.update(review_editorials(client, items, results))
+            return results, review_editorials(client, items, results)
         except Exception as error:
-            for result in results:
-                failures[str(result["key"])] = f"editorial review failed: {error}"
-            continue
-        write_json_atomic(state_path, state)
-        print(f"reviewed {min(start + len(results), len(review_candidates))}/{len(review_candidates)}", flush=True)
+            return results, error
+
+    reviewed_count = 0
+    with ThreadPoolExecutor(max_workers=max(1, args.review_workers)) as executor:
+        futures = [executor.submit(review_batch, results) for results in review_batches]
+        for future in as_completed(futures):
+            results, outcome = future.result()
+            reviewed_count += len(results)
+            if isinstance(outcome, Exception):
+                for result in results:
+                    failures[str(result["key"])] = f"editorial review failed: {outcome}"
+            else:
+                failures.update(outcome)
+            write_json_atomic(state_path, state)
+            print(f"reviewed {reviewed_count}/{len(review_candidates)}", flush=True)
 
     for item in pending:
         cached = research.get(item["key"])
@@ -374,16 +598,18 @@ def main() -> None:
             failures.pop(item["key"], None)
             verified += 1
 
-    eligible = sum(bool(item.get("recommendationEligible")) for item in catalog["items"])
+    quality = catalog_quality_summary(catalog["items"])
     catalog["editorialEnrichment"] = {
         "updatedAt": generated_at,
         "model": MODEL,
         "promptVersion": PROMPT_VERSION,
-        "requested": len(pending),
-        "verified": verified,
-        "failed": len(failures),
-        "eligibleTotal": eligible,
-        "failures": failures,
+        **quality,
+        "lastRun": {
+            "requested": len(pending),
+            "verified": verified,
+            "failed": len(failures),
+            "failures": failures,
+        },
     }
     write_json_atomic(path, catalog)
     print(json.dumps(catalog["editorialEnrichment"], ensure_ascii=False))

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-14T20:09:11.640393Z",
+  "catalog": "data/catalog.json",
+  "model": "muse-spark-1.1",
+  "promptVersion": "catalog-editorial-v2",
+  "minimumDoubanScore": 6.0,
+  "catalogTotal": 1183,
+  "directDoubanAtLeastSixTotal": 1010,
+  "imagePairTotal": 1173,
+  "editorialTotal": 1002,
+  "completeCardTotal": 1002,
+  "uniqueCompleteQuoteTotal": 1002,
+  "invalidQuoteLengthTotal": 0,
+  "failedReviewTotal": 0,
+  "qualityPolicy": {
+    "quoteLengthCharacters": {
+      "minimum": 12,
+      "maximum": 42
+    },
+    "minimumReviewScore": 8,
+    "reviewDimensions": [
+      "relevance",
+      "literary",
+      "specificity",
+      "spoilerSafety",
+      "widgetFit"
+    ],
+    "requiresCanonicalDoubanSubject": true,
+    "requiresSmallAndMediumImages": true
+  }
+}

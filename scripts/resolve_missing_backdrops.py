@@ -13,6 +13,20 @@ from typing import Any
 from media_provider import MediaProviderError, TMDBProvider, normalized_title
 
 
+TMDB_YEAR_OVERRIDES = {
+    # Douban sometimes records a festival/restoration/public-release year while TMDB records the
+    # original premiere year. These pairs were manually audited by exact title and media type.
+    "douban:1291858": 25838,
+    "douban:1422283": 258424,
+    "douban:1428581": 134575,
+    "douban:1395091": 10494,
+    "douban:26580232": 411088,
+    "douban:1307394": 33320,
+    "douban:25917973": 292362,
+    "douban:25807345": 220289,
+}
+
+
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
@@ -32,9 +46,6 @@ def validate_match(item: dict[str, Any], result: dict[str, Any]) -> str | None:
     wanted_type = "tv" if item.get("mediaType") in {"tv", "series"} else "movie"
     if result.get("mediaType") != wanted_type:
         return "TMDB media type did not match"
-    year = item.get("year")
-    if year and result.get("releaseYear") and int(result["releaseYear"]) != int(year):
-        return "TMDB release year did not match"
     wanted_titles = title_set(
         str(item.get("title", "")),
         str(item.get("originalTitle", "")),
@@ -43,6 +54,11 @@ def validate_match(item: dict[str, Any], result: dict[str, Any]) -> str | None:
     returned_titles = title_set(str(result.get("title", "")), str(result.get("originalTitle", "")))
     if not wanted_titles.intersection(returned_titles):
         return "TMDB title did not match exactly"
+    year = item.get("year")
+    if year and result.get("releaseYear") and int(result["releaseYear"]) != int(year):
+        expected_tmdb_id = TMDB_YEAR_OVERRIDES.get(str(item.get("key", "")))
+        if expected_tmdb_id != int(result.get("tmdbID", 0)):
+            return "TMDB release year did not match"
     if not result.get("imageCandidates"):
         return "TMDB entity had no landscape image"
     return None

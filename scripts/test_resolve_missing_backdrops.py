@@ -26,6 +26,24 @@ class BackdropResolutionTests(unittest.TestCase):
         }
         self.assertIsNotNone(validate_match(item, result))
 
+    def test_accepts_audited_release_year_override(self):
+        item = {
+            "key": "douban:1291858",
+            "title": "鬼子来了",
+            "originalTitle": "",
+            "year": 2000,
+            "mediaType": "movie",
+        }
+        result = {
+            "tmdbID": 25838,
+            "title": "鬼子来了",
+            "originalTitle": "鬼子来了",
+            "releaseYear": 2001,
+            "mediaType": "movie",
+            "imageCandidates": [{"imageURL": "https://example.test/image.jpg"}],
+        }
+        self.assertIsNone(validate_match(item, result))
+
 
 if __name__ == "__main__":
     unittest.main()

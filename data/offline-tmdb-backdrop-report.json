@@ -1,16 +1,7 @@
 {
-  "updatedAt": "2026-07-14T17:14:08.472721Z",
-  "requested": 130,
-  "resolved": 122,
-  "failed": 8,
-  "failures": {
-    "douban:1291858": "TMDB release year did not match",
-    "douban:1422283": "TMDB release year did not match",
-    "douban:1428581": "TMDB release year did not match",
-    "douban:1395091": "TMDB release year did not match",
-    "douban:26580232": "TMDB release year did not match",
-    "douban:1307394": "TMDB release year did not match",
-    "douban:25917973": "TMDB release year did not match",
-    "douban:25807345": "TMDB release year did not match"
-  }
+  "updatedAt": "2026-07-14T19:16:46.455794Z",
+  "requested": 8,
+  "resolved": 8,
+  "failed": 0,
+  "failures": {}
 }

@@ -608,7 +608,12 @@ def main() -> int:
         raise SystemExit("MODEL_API_KEY is required. Store it as a GitHub Actions secret.")
 
     feed = load_calendar()
-    client = OpenAI(base_url="https://api.meta.ai/v1", api_key=api_key)
+    client = OpenAI(
+        base_url="https://api.meta.ai/v1",
+        api_key=api_key,
+        timeout=180.0,
+        max_retries=1,
+    )
     if args.movie:
         title = args.movie
         discovery_sources: list[str] = []

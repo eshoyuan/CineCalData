@@ -4,8 +4,8 @@
   "researchSources": [
     "https://en.wikipedia.org/wiki/Bastille_Day",
     "https://www.themoviedb.org/tv/81224",
-    "https://www.douban.com/j/search_suggest?debug=true&q=%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C",
-    "https://movie.douban.com/subject/6860160/",
+    "https://www.douban.com/j/search_suggest?debug=true&q=%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C+2018",
+    "https://movie.douban.com/subject/26842796/",
     "https://image.tmdb.org/t/p/original/uyN1hL0T7bda47EpAtvCsCZfYX2.jpg",
     "https://image.tmdb.org/t/p/original/45exme6h3yYFAnScri4Zke2yfZz.jpg",
     "https://image.tmdb.org/t/p/original/bAtVHuvLxqa3o5QLQrksfyk9kPR.jpg",
@@ -36,24 +36,24 @@
   "cropPlan": {
     "sourceAcceptable": true,
     "workIdentityMatch": true,
-    "identityReason": "BBC 2018 Les Miserables TV adaptation recognizable by period costume: Ellie Bamber as Cosette in blue Empire velvet dress with fur collar and poke bonnet and Josh O'Connor as Marius Pontmercy in top hat, frock coat and cravat, Luxembourg Gardens fountain scene which is specific to this screen version",
-    "sourceReason": "High resolution official promotional still with cinematic natural light, shallow depth of field, no typography, watermark, collage or painting artifacts; clear cast in character",
+    "identityReason": "Image shows Josh O'Connor as Marius Pontmercy in tall top hat and 1830s frock coat with cravat and Ellie Bamber as Cosette in blue velvet pelisse with fur collar and black bonnet, the Luxembourg Garden fountain promenade scene that is iconic to the BBC/Masterpiece 2018-2019 TV adaptation of Les Miserables. Costume, hair, and naturalistic cinematography match that exact screen production.",
+    "sourceReason": "High-resolution photographic still with cinematic depth of field, natural daylight and water spray, production-designed period costumes and location. Not a painting, stage costume, fan art or generic illustration. No overlaid typography or collage.",
     "subjects": [
       {
         "label": "person",
         "bbox": [
-          343,
+          347,
           12,
-          696,
+          711,
           998
         ]
       },
       {
         "label": "person",
         "bbox": [
-          587,
+          572,
           86,
-          960,
+          955,
           998
         ]
       }
@@ -66,31 +66,31 @@
         1000
       ],
       "compositionScore": 8,
-      "reason": "Full frame preserves both faces and top hat. Fountain mist on left gives clean negative space for upper-left date. Both subjects' eyes at y~25-45% safely above lower 38% title/quote block. Balanced tension with couple offset right, gaze leading into mist."
+      "reason": "Full-frame 1:1 preserves both figures right of center, leaving bright fountain bokeh in upper-left for date. Eyes at y~200-400 remain well above lower 38% text zone (y>620). Torso dress provides dark clean background for title/quote. No face or hand is intersected by crop edge; negative space balances tension."
     },
     "medium": {
       "crop": [
         0,
-        5,
+        12,
         1000,
-        474
+        482
       ],
       "compositionScore": 7,
-      "reason": "2.128:1 panoramic uses full width to keep fountain left for lower-left date and couple center-right. Crop height 469 ends at mid-chest, excluding hands cleanly without cutting through them. Eyes at y~45-60% of crop, kept as high as possible for ultra-wide ratio, leaving lower-middle for title/quote and lower-right for rating."
+      "reason": "2.128:1 wide band across upper image. Width 1000 height 470 = 2.127 ratio. Top at 12 includes top hat tip, bottom at 482 cuts below Cosette chin but above clasped hands to avoid cutting hands. Faces sit in upper-middle of strip, leaving ~50-120px of dark velvet and coat below for lower-left date, lower-middle title/quote and lower-right rating, preserving eyes outside text."
     }
   },
   "finalReview": {
     "small": {
       "pass": true,
-      "score": 9,
-      "reason": "Square crop keeps both faces, eyes, and hats fully visible outside red zones. Top box overlaps empty background and hat brim only; bottom box covers lower torsos/hands but faces and dramatic focal point remain clear. No decapitation, watermarks, or embedded text."
+      "score": 8,
+      "reason": "Square widget keeps both faces, eyes, hats and focal interaction fully clear above/beside red zones. Top box sits in negative sky with only minimal edge of top hat behind it. Bottom box covers only lower torsos/hands, allowed. No decapitation, crowding, watermark or embedded text. Attractive and story intact."
     },
     "medium": {
       "pass": true,
-      "score": 8,
-      "reason": "Medium crop keeps faces/eyes clear above text zones. Red boxes cover lower torso, fur collar and background only, not faces. Attractive framing retains story of the couple. No edge decapitation, watermarks, or embedded typography."
+      "score": 9,
+      "reason": "Widescreen widget preserves both faces, eyes, hats and period costumes clear of all three red zones. Zones occupy empty background left and lower clothing only. No face/eye or essential action obscured, no decapitation or edge crowding, no watermarks. Composition remains balanced and dramatic."
     },
     "overallPass": true
   },
-  "generatedAt": "2026-07-14T08:06:34.451620Z"
+  "generatedAt": "2026-07-14T08:12:06.398468Z"
 }

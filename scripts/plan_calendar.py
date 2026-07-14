@@ -11,13 +11,9 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from openai import OpenAI
-
-from cinecal_agent import MODEL, PublicationError, grounded_json, is_grounded_url
-
-
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PLAN = ROOT / "data" / "plan.json"
+MODEL = os.environ.get("CINECAL_MODEL", "muse-spark-1.1")
 ALLOWED_SIGNALS = {
     "holiday",
     "release_anniversary",
@@ -28,6 +24,10 @@ ALLOWED_SIGNALS = {
     "cultural_moment",
     "editorial_theme",
 }
+
+
+class PublicationError(RuntimeError):
+    """Raised when a planning batch cannot be published safely."""
 
 
 def iso_now() -> str:
@@ -70,11 +70,13 @@ def existing_titles(plan_path: Path, start: date, days: int) -> list[str]:
 
 
 def generate_batch(
-    client: OpenAI,
+    client: Any,
     start: date,
     days: int,
     excluded_titles: list[str],
 ) -> dict[str, Any]:
+    from cinecal_agent import grounded_json, is_grounded_url
+
     dates = date_range(start, days)
     prompt = f"""
 Create a date-specific editorial film/television plan for these calendar dates:
@@ -249,6 +251,8 @@ def main() -> int:
     api_key = os.environ.get("MODEL_API_KEY", "").strip()
     if not api_key:
         raise SystemExit("MODEL_API_KEY is required.")
+    from openai import OpenAI
+
     client = OpenAI(
         base_url="https://api.meta.ai/v1",
         api_key=api_key,

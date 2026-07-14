@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "date": "2026-07-13",
-  "publishedAt": "2026-07-14T06:53:17.200239Z",
+  "date": "2026-07-15",
+  "publishedAt": "2026-07-14T17:19:55.338614Z",
   "complete": false,
   "usedFallback": false,
   "missingFields": [
@@ -9,16 +9,16 @@
     "imageURLMedium"
   ],
   "entry": {
-    "date": "2026-07-13",
-    "id": "house-of-the-dragon-season-3",
-    "title": "龙之家族 第三季",
-    "rating": "暂无",
-    "ratingSourceURL": "https://m.douban.com/movie/subject/36666949/",
+    "date": "2026-07-15",
+    "id": "our-little-sister",
+    "title": "海街日记",
+    "rating": "8.8",
+    "ratingSourceURL": "https://movie.douban.com/subject/25895901/",
     "ratingRetrievedAt": "2026-07-14T05:00:00Z",
-    "quote": "让我们成为君王的，不是梦，而是龙。",
+    "quote": "平常的一天，也会因为有人相伴而闪闪发亮。",
     "quoteType": "editorial",
     "quoteAttribution": "CineCal 原创编辑文案",
     "imageRightsStatus": "local_prototype_not_published",
-    "doubanURL": "https://movie.douban.com/subject/36666949/"
+    "doubanURL": "https://movie.douban.com/subject/25895901/"
   }
 }

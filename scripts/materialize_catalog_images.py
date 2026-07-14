@@ -250,7 +250,16 @@ def main() -> None:
         )
         processed += 1
     catalog["imagesMaterializedAt"] = utc_now()
-    catalog["imageStats"] = {"requested": len(items), "processed": processed, "failed": len(failures)}
+    materialized_total = sum(
+        bool(item.get("images", {}).get("small") and item.get("images", {}).get("medium"))
+        for item in catalog["items"]
+    )
+    catalog["imageStats"] = {
+        "requested": len(items),
+        "processed": processed,
+        "failed": len(failures),
+        "materializedTotal": materialized_total,
+    }
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     for failure in failures:
         print(f"warning: {failure}")

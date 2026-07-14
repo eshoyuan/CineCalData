@@ -48,7 +48,8 @@ def title_without_season(value: str) -> tuple[str, int | None]:
 
 def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]:
     query_title, _ = title_without_season(title)
-    url = f"{DOUBAN_SUGGEST}?{urllib.parse.urlencode({'debug': 'true', 'q': query_title})}"
+    query = f"{query_title} {release_year}" if release_year else query_title
+    url = f"{DOUBAN_SUGGEST}?{urllib.parse.urlencode({'debug': 'true', 'q': query})}"
     payload = request_json(url, {"Referer": "https://www.douban.com/"})
     cards = [card for card in payload.get("cards", []) if card.get("type") in {"movie", "tv"}]
     if not cards:
@@ -60,6 +61,13 @@ def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]
         year = int(bool(release_year) and str(card.get("year", "")) == str(release_year))
         return exact, year
 
+    if release_year:
+        exact_year_cards = [card for card in cards if str(card.get("year", "")) == str(release_year)]
+        if not exact_year_cards:
+            raise MediaProviderError(
+                f"Douban returned no {release_year} match for {title}; refusing a cross-version rating."
+            )
+        cards = exact_year_cards
     card = max(cards, key=score)
     subtitle = str(card.get("card_subtitle", ""))
     rating_match = re.search(r"(?<!\d)(10(?:\.0)?|[0-9](?:\.[0-9])?)分", subtitle)

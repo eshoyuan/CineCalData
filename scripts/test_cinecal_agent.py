@@ -16,7 +16,7 @@ from cinecal_agent import (
     render_crop,
 )
 from merge_cards import merge_cards
-from media_provider import TMDBProvider, douban_lookup, title_without_season
+from media_provider import MediaProviderError, TMDBProvider, douban_lookup, title_without_season
 from plan_calendar import build_matrix, merge_batches
 from publish_today import choose_entry, publish
 
@@ -39,6 +39,21 @@ class AgentTests(unittest.TestCase):
         result = douban_lookup("花样年华", 2000)
         self.assertEqual(result["rating"], "8.8")
         self.assertEqual(result["doubanURL"], "https://movie.douban.com/subject/1291557/")
+        self.assertIn("%E8%8A%B1%E6%A0%B7%E5%B9%B4%E5%8D%8E+2000", request.call_args.args[0])
+
+    @patch("media_provider.request_json")
+    def test_douban_rejects_rating_from_wrong_adaptation_year(self, request):
+        request.return_value = {
+            "cards": [{
+                "title": "悲惨世界",
+                "url": "https://movie.douban.com/subject/6860160/",
+                "year": "2012",
+                "card_subtitle": "8.7分 / 2012 / 英国 美国",
+                "type": "movie",
+            }]
+        }
+        with self.assertRaises(MediaProviderError):
+            douban_lookup("悲惨世界", 2018)
 
     @patch("media_provider.request_json")
     def test_tmdb_resolver_returns_ranked_landscape_candidates(self, request):

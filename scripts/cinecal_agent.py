@@ -110,11 +110,12 @@ def response_payload(response: Any) -> dict[str, Any]:
 def grounded_json(
     client: OpenAI, prompt: str, search_context_size: str = "medium"
 ) -> tuple[dict[str, Any], list[str]]:
+    # Meta's Responses endpoint currently accepts the minimal web_search tool shape.
+    # OpenAI-specific fields such as search_context_size and include cause a 400.
     response = client.responses.create(
         model=MODEL,
         input=prompt,
-        tools=[{"type": "web_search", "search_context_size": search_context_size}],
-        include=["web_search_call.results"],
+        tools=[{"type": "web_search"}],
     )
     payload = response_payload(response)
     urls = collect_urls(payload)

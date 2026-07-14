@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T10:04:27.138791Z",
+  "generatedAt": "2026-07-14T10:06:00.017998Z",
   "source": "https://movie.douban.com/top250",
   "count": 250,
   "items": [
@@ -101,7 +101,7 @@
       ],
       "year": 1994,
       "rating": 9.4,
-      "ratingCount": 2563656,
+      "ratingCount": 2563657,
       "url": "https://movie.douban.com/subject/1295644/",
       "subjectID": "1295644",
       "metadataText": "导演: 吕克·贝松 Luc Besson 主演: 让·雷诺 Jean Reno / 娜塔莉·波特曼 ... 1994 / 法国 美国 / 剧情 动作 犯罪"
@@ -153,7 +153,7 @@
       ],
       "year": 2009,
       "rating": 9.4,
-      "ratingCount": 1550689,
+      "ratingCount": 1550690,
       "url": "https://movie.douban.com/subject/3011091/",
       "subjectID": "3011091",
       "metadataText": "导演: 莱塞·霍尔斯道姆 Lasse Hallström 主演: 理查·基尔 Richard Ger... 2009 / 美国 英国 / 剧情"
@@ -179,7 +179,7 @@
       ],
       "year": 2016,
       "rating": 9.3,
-      "ratingCount": 2336796,
+      "ratingCount": 2336797,
       "url": "https://movie.douban.com/subject/25662329/",
       "subjectID": "25662329",
       "metadataText": "导演: 拜伦·霍华德 Byron Howard / 瑞奇·摩尔 Rich Moore 主演: 金妮弗·... 2016 / 美国 / 喜剧 动画 冒险"
@@ -231,7 +231,7 @@
       ],
       "year": 2002,
       "rating": 9.3,
-      "ratingCount": 1575357,
+      "ratingCount": 1575360,
       "url": "https://movie.douban.com/subject/1307914/",
       "subjectID": "1307914",
       "metadataText": "导演: 刘伟强 / 麦兆辉 主演: 刘德华 Andy Lau / 梁朝伟 Tony Leung Chiu W... 2002 / 中国香港 / 剧情 犯罪 惊悚"
@@ -270,7 +270,7 @@
       ],
       "year": 1995,
       "rating": 9.2,
-      "ratingCount": 1718478,
+      "ratingCount": 1718480,
       "url": "https://movie.douban.com/subject/1292213/",
       "subjectID": "1292213",
       "metadataText": "导演: 刘镇伟 Jeffrey Lau 主演: 周星驰 Stephen Chow / 吴孟达 Man Tat Ng... 1995 / 中国香港 中国大陆 / 喜剧 爱情 奇幻 古装"
@@ -335,7 +335,7 @@
       ],
       "year": 2001,
       "rating": 9.2,
-      "ratingCount": 1433520,
+      "ratingCount": 1433523,
       "url": "https://movie.douban.com/subject/1295038/",
       "subjectID": "1295038",
       "metadataText": "导演: Chris Columbus 主演: Daniel Radcliffe / Emma Watson / Rupert Grint 2001 / 美国 英国 / 奇幻 冒险"
@@ -348,7 +348,7 @@
       ],
       "year": 2006,
       "rating": 9.1,
-      "ratingCount": 1696917,
+      "ratingCount": 1696918,
       "url": "https://movie.douban.com/subject/1849031/",
       "subjectID": "1849031",
       "metadataText": "导演: 加布里尔·穆奇诺 Gabriele Muccino 主演: 威尔·史密斯 Will Smith ... 2006 / 美国 / 剧情 传记 家庭"
@@ -715,7 +715,7 @@
       ],
       "year": 1953,
       "rating": 9.1,
-      "ratingCount": 1053829,
+      "ratingCount": 1053833,
       "url": "https://movie.douban.com/subject/1293839/",
       "subjectID": "1293839",
       "metadataText": "导演: 威廉·惠勒 William Wyler 主演: 奥黛丽·赫本 Audrey Hepburn / 格... 1953 / 美国 / 喜剧 剧情 爱情"
@@ -728,7 +728,7 @@
       ],
       "year": 1974,
       "rating": 9.3,
-      "ratingCount": 645521,
+      "ratingCount": 645522,
       "url": "https://movie.douban.com/subject/1299131/",
       "subjectID": "1299131",
       "metadataText": "导演: 弗朗西斯·福特·科波拉 Francis Ford Coppola 主演: 阿尔·帕西诺 A... 1974 / 美国 / 剧情 犯罪"
@@ -806,7 +806,7 @@
       ],
       "year": 1999,
       "rating": 9.0,
-      "ratingCount": 984372,
+      "ratingCount": 984373,
       "url": "https://movie.douban.com/subject/1292000/",
       "subjectID": "1292000",
       "metadataText": "导演: 大卫·芬奇 David Fincher 主演: 爱德华·诺顿 Edward Norton / 布拉... 1999 / 美国 / 剧情 动作 悬疑 惊悚"
@@ -858,7 +858,7 @@
       ],
       "year": 1998,
       "rating": 9.1,
-      "ratingCount": 683316,
+      "ratingCount": 683317,
       "url": "https://movie.douban.com/subject/1293350/",
       "subjectID": "1293350",
       "metadataText": "导演: 盖·里奇 Guy Ritchie 主演: 杰森·弗莱明 Jason Flemyng / 德克斯特... 1998 / 英国 / 剧情 喜剧 犯罪"
@@ -1103,7 +1103,7 @@
       ],
       "year": 1994,
       "rating": 8.9,
-      "ratingCount": 967553,
+      "ratingCount": 967555,
       "url": "https://movie.douban.com/subject/1291832/",
       "subjectID": "1291832",
       "metadataText": "导演: 昆汀·塔伦蒂诺 Quentin Tarantino 主演: 约翰·特拉沃尔塔 John Tra... 1994 / 美国 / 剧情 喜剧 犯罪"
@@ -1839,7 +1839,7 @@
       ],
       "year": 2012,
       "rating": 8.8,
-      "ratingCount": 700088,
+      "ratingCount": 700089,
       "url": "https://movie.douban.com/subject/6307447/",
       "subjectID": "6307447",
       "metadataText": "导演: 昆汀·塔伦蒂诺 Quentin Tarantino 主演: 杰米·福克斯 Jamie Foxx /... 2012 / 美国 / 剧情 动作 西部 冒险"
@@ -2121,7 +2121,7 @@
       ],
       "year": 2001,
       "rating": 9.0,
-      "ratingCount": 380703,
+      "ratingCount": 380704,
       "url": "https://movie.douban.com/subject/1306861/",
       "subjectID": "1306861",
       "metadataText": "导演: 杰茜·尼尔森 Jessie Nelson 主演: Sean Penn / Dakota Fanning / Mi... 2001 / 美国 / 剧情 家庭"
@@ -2438,7 +2438,7 @@
       ],
       "year": 2009,
       "rating": 8.5,
-      "ratingCount": 1005472,
+      "ratingCount": 1005473,
       "url": "https://movie.douban.com/subject/3011051/",
       "subjectID": "3011051",
       "metadataText": "导演: 克里斯托弗·史密斯 Christopher Smith 主演: 梅利莎·乔治 Melissa ... 2009 / 英国 澳大利亚 / 科幻 悬疑 奇幻 惊悚"
@@ -2527,7 +2527,7 @@
       ],
       "year": 2002,
       "rating": 8.7,
-      "ratingCount": 691971,
+      "ratingCount": 691995,
       "url": "https://movie.douban.com/subject/1291578/",
       "subjectID": "1291578",
       "metadataText": "导演: 卡洛斯·沙尔丹哈 Carlos Saldanha / 克里斯·韦奇 Chris Wedge 主演... 2002 / 美国 / 喜剧 动画 冒险"
@@ -2909,7 +2909,7 @@
       ],
       "year": 1988,
       "rating": 8.7,
-      "ratingCount": 446855,
+      "ratingCount": 446856,
       "url": "https://movie.douban.com/subject/1291870/",
       "subjectID": "1291870",
       "metadataText": "导演: 巴瑞·莱文森 Barry Levinson 主演: 达斯汀·霍夫曼 Dustin Hoffman ... 1988 / 美国 / 剧情"
@@ -2974,7 +2974,7 @@
       ],
       "year": 2015,
       "rating": 8.5,
-      "ratingCount": 849292,
+      "ratingCount": 849293,
       "url": "https://movie.douban.com/subject/25864085/",
       "subjectID": "25864085",
       "metadataText": "导演: 雷德利·斯科特 Ridley Scott 主演: 马特·达蒙 Matt Damon / 杰西卡... 2015 / 英国 美国 匈牙利 约旦 / 剧情 科幻 冒险"
@@ -3143,7 +3143,7 @@
       ],
       "year": 2016,
       "rating": 8.5,
-      "ratingCount": 587752,
+      "ratingCount": 587754,
       "url": "https://movie.douban.com/subject/25977027/",
       "subjectID": "25977027",
       "metadataText": "导演: 朴赞郁 Chan-wook Park 主演: 金敏喜 Min-hee Kim / 金泰梨 Tae-ri K... 2016 / 韩国 / 剧情 悬疑 情色 同性"
@@ -3156,7 +3156,7 @@
       ],
       "year": 2017,
       "rating": 8.6,
-      "ratingCount": 576586,
+      "ratingCount": 576588,
       "url": "https://movie.douban.com/subject/27113517/",
       "subjectID": "27113517",
       "metadataText": "导演: 杨雅喆 Ya-che Yang 主演: 惠英红 Kara Wai Ying Hung / 吴可熙 Wu K... 2017 / 中国台湾 / 剧情 悬疑"

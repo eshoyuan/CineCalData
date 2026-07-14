@@ -102,11 +102,13 @@ def response_payload(response: Any) -> dict[str, Any]:
     raise PublicationError("Unsupported response object from the model SDK.")
 
 
-def grounded_json(client: OpenAI, prompt: str) -> tuple[dict[str, Any], list[str]]:
+def grounded_json(
+    client: OpenAI, prompt: str, search_context_size: str = "medium"
+) -> tuple[dict[str, Any], list[str]]:
     response = client.responses.create(
         model=MODEL,
         input=prompt,
-        tools=[{"type": "web_search", "search_context_size": "high"}],
+        tools=[{"type": "web_search", "search_context_size": search_context_size}],
         include=["web_search_call.results"],
     )
     payload = response_payload(response)
@@ -114,6 +116,11 @@ def grounded_json(client: OpenAI, prompt: str) -> tuple[dict[str, Any], list[str
     if not urls:
         raise PublicationError("Search grounding returned no inspectable source URLs.")
     return parse_json_object(response_text(response)), urls
+
+
+def text_json(client: OpenAI, prompt: str) -> dict[str, Any]:
+    response = client.responses.create(model=MODEL, input=prompt)
+    return parse_json_object(response_text(response))
 
 
 def image_data_url(image: Image.Image, max_edge: int = 1600) -> str:
@@ -161,7 +168,7 @@ Do not repeat any of these recent selections: {json.dumps(excluded, ensure_ascii
 Return JSON only:
 {{"title": "official Chinese title", "reason": "one short editorial reason"}}
 """.strip()
-    result, sources = grounded_json(client, prompt)
+    result, sources = grounded_json(client, prompt, search_context_size="medium")
     title = str(result.get("title", "")).strip()
     if not title:
         raise PublicationError("The discovery step did not select a title.")
@@ -169,34 +176,44 @@ Return JSON only:
 
 
 def research_title(client: OpenAI, title: str, target_date: str) -> tuple[dict[str, Any], list[str]]:
-    prompt = f"""
-Research the single work “{title}” for a Chinese movie-calendar entry dated {target_date}.
-Use live web search. Accuracy and provenance are mandatory.
-
-Requirements:
-1. Find its real Douban subject URL and current Douban rating. Never invent a rating. If the work
-   is not yet rated, return the exact string "暂无".
-2. Write one original CineCal editorial sentence in Chinese, under 42 Chinese characters. It may
-   respond to the work's themes, but must not quote or closely paraphrase dialogue, reviews, plot
-   summaries, lyrics, subtitles, or marketing copy.
-3. Provide 3–6 direct HTTPS image-file URLs with a real source page, credit, and rights holder.
-   Prefer official promotional/press stills, public-domain material, or Creative Commons material;
-   avoid fan uploads, screenshots from pirated video, typography, watermarks, and logos. Report the
-   actual rights basis honestly. Never claim that "official" or attribution is a license.
-4. Every factual field must have a source URL. If you cannot verify a field, return an error field
-   instead of guessing.
-
-Return JSON only with exactly this shape:
+    metadata_prompt = f"""
+Find the exact Douban subject page and current Douban rating for “{title}” on {target_date}.
+Use live web search. This is a focused factual lookup. Never invent a rating; return "暂无" if the
+work is not rated. Return JSON only:
 {{
   "id": "lowercase-ascii-slug",
   "title": "official Chinese title",
   "rating": "8.5 or 暂无",
   "ratingSourceURL": "https://...",
   "doubanURL": "https://movie.douban.com/subject/.../",
-  "ratingRetrievedAt": "ISO-8601 timestamp",
+  "ratingRetrievedAt": "ISO-8601 timestamp"
+}}
+""".strip()
+    metadata, metadata_sources = grounded_json(
+        client, metadata_prompt, search_context_size="low"
+    )
+
+    quote_prompt = f"""
+Write one original CineCal editorial sentence in Chinese for “{title}”, under 42 Chinese
+characters. It should feel literary and emotionally specific, but must not quote or closely
+paraphrase dialogue, reviews, plot summaries, lyrics, subtitles, or marketing copy.
+Return JSON only:
+{{
   "quote": "original short Chinese sentence",
   "quoteType": "editorial",
-  "quoteAttribution": "CineCal 原创编辑文案",
+  "quoteAttribution": "CineCal 原创编辑文案"
+}}
+""".strip()
+    quote = text_json(client, quote_prompt)
+
+    image_prompt = f"""
+Find 3–6 landscape image candidates for a home-screen widget about “{title}”. Use live web search.
+Each candidate must have a direct HTTPS image URL, a real source page, credit, and rights holder.
+Prefer official promotional/press stills, public-domain material, or Creative Commons material;
+avoid fan uploads, pirated-video screenshots, posters with typography, watermarks, collages, and
+logos. Report the actual rights basis honestly; never claim attribution is a license.
+Return JSON only:
+{{
   "imageCandidates": [
     {{
       "imageURL": "https://...jpg",
@@ -212,7 +229,11 @@ Return JSON only with exactly this shape:
   ]
 }}
 """.strip()
-    return grounded_json(client, prompt)
+    images, image_sources = grounded_json(
+        client, image_prompt, search_context_size="medium"
+    )
+    research = {**metadata, **quote, **images}
+    return research, list(dict.fromkeys(metadata_sources + image_sources))
 
 
 def validate_research(item: dict[str, Any]) -> None:
@@ -611,7 +632,7 @@ def main() -> int:
     client = OpenAI(
         base_url="https://api.meta.ai/v1",
         api_key=api_key,
-        timeout=180.0,
+        timeout=600.0,
         max_retries=1,
     )
     if args.movie:

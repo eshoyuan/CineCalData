@@ -25,7 +25,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     env:
       MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
       CINECAL_MODEL: muse-spark-1.1

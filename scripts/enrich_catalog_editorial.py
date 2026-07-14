@@ -7,13 +7,15 @@ import argparse
 import json
 import os
 import re
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 
-PROMPT_VERSION = "catalog-editorial-v1"
+PROMPT_VERSION = "catalog-editorial-v2"
 DOUBAN_SUBJECT = re.compile(r"^https://movie\.douban\.com/subject/(\d+)/$")
+WEAK_CONTEXT_HOSTS = {"play.google.com", "tv.apple.com", "www.amazon.com", "amazon.com"}
 
 
 def utc_now() -> str:
@@ -63,7 +65,9 @@ For each work:
    over 42 characters. It should be literary, emotionally specific, spoiler-free, and work in a
    small home-screen widget. Do not quote or closely paraphrase dialogue, reviews, subtitles,
    lyrics, plot summaries, taglines or marketing copy. Do not present invented words as a quote.
-5. Use contextSourceURL for the strongest grounded page that informed the sentence.
+5. Use contextSourceURL for the strongest grounded page that informed the sentence. Prefer the
+   Douban subject, an encyclopedia, a film festival/archive, an interview, or reputable criticism.
+   Do not use an app store, streaming storefront, ticket seller, shopping page, or search page.
 6. Set confidence below 0.85 when exact identity, rating, or context remains uncertain.
 
 Avoid generic interchangeable lines and clichés such as “时光温柔”“岁月静好”“愿你”“治愈一切”.
@@ -130,8 +134,15 @@ def normalize_result(
     context_url = str(result.get("contextSourceURL", ""))
     if not context_url.startswith("https://") or not is_grounded_url(context_url, grounded_urls):
         return "editorial context source was not grounded"
+    if (urllib.parse.urlparse(context_url).hostname or "").lower() in WEAK_CONTEXT_HOSTS:
+        return "editorial context source was a storefront"
     if result.get("quoteType") != "editorial":
         return "quote type was not editorial"
+    review = result.get("_review", {})
+    scores = review.get("scores", {}) if isinstance(review, dict) else {}
+    required_scores = ("relevance", "literary", "specificity", "spoilerSafety", "widgetFit")
+    if not review.get("approved") or any(float(scores.get(name, 0)) < 8 for name in required_scores):
+        return "editorial review did not pass every 8/10 threshold"
 
     item["doubanSubjectID"] = match.group(1)
     current = item["ratings"]["douban"]
@@ -153,11 +164,54 @@ def normalize_result(
         "model": model,
         "promptVersion": PROMPT_VERSION,
         "generatedAt": generated_at,
+        "review": {
+            "scores": {name: float(scores[name]) for name in required_scores},
+            "reason": str(review.get("reason", "")),
+        },
     }
     item["recommendationEligible"] = bool(
         item.get("images", {}).get("small") and item.get("images", {}).get("medium")
     )
     return None
+
+
+def review_editorial(client: Any, item: dict[str, Any], result: dict[str, Any]) -> dict[str, Any]:
+    from cinecal_agent import text_json
+
+    prompt = f"""
+You are the final Chinese copy editor for a 169-point film widget. Review the proposed ORIGINAL
+editorial sentence against the supplied work. It must be emotionally specific and literary, but
+must not reveal plot mechanics, twists, endings, deaths, destinations, or character outcomes. It
+must not copy or imitate a famous line/review, invent a quotation, summarize the plot, or rely on
+generic interchangeable comfort-language. The final line must be 12–42 characters, ideally 18–34.
+
+Work metadata:
+{json.dumps(prompt_item(item), ensure_ascii=False)}
+
+Draft:
+{json.dumps(result.get('quote', ''), ensure_ascii=False)}
+
+If the draft has any weakness, silently rewrite it and score the rewritten final version. Approve
+only when every score is at least 8. Return JSON only:
+{{
+  "approved": true,
+  "approvedQuote": "final original Chinese sentence",
+  "scores": {{
+    "relevance": 0,
+    "literary": 0,
+    "specificity": 0,
+    "spoilerSafety": 0,
+    "widgetFit": 0
+  }},
+  "reason": "one concise Chinese editorial note"
+}}
+""".strip()
+    review = text_json(client, prompt)
+    approved_quote = re.sub(r"\s+", "", str(review.get("approvedQuote", "")).strip())
+    if approved_quote:
+        result["quote"] = approved_quote
+    result["_review"] = review
+    return review
 
 
 def parse_args() -> argparse.Namespace:
@@ -205,6 +259,11 @@ def main() -> None:
                 continue
             key = str(raw["key"])
             seen.add(key)
+            try:
+                review_editorial(client, item_index[key], raw)
+            except Exception as error:
+                failures[key] = f"editorial review failed: {error}"
+                continue
             reason = normalize_result(
                 item_index[key], raw, sources, model=MODEL, generated_at=generated_at
             )

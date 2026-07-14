@@ -1,6 +1,6 @@
 import unittest
 
-from enrich_catalog_editorial import DOUBAN_SUBJECT, build_prompt, needs_enrichment
+from enrich_catalog_editorial import DOUBAN_SUBJECT, PROMPT_VERSION, build_prompt, needs_enrichment
 
 
 class EditorialEnrichmentTests(unittest.TestCase):
@@ -20,6 +20,15 @@ class EditorialEnrichmentTests(unittest.TestCase):
         prompt = build_prompt([{"key": "x", "title": "霸王别姬", "ratings": {"douban": {}}, "images": {}}])
         self.assertIn("do not guess", prompt)
         self.assertIn("Do not quote", prompt)
+        self.assertIn("Do not use an app store", prompt)
+
+    def test_new_prompt_version_requeues_old_copy(self):
+        item = {
+            "ratings": {"douban": {"url": "https://movie.douban.com/subject/1295644/", "score": 9.4}},
+            "editorial": {"quote": "旧文案", "promptVersion": "catalog-editorial-v1"},
+        }
+        self.assertEqual(PROMPT_VERSION, "catalog-editorial-v2")
+        self.assertTrue(needs_enrichment(item))
 
 
 if __name__ == "__main__":

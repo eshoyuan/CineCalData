@@ -1,0 +1,139 @@
+name: Precache editorial plan
+
+on:
+  schedule:
+    # Refresh the next 120 days on the first day of each month.
+    - cron: "40 17 1 * *"
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "First planned date (defaults to today)"
+        required: false
+        type: string
+      days:
+        description: "Planning horizon; use 365 or 730 for bootstrap"
+        required: false
+        default: "730"
+        type: string
+      batch_days:
+        description: "Dates researched by each parallel agent"
+        required: false
+        default: "14"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-editorial-plan
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.config.outputs.matrix }}
+      horizon: ${{ steps.config.outputs.horizon }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Build parallel planning batches
+        id: config
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_START: ${{ inputs.start_date }}
+          INPUT_DAYS: ${{ inputs.days }}
+          INPUT_BATCH_DAYS: ${{ inputs.batch_days }}
+        run: |
+          start="${INPUT_START:-$(date +%F)}"
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            days=120
+            batch_days=14
+          else
+            days="${INPUT_DAYS:-730}"
+            batch_days="${INPUT_BATCH_DAYS:-14}"
+          fi
+          matrix=$(python scripts/plan_calendar.py --matrix --start "$start" --days "$days" --batch-days "$batch_days")
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+          echo "horizon=$days" >> "$GITHUB_OUTPUT"
+
+  plan:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        batch: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
+      CINECAL_MODEL: muse-spark-1.1
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-agent.txt
+
+      - run: python -m pip install -r requirements-agent.txt
+
+      - name: Research date-specific selections
+        run: |
+          python scripts/plan_calendar.py \
+            --start "${{ matrix.batch.start }}" \
+            --days "${{ matrix.batch.days }}" \
+            --output batch.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: plan-${{ matrix.batch.start }}
+          path: batch.json
+          retention-days: 7
+
+  merge:
+    if: ${{ always() && needs.prepare.result == 'success' }}
+    needs: [prepare, plan]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-agent.txt
+
+      - run: python -m pip install -r requirements-agent.txt
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: plan-*
+          path: precache
+
+      - name: Merge unlocked plan entries
+        run: |
+          python scripts/plan_calendar.py \
+            --merge-dir precache \
+            --plan data/plan.json \
+            --horizon-days "${{ needs.prepare.outputs.horizon }}"
+
+      - name: Commit editorial plan
+        run: |
+          if git diff --quiet -- data/plan.json; then
+            echo "Plan already up to date."
+            exit 0
+          fi
+          git config user.name "CineCal Planning Agent"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/plan.json
+          git commit -m "Refresh long-range editorial plan"
+          git push

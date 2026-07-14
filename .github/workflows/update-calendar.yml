@@ -1,9 +1,6 @@
 name: Update movie calendar
 
 on:
-  schedule:
-    # 00:15 in Asia/Shanghai. GitHub cron is UTC.
-    - cron: "15 16 * * *"
   workflow_dispatch:
     inputs:
       movie:

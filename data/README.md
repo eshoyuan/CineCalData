@@ -2,6 +2,15 @@
 
 `calendar.json` is the static API consumed by both the iOS app and the widget.
 
+`plan.json` is a separate long-range editorial cache. Its entries explain why a title belongs on
+a particular date and retain grounded signals such as a holiday, original release anniversary,
+principal cast/creator anniversary, festival, seasonal theme, or cultural event. Plan entries may
+be generated 365–730 days ahead; complete image cards are materialized only for the near-term
+window so volatile ratings and topical context do not go stale.
+
+`today.json` is generated from the already cached card by a model-free daily workflow. It exposes
+`complete`, `usedFallback`, and `missingFields` for operational health checks.
+
 - Keep `schemaVersion` at `1` until the client model changes.
 - Use local calendar dates in `YYYY-MM-DD` format.
 - Store final movie images in this GitHub repository. New entries provide `imageURLSmall` and
@@ -20,12 +29,10 @@ The client checks the exact entry for today. If the network request fails, it us
 
 ## Daily editorial agent
 
-`.github/workflows/update-calendar.yml` runs at 00:15 Asia/Shanghai and can also be started
-manually with an exact title and date. It uses Meta's Responses API in two distinct stages:
+The heavy editor workflows use Meta's Responses API in focused stages:
 
-1. `web_search` discovers and verifies the title, current Douban score, original editorial copy,
-   and explicitly licensed candidate images. The raw search results and cited URLs are retained
-   for audit.
+1. Narrow `web_search` calls separately verify the Douban metadata and find image candidates;
+   original copy is generated without search. The raw search results and cited URLs are retained.
 2. Image understanding localizes subjects on Meta's normalized 0–1000 coordinate grid and proposes
    separate 1:1 and 2.128:1 crops. A second vision pass sees translucent overlays representing the
    real widget text zones and must approve both crops with a score of at least 7/10.

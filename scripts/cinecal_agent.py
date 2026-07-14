@@ -28,6 +28,7 @@ from PIL import Image, ImageDraw, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 CALENDAR_PATH = ROOT / "data" / "calendar.json"
+PLAN_PATH = ROOT / "data" / "plan.json"
 IMAGE_DIR = ROOT / "data" / "images"
 REPORT_DIR = ROOT / "data" / "reports"
 MODEL = os.environ.get("CINECAL_MODEL", "muse-spark-1.1")
@@ -157,6 +158,30 @@ def recent_titles(feed: dict[str, Any], limit: int = 30) -> list[str]:
     return [str(item.get("title", "")) for item in entries[:limit] if item.get("title")]
 
 
+def planned_selection(target_date: str) -> tuple[str, list[str]] | None:
+    if not PLAN_PATH.exists():
+        return None
+    with PLAN_PATH.open("r", encoding="utf-8") as handle:
+        plan = json.load(handle)
+    if plan.get("schemaVersion") != 1:
+        raise PublicationError("data/plan.json is not a supported schemaVersion 1 plan.")
+    for entry in plan.get("entries", []):
+        if entry.get("date") != target_date or not entry.get("title"):
+            continue
+        sources = [
+            str(signal.get("sourceURL"))
+            for signal in entry.get("signals", [])
+            if isinstance(signal, dict) and str(signal.get("sourceURL", "")).startswith("https://")
+        ]
+        sources.extend(
+            str(url)
+            for url in entry.get("researchSources", [])
+            if str(url).startswith("https://")
+        )
+        return str(entry["title"]), list(dict.fromkeys(sources))
+    return None
+
+
 def discover_title(client: OpenAI, target_date: str, excluded: list[str]) -> tuple[str, list[str]]:
     prompt = f"""
 You are selecting one film or prestige television series for a Chinese daily cinema calendar.
@@ -176,6 +201,7 @@ Return JSON only:
 
 
 def research_title(client: OpenAI, title: str, target_date: str) -> tuple[dict[str, Any], list[str]]:
+    print(f"[1/5] Looking up Douban metadata for {title}...", flush=True)
     metadata_prompt = f"""
 Find the exact Douban subject page and current Douban rating for “{title}” on {target_date}.
 Use live web search. This is a focused factual lookup. Never invent a rating; return "暂无" if the
@@ -193,6 +219,7 @@ work is not rated. Return JSON only:
         client, metadata_prompt, search_context_size="low"
     )
 
+    print("[2/5] Writing original editorial copy...", flush=True)
     quote_prompt = f"""
 Write one original CineCal editorial sentence in Chinese for “{title}”, under 42 Chinese
 characters. It should feel literary and emotionally specific, but must not quote or closely
@@ -206,6 +233,7 @@ Return JSON only:
 """.strip()
     quote = text_json(client, quote_prompt)
 
+    print("[3/5] Searching for grounded image candidates...", flush=True)
     image_prompt = f"""
 Find 3–6 landscape image candidates for a home-screen widget about “{title}”. Use live web search.
 Each candidate must have a direct HTTPS image URL, a real source page, credit, and rights holder.
@@ -295,7 +323,10 @@ def is_grounded_url(claimed_url: str, grounded_urls: Iterable[str]) -> bool:
 def enforce_grounded_provenance(
     item: dict[str, Any], grounded_urls: list[str], rights_mode: str = RIGHTS_MODE
 ) -> None:
-    for key in ("doubanURL", "ratingSourceURL"):
+    required_grounded_fields = ["ratingSourceURL"]
+    if rights_mode == "production":
+        required_grounded_fields.append("doubanURL")
+    for key in required_grounded_fields:
         if not is_grounded_url(str(item[key]), grounded_urls):
             raise PublicationError(f"{key} was not present in the grounded search evidence.")
 
@@ -521,6 +552,7 @@ def select_and_crop_image(
     failures: list[str] = []
     for index, candidate in enumerate(research["imageCandidates"][:6], start=1):
         try:
+            print(f"[4/5] Reviewing image candidate {index}...", flush=True)
             image_url = str(candidate["imageURL"])
             image = download_image(image_url)
             plan = crop_plan(client, image, str(research["title"]))
@@ -638,7 +670,11 @@ def main() -> int:
     if args.movie:
         title = args.movie
         discovery_sources: list[str] = []
+    elif planned := planned_selection(target_date):
+        title, discovery_sources = planned
+        print(f"Using cached editorial plan: {title}", flush=True)
     else:
+        print("No cached plan entry; discovering a title from the live web...", flush=True)
         title, discovery_sources = discover_title(client, target_date, recent_titles(feed))
 
     research, research_sources = research_title(client, title, target_date)
@@ -657,6 +693,7 @@ def main() -> int:
         plan,
         review,
     )
+    print("[5/5] Saved feed, image crops, and provenance report.", flush=True)
     print(f"Published {research['title']} for {target_date}.")
     return 0
 

@@ -1,0 +1,120 @@
+name: Precache complete widget cards
+
+on:
+  schedule:
+    # Every Sunday, fill seven dates starting 30 days ahead.
+    - cron: "20 18 * * 0"
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "First card date (defaults to today)"
+        required: false
+        type: string
+      days:
+        description: "Number of complete cards to precompute"
+        required: false
+        default: "30"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-card-precache
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.config.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Choose the materialization window
+        id: config
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_START: ${{ inputs.start_date }}
+          INPUT_DAYS: ${{ inputs.days }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            start=$(date -d "+30 days" +%F)
+            days=7
+          else
+            start="${INPUT_START:-$(date +%F)}"
+            days="${INPUT_DAYS:-30}"
+          fi
+          matrix=$(python scripts/plan_calendar.py --matrix --start "$start" --days "$days" --batch-days 1)
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
+  materialize:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        batch: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env:
+      MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
+      CINECAL_MODEL: muse-spark-1.1
+      CINECAL_RIGHTS_MODE: prototype
+      CINECAL_REPOSITORY: ${{ github.repository }}
+      CINECAL_BRANCH: ${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-agent.txt
+
+      - run: python -m pip install -r requirements-agent.txt
+
+      - name: Materialize preselected card
+        run: python scripts/cinecal_agent.py --date "${{ matrix.batch.start }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: card-${{ matrix.batch.start }}
+          path: |
+            data/calendar.json
+            data/images/${{ matrix.batch.start }}-*
+            data/reports/${{ matrix.batch.start }}-*
+          retention-days: 7
+
+  merge:
+    if: ${{ always() && needs.prepare.result == 'success' }}
+    needs: [prepare, materialize]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: card-*
+          path: precache
+
+      - name: Merge successful card artifacts
+        run: python scripts/merge_cards.py --artifacts precache
+
+      - name: Commit complete card cache
+        run: |
+          git config user.name "CineCal Card Agent"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/calendar.json data/images data/reports
+          git commit -m "Precache complete CineCal cards"
+          git push

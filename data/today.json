@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-13",
+  "publishedAt": "2026-07-14T06:52:22.493445Z",
+  "complete": false,
+  "usedFallback": false,
+  "missingFields": [
+    "imageURLSmall",
+    "imageURLMedium"
+  ],
+  "entry": {
+    "date": "2026-07-13",
+    "id": "house-of-the-dragon-season-3",
+    "title": "龙之家族 第三季",
+    "rating": "暂无",
+    "ratingSourceURL": "https://m.douban.com/movie/subject/36666949/",
+    "ratingRetrievedAt": "2026-07-14T05:00:00Z",
+    "quote": "让我们成为君王的，不是梦，而是龙。",
+    "quoteType": "editorial",
+    "quoteAttribution": "CineCal 原创编辑文案",
+    "imageRightsStatus": "local_prototype_not_published",
+    "doubanURL": "https://movie.douban.com/subject/36666949/"
+  }
+}

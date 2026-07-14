@@ -1,0 +1,60 @@
+name: Publish today's cached card
+
+on:
+  schedule:
+    # 00:05 in Asia/Shanghai. No model call is made here.
+    - cron: "5 16 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Optional publish date (YYYY-MM-DD)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-daily-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Choose publish date
+        id: publish-date
+        env:
+          REQUESTED_DATE: ${{ inputs.date }}
+          TZ: Asia/Shanghai
+        run: |
+          if [ -n "$REQUESTED_DATE" ]; then
+            echo "date=$REQUESTED_DATE" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(date +%F)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Point to the precomputed card
+        run: python scripts/publish_today.py --date "${{ steps.publish-date.outputs.date }}"
+
+      - name: Validate and publish
+        run: |
+          python -m json.tool data/today.json >/dev/null
+          if git diff --quiet -- data/today.json; then
+            echo "Today's pointer is already current."
+            exit 0
+          fi
+          git config user.name "CineCal Daily Publisher"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/today.json
+          git commit -m "Publish cached card for ${{ steps.publish-date.outputs.date }}"
+          git push

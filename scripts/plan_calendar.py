@@ -170,7 +170,13 @@ connection, cultural value, visual potential, and audience interest.
                 "selectionScore": score,
                 "reason": str(raw.get("reason", "")),
                 "signals": grounded_signals,
-                "researchSources": sources,
+                # Keep the long-range plan compact. The full web-search citation
+                # set can contain dozens of incidental URLs per date; only the
+                # grounded URLs that justify the editorial choice are needed by
+                # the later card-materialization job.
+                "researchSources": list(
+                    dict.fromkeys(signal["sourceURL"] for signal in grounded_signals)
+                ),
                 "locked": False,
                 "generatedAt": iso_now(),
             }
@@ -212,9 +218,15 @@ def merge_batches(plan_path: Path, merge_dir: Path, horizon_days: int) -> None:
                 continue
             by_date[entry_date] = entry
 
+    try:
+        existing_horizon = int(existing.get("horizonDays", 0))
+    except (TypeError, ValueError):
+        existing_horizon = 0
     merged = {
         "schemaVersion": 1,
-        "horizonDays": horizon_days,
+        # A small refresh/pilot must not shrink a previously bootstrapped
+        # 365/730-day planning horizon.
+        "horizonDays": max(existing_horizon, horizon_days),
         "updatedAt": iso_now(),
         "entries": sorted(by_date.values(), key=lambda item: item.get("date", "")),
     }

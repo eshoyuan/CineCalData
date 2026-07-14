@@ -138,6 +138,7 @@ class AgentTests(unittest.TestCase):
             plan = root / "plan.json"
             plan.write_text(json.dumps({
                 "schemaVersion": 1,
+                "horizonDays": 730,
                 "entries": [{"date": "2026-01-01", "title": "Locked", "locked": True}],
             }), encoding="utf-8")
             batches = root / "batches"
@@ -148,9 +149,10 @@ class AgentTests(unittest.TestCase):
                     {"date": "2026-01-02", "title": "New", "locked": False},
                 ]
             }), encoding="utf-8")
-            merge_batches(plan, batches, horizon_days=730)
+            merge_batches(plan, batches, horizon_days=1)
             merged = json.loads(plan.read_text(encoding="utf-8"))
             self.assertEqual([entry["title"] for entry in merged["entries"]], ["Locked", "New"])
+            self.assertEqual(merged["horizonDays"], 730)
 
     def test_lightweight_today_publisher_uses_cached_entry(self):
         entries = [

@@ -9,12 +9,17 @@ on:
       limit:
         description: "Maximum pending catalog items"
         required: false
-        default: "40"
+        default: "12"
         type: string
       batch_size:
         description: "Works researched per grounded model request"
         required: false
         default: "4"
+        type: string
+      review_batch_size:
+        description: "Editorial drafts reviewed per non-search request"
+        required: false
+        default: "12"
         type: string
 
 permissions:
@@ -27,7 +32,7 @@ concurrency:
 jobs:
   enrich:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
     env:
       MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
       CINECAL_MODEL: muse-spark-1.1
@@ -50,9 +55,14 @@ jobs:
 
       - name: Resolve exact Douban subjects and write original lines
         env:
-          LIMIT: ${{ inputs.limit || '40' }}
+          LIMIT: ${{ inputs.limit || '12' }}
           BATCH_SIZE: ${{ inputs.batch_size || '4' }}
-        run: python scripts/enrich_catalog_editorial.py --limit "$LIMIT" --batch-size "$BATCH_SIZE"
+          REVIEW_BATCH_SIZE: ${{ inputs.review_batch_size || '12' }}
+        run: >-
+          python scripts/enrich_catalog_editorial.py
+          --limit "$LIMIT"
+          --batch-size "$BATCH_SIZE"
+          --review-batch-size "$REVIEW_BATCH_SIZE"
 
       - name: Commit verified enrichment cache
         run: |

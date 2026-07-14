@@ -285,7 +285,9 @@ def main() -> None:
 
     path = Path(args.catalog)
     catalog = json.loads(path.read_text())
-    pending = [item for item in catalog["items"] if needs_enrichment(item)][: args.limit]
+    pending = [item for item in catalog["items"] if needs_enrichment(item)]
+    if args.limit > 0:
+        pending = pending[: args.limit]
     client = OpenAI(
         base_url="https://api.meta.ai/v1",
         api_key=os.environ["MODEL_API_KEY"],

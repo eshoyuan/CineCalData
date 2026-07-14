@@ -232,6 +232,13 @@ class TMDBProvider:
             "overview": str(detail.get("overview", "")),
             "tmdbID": tmdb_id,
             "tmdbURL": source_page,
+            "tmdbScore": float(detail.get("vote_average", 0) or 0),
+            "tmdbVoteCount": int(detail.get("vote_count", 0) or 0),
+            "tmdbPopularity": float(detail.get("popularity", 0) or 0),
+            "posterURL": (
+                f"https://image.tmdb.org/t/p/w780{detail['poster_path']}"
+                if detail.get("poster_path") else ""
+            ),
             "seasonNumber": season_number,
             "imageCandidates": candidates,
         }

@@ -183,6 +183,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--cache-root", default=".cache/catalog-sources")
     parser.add_argument("--limit", type=int, default=0, help="Process at most N image-backed items (0 means all).")
     parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument(
+        "--missing-only",
+        action="store_true",
+        help="Only process entries that do not already have both widget image URLs.",
+    )
     parser.add_argument("--vision-source", default="scripts/vision_analyzer.swift")
     parser.add_argument("--repo-root", default=".", help="Repository root used to build public image URLs.")
     return parser.parse_args()
@@ -193,6 +198,17 @@ def main() -> None:
     catalog_path = Path(args.catalog)
     catalog = json.loads(catalog_path.read_text())
     items = [item for item in catalog["items"] if item.get("images", {}).get("backdrop")]
+    if args.missing_only:
+        items = [
+            item for item in items
+            if not (
+                item.get("images", {}).get("small")
+                and item.get("images", {}).get("medium")
+            )
+        ]
+    if not items:
+        print(json.dumps({"requested": 0, "processed": 0, "failed": 0, "unchanged": True}))
+        return
     if args.limit:
         items = items[: args.limit]
     cache_root = Path(args.cache_root)

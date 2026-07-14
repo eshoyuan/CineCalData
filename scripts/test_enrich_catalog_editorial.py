@@ -1,6 +1,12 @@
 import unittest
 
-from enrich_catalog_editorial import DOUBAN_SUBJECT, PROMPT_VERSION, build_prompt, needs_enrichment
+from enrich_catalog_editorial import (
+    DOUBAN_SUBJECT,
+    PROMPT_VERSION,
+    build_prompt,
+    build_review_prompt,
+    needs_enrichment,
+)
 
 
 class EditorialEnrichmentTests(unittest.TestCase):
@@ -29,6 +35,16 @@ class EditorialEnrichmentTests(unittest.TestCase):
         }
         self.assertEqual(PROMPT_VERSION, "catalog-editorial-v2")
         self.assertTrue(needs_enrichment(item))
+
+    def test_review_prompt_batches_and_preserves_keys(self):
+        items = [
+            {"key": "a", "title": "甲", "ratings": {"douban": {}}, "images": {}},
+            {"key": "b", "title": "乙", "ratings": {"douban": {}}, "images": {}},
+        ]
+        prompt = build_review_prompt(items, [{"key": "a", "quote": "甲句"}, {"key": "b", "quote": "乙句"}])
+        self.assertIn('"key": "a"', prompt)
+        self.assertIn('"key": "b"', prompt)
+        self.assertIn("Never merge, omit, or change an input key", prompt)
 
 
 if __name__ == "__main__":

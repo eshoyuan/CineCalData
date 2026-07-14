@@ -48,7 +48,11 @@ def title_without_season(value: str) -> tuple[str, int | None]:
 
 def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]:
     query_title, _ = title_without_season(title)
-    query = f"{query_title} {release_year}" if release_year else query_title
+    # Douban's suggestion endpoint treats a year suffix as literal title text and
+    # frequently returns no cards (for example, "Citizen Kane 1941"). Search by
+    # title only, then use the structured year field below to reject remakes and
+    # similarly named works.
+    query = query_title
     url = f"{DOUBAN_SUGGEST}?{urllib.parse.urlencode({'debug': 'true', 'q': query})}"
     payload = request_json(url, {"Referer": "https://www.douban.com/"})
     cards = [card for card in payload.get("cards", []) if card.get("type") in {"movie", "tv"}]
@@ -68,6 +72,19 @@ def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]
                 f"Douban returned no {release_year} match for {title}; refusing a cross-version rating."
             )
         cards = exact_year_cards
+    exact_title_cards = []
+    for card in cards:
+        card_title = str(card.get("title", ""))
+        card_base_title, card_season = title_without_season(card_title)
+        if normalized_title(card_title) == wanted or (
+            card_season is not None and normalized_title(card_base_title) == wanted
+        ):
+            exact_title_cards.append(card)
+    if not exact_title_cards:
+        raise MediaProviderError(
+            f"Douban returned no exact-title match for {title}; refusing an ambiguous subject."
+        )
+    cards = exact_title_cards
     card = max(cards, key=score)
     subtitle = str(card.get("card_subtitle", ""))
     rating_match = re.search(r"(?<!\d)(10(?:\.0)?|[0-9](?:\.[0-9])?)分", subtitle)

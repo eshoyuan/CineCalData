@@ -22,6 +22,13 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
 
 
+def write_json_atomic(path: Path, value: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
+    temporary.replace(path)
+
+
 def needs_enrichment(item: dict[str, Any]) -> bool:
     douban = item.get("ratings", {}).get("douban", {})
     editorial = item.get("editorial", {})
@@ -175,43 +182,88 @@ def normalize_result(
     return None
 
 
-def review_editorial(client: Any, item: dict[str, Any], result: dict[str, Any]) -> dict[str, Any]:
-    from cinecal_agent import text_json
+def build_review_prompt(
+    items: list[dict[str, Any]], results: list[dict[str, Any]]
+) -> str:
+    item_index = {item["key"]: item for item in items}
+    drafts = [
+        {
+            "key": result["key"],
+            "work": prompt_item(item_index[str(result["key"])]),
+            "draft": result.get("quote", ""),
+        }
+        for result in results
+        if str(result.get("key", "")) in item_index
+    ]
+    return f"""
+You are the final Chinese copy editor for a 169-point film widget. Review every proposed ORIGINAL
+editorial sentence against its supplied work. Each line must be emotionally specific and literary,
+but must not reveal plot mechanics, twists, endings, deaths, destinations, or character outcomes.
+It must not copy or imitate a famous line/review, invent a quotation, summarize the plot, or rely
+on generic interchangeable comfort-language. Each final line must be 12–42 characters, ideally
+18–34. Never merge, omit, or change an input key.
 
-    prompt = f"""
-You are the final Chinese copy editor for a 169-point film widget. Review the proposed ORIGINAL
-editorial sentence against the supplied work. It must be emotionally specific and literary, but
-must not reveal plot mechanics, twists, endings, deaths, destinations, or character outcomes. It
-must not copy or imitate a famous line/review, invent a quotation, summarize the plot, or rely on
-generic interchangeable comfort-language. The final line must be 12–42 characters, ideally 18–34.
+Drafts:
+{json.dumps(drafts, ensure_ascii=False)}
 
-Work metadata:
-{json.dumps(prompt_item(item), ensure_ascii=False)}
-
-Draft:
-{json.dumps(result.get('quote', ''), ensure_ascii=False)}
-
-If the draft has any weakness, silently rewrite it and score the rewritten final version. Approve
+If a draft has any weakness, silently rewrite it and score the rewritten final version. Approve
 only when every score is at least 8. Return JSON only:
 {{
-  "approved": true,
-  "approvedQuote": "final original Chinese sentence",
-  "scores": {{
-    "relevance": 0,
-    "literary": 0,
-    "specificity": 0,
-    "spoilerSafety": 0,
-    "widgetFit": 0
-  }},
-  "reason": "one concise Chinese editorial note"
+  "entries": [
+    {{
+      "key": "exact input key",
+      "approved": true,
+      "approvedQuote": "final original Chinese sentence",
+      "scores": {{
+        "relevance": 0,
+        "literary": 0,
+        "specificity": 0,
+        "spoilerSafety": 0,
+        "widgetFit": 0
+      }},
+      "reason": "one concise Chinese editorial note"
+    }}
+  ]
 }}
 """.strip()
-    review = text_json(client, prompt)
-    approved_quote = re.sub(r"\s+", "", str(review.get("approvedQuote", "")).strip())
-    if approved_quote:
-        result["quote"] = approved_quote
-    result["_review"] = review
-    return review
+
+
+def review_editorials(
+    client: Any,
+    items: list[dict[str, Any]],
+    results: list[dict[str, Any]],
+) -> dict[str, str]:
+    from cinecal_agent import text_json
+    payload = text_json(client, build_review_prompt(items, results))
+    returned = payload.get("entries", [])
+    if not isinstance(returned, list):
+        returned = []
+    result_index = {str(result.get("key", "")): result for result in results}
+    failures: dict[str, str] = {}
+    seen: set[str] = set()
+    for review in returned:
+        if not isinstance(review, dict):
+            continue
+        key = str(review.get("key", ""))
+        result = result_index.get(key)
+        if result is None or key in seen:
+            continue
+        seen.add(key)
+        approved_quote = re.sub(r"\s+", "", str(review.get("approvedQuote", "")).strip())
+        if approved_quote:
+            result["quote"] = approved_quote
+        result["_review"] = review
+    for key in result_index.keys() - seen:
+        failures[key] = "editorial reviewer omitted the item"
+    return failures
+
+
+def review_editorial(client: Any, item: dict[str, Any], result: dict[str, Any]) -> dict[str, Any]:
+    """Backward-compatible single-item review helper used by older callers."""
+    failures = review_editorials(client, [item], [result])
+    if failures:
+        raise RuntimeError(next(iter(failures.values())))
+    return result["_review"]
 
 
 def parse_args() -> argparse.Namespace:
@@ -219,6 +271,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--catalog", default="data/catalog.json")
     parser.add_argument("--limit", type=int, default=40)
     parser.add_argument("--batch-size", type=int, default=4)
+    parser.add_argument("--review-batch-size", type=int, default=16)
+    parser.add_argument("--state", default=".cache/cinecal-editorial-v2.json")
     return parser.parse_args()
 
 
@@ -242,12 +296,25 @@ def main() -> None:
     verified = 0
     failures: dict[str, str] = {}
 
+    state_path = Path(args.state)
+    try:
+        state = json.loads(state_path.read_text()) if state_path.exists() else {}
+    except (OSError, json.JSONDecodeError):
+        state = {}
+    if state.get("promptVersion") != PROMPT_VERSION:
+        state = {"promptVersion": PROMPT_VERSION, "research": {}}
+    research: dict[str, dict[str, Any]] = state.setdefault("research", {})
+
     for start in range(0, len(pending), max(1, args.batch_size)):
         batch = pending[start : start + max(1, args.batch_size)]
+        uncached = [item for item in batch if item["key"] not in research]
+        if not uncached:
+            print(f"researched {min(start + len(batch), len(pending))}/{len(pending)} (cached)", flush=True)
+            continue
         try:
-            payload, sources = grounded_json(client, build_prompt(batch), search_context_size="large")
+            payload, sources = grounded_json(client, build_prompt(uncached), search_context_size="large")
         except Exception as error:
-            for item in batch:
+            for item in uncached:
                 failures[item["key"]] = f"request failed: {error}"
             continue
         returned = payload.get("entries", [])
@@ -259,22 +326,45 @@ def main() -> None:
                 continue
             key = str(raw["key"])
             seen.add(key)
-            try:
-                review_editorial(client, item_index[key], raw)
-            except Exception as error:
-                failures[key] = f"editorial review failed: {error}"
-                continue
-            reason = normalize_result(
-                item_index[key], raw, sources, model=MODEL, generated_at=generated_at
-            )
-            if reason:
-                failures[key] = reason
-            else:
-                verified += 1
-        for item in batch:
+            if raw.get("status") == "verified":
+                research[key] = {"result": raw, "sources": sources, "researchedAt": generated_at}
+        for item in uncached:
             if item["key"] not in seen:
                 failures[item["key"]] = "agent omitted the item"
-        print(f"processed {min(start + len(batch), len(pending))}/{len(pending)}; verified={verified}", flush=True)
+        write_json_atomic(state_path, state)
+        print(f"researched {min(start + len(batch), len(pending))}/{len(pending)}", flush=True)
+
+    review_candidates = [
+        research[item["key"]]["result"]
+        for item in pending
+        if item["key"] in research and not research[item["key"]]["result"].get("_review")
+    ]
+    for start in range(0, len(review_candidates), max(1, args.review_batch_size)):
+        results = review_candidates[start : start + max(1, args.review_batch_size)]
+        items = [item_index[str(result["key"])] for result in results]
+        try:
+            failures.update(review_editorials(client, items, results))
+        except Exception as error:
+            for result in results:
+                failures[str(result["key"])] = f"editorial review failed: {error}"
+            continue
+        write_json_atomic(state_path, state)
+        print(f"reviewed {min(start + len(results), len(review_candidates))}/{len(review_candidates)}", flush=True)
+
+    for item in pending:
+        cached = research.get(item["key"])
+        if not cached:
+            failures.setdefault(item["key"], "research unresolved")
+            continue
+        raw = cached["result"]
+        reason = normalize_result(
+            item, raw, list(cached.get("sources", [])), model=MODEL, generated_at=generated_at
+        )
+        if reason:
+            failures[item["key"]] = reason
+        else:
+            failures.pop(item["key"], None)
+            verified += 1
 
     eligible = sum(bool(item.get("recommendationEligible")) for item in catalog["items"])
     catalog["editorialEnrichment"] = {
@@ -287,7 +377,7 @@ def main() -> None:
         "eligibleTotal": eligible,
         "failures": failures,
     }
-    path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
+    write_json_atomic(path, catalog)
     print(json.dumps(catalog["editorialEnrichment"], ensure_ascii=False))
 
 

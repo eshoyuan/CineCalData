@@ -31,6 +31,15 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Verify structured media source
+        env:
+          TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
+        run: |
+          if [ -z "$TMDB_API_TOKEN" ]; then
+            echo "Missing repository secret: TMDB_API_TOKEN" >&2
+            exit 1
+          fi
+
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"

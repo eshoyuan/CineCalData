@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T10:05:14.486771Z",
-  "mode": "bootstrap",
+  "generatedAt": "2026-07-14T10:50:08.561324Z",
+  "mode": "incremental",
   "filters": {
     "minimumScore": 7.0,
     "minimumMovieVotes": 100,
@@ -17,12 +17,12 @@
     "https://api.themoviedb.org/3/trending/tv/week"
   ],
   "stats": {
-    "count": 703,
-    "movies": 458,
-    "tv": 245,
+    "count": 710,
+    "movies": 460,
+    "tv": 250,
     "doubanRated": 254,
     "doubanTop250": 250,
-    "withBackdrop": 530
+    "withBackdrop": 537
   },
   "items": [
     {
@@ -32,9 +32,7 @@
       "mediaType": "movie",
       "title": "肖申克的救赎",
       "originalTitle": "The Shawshank Redemption",
-      "alternateTitles": [
-        "/ The Shawshank Redemption"
-      ],
+      "alternateTitles": [],
       "year": 1994,
       "releaseDate": "1994-09-23",
       "overview": "安迪·杜佛兰被错判谋杀妻子及其情人，在缅因州肖申克服刑，判处两项无期徒刑接连执行。影片背景设定于1940年代，展现安迪如何在残酷的监狱环境中艰难求生，甚至赢得狱友们的敬重——尤其是与老囚徒“瑞德”·雷丁之间深厚的友谊。",
@@ -88,7 +86,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.7,
-          "count": 30753,
+          "count": 30754,
           "url": "https://www.themoviedb.org/movie/278"
         },
         "douban": {
@@ -111,11 +109,11 @@
         "poster": "https://image.tmdb.org/t/p/w780/Aqo8yM5S5ZEdlcyeBBxj7s0vkTf.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 9.7,
       "qualityScoreSource": "douban",
-      "rankingScore": 171.4446,
-      "searchableText": "肖申克的救赎 The Shawshank Redemption / The Shawshank Redemption 安迪·杜佛兰被错判谋杀妻子及其情人，在缅因州肖申克服刑，判处两项无期徒刑接连执行。影片背景设定于1940年代，展现安迪如何在残酷的监狱环境中艰难求生，甚至赢得狱友们的敬重——尤其是与老囚徒“瑞德”·雷丁之间深厚的友谊。 剧情 犯罪 United States of America 弗兰克·德拉邦特 Liz Glotzer David V. Lester 蒂姆·罗宾斯 摩根·弗里曼 鲍勃·冈顿 威廉姆·赛德勒 克兰西·布朗 吉尔·贝罗斯 小詹姆斯·艾伦·惠特莫尔 马克·罗斯顿 杰弗里·德蒙 拉里·勃兰登堡 prison friendship police brutality corruption based on novel or book freedom hope prison cell delinquent redemption parole board prison escape wrongful imprisonment interracial friendship framed for murder 1940s voiceover dramatic powerful epic movie 1994"
+      "rankingScore": 171.4447,
+      "searchableText": "肖申克的救赎 The Shawshank Redemption 安迪·杜佛兰被错判谋杀妻子及其情人，在缅因州肖申克服刑，判处两项无期徒刑接连执行。影片背景设定于1940年代，展现安迪如何在残酷的监狱环境中艰难求生，甚至赢得狱友们的敬重——尤其是与老囚徒“瑞德”·雷丁之间深厚的友谊。 剧情 犯罪 United States of America 弗兰克·德拉邦特 Liz Glotzer David V. Lester 蒂姆·罗宾斯 摩根·弗里曼 鲍勃·冈顿 威廉姆·赛德勒 克兰西·布朗 吉尔·贝罗斯 小詹姆斯·艾伦·惠特莫尔 马克·罗斯顿 杰弗里·德蒙 拉里·勃兰登堡 prison friendship police brutality corruption based on novel or book freedom hope prison cell delinquent redemption parole board prison escape wrongful imprisonment interracial friendship framed for murder 1940s voiceover dramatic powerful epic movie 1994"
     },
     {
       "key": "tmdb:tv:94997",
@@ -206,7 +204,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/w5iFwPk6h9fv3zxLN2QkxVEVyBw.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.4,
       "qualityScoreSource": "tmdb",
       "rankingScore": 141.4498,
@@ -300,7 +298,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/xoM3lntYJzZwOBJJs5O1ix0jyfe.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.2,
       "qualityScoreSource": "tmdb",
       "rankingScore": 140.4468,
@@ -364,7 +362,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.3,
-          "count": 2911,
+          "count": 2916,
           "url": "https://www.themoviedb.org/movie/1339713"
         },
         "douban": {
@@ -387,10 +385,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/5kNrhOgyREvm62H0rG1tuSrzirR.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 140.3471,
+      "rankingScore": 140.3501,
       "searchableText": "痴迷 Obsession 在折断神秘的“心愿柳”以赢得暗恋对象的心之后，一个对爱情充满幻想的人如愿以偿地得到了自己想要的一切，但很快他发现，有些欲望需要付出黑暗而可怕的代价。 恐怖 惊悚 United States of America United Kingdom Curry Barker Ruzanna Kegeyan David Haring Leonora Darby 贾森·布鲁姆 Mark Lane 迈克尔·约翰斯顿 英迪·納瓦瑞特 Cooper Tomlinson Megan Lawless 安迪·里克特 Haley Fitzgerald Darin Toonder Anthony Pavone Justice Anthony Casabianca obsession supernatural possession wish unrequited love couple absurdism self-harm supernatural horror psychological independent film psychological horror cursed object movie 2026"
     },
     {
@@ -560,7 +558,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/wMSO4QgEyUhnf1XLIpz5w371xtb.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.5,
       "qualityScoreSource": "tmdb",
       "rankingScore": 134.4704,
@@ -573,9 +571,7 @@
       "mediaType": "movie",
       "title": "星际穿越",
       "originalTitle": "Interstellar",
-      "alternateTitles": [
-        "/ Interstellar"
-      ],
+      "alternateTitles": [],
       "year": 2014,
       "releaseDate": "2014-11-05",
       "overview": "近未来的地球黄沙遍野，小麦、秋葵等基础农作物相继因枯萎病灭绝，人类不再像从前那样仰望星空，放纵想象力和灵感的迸发，而是每日在沙尘暴的肆虐下倒数着所剩不多的光景。在家务农的前NASA宇航员库珀接连在女儿墨菲的书房发现奇怪的重力场现象，随即得知在某个未知区域内前NASA成员仍秘密进行一个拯救人类的计划。多年以前土星附近出现神秘虫洞，NASA借机将数名宇航员派遣到遥远的星系寻找适合居住的星球。在布兰德教授的劝说下，库珀忍痛告别了女儿，和其他三名专家教授女儿艾米莉亚·布兰德、罗米利、多伊尔搭乘宇宙飞船前往目前已知的最有希望的三颗星球考察。他们穿越遥远的星系银河，感受了一小时七年光阴的沧海桑田，窥见了未知星球和黑洞的壮伟与神秘。在浩瀚宇宙的绝望而孤独角落，总有一份超越了时空的笃定情怀将他们紧紧相连……",
@@ -657,11 +653,184 @@
         "poster": "https://image.tmdb.org/t/p/w780/c35Vwd9rmMQfaEJuUrJRF3LZWJX.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 9.4,
       "qualityScoreSource": "douban",
       "rankingScore": 134.4533,
-      "searchableText": "星际穿越 Interstellar / Interstellar 近未来的地球黄沙遍野，小麦、秋葵等基础农作物相继因枯萎病灭绝，人类不再像从前那样仰望星空，放纵想象力和灵感的迸发，而是每日在沙尘暴的肆虐下倒数着所剩不多的光景。在家务农的前NASA宇航员库珀接连在女儿墨菲的书房发现奇怪的重力场现象，随即得知在某个未知区域内前NASA成员仍秘密进行一个拯救人类的计划。多年以前土星附近出现神秘虫洞，NASA借机将数名宇航员派遣到遥远的星系寻找适合居住的星球。在布兰德教授的劝说下，库珀忍痛告别了女儿，和其他三名专家教授女儿艾米莉亚·布兰德、罗米利、多伊尔搭乘宇宙飞船前往目前已知的最有希望的三颗星球考察。他们穿越遥远的星系银河，感受了一小时七年光阴的沧海桑田，窥见了未知星球和黑洞的壮伟与神秘。在浩瀚宇宙的绝望而孤独角落，总有一份超越了时空的笃定情怀将他们紧紧相连…… 冒险 剧情 科幻 United Kingdom United States of America 乔纳森·诺兰 Jake Myers 托马斯·图尔 克里斯托弗·诺兰 Kip Thorne Jordan Goldberg 马修·麦康纳 安妮·海瑟薇 迈克尔·凯恩 杰西卡·查斯坦 卡西·阿弗莱克 韦斯·本特利 托弗·戈瑞斯 麦肯基·弗依 艾伦·伯斯汀 约翰·利思戈 spacecraft race against time artificial intelligence (a.i.) nasa time warp dystopia expedition time travel space travel wormhole famine hibernation black hole quantum mechanics family relationships space planet astronaut scientist single father movie 2014"
+      "searchableText": "星际穿越 Interstellar 近未来的地球黄沙遍野，小麦、秋葵等基础农作物相继因枯萎病灭绝，人类不再像从前那样仰望星空，放纵想象力和灵感的迸发，而是每日在沙尘暴的肆虐下倒数着所剩不多的光景。在家务农的前NASA宇航员库珀接连在女儿墨菲的书房发现奇怪的重力场现象，随即得知在某个未知区域内前NASA成员仍秘密进行一个拯救人类的计划。多年以前土星附近出现神秘虫洞，NASA借机将数名宇航员派遣到遥远的星系寻找适合居住的星球。在布兰德教授的劝说下，库珀忍痛告别了女儿，和其他三名专家教授女儿艾米莉亚·布兰德、罗米利、多伊尔搭乘宇宙飞船前往目前已知的最有希望的三颗星球考察。他们穿越遥远的星系银河，感受了一小时七年光阴的沧海桑田，窥见了未知星球和黑洞的壮伟与神秘。在浩瀚宇宙的绝望而孤独角落，总有一份超越了时空的笃定情怀将他们紧紧相连…… 冒险 剧情 科幻 United Kingdom United States of America 乔纳森·诺兰 Jake Myers 托马斯·图尔 克里斯托弗·诺兰 Kip Thorne Jordan Goldberg 马修·麦康纳 安妮·海瑟薇 迈克尔·凯恩 杰西卡·查斯坦 卡西·阿弗莱克 韦斯·本特利 托弗·戈瑞斯 麦肯基·弗依 艾伦·伯斯汀 约翰·利思戈 spacecraft race against time artificial intelligence (a.i.) nasa time warp dystopia expedition time travel space travel wormhole famine hibernation black hole quantum mechanics family relationships space planet astronaut scientist single father movie 2014"
+    },
+    {
+      "key": "tmdb:tv:299167",
+      "tmdbID": 299167,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "达顿牧场",
+      "originalTitle": "Dutton Ranch",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-15",
+      "overview": "抛开《黄石》时期经历的阴影，Beth和Rip努力共筑未来，但他们遭遇了残酷的新现实，以及一家不择手段、只为保住自己帝国的无情敌对牧场。在南得克萨斯州，血脉之深远胜于一切，宽恕转瞬即逝，而生存的代价，或许正是你的灵魂。",
+      "genres": [
+        "西部",
+        "剧情"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "泰勒·谢里登",
+        "大卫·格拉瑟",
+        "Ron Burkle",
+        "David Hutkin",
+        "鲍勃·亚里",
+        "迈克尔·弗里德曼",
+        "Chad Feehan",
+        "克里斯蒂娜·沃罗斯"
+      ],
+      "cast": [
+        "凯莉·蕾莉",
+        "科尔·豪瑟",
+        "芬恩·利特",
+        "胡安·巴勃罗·拉巴",
+        "杰·科特尼",
+        "J.R. Villarreal",
+        "马克·门查卡",
+        "娜塔莉·艾琳·林德",
+        "艾德·哈里斯",
+        "安妮特·贝宁"
+      ],
+      "keywords": [
+        "texas",
+        "spin off",
+        "cattle ranch"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 9.2,
+          "count": 422,
+          "url": "https://www.themoviedb.org/tv/299167"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 156.218
+      },
+      "sourceRanks": {
+        "top_rated": 2,
+        "popular": 32,
+        "trending_week": 14,
+        "recent": 4
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/5flBkpyqwxyq69HzRnV6XL8nOUa.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 9.2,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 133.9121,
+      "searchableText": "达顿牧场 Dutton Ranch 抛开《黄石》时期经历的阴影，Beth和Rip努力共筑未来，但他们遭遇了残酷的新现实，以及一家不择手段、只为保住自己帝国的无情敌对牧场。在南得克萨斯州，血脉之深远胜于一切，宽恕转瞬即逝，而生存的代价，或许正是你的灵魂。 西部 剧情 United States of America 泰勒·谢里登 大卫·格拉瑟 Ron Burkle David Hutkin 鲍勃·亚里 迈克尔·弗里德曼 Chad Feehan 克里斯蒂娜·沃罗斯 凯莉·蕾莉 科尔·豪瑟 芬恩·利特 胡安·巴勃罗·拉巴 杰·科特尼 J.R. Villarreal 马克·门查卡 娜塔莉·艾琳·林德 艾德·哈里斯 安妮特·贝宁 texas spin off cattle ranch tv 2026"
+    },
+    {
+      "key": "tmdb:movie:1084244",
+      "tmdbID": 1084244,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "玩具总动员5",
+      "originalTitle": "Toy Story 5",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-17",
+      "overview": "胡迪、巴斯光年、翠斯等“元老级”玩具将跟随小主人邦妮的成长脚步，共同迎接数字时代下的全新挑战。随着无所不能的科技产品逐渐走进童年世界，一批充满科技感的崭新角色也随之重磅亮相：青蛙造型的智能平板小荷、憨态可掬的导航玩具小不丢、活力十足的抓拍好手小拍侠，以及自带笑点的臭屁小机灵。当身边的同龄朋友们开始沉浸在科技玩具带来的“电子陪伴”中，而玩具伙伴们也迎来了前所未有的生存难题：在屏幕占据注意力的时代，玩具的时代真的结束了吗？在“被取代”危机的当下，这群玩具伙伴还能否携手，帮助邦妮找回属于自己的真实友谊与快乐？",
+      "genres": [
+        "动画",
+        "家庭",
+        "喜剧",
+        "冒险"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "安德鲁·斯坦顿",
+        "皮特·多克特",
+        "乔纳斯·里维拉",
+        "Kenna Harris",
+        "Trevor Jimenez"
+      ],
+      "cast": [
+        "汤姆·汉克斯",
+        "蒂姆·艾伦",
+        "琼·库萨克",
+        "格蕾塔·李",
+        "柯南·奥布莱恩",
+        "克雷格·罗宾逊",
+        "Shelby Rabara",
+        "托尼·海尔",
+        "Scarlett Spears",
+        "杰伊·赫尔南德斯"
+      ],
+      "keywords": [
+        "farm",
+        "island",
+        "pig",
+        "horse",
+        "rescue mission",
+        "rivalry",
+        "sequel",
+        "love",
+        "stranded",
+        "wedding",
+        "tire swing",
+        "walkie talkie",
+        "cowgirl",
+        "cowboy",
+        "buddy comedy",
+        "duringcreditsstinger",
+        "toy comes to life",
+        "hippo",
+        "shocking",
+        "abandonment"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.4,
+          "count": 584,
+          "url": "https://www.themoviedb.org/movie/1084244"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 684.259
+      },
+      "sourceRanks": {
+        "popular": 1,
+        "trending_week": 8,
+        "recent": 1
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/oo46YfPuMcV9t7KsTiaMVUVRjvJ.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.4,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 133.4428,
+      "searchableText": "玩具总动员5 Toy Story 5 胡迪、巴斯光年、翠斯等“元老级”玩具将跟随小主人邦妮的成长脚步，共同迎接数字时代下的全新挑战。随着无所不能的科技产品逐渐走进童年世界，一批充满科技感的崭新角色也随之重磅亮相：青蛙造型的智能平板小荷、憨态可掬的导航玩具小不丢、活力十足的抓拍好手小拍侠，以及自带笑点的臭屁小机灵。当身边的同龄朋友们开始沉浸在科技玩具带来的“电子陪伴”中，而玩具伙伴们也迎来了前所未有的生存难题：在屏幕占据注意力的时代，玩具的时代真的结束了吗？在“被取代”危机的当下，这群玩具伙伴还能否携手，帮助邦妮找回属于自己的真实友谊与快乐？ 动画 家庭 喜剧 冒险 United States of America 安德鲁·斯坦顿 皮特·多克特 乔纳斯·里维拉 Kenna Harris Trevor Jimenez 汤姆·汉克斯 蒂姆·艾伦 琼·库萨克 格蕾塔·李 柯南·奥布莱恩 克雷格·罗宾逊 Shelby Rabara 托尼·海尔 Scarlett Spears 杰伊·赫尔南德斯 farm island pig horse rescue mission rivalry sequel love stranded wedding tire swing walkie talkie cowgirl cowboy buddy comedy duringcreditsstinger toy comes to life hippo shocking abandonment movie 2026"
     },
     {
       "key": "tmdb:movie:129",
@@ -834,6 +1003,95 @@
       "searchableText": "盗梦空间 Inception / Inception 道姆·柯布与同事阿瑟和纳什在一次针对日本能源大亨齐藤（渡边谦 饰）的盗梦行动中失败，反被齐藤利用。齐藤威逼利诱因遭通缉而流亡海外的柯布帮他拆分他竞争对手的公司，采取极端措施在其唯一继承人罗伯特·费希尔的深层潜意识中种下放弃家族公司、自立门户的想法。为了重返美国，柯布偷偷求助于岳父迈尔斯，吸收了年轻的梦境设计师艾里阿德妮、梦境演员艾姆斯和药剂师约瑟夫加入行动。在一层层递进的梦境中，柯布不仅要对付费希尔潜意识的本能反抗，还必须直面已逝妻子梅尔的处处破坏，实际情况远比预想危险得多…… 动作 科幻 冒险 United Kingdom United States of America 托马斯·图尔 Chris Brigham 克里斯托弗·诺兰 莱昂纳多·迪卡普里奥 约瑟夫·高登-莱维特 渡边谦 汤姆·哈迪 艾利奥特·佩吉 迪利普·劳 基利安·墨菲 汤姆·贝伦杰 玛丽昂·歌迪亚 皮特·波斯尔思韦特 mission dreams kidnapping spy allegory intellectual manipulation heist memory dream world subconscious admiring high concept dream movie 2010"
     },
     {
+      "key": "tmdb:tv:276161",
+      "tmdbID": 276161,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "铁拳教育",
+      "originalTitle": "참교육",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-05",
+      "overview": "在校园暴力猖獗、教师权威瓦解且恐龙家长无理解干涉的崩坏世界中，政府为了重整教育体制，依法创立了特殊机构“教权保护局”。当学校陷入常规手段无法解决的混乱失序时，特勤小组便会奉命出动。他们获准在必要时不惜逾越法律规范，使出课本上绝对不会教的强硬暴力与非常规手段，展开拳拳到肉的黑色幽默反击。这群特勤队员无所不用其极，誓言要对越界的失控学生、失格教师及傲慢家长实施痛快的“铁拳教育”，以恶制恶地夺回崩塌的教育正义与崩溃的校园秩序。",
+      "genres": [
+        "动作冒险",
+        "剧情",
+        "喜剧"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "originalLanguage": "ko",
+      "creators": [
+        "洪钟灿",
+        "李楠圭",
+        "金多喜",
+        "Moon Jong-ho"
+      ],
+      "cast": [
+        "金武烈",
+        "李星民",
+        "秦基周",
+        "表志勋",
+        "金钟秀",
+        "贺营",
+        "李奉俊"
+      ],
+      "keywords": [
+        "education",
+        "minister",
+        "respect",
+        "politician",
+        "bullying",
+        "violence in schools",
+        "teacher",
+        "school",
+        "social commentary",
+        "juvenile delinquent",
+        "teacher student relationship",
+        "parents",
+        "military veteran",
+        "fight the system",
+        "school life",
+        "social issues",
+        "life lessons",
+        "students",
+        "based on webcomic or webtoon",
+        "dramatic"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 9.5,
+          "count": 672,
+          "url": "https://www.themoviedb.org/tv/276161"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 123.352
+      },
+      "sourceRanks": {
+        "top_rated": 1,
+        "popular": 67,
+        "recent": 9
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/7KEA6GYQ81Lcmu3KHee2eYKjccP.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 9.5,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 130.453,
+      "searchableText": "铁拳教育 참교육 在校园暴力猖獗、教师权威瓦解且恐龙家长无理解干涉的崩坏世界中，政府为了重整教育体制，依法创立了特殊机构“教权保护局”。当学校陷入常规手段无法解决的混乱失序时，特勤小组便会奉命出动。他们获准在必要时不惜逾越法律规范，使出课本上绝对不会教的强硬暴力与非常规手段，展开拳拳到肉的黑色幽默反击。这群特勤队员无所不用其极，誓言要对越界的失控学生、失格教师及傲慢家长实施痛快的“铁拳教育”，以恶制恶地夺回崩塌的教育正义与崩溃的校园秩序。 动作冒险 剧情 喜剧 South Korea 洪钟灿 李楠圭 金多喜 Moon Jong-ho 金武烈 李星民 秦基周 表志勋 金钟秀 贺营 李奉俊 education minister respect politician bullying violence in schools teacher school social commentary juvenile delinquent teacher student relationship parents military veteran fight the system school life social issues life lessons students based on webcomic or webtoon dramatic tv 2026"
+    },
+    {
       "key": "tmdb:tv:60625",
       "tmdbID": 60625,
       "doubanSubjectID": "30370147",
@@ -888,7 +1146,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.7,
-          "count": 11104,
+          "count": 11107,
           "url": "https://www.themoviedb.org/tv/60625"
         },
         "douban": {
@@ -911,10 +1169,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/nbLginNBtPaqz12tSvMjzvxuPFJ.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.7,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 130.3964,
+      "rankingScore": 130.3969,
       "searchableText": "瑞克和莫蒂 Rick and Morty 一名反社会人格的天才科学家拉着他天性胆怯的孙子一同进行疯狂又危险的跨宇宙探险的故事。瑞克·桑切斯和女儿贝丝一家同住，他经常带着她、女婿杰瑞、孙女桑美和孙子莫蒂一同踏上大胆的星系冒险之旅。 动画 喜剧 Sci-Fi & Fantasy 动作冒险 United States of America Rob Schrab 尼克·卢瑟福 Heather Anne Campbell Monica Mitchell Albro Lundy James Siciliano Steve Levy Scott Marder 克里斯·帕内尔 斯宾瑟·格拉默 萨拉·朝克 Ian Cardoni Harry Belden time travel grandfather alcoholism alien dysfunctional family mad scientist scientist adult animation father figure machinist multiple dimensions spaceship tv 2013"
     },
     {
@@ -978,7 +1236,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.5,
-          "count": 3981,
+          "count": 3985,
           "url": "https://www.themoviedb.org/tv/124364"
         },
         "douban": {
@@ -1001,89 +1259,11 @@
         "poster": "https://image.tmdb.org/t/p/w780/q0aZ89NDGXxzJeJtJIvpxZmD5e3.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.5,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 129.3714,
+      "rankingScore": 129.3731,
       "searchableText": "梦魇绝镇 FROM 本剧讲述美国中部一个噩梦般的小镇会困住所有走进来的人，而不甘愿留下来的人在找寻出路的同时，他们还得面对日落后出没的怪物。 悬疑 剧情 Sci-Fi & Fantasy United States of America 杰克·本德 John Griffin 乔什·阿佩尔鲍姆 安德烈·内梅克 杰夫·皮克纳 斯科特·罗森伯格 乔·罗素 安东尼·罗素 哈罗德·佩里诺 卡塔琳娜·桑迪诺·莫雷诺 里奇·何 大卫·阿尔裴 克洛伊·凡·兰德斯乔特 汉娜·切尔敏 佩加·加福里 西蒙·韦伯斯特 伊丽莎白·桑德斯 艾弗里·康拉德 sheriff small town gore trapped cynical folk horror supernatural horror lovecraftian suspense violence horror apathetic complicated cruel tv 2022"
-    },
-    {
-      "key": "tmdb:tv:299167",
-      "tmdbID": 299167,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "达顿牧场",
-      "originalTitle": "Dutton Ranch",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-05-15",
-      "overview": "抛开《黄石》时期经历的阴影，Beth和Rip努力共筑未来，但他们遭遇了残酷的新现实，以及一家不择手段、只为保住自己帝国的无情敌对牧场。在南得克萨斯州，血脉之深远胜于一切，宽恕转瞬即逝，而生存的代价，或许正是你的灵魂。",
-      "genres": [
-        "西部",
-        "剧情"
-      ],
-      "countries": [
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "泰勒·谢里登",
-        "大卫·格拉瑟",
-        "Ron Burkle",
-        "David Hutkin",
-        "鲍勃·亚里",
-        "迈克尔·弗里德曼",
-        "Chad Feehan",
-        "克里斯蒂娜·沃罗斯"
-      ],
-      "cast": [
-        "凯莉·蕾莉",
-        "科尔·豪瑟",
-        "芬恩·利特",
-        "胡安·巴勃罗·拉巴",
-        "杰·科特尼",
-        "J.R. Villarreal",
-        "马克·门查卡",
-        "娜塔莉·艾琳·林德",
-        "艾德·哈里斯",
-        "安妮特·贝宁"
-      ],
-      "keywords": [
-        "texas",
-        "spin off",
-        "cattle ranch"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 9.2,
-          "count": 422,
-          "url": "https://www.themoviedb.org/tv/299167"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 156.218
-      },
-      "sourceRanks": {
-        "top_rated": 2,
-        "popular": 32,
-        "trending_week": 13
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/5flBkpyqwxyq69HzRnV6XL8nOUa.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 9.2,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 129.1543,
-      "searchableText": "达顿牧场 Dutton Ranch 抛开《黄石》时期经历的阴影，Beth和Rip努力共筑未来，但他们遭遇了残酷的新现实，以及一家不择手段、只为保住自己帝国的无情敌对牧场。在南得克萨斯州，血脉之深远胜于一切，宽恕转瞬即逝，而生存的代价，或许正是你的灵魂。 西部 剧情 United States of America 泰勒·谢里登 大卫·格拉瑟 Ron Burkle David Hutkin 鲍勃·亚里 迈克尔·弗里德曼 Chad Feehan 克里斯蒂娜·沃罗斯 凯莉·蕾莉 科尔·豪瑟 芬恩·利特 胡安·巴勃罗·拉巴 杰·科特尼 J.R. Villarreal 马克·门查卡 娜塔莉·艾琳·林德 艾德·哈里斯 安妮特·贝宁 texas spin off cattle ranch tv 2026"
     },
     {
       "key": "tmdb:movie:637",
@@ -1269,6 +1449,99 @@
       "searchableText": "辛德勒的名单 Schindler's List / Schindler's List 1939年，波兰在纳粹德国的统治下，党卫军对犹太人进行了隔离统治。德国商人奥斯卡·辛德勒（连姆·尼森 Liam Neeson 饰）来到德军统治下的克拉科夫，开设了一间搪瓷厂，生产军需用品。凭着出众的社交能力和大量的金钱，辛德勒和德军建立了良好的关系，他的工厂雇用犹太人工作，大发战争财。 1943年，克拉科夫的犹太人遭到了惨绝人寰的大屠杀，辛德勒目睹这一切，受到了极大的震撼，他贿赂军官，让自己的工厂成为集中营的附属劳役营，在那些疯狂屠杀的日子里，他的工厂也成为了犹太人的避难所。 1944年，德国战败前夕，屠杀犹太人的行动越发疯狂，辛德勒向德军军官开出了1200人的名单，倾家荡产买下了这些犹太人的生命。在那些暗无天日的岁月里，拯救一个人，就是拯救全世界。 剧情 历史 战争 United States of America 史蒂文·斯皮尔伯格 斯蒂文·泽里安 凯斯琳·肯尼迪 连姆·尼森 本·金斯利 拉尔夫·费因斯 卡罗琳·古道尔 乔纳森·萨加尔 艾伯斯·戴维斯 马尔戈萨·格贝尔 什穆埃尔·利维 马克·伊瓦涅 Béatrice Macola factory hero nazi concentration camp ss (nazi schutzstaffel) holocaust (shoah) world war ii ghetto jew persecution kraków, poland defense industry auschwitz-birkenau concentration camp biography based on true story industrialist historical fiction black and white train period drama poland movie 1993"
     },
     {
+      "key": "tmdb:movie:936075",
+      "tmdbID": 936075,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "迈克尔·杰克逊：巨星之路",
+      "originalTitle": "Michael",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-04-22",
+      "overview": "　　本片将通过一段从未展现过的深度视角，真实记录传奇巨星迈克尔·杰克逊的复杂人生。影片不仅再现了他最具标志性的艺术表演瞬间，更深入挖掘了他的内心世界——从天才神童的成长阵痛到全球偶像背后的争议与坚韧，全面呈现这位伟大艺术家的辉煌与坎坷。",
+      "genres": [
+        "音乐",
+        "剧情"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "约翰·洛根",
+        "安东尼·福奎阿",
+        "David B. Householter",
+        "Lydia Silverman",
+        "Prince Jackson",
+        "Karen Langford",
+        "Hayley King",
+        "Ron Burkle"
+      ],
+      "cast": [
+        "贾法尔·杰克逊",
+        "科尔曼·多明戈",
+        "尼娅·朗",
+        "Juliano Krue Valdi",
+        "凯琳·杜雷尔·琼斯",
+        "迈尔斯·特勒",
+        "拉伦茨·泰特",
+        "劳拉·哈里尔",
+        "麦克·梅尔斯",
+        "肯德里克·桑普森"
+      ],
+      "keywords": [
+        "child abuse",
+        "sibling relationship",
+        "1970s",
+        "abusive father",
+        "ambition",
+        "biography",
+        "singer",
+        "period drama",
+        "music history",
+        "price of fame",
+        "singer-songwriter",
+        "rise to fame",
+        "1980s",
+        "1960s",
+        "music",
+        "biographical drama",
+        "music drama",
+        "biopic"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.7,
+          "count": 3479,
+          "url": "https://www.themoviedb.org/movie/936075"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 175.917
+      },
+      "sourceRanks": {
+        "top_rated": 4,
+        "popular": 13,
+        "trending_week": 14
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/1hPSbiyfAhtWAIBf2XtDPA0NyvS.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.7,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 127.7914,
+      "searchableText": "迈克尔·杰克逊：巨星之路 Michael 本片将通过一段从未展现过的深度视角，真实记录传奇巨星迈克尔·杰克逊的复杂人生。影片不仅再现了他最具标志性的艺术表演瞬间，更深入挖掘了他的内心世界——从天才神童的成长阵痛到全球偶像背后的争议与坚韧，全面呈现这位伟大艺术家的辉煌与坎坷。 音乐 剧情 United States of America 约翰·洛根 安东尼·福奎阿 David B. Householter Lydia Silverman Prince Jackson Karen Langford Hayley King Ron Burkle 贾法尔·杰克逊 科尔曼·多明戈 尼娅·朗 Juliano Krue Valdi 凯琳·杜雷尔·琼斯 迈尔斯·特勒 拉伦茨·泰特 劳拉·哈里尔 麦克·梅尔斯 肯德里克·桑普森 child abuse sibling relationship 1970s abusive father ambition biography singer period drama music history price of fame singer-songwriter rise to fame 1980s 1960s music biographical drama music drama biopic movie 2026"
+    },
+    {
       "key": "tmdb:movie:687163",
       "tmdbID": 687163,
       "doubanSubjectID": "",
@@ -1334,7 +1607,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.7,
-          "count": 6028,
+          "count": 6029,
           "url": "https://www.themoviedb.org/movie/687163"
         },
         "douban": {
@@ -1350,199 +1623,18 @@
       "sourceRanks": {
         "top_rated": 6,
         "popular": 15,
-        "trending_week": 11
+        "trending_week": 12
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
         "poster": "https://image.tmdb.org/t/p/w780/qf8HaEGNUFXU6nVAq9BVEk4Tiqb.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.7,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 127.8652,
+      "rankingScore": 127.5575,
       "searchableText": "挽救计划 Project Hail Mary 太阳正在被“吃”掉，绝望吞噬地球。一名“平凡”的中学教师背负全人类的希望，踏上“太空不归路”。末路孤旅中，他意外遇到一位外星萌友，一个同样身陷绝境的外星工程师，这对“宇宙搭子”成了两个文明最后的救命稻草。他们能否在资源紧缺的情况下攻克重重科学谜 题，寻回唯一的希望火种？ 科幻 冒险 United States of America Will Allegra 德鲁·高达 Sarah Esberg Ken Kao 菲尔·洛德 克里斯托弗·米勒 Patricia Whitcher Nikki Baida 瑞恩·高斯林 桑德拉·惠勒 詹姆斯·奥尔蒂斯 莱昂内尔·博伊斯 米拉娜·薇恩翠 肯·兰格 普里亚·坎萨拉 米娅·索特里乌 安内尔·奥拉耶 Maya Eva Hosein friendship coma based on novel or book bravery sun language barrier space travel space mission alien space memory loss astronaut scientist calm science teacher save the planet spaceship interspecies friendship amused epic sci-fi movie 2026"
-    },
-    {
-      "key": "tmdb:movie:936075",
-      "tmdbID": 936075,
-      "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "迈克尔·杰克逊：巨星之路",
-      "originalTitle": "Michael",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-04-22",
-      "overview": "　　本片将通过一段从未展现过的深度视角，真实记录传奇巨星迈克尔·杰克逊的复杂人生。影片不仅再现了他最具标志性的艺术表演瞬间，更深入挖掘了他的内心世界——从天才神童的成长阵痛到全球偶像背后的争议与坚韧，全面呈现这位伟大艺术家的辉煌与坎坷。",
-      "genres": [
-        "音乐",
-        "剧情"
-      ],
-      "countries": [
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "约翰·洛根",
-        "安东尼·福奎阿",
-        "David B. Householter",
-        "Lydia Silverman",
-        "Prince Jackson",
-        "Karen Langford",
-        "Hayley King",
-        "Ron Burkle"
-      ],
-      "cast": [
-        "贾法尔·杰克逊",
-        "科尔曼·多明戈",
-        "尼娅·朗",
-        "Juliano Krue Valdi",
-        "凯琳·杜雷尔·琼斯",
-        "迈尔斯·特勒",
-        "拉伦茨·泰特",
-        "劳拉·哈里尔",
-        "麦克·梅尔斯",
-        "肯德里克·桑普森"
-      ],
-      "keywords": [
-        "child abuse",
-        "sibling relationship",
-        "1970s",
-        "abusive father",
-        "ambition",
-        "biography",
-        "singer",
-        "period drama",
-        "music history",
-        "price of fame",
-        "singer-songwriter",
-        "rise to fame",
-        "1980s",
-        "1960s",
-        "music",
-        "biographical drama",
-        "music drama",
-        "biopic"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 8.7,
-          "count": 3473,
-          "url": "https://www.themoviedb.org/movie/936075"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 175.917
-      },
-      "sourceRanks": {
-        "top_rated": 4,
-        "popular": 13,
-        "trending_week": 15
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/1hPSbiyfAhtWAIBf2XtDPA0NyvS.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 8.7,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 127.5709,
-      "searchableText": "迈克尔·杰克逊：巨星之路 Michael 本片将通过一段从未展现过的深度视角，真实记录传奇巨星迈克尔·杰克逊的复杂人生。影片不仅再现了他最具标志性的艺术表演瞬间，更深入挖掘了他的内心世界——从天才神童的成长阵痛到全球偶像背后的争议与坚韧，全面呈现这位伟大艺术家的辉煌与坎坷。 音乐 剧情 United States of America 约翰·洛根 安东尼·福奎阿 David B. Householter Lydia Silverman Prince Jackson Karen Langford Hayley King Ron Burkle 贾法尔·杰克逊 科尔曼·多明戈 尼娅·朗 Juliano Krue Valdi 凯琳·杜雷尔·琼斯 迈尔斯·特勒 拉伦茨·泰特 劳拉·哈里尔 麦克·梅尔斯 肯德里克·桑普森 child abuse sibling relationship 1970s abusive father ambition biography singer period drama music history price of fame singer-songwriter rise to fame 1980s 1960s music biographical drama music drama biopic movie 2026"
-    },
-    {
-      "key": "tmdb:tv:276161",
-      "tmdbID": 276161,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "铁拳教育",
-      "originalTitle": "참교육",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-06-05",
-      "overview": "在校园暴力猖獗、教师权威瓦解且恐龙家长无理解干涉的崩坏世界中，政府为了重整教育体制，依法创立了特殊机构“教权保护局”。当学校陷入常规手段无法解决的混乱失序时，特勤小组便会奉命出动。他们获准在必要时不惜逾越法律规范，使出课本上绝对不会教的强硬暴力与非常规手段，展开拳拳到肉的黑色幽默反击。这群特勤队员无所不用其极，誓言要对越界的失控学生、失格教师及傲慢家长实施痛快的“铁拳教育”，以恶制恶地夺回崩塌的教育正义与崩溃的校园秩序。",
-      "genres": [
-        "动作冒险",
-        "剧情",
-        "喜剧"
-      ],
-      "countries": [
-        "South Korea"
-      ],
-      "originalLanguage": "ko",
-      "creators": [
-        "洪钟灿",
-        "李楠圭",
-        "金多喜",
-        "Moon Jong-ho"
-      ],
-      "cast": [
-        "金武烈",
-        "李星民",
-        "秦基周",
-        "表志勋",
-        "金钟秀",
-        "贺营",
-        "李奉俊"
-      ],
-      "keywords": [
-        "education",
-        "minister",
-        "respect",
-        "politician",
-        "bullying",
-        "violence in schools",
-        "teacher",
-        "school",
-        "social commentary",
-        "juvenile delinquent",
-        "teacher student relationship",
-        "parents",
-        "military veteran",
-        "fight the system",
-        "school life",
-        "social issues",
-        "life lessons",
-        "students",
-        "based on webcomic or webtoon",
-        "dramatic"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 9.5,
-          "count": 671,
-          "url": "https://www.themoviedb.org/tv/276161"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 123.352
-      },
-      "sourceRanks": {
-        "top_rated": 1,
-        "popular": 67
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/7KEA6GYQ81Lcmu3KHee2eYKjccP.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 9.5,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 127.1171,
-      "searchableText": "铁拳教育 참교육 在校园暴力猖獗、教师权威瓦解且恐龙家长无理解干涉的崩坏世界中，政府为了重整教育体制，依法创立了特殊机构“教权保护局”。当学校陷入常规手段无法解决的混乱失序时，特勤小组便会奉命出动。他们获准在必要时不惜逾越法律规范，使出课本上绝对不会教的强硬暴力与非常规手段，展开拳拳到肉的黑色幽默反击。这群特勤队员无所不用其极，誓言要对越界的失控学生、失格教师及傲慢家长实施痛快的“铁拳教育”，以恶制恶地夺回崩塌的教育正义与崩溃的校园秩序。 动作冒险 剧情 喜剧 South Korea 洪钟灿 李楠圭 金多喜 Moon Jong-ho 金武烈 李星民 秦基周 表志勋 金钟秀 贺营 李奉俊 education minister respect politician bullying violence in schools teacher school social commentary juvenile delinquent teacher student relationship parents military veteran fight the system school life social issues life lessons students based on webcomic or webtoon dramatic tv 2026"
     },
     {
       "key": "tmdb:movie:101",
@@ -1905,99 +1997,6 @@
       "searchableText": "蝙蝠侠：黑暗骑士 The Dark Knight / The Dark Knight 蝙蝠侠在打击犯罪的战争中加大了赌注。在吉姆·戈登警长与地方检察官哈维·丹特的协助下，蝙蝠侠决心清除肆虐哥谭街头的残余犯罪组织。这一联手行动卓有成效，但他们很快发现自己沦为了一场混沌统治的猎物——这场混乱由一位新兴犯罪大师所掀动，惶恐的哥谭市民称他为“小丑”。[华纳兄弟影业] 动作 犯罪 惊悚 United Kingdom United States of America 克里斯托弗·诺兰 迈克尔·乌斯兰 迈 Kevin De La Noy 乔纳森·诺兰 本杰明·梅尔尼克 托马斯·图尔 克里斯蒂安·贝尔 希斯·莱杰 艾伦·艾克哈特 迈克尔·凯恩 玛吉·吉伦哈尔 加里·奥德曼 摩根·弗里曼 莫妮克·加布里埃拉·库尔内 罗恩·迪恩 基利安·墨菲 sadism chaos secret identity crime fighter superhero anti hero scarecrow based on comic vigilante organized crime tragic hero anti villain criminal mastermind district attorney super power super villain neo-noir bold movie 2008"
     },
     {
-      "key": "tmdb:movie:1084244",
-      "tmdbID": 1084244,
-      "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "玩具总动员5",
-      "originalTitle": "Toy Story 5",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-06-17",
-      "overview": "胡迪、巴斯光年、翠斯等“元老级”玩具将跟随小主人邦妮的成长脚步，共同迎接数字时代下的全新挑战。随着无所不能的科技产品逐渐走进童年世界，一批充满科技感的崭新角色也随之重磅亮相：青蛙造型的智能平板小荷、憨态可掬的导航玩具小不丢、活力十足的抓拍好手小拍侠，以及自带笑点的臭屁小机灵。当身边的同龄朋友们开始沉浸在科技玩具带来的“电子陪伴”中，而玩具伙伴们也迎来了前所未有的生存难题：在屏幕占据注意力的时代，玩具的时代真的结束了吗？在“被取代”危机的当下，这群玩具伙伴还能否携手，帮助邦妮找回属于自己的真实友谊与快乐？",
-      "genres": [
-        "动画",
-        "家庭",
-        "喜剧",
-        "冒险"
-      ],
-      "countries": [
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "安德鲁·斯坦顿",
-        "皮特·多克特",
-        "乔纳斯·里维拉",
-        "Kenna Harris",
-        "Trevor Jimenez"
-      ],
-      "cast": [
-        "汤姆·汉克斯",
-        "蒂姆·艾伦",
-        "琼·库萨克",
-        "格蕾塔·李",
-        "柯南·奥布莱恩",
-        "克雷格·罗宾逊",
-        "Shelby Rabara",
-        "托尼·海尔",
-        "Scarlett Spears",
-        "杰伊·赫尔南德斯"
-      ],
-      "keywords": [
-        "farm",
-        "island",
-        "pig",
-        "horse",
-        "rescue mission",
-        "rivalry",
-        "sequel",
-        "love",
-        "stranded",
-        "wedding",
-        "tire swing",
-        "walkie talkie",
-        "cowgirl",
-        "cowboy",
-        "buddy comedy",
-        "duringcreditsstinger",
-        "toy comes to life",
-        "hippo",
-        "shocking",
-        "abandonment"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 7.4,
-          "count": 584,
-          "url": "https://www.themoviedb.org/movie/1084244"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 684.259
-      },
-      "sourceRanks": {
-        "popular": 1,
-        "trending_week": 8
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/oo46YfPuMcV9t7KsTiaMVUVRjvJ.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 7.4,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 123.4428,
-      "searchableText": "玩具总动员5 Toy Story 5 胡迪、巴斯光年、翠斯等“元老级”玩具将跟随小主人邦妮的成长脚步，共同迎接数字时代下的全新挑战。随着无所不能的科技产品逐渐走进童年世界，一批充满科技感的崭新角色也随之重磅亮相：青蛙造型的智能平板小荷、憨态可掬的导航玩具小不丢、活力十足的抓拍好手小拍侠，以及自带笑点的臭屁小机灵。当身边的同龄朋友们开始沉浸在科技玩具带来的“电子陪伴”中，而玩具伙伴们也迎来了前所未有的生存难题：在屏幕占据注意力的时代，玩具的时代真的结束了吗？在“被取代”危机的当下，这群玩具伙伴还能否携手，帮助邦妮找回属于自己的真实友谊与快乐？ 动画 家庭 喜剧 冒险 United States of America 安德鲁·斯坦顿 皮特·多克特 乔纳斯·里维拉 Kenna Harris Trevor Jimenez 汤姆·汉克斯 蒂姆·艾伦 琼·库萨克 格蕾塔·李 柯南·奥布莱恩 克雷格·罗宾逊 Shelby Rabara 托尼·海尔 Scarlett Spears 杰伊·赫尔南德斯 farm island pig horse rescue mission rivalry sequel love stranded wedding tire swing walkie talkie cowgirl cowboy buddy comedy duringcreditsstinger toy comes to life hippo shocking abandonment movie 2026"
-    },
-    {
       "key": "tmdb:movie:77338",
       "tmdbID": 77338,
       "doubanSubjectID": "6786002",
@@ -2292,7 +2291,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.9,
-          "count": 18104,
+          "count": 18102,
           "url": "https://www.themoviedb.org/tv/1396"
         },
         "douban": {
@@ -2314,10 +2313,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/rqliuvX7NdknSHu5qaSDfESplQi.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.9,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 121.4304,
+      "rankingScore": 121.4302,
       "searchableText": "绝命毒师 Breaking Bad 新墨西哥州的高中化学老师沃尔特·H·怀特是拮据家庭的唯一经济来源。他大半生安分守己，兢兢业业，却在50岁生日之际突然得知自己罹患肺癌晚期的噩耗，原本便不甚顺意的人生顿时雪上加霜。为了保障怀孕的妻子斯凯勒和残疾的儿子小沃特能在自己死后衣食无忧，沃尔特决意铤而走险。他主动找到曾经的学生、而今的毒贩小混混杰西·平克曼谈合作，并运用娴熟高超的化学技术提炼出高纯度冰毒交给后者贩售。孰料事态的发展却在平克曼带回毒品供销商疯狂小八及其表弟后急转直下，沃尔特的人生也由此彻底步向失控。他被迫开始了教书与制毒的双重生活，逐渐坠落至万劫不复的深渊。 剧情 犯罪 United States of America 米歇尔·麦克拉伦 文斯·吉利根 马克·约翰逊 布莱恩·克兰斯顿 亚伦·保尔 安娜·冈 RJ·米特 迪恩·诺里斯 贝琪·勃兰特 鲍勃·奥登科克 乔纳森·班克斯 new mexico drug dealer narcissism psychopath terminal illness outlaw dark comedy cancer tragedy drugs criminal meth lab drug lord high school teacher dea agent neo-western albuquerque, new mexico criminal lawyer fall from grace cartel tv 2008"
     },
     {
@@ -2627,7 +2626,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/f9AFdxegmmWOghgw9E6ebICkstl.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.7,
       "qualityScoreSource": "tmdb",
       "rankingScore": 120.309,
@@ -2799,7 +2798,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/8Q7RFUOxaZzJMXc5MZExfaUm22y.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.6,
       "qualityScoreSource": "tmdb",
       "rankingScore": 119.2317,
@@ -3263,6 +3262,96 @@
       "searchableText": "指环王1：护戒使者 The Lord of the Rings: The Fellowship of the Ring / The Lord of the Rings: The Fellowship of the Ring J.R.R.托尔金的文学巨著首次以电影形式磅礴呈现——这是一场正义对抗邪恶的史诗冒险，一段关于友谊力量与个人勇气的传奇，更是一次为人类纪元开辟道路的英雄征程。 冒险 奇幻 动作 New Zealand United States of America 彼得·杰克逊 鲍勃·韦恩斯坦 哈維·溫斯坦 Mark Ordesky Michael Lynne 弗兰·威尔士 菲利帕·博因斯 Robert Shaye 伊利亚·伍德 伊恩·麦克莱恩 维果·莫特森 西恩·奥斯汀 伊恩·霍姆 丽芙·泰勒 克里斯托弗·李 肖恩·宾 比利·博伊德 多米尼克·莫纳汉 based on novel or book elves dwarf magic obsession allegory bravery castle troll battle demon uncle nephew relationship fantasy world dark fantasy journey companionship magical creature live action and animation hero's journey wraith movie 2001"
     },
     {
+      "key": "tmdb:movie:1280738",
+      "tmdbID": 1280738,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "火遮眼",
+      "originalTitle": "火遮眼",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-10",
+      "overview": "女儿在街头被拐走，店主（谢苗 饰）探寻一个复杂的犯罪网络，不择手段将女儿救回来。他唯一的盟友是一名记者（乔•塔斯利姆 饰）。这两个来自不同背景的人物必须学会相互信任、合作，运用自己不为人知的过去所赋予的格斗技能。",
+      "genres": [
+        "动作",
+        "犯罪",
+        "惊悚"
+      ],
+      "countries": [
+        "Hong Kong",
+        "United States of America",
+        "China"
+      ],
+      "originalLanguage": "zh",
+      "creators": [
+        "Todd Brown",
+        "Aram Tertzakian",
+        "谷垣健治",
+        "岑君茜",
+        "许学文",
+        "麦天枢",
+        "雷志龙",
+        "徐天福"
+      ],
+      "cast": [
+        "谢苗",
+        "乔·塔斯利姆",
+        "杨恩又",
+        "雅彦·鲁伊安",
+        "杰佳·亚宁",
+        "黎唯",
+        "岩永丞威",
+        "萨哈贾克·波斯安吉特",
+        "玛娜莎楠·潘叻翁固",
+        "威奈·旺扬功"
+      ],
+      "keywords": [
+        "martial arts",
+        "kung fu",
+        "rescue mission",
+        "police corruption",
+        "child trafficking",
+        "child kidnapping",
+        "missing wife",
+        "child rescue",
+        "depressing",
+        "inflammatory",
+        "relentless vengeance",
+        "dynamic duo"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.5,
+          "count": 179,
+          "url": "https://www.themoviedb.org/movie/1280738"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 267.233
+      },
+      "sourceRanks": {
+        "popular": 9,
+        "trending_week": 5,
+        "recent": 7
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/k334z7zxOJlJvOsOwyRF6HClCvi.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.5,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 117.7561,
+      "searchableText": "火遮眼 火遮眼 女儿在街头被拐走，店主（谢苗 饰）探寻一个复杂的犯罪网络，不择手段将女儿救回来。他唯一的盟友是一名记者（乔•塔斯利姆 饰）。这两个来自不同背景的人物必须学会相互信任、合作，运用自己不为人知的过去所赋予的格斗技能。 动作 犯罪 惊悚 Hong Kong United States of America China Todd Brown Aram Tertzakian 谷垣健治 岑君茜 许学文 麦天枢 雷志龙 徐天福 谢苗 乔·塔斯利姆 杨恩又 雅彦·鲁伊安 杰佳·亚宁 黎唯 岩永丞威 萨哈贾克·波斯安吉特 玛娜莎楠·潘叻翁固 威奈·旺扬功 martial arts kung fu rescue mission police corruption child trafficking child kidnapping missing wife child rescue depressing inflammatory relentless vengeance dynamic duo movie 2026"
+    },
+    {
       "key": "tmdb:movie:1007757",
       "tmdbID": 1007757,
       "doubanSubjectID": "",
@@ -3338,7 +3427,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/7eJO1JUx6C52lufZpcmHpdI0kJe.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.9,
       "qualityScoreSource": "tmdb",
       "rankingScore": 117.4751,
@@ -3397,7 +3486,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.5,
-          "count": 27230,
+          "count": 27233,
           "url": "https://www.themoviedb.org/tv/1399"
         },
         "douban": {
@@ -3419,10 +3508,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/6fJ7Gql9rD4C3X1uW2zinlkNwvw.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.5,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 117.1558,
+      "rankingScore": 117.156,
       "searchableText": "权力的游戏 Game of Thrones 维斯特洛大陆边境处发现远古传说中早已灭绝的生物，危险也渐渐靠近这里。危情一触即发，整个王国看似平和的表面下却是波涛暗涌。权高位重的拜拉席恩家族、勇敢善良的史塔克家族、企图谋取王位的坦格利安家族、有着不可告人秘密的兰尼斯特家族。这些家族各怀鬼胎，这个国家将会陷入一场混战..... Sci-Fi & Fantasy 剧情 动作冒险 United Kingdom United States of America David Nutter 米格尔·萨普什尼克 Bernadette Caulfield Frank Doelger Carolyn Strauss 大卫·贝尼奥夫 D·B·威斯 彼特·丁拉基 基特·哈灵顿 尼古拉·科斯特-瓦尔道 琳娜·海蒂 艾米莉亚·克拉克 利亚姆·坎宁安 麦茜·威廉姆斯 艾萨克·亨普斯特德·赖特 苏菲·特纳 约翰·布莱德利 based on novel or book kingdom dragon king intrigue fantasy world tv 2011"
     },
     {
@@ -3883,7 +3972,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.9,
-          "count": 687,
+          "count": 685,
           "url": "https://www.themoviedb.org/tv/273240"
         },
         "douban": {
@@ -3905,10 +3994,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/vOyCOnSOPTRjPTujsJnfEyDBR26.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.9,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 115.9265,
+      "rankingScore": 115.9214,
       "searchableText": "校园之外 Off Campus 为了赢得心上人的心，汉娜·威尔斯主动为冰球队队长加雷特·格雷厄姆辅导功课。随着两人面对各自的过往，这场最初各取所需的交易，渐渐萌生了真情。他们的朋友洛根、迪恩、塔克和艾莉也都在大学生活与爱情中摸索前行。 剧情 United States of America Louisa Levy Wyck Godfrey Marty Bowen Neal Flaherty James Seidman Gina Fattore Silver Tree Leanna Billings 艾拉·布赖特 贝尔蒙特·卡梅利 米卡·阿卜杜拉 Stephen Kalyn 杰伦·托马斯·布鲁克斯 Antonio Cipriano based on novel or book self-discovery love romance romantic compassionate tv 2026"
     },
     {
@@ -4158,100 +4247,11 @@
         "poster": "https://image.tmdb.org/t/p/w780/iabiheoeDk9uEZrsFJRySIEPNap.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.4,
       "qualityScoreSource": "tmdb",
       "rankingScore": 115.4557,
       "searchableText": "超感警探 The Mentalist 《超感警探》英文片名为《The Mentalist》，由美国 CBS 发行，金球奖提名者西蒙·贝克 (Simon Baker) 主演，饰演一位过去曾长期在媒体上发表各类关于精神疾病和超自然感觉的文章，并且一直担任电视谈话节目的嘉宾。他俨然是一个心理专家，但这位“半名人”自己也承认，他所谓的“超自然能力”纯粹是糊弄人的骗局－－只不过他的观察力和感知力远比别人强而已。如今，从“名人圈”里“卸甲归田”的简 (Jane) 当上了加利福尼亚调查局 (CBI) 专案调查组的独立顾问。他利用自己的“超感”特长连续破获了多起公众关注度高的疑难悬案，惊人的破案效率和成功记录让很多人连呼“神人” 。但是在调查局内，大家都知道简的底细－－他是个缺乏纪律感、不愿意按规矩办事的家伙。 古板严肃、一切只知道照本宣科的高级特工里斯本（Teresa Lisbon，罗宾·唐尼 Robin Tunney 饰，代表作《越狱 Prison Break》）拿简非常头疼。她不喜欢简公私不明、轻重不分的性格。但另一方面，她也不得不承认：简的作用无人可替代，他的判断力对同事们来说非常有价值。 里斯本手下的得力乾将包括聪明的金博尔·乔（Kimball Cho，蒂姆·康 Tim Kang 饰， 代表作《第一滴血 Rambo》）和韦恩·瑞斯比（Wayne Rigsby，欧文·约曼 Owain Yeoman 饰，代表作《The Nine》），还有一名毫无经验的新手格蕾丝·范·佩尔特（Grace Van Pelt，阿曼达·莱赫提 Amanda Righetti 饰）。 犯罪 剧情 悬疑 United States of America Tom Szentgyorgyi Chris Long Bruno Heller 西蒙·贝克 罗宾·唐尼 蒂姆·康 罗克蒙德·邓巴 喬·阿德勒 Josie Loren california con man cop serial killer criminal investigation forensic psychology criminal consultant police procedural tv 2008"
-    },
-    {
-      "key": "tmdb:movie:1280738",
-      "tmdbID": 1280738,
-      "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "火遮眼",
-      "originalTitle": "火遮眼",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-06-10",
-      "overview": "女儿在街头被拐走，店主（谢苗 饰）探寻一个复杂的犯罪网络，不择手段将女儿救回来。他唯一的盟友是一名记者（乔•塔斯利姆 饰）。这两个来自不同背景的人物必须学会相互信任、合作，运用自己不为人知的过去所赋予的格斗技能。",
-      "genres": [
-        "动作",
-        "犯罪",
-        "惊悚"
-      ],
-      "countries": [
-        "Hong Kong",
-        "United States of America",
-        "China"
-      ],
-      "originalLanguage": "zh",
-      "creators": [
-        "Todd Brown",
-        "Aram Tertzakian",
-        "谷垣健治",
-        "岑君茜",
-        "许学文",
-        "麦天枢",
-        "雷志龙",
-        "徐天福"
-      ],
-      "cast": [
-        "谢苗",
-        "乔·塔斯利姆",
-        "杨恩又",
-        "雅彦·鲁伊安",
-        "杰佳·亚宁",
-        "黎唯",
-        "岩永丞威",
-        "萨哈贾克·波斯安吉特",
-        "玛娜莎楠·潘叻翁固",
-        "威奈·旺扬功"
-      ],
-      "keywords": [
-        "martial arts",
-        "kung fu",
-        "rescue mission",
-        "police corruption",
-        "child trafficking",
-        "child kidnapping",
-        "missing wife",
-        "child rescue",
-        "depressing",
-        "inflammatory",
-        "relentless vengeance",
-        "dynamic duo"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 7.5,
-          "count": 179,
-          "url": "https://www.themoviedb.org/movie/1280738"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 267.233
-      },
-      "sourceRanks": {
-        "popular": 9,
-        "trending_week": 4
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/k334z7zxOJlJvOsOwyRF6HClCvi.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 7.5,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 115.2433,
-      "searchableText": "火遮眼 火遮眼 女儿在街头被拐走，店主（谢苗 饰）探寻一个复杂的犯罪网络，不择手段将女儿救回来。他唯一的盟友是一名记者（乔•塔斯利姆 饰）。这两个来自不同背景的人物必须学会相互信任、合作，运用自己不为人知的过去所赋予的格斗技能。 动作 犯罪 惊悚 Hong Kong United States of America China Todd Brown Aram Tertzakian 谷垣健治 岑君茜 许学文 麦天枢 雷志龙 徐天福 谢苗 乔·塔斯利姆 杨恩又 雅彦·鲁伊安 杰佳·亚宁 黎唯 岩永丞威 萨哈贾克·波斯安吉特 玛娜莎楠·潘叻翁固 威奈·旺扬功 martial arts kung fu rescue mission police corruption child trafficking child kidnapping missing wife child rescue depressing inflammatory relentless vengeance dynamic duo movie 2026"
     },
     {
       "key": "douban:1292722",
@@ -4468,7 +4468,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/3kI8vHDly1RVE5FrWDozY2Km8fI.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.2,
       "qualityScoreSource": "tmdb",
       "rankingScore": 114.5865,
@@ -4546,7 +4546,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/3abGbUKSrLk3VyPzVsPMOKRg1c3.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 114.4951,
@@ -4633,7 +4633,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/aRsqepBpM6QcwiAhOE1fWkpAnO5.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 114.4637,
@@ -4700,7 +4700,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.7,
-          "count": 6633,
+          "count": 6632,
           "url": "https://www.themoviedb.org/tv/60059"
         },
         "douban": {
@@ -4722,10 +4722,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/5rtWTNpkejLc17kDUyxBWTBxBxL.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.7,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 114.4512,
+      "rankingScore": 114.451,
       "searchableText": "风骚律师 Better Call Saul 名不见经传的律师吉米·麦吉尔是如何转变成备受道德谴责的大律师索尔·古德曼的？ 犯罪 剧情 United States of America Michael Morris 黛安娜·默瑟 Gordon Smith Alison Tatlock 托马斯·施纳泽 马克·约翰逊 梅丽莎·伯恩斯坦 文斯·吉利根 鲍勃·奥登科克 乔纳森·班克斯 蕾亚·塞洪 托尼·达尔顿 吉安卡罗·埃斯波西托 new mexico moral conflict crooked lawyer prequel romance dark comedy family relationships tragedy lawyer brother against brother spin off neo-western albuquerque, new mexico criminal lawyer fall from grace aggressive neo-noir mexican cartel legal drama gritty tv 2015"
     },
     {
@@ -4882,6 +4882,90 @@
       "qualityScoreSource": "douban",
       "rankingScore": 114.3188,
       "searchableText": "天堂电影院 Nuovo Cinema Paradiso / Nuovo Cinema Paradiso 在意大利南部小镇姜卡尔多，童年的小多多不仅喜欢看电影，还喜欢看放映师艾弗达“剪”电影：在40年代的意大利小镇上，电影在放映之前都要经由牧师检查，把认为观众不宜的镜头（比如接吻戏）严格地剪掉之后，才可以放映。好心的艾佛特为了让更多的观众看到电影，搞了一次露天电影，结果胶片着火了，多多把艾弗达从火海中救了出来，但艾弗达双目失明。多多成了小镇唯一会放电影的人，他接替艾佛特成了小镇的电影放映师。多多渐渐长大，他爱上了银行家的女儿艾莲娜。初恋的纯洁情愫美如天堂，但是一对小情侣的海誓山盟被艾莲娜父亲的阻挠给隔断了，托托去服兵役，而艾莲娜去念大学。伤心的多多在艾佛达的鼓励下，离开小镇，追寻自己生命中的梦想……30年后，艾佛达去世，此时的多多已经是功成名就的导演，他回到了家乡参加艾弗达的葬礼。老放映员留给他一份礼物，原来是当初被镇上的检查员勒令剪掉的吻戏胶片。多多看着这些镜头，突然发现自己已经理解了生命中的一切。 剧情 爱情 Italy France 朱塞佩·托纳多雷 瓦娜·波利 菲利浦·诺瓦雷 雅克·贝汉 马可·莱昂纳迪 萨瓦特利·卡西欧 阿格妮丝·那诺 安东内拉·阿蒂利 普佩拉·玛奇奥 恩佐·卡拉瓦勒 伊萨·丹尼尔 Leo Gullotta parent child relationship sicily, italy movie business kiss coming of age flashback magic realism nostalgic haunted by the past censorship nuovo cinema paradiso movie theater movie 1988"
+    },
+    {
+      "key": "tmdb:movie:1368314",
+      "tmdbID": 1368314,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "鬼上车",
+      "originalTitle": "Passenger",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-20",
+      "overview": "一对年轻情侣目睹了一场血肉横飞的高速公路惨剧后，原以为只是路上的惊魂插曲，却未曾想到，一个名为“凶灵”的恶魔早已悄然潜入他们的房车。当这个不散的恶灵开始步步紧逼，誓要将两人拖入地狱深渊时，原本浪漫的房车旅行彻底沦为一场挣脱不得的梦魇之旅。",
+      "genres": [
+        "恐怖",
+        "惊悚"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "安德烈·艾弗道夫",
+        "Nathan Samdahl",
+        "T. W. Burgess",
+        "Zachary Donohue",
+        "Jenny Hinkey",
+        "皮特·基亚佩塔",
+        "Anthony Tittanegro",
+        "安德鲁·拉里"
+      ],
+      "cast": [
+        "卢·洛贝尔",
+        "雅各布·西皮奥",
+        "梅丽莎·里奥",
+        "Joseph Lopez",
+        "Tony Doupe",
+        "Bonni Dichone",
+        "Devielle Johnson",
+        "Jessica Cruz",
+        "迈尔斯·福勒",
+        "艾伦·特龙"
+      ],
+      "keywords": [
+        "stalker",
+        "road trip",
+        "evil spirit",
+        "couple",
+        "frantic",
+        "demonic",
+        "supernatural horror",
+        "vanlife",
+        "baffled"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.1,
+          "count": 378,
+          "url": "https://www.themoviedb.org/movie/1368314"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 293.514
+      },
+      "sourceRanks": {
+        "popular": 8,
+        "trending_week": 7,
+        "recent": 6
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/yRxCn3v7FeUBHh3gnutx0VsXdNC.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.1,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 114.0139,
+      "searchableText": "鬼上车 Passenger 一对年轻情侣目睹了一场血肉横飞的高速公路惨剧后，原以为只是路上的惊魂插曲，却未曾想到，一个名为“凶灵”的恶魔早已悄然潜入他们的房车。当这个不散的恶灵开始步步紧逼，誓要将两人拖入地狱深渊时，原本浪漫的房车旅行彻底沦为一场挣脱不得的梦魇之旅。 恐怖 惊悚 United States of America 安德烈·艾弗道夫 Nathan Samdahl T. W. Burgess Zachary Donohue Jenny Hinkey 皮特·基亚佩塔 Anthony Tittanegro 安德鲁·拉里 卢·洛贝尔 雅各布·西皮奥 梅丽莎·里奥 Joseph Lopez Tony Doupe Bonni Dichone Devielle Johnson Jessica Cruz 迈尔斯·福勒 艾伦·特龙 stalker road trip evil spirit couple frantic demonic supernatural horror vanlife baffled movie 2026"
     },
     {
       "key": "tmdb:movie:510",
@@ -5859,7 +5943,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.4,
-          "count": 13112,
+          "count": 13110,
           "url": "https://www.themoviedb.org/tv/76479"
         },
         "douban": {
@@ -5881,10 +5965,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/3FmvkVnH3wASaBOxW2Mcrw97IzO.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.4,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 112.5561,
+      "rankingScore": 112.5559,
       "searchableText": "黑袍纠察队 The Boys 这是一个超能力者和普通人共存的世界，祖国人、火车头、深海、梅芙女王、透明人和玄色隶属于全球最大的超级英雄公司沃特集团，在帮助政府惩奸除恶维护世界和平的同时，他们也以偶像的身份帮助公司赚取了难以计数的利润。休伊是一个平凡的男孩，她的女友死于一场意外，而这场意外的制造者正是火车头。休伊不愿意接受沃特公司潦草的致歉和赔偿，决定替女友报仇。 Sci-Fi & Fantasy 动作冒险 United States of America Jessica Chou Gabriel Garcia Judalina Neira Darick Robertson Garth Ennis David Reed Michaela Starr Paul Grellong 卡尔·厄本 杰克·奎德 安东尼·斯塔尔 艾琳·莫里亚蒂 赖斯·艾隆索 切斯·克劳福 托默·卡彭 凯伦·福原 内森·米切尔 柯碧·米妮菲 corruption satire superhero based on comic gore tragedy evil corporation super power superhero team violence hilarious action tv 2019"
     },
     {
@@ -6964,7 +7048,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/drFXG1WmEXqgOcoI5SlxJtSitQA.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 110.8309,
@@ -7261,79 +7345,6 @@
       "searchableText": "狩猎 Jagten / Jagten 刚刚和妻子离婚的卢卡斯目前在一家托儿所工作，心地善良个性温和的他很快就受到了同事和孩子们的喜爱，其中，一个名叫卡拉的早熟女孩对卢卡斯尤为的亲近。面对女孩幼稚 而单纯的示好，卢卡斯只能婉转的拒绝，可令他没有想到的是，这一举动将他的生活推向了风口浪尖。 卡拉报复性的谎言让卢卡斯背负起了性侵女童的罪名，一时间，这个好好先生成为了整个小镇排挤和压迫的对象。好友的愤怒，前妻的不信任，爱犬的死亡和陌生人的恶意让卢卡斯几近崩溃，而当小小的卡拉吐露真相之后，恶意却并没有随着卢卡斯的重获清白而划下句点。 剧情 movie 2012"
     },
     {
-      "key": "tmdb:tv:138502",
-      "tmdbID": 138502,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "X战警97",
-      "originalTitle": "X-Men '97",
-      "alternateTitles": [],
-      "year": 2024,
-      "releaseDate": "2024-03-20",
-      "overview": "由变种人组成的X战警利用他们不可思议的天赋，保护一个痛恨又恐惧他们的世界，接受前所未有的挑战，并面临出乎意料的危险新未来。",
-      "genres": [
-        "动画",
-        "动作冒险",
-        "Sci-Fi & Fantasy"
-      ],
-      "countries": [
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "Dana Vasquez-Eberhardt",
-        "Julia Lewald",
-        "Eric Lewald",
-        "Larry Houston",
-        "Louis D'Esposito",
-        "Brad Winderbaum",
-        "Beau DeMayo",
-        "凯文·费奇"
-      ],
-      "cast": [],
-      "keywords": [
-        "mutant",
-        "sequel",
-        "superhero",
-        "based on comic",
-        "super power",
-        "superhero team",
-        "discrimination",
-        "1990s",
-        "tense"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 8.6,
-          "count": 758,
-          "url": "https://www.themoviedb.org/tv/138502"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 80.427
-      },
-      "sourceRanks": {
-        "top_rated": 52,
-        "trending_week": 12
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/pmNPP4TdwTXl6FgCY8ppOIu096A.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 8.6,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 110.5814,
-      "searchableText": "X战警97 X-Men '97 由变种人组成的X战警利用他们不可思议的天赋，保护一个痛恨又恐惧他们的世界，接受前所未有的挑战，并面临出乎意料的危险新未来。 动画 动作冒险 Sci-Fi & Fantasy United States of America Dana Vasquez-Eberhardt Julia Lewald Eric Lewald Larry Houston Louis D'Esposito Brad Winderbaum Beau DeMayo 凯文·费奇 mutant sequel superhero based on comic super power superhero team discrimination 1990s tense tv 2024"
-    },
-    {
       "key": "tmdb:movie:901",
       "tmdbID": 901,
       "doubanSubjectID": "1293908",
@@ -7584,69 +7595,59 @@
         "poster": "https://image.tmdb.org/t/p/w780/zGQyw7v2dvb2FNDdVUJFcaPrD5y.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 110.2561,
       "searchableText": "穿普拉达的女王2 The Devil Wears Prada 2 随着传统出版业的式微，时尚女王米兰达在职业生涯中迎来新挑战。她不得不与手握广告预算的曾经的助理，如今已是奢侈品牌集团高管的艾米莉正面交锋。两人在行业变局中展开了一场关乎权力与生存的较量。 喜剧 剧情 United States of America 艾琳·布罗什·麦肯纳 大卫·弗兰克尔 Michael Bederman Karen Rosenfelt 梅丽尔·斯特里普 安妮·海瑟薇 艾米莉·布朗特 斯坦利·图齐 肯尼思·布拉纳 贾斯汀·塞洛克斯 刘玉玲 特蕾西·汤姆斯 Tibor Feldman 本杰明·约瑟夫·诺瓦克 new york city based on novel or book sequel fashion fashion magazine dramedy magazine editor fashion industry fashionista movie 2026"
     },
     {
-      "key": "tmdb:movie:1368314",
-      "tmdbID": 1368314,
+      "key": "tmdb:tv:138502",
+      "tmdbID": 138502,
       "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "鬼上车",
-      "originalTitle": "Passenger",
+      "mediaType": "tv",
+      "title": "X战警97",
+      "originalTitle": "X-Men '97",
       "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-05-20",
-      "overview": "一对年轻情侣目睹了一场血肉横飞的高速公路惨剧后，原以为只是路上的惊魂插曲，却未曾想到，一个名为“凶灵”的恶魔早已悄然潜入他们的房车。当这个不散的恶灵开始步步紧逼，誓要将两人拖入地狱深渊时，原本浪漫的房车旅行彻底沦为一场挣脱不得的梦魇之旅。",
+      "year": 2024,
+      "releaseDate": "2024-03-20",
+      "overview": "由变种人组成的X战警利用他们不可思议的天赋，保护一个痛恨又恐惧他们的世界，接受前所未有的挑战，并面临出乎意料的危险新未来。",
       "genres": [
-        "恐怖",
-        "惊悚"
+        "动画",
+        "动作冒险",
+        "Sci-Fi & Fantasy"
       ],
       "countries": [
         "United States of America"
       ],
       "originalLanguage": "en",
       "creators": [
-        "安德烈·艾弗道夫",
-        "Nathan Samdahl",
-        "T. W. Burgess",
-        "Zachary Donohue",
-        "Jenny Hinkey",
-        "皮特·基亚佩塔",
-        "Anthony Tittanegro",
-        "安德鲁·拉里"
+        "Dana Vasquez-Eberhardt",
+        "Julia Lewald",
+        "Eric Lewald",
+        "Larry Houston",
+        "Louis D'Esposito",
+        "Brad Winderbaum",
+        "Beau DeMayo",
+        "凯文·费奇"
       ],
-      "cast": [
-        "卢·洛贝尔",
-        "雅各布·西皮奥",
-        "梅丽莎·里奥",
-        "Joseph Lopez",
-        "Tony Doupe",
-        "Bonni Dichone",
-        "Devielle Johnson",
-        "Jessica Cruz",
-        "迈尔斯·福勒",
-        "艾伦·特龙"
-      ],
+      "cast": [],
       "keywords": [
-        "stalker",
-        "road trip",
-        "evil spirit",
-        "couple",
-        "frantic",
-        "demonic",
-        "supernatural horror",
-        "vanlife",
-        "baffled"
+        "mutant",
+        "sequel",
+        "superhero",
+        "based on comic",
+        "super power",
+        "superhero team",
+        "discrimination",
+        "1990s",
+        "tense"
       ],
       "ratings": {
         "tmdb": {
-          "score": 7.1,
-          "count": 378,
-          "url": "https://www.themoviedb.org/movie/1368314"
+          "score": 8.6,
+          "count": 758,
+          "url": "https://www.themoviedb.org/tv/138502"
         },
         "douban": {
           "score": null,
@@ -7656,22 +7657,22 @@
         }
       },
       "popularity": {
-        "tmdb": 293.514
+        "tmdb": 80.427
       },
       "sourceRanks": {
-        "popular": 8,
-        "trending_week": 7
+        "top_rated": 52,
+        "trending_week": 15
       },
       "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/yRxCn3v7FeUBHh3gnutx0VsXdNC.jpg"
+        "backdrop": "https://image.tmdb.org/t/p/original/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/pmNPP4TdwTXl6FgCY8ppOIu096A.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 7.1,
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.6,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 109.9314,
-      "searchableText": "鬼上车 Passenger 一对年轻情侣目睹了一场血肉横飞的高速公路惨剧后，原以为只是路上的惊魂插曲，却未曾想到，一个名为“凶灵”的恶魔早已悄然潜入他们的房车。当这个不散的恶灵开始步步紧逼，誓要将两人拖入地狱深渊时，原本浪漫的房车旅行彻底沦为一场挣脱不得的梦魇之旅。 恐怖 惊悚 United States of America 安德烈·艾弗道夫 Nathan Samdahl T. W. Burgess Zachary Donohue Jenny Hinkey 皮特·基亚佩塔 Anthony Tittanegro 安德鲁·拉里 卢·洛贝尔 雅各布·西皮奥 梅丽莎·里奥 Joseph Lopez Tony Doupe Bonni Dichone Devielle Johnson Jessica Cruz 迈尔斯·福勒 艾伦·特龙 stalker road trip evil spirit couple frantic demonic supernatural horror vanlife baffled movie 2026"
+      "rankingScore": 109.85,
+      "searchableText": "X战警97 X-Men '97 由变种人组成的X战警利用他们不可思议的天赋，保护一个痛恨又恐惧他们的世界，接受前所未有的挑战，并面临出乎意料的危险新未来。 动画 动作冒险 Sci-Fi & Fantasy United States of America Dana Vasquez-Eberhardt Julia Lewald Eric Lewald Larry Houston Louis D'Esposito Brad Winderbaum Beau DeMayo 凯文·费奇 mutant sequel superhero based on comic super power superhero team discrimination 1990s tense tv 2024"
     },
     {
       "key": "tmdb:movie:1226863",
@@ -7761,7 +7762,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/7tLVCMnGg0Q3rWlkoBjdKA0S57R.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 109.7949,
@@ -7874,6 +7875,84 @@
       "qualityScoreSource": "douban",
       "rankingScore": 109.6392,
       "searchableText": "小丑 Joker / Joker 亚瑟·弗兰克是一个依靠扮演小丑赚取营生的普通人，患有精神疾病的他和母亲一同住在哥谭市的一座公寓里，幻想成为脱口秀演员的亚瑟为了这个目标而努力的生活着，但是现实却屡次击败他的梦想，亚瑟渐渐地变得越来越癫狂，某天在地铁上，亚瑟为了自保杀害了几名嘲笑他的人，同时，一个疯狂的想法在亚瑟心灵萌发…… 在看似和平的哥谭市，即将发生翻天覆地的巨变。 犯罪 惊悚 剧情 movie 2019"
+    },
+    {
+      "key": "tmdb:tv:259837",
+      "tmdbID": 259837,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "超能路人甲",
+      "originalTitle": "원더풀스",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-15",
+      "overview": "世界末日论盛行的 1999 年世纪末，一群原本平凡的“路人甲”意外获得超能力，却没有走上典型英雄之路，反而以各自不按牌理出牌的方式组成临时英雄联盟，对抗威胁世界和平的反派势力，在混乱与笑料之中肩负起守护世界的任务。",
+      "genres": [
+        "动作冒险",
+        "喜剧",
+        "Sci-Fi & Fantasy",
+        "剧情"
+      ],
+      "countries": [
+        "South Korea"
+      ],
+      "originalLanguage": "ko",
+      "creators": [
+        "刘仁植",
+        "许多仲"
+      ],
+      "cast": [
+        "朴恩斌",
+        "车银优",
+        "崔代勋",
+        "林成宰",
+        "金海淑",
+        "孙贤周",
+        "裴奈拏",
+        "郑伊书",
+        "崔允智"
+      ],
+      "keywords": [
+        "hero",
+        "villain",
+        "superhero",
+        "miniseries",
+        "super power",
+        "superhero team",
+        "supervillain",
+        "cheerful",
+        "joyful"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 9.0,
+          "count": 212,
+          "url": "https://www.themoviedb.org/tv/259837"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 27.099
+      },
+      "sourceRanks": {
+        "top_rated": 3,
+        "recent": 48
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/8uhY6EYNJH4tkdfC1zY8ZoVk7eM.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 9.0,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 109.1906,
+      "searchableText": "超能路人甲 원더풀스 世界末日论盛行的 1999 年世纪末，一群原本平凡的“路人甲”意外获得超能力，却没有走上典型英雄之路，反而以各自不按牌理出牌的方式组成临时英雄联盟，对抗威胁世界和平的反派势力，在混乱与笑料之中肩负起守护世界的任务。 动作冒险 喜剧 Sci-Fi & Fantasy 剧情 South Korea 刘仁植 许多仲 朴恩斌 车银优 崔代勋 林成宰 金海淑 孙贤周 裴奈拏 郑伊书 崔允智 hero villain superhero miniseries super power superhero team supervillain cheerful joyful tv 2026"
     },
     {
       "key": "tmdb:movie:398818",
@@ -8396,6 +8475,74 @@
       "qualityScoreSource": "douban",
       "rankingScore": 108.9441,
       "searchableText": "杀人回忆 살인의 추억 / 살인의 추억 在其突破性的第二部作品中，奉俊昊以颠覆性的手法引爆了警察类型片的传统桎梏，带来了震撼且超越类型的成果。影片基于1980年代撼动韩国乡村社区的一连串真实连环杀人案改编，韩国电影标志性人物宋康昊饰演当地警官，他不得不与一位老练的首尔侦探联手调查此案——两人由此踏上一段长达数年、充满挫败与煎熬的艰苦历程，逐渐被推向存在的边缘。奉俊昊将扣人心弦的刑侦过程与军权统治下日常生活的荒诞社会图景生动结合，打造了一次深入黑暗的萦心之旅：它始于黑色喜剧的讽刺，终于与深渊那场灵魂破碎的遭遇。 犯罪 剧情 惊悚 movie 2003"
+    },
+    {
+      "key": "tmdb:tv:322430",
+      "tmdbID": 322430,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "众妻之夫",
+      "originalTitle": "The Polygamist",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-12",
+      "overview": "网红乔伊丝有着看似完美的婚姻，但出轨丈夫的一系列“成就”浮出水面后，她在丑闻的打击之下面临情绪崩溃。",
+      "genres": [
+        "剧情",
+        "肥皂剧"
+      ],
+      "countries": [
+        "South Africa"
+      ],
+      "originalLanguage": "zu",
+      "creators": [],
+      "cast": [
+        "古古·古梅德",
+        "斯迪莫·姆查利",
+        "夸内勒·姆特瓦",
+        "Kenneth Nkosi",
+        "Noluthando Shabalala",
+        "Wonder Ndlovu",
+        "Celeste Ntuli",
+        "Lwazie Keith Tsebesha",
+        "Luyanda Zwane",
+        "S'Thandiwe Kgoroge"
+      ],
+      "keywords": [
+        "based on novel or book",
+        "scandal",
+        "emotional"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.8,
+          "count": 126,
+          "url": "https://www.themoviedb.org/tv/322430"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 124.666
+      },
+      "sourceRanks": {
+        "popular": 65,
+        "recent": 8
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/hGCQ0tsJMpKjfrnCyYY0kMY2kY1.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/a7cg0krQZS30UuGNafSS4l6N9DL.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.8,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 108.8612,
+      "searchableText": "众妻之夫 The Polygamist 网红乔伊丝有着看似完美的婚姻，但出轨丈夫的一系列“成就”浮出水面后，她在丑闻的打击之下面临情绪崩溃。 剧情 肥皂剧 South Africa 古古·古梅德 斯迪莫·姆查利 夸内勒·姆特瓦 Kenneth Nkosi Noluthando Shabalala Wonder Ndlovu Celeste Ntuli Lwazie Keith Tsebesha Luyanda Zwane S'Thandiwe Kgoroge based on novel or book scandal emotional tv 2026"
     },
     {
       "key": "tmdb:movie:324857",
@@ -8955,7 +9102,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/gV1X2d0NZMgvrBsZ1Sh1i6MFMHQ.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 108.3448,
@@ -9222,83 +9369,6 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 107.8782,
       "searchableText": "老友记 Friends 莫妮卡、钱德勒、瑞秋、菲比、乔伊和罗斯是彼此最好的朋友，一起走过十年岁月的点点滴滴。虽然老友们各有各的性格特点，也会有矛盾和争执，但对于彼此，他们永远\"be there for you\"。故事开始在Central Perk咖啡馆里，婚礼上落荒而逃的瑞秋闯进来寻找老同学莫妮卡。莫妮卡的哥哥刚刚离婚，而他从小暗恋的人正是这个落跑新娘瑞秋。瑞秋在莫妮卡家住了下来，决定真正的步入社会，于是在其他老友的帮助下她上路了，从二十多岁初入社会，到三十多岁成家立业，他们一走就是十年。十年间风风雨雨，在嬉笑怒骂中，在离别团聚中，他们向我们讲述着友情、爱情还有生活。 喜剧 United States of America Ted Cohen Andrew Reich Scott Silveri Shana Goldberg-Meehan 大卫·克拉尼 玛尔塔·考夫曼 Kevin S. Bright 詹妮弗·安妮斯顿 柯特妮·考克斯 丽莎·库卓 马特·理勃兰 马修·派瑞 大卫·休默 new york city roommates friendship cafe apartment building group of friends manhattan, new york city sitcom young adult searching for love apartment best friends tv 1994"
-    },
-    {
-      "key": "tmdb:tv:259837",
-      "tmdbID": 259837,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "超能路人甲",
-      "originalTitle": "원더풀스",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-05-15",
-      "overview": "世界末日论盛行的 1999 年世纪末，一群原本平凡的“路人甲”意外获得超能力，却没有走上典型英雄之路，反而以各自不按牌理出牌的方式组成临时英雄联盟，对抗威胁世界和平的反派势力，在混乱与笑料之中肩负起守护世界的任务。",
-      "genres": [
-        "动作冒险",
-        "喜剧",
-        "Sci-Fi & Fantasy",
-        "剧情"
-      ],
-      "countries": [
-        "South Korea"
-      ],
-      "originalLanguage": "ko",
-      "creators": [
-        "刘仁植",
-        "许多仲"
-      ],
-      "cast": [
-        "朴恩斌",
-        "车银优",
-        "崔代勋",
-        "林成宰",
-        "金海淑",
-        "孙贤周",
-        "裴奈拏",
-        "郑伊书",
-        "崔允智"
-      ],
-      "keywords": [
-        "hero",
-        "villain",
-        "superhero",
-        "miniseries",
-        "super power",
-        "superhero team",
-        "supervillain",
-        "cheerful",
-        "joyful"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 9.0,
-          "count": 212,
-          "url": "https://www.themoviedb.org/tv/259837"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 27.099
-      },
-      "sourceRanks": {
-        "top_rated": 3
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/8uhY6EYNJH4tkdfC1zY8ZoVk7eM.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 9.0,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 107.7472,
-      "searchableText": "超能路人甲 원더풀스 世界末日论盛行的 1999 年世纪末，一群原本平凡的“路人甲”意外获得超能力，却没有走上典型英雄之路，反而以各自不按牌理出牌的方式组成临时英雄联盟，对抗威胁世界和平的反派势力，在混乱与笑料之中肩负起守护世界的任务。 动作冒险 喜剧 Sci-Fi & Fantasy 剧情 South Korea 刘仁植 许多仲 朴恩斌 车银优 崔代勋 林成宰 金海淑 孙贤周 裴奈拏 郑伊书 崔允智 hero villain superhero miniseries super power superhero team supervillain cheerful joyful tv 2026"
     },
     {
       "key": "tmdb:movie:508442",
@@ -9573,7 +9643,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/muSolUGIvAjrH7VynyJwOyMAtsY.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 107.5605,
@@ -10365,7 +10435,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/wpHrxkJzXJAFOeNUh2phKdxdJ6L.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 106.5233,
@@ -11210,7 +11280,7 @@
       "ratings": {
         "tmdb": {
           "score": 8.3,
-          "count": 1837,
+          "count": 1838,
           "url": "https://www.themoviedb.org/movie/1439930"
         },
         "douban": {
@@ -11232,10 +11302,10 @@
         "poster": "https://image.tmdb.org/t/p/w780/sjlVRbsB33Mzt26vKRxoGPV0YZC.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
-      "rankingScore": 104.9754,
+      "rankingScore": 104.9764,
       "searchableText": "惩罚者：最后一击 The Punisher: One Last Kill 弗兰克·卡斯特想在复仇之外，追求更有意义的目标，但他却意外地被拉回战场。 动作 剧情 犯罪 United States of America 雷纳尔多·马库斯·格林 乔·博恩瑟 凯文·费奇 Brad Winderbaum Louis D'Esposito Sana Amanat 乔·博恩瑟 黛博拉·安·沃尔 Jason R. Moore 朱迪丝·莱特 Kelli Barrett 安德烈·洛优 约翰·道格拉斯·汤普森 Colton Hill Nick Koumalatsos Addie Bernthal new york city post-traumatic stress disorder (ptsd) gun anti hero hallucination based on comic revenge one man army death of family mental health marvel cinematic universe (mcu) hunted aggressive vigilante justice movie 2026"
     },
     {
@@ -11321,7 +11391,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/6ktKo8jm5weIA09oWqYtM4hBTwU.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 104.968,
@@ -11728,6 +11798,82 @@
       "searchableText": "鬼灭之刃 鬼滅の刃 时值日本大正时期。 传说太阳下山后，有恶鬼出没吃人。亦有猎鬼人斩杀恶鬼、保护人们。 卖炭少年炭治郎，他那平凡而幸福的日常生活，在家人遭到恶鬼袭击的那一天发生了剧变。母亲与四个弟弟妹妹惨遭杀害，而与他一起生还的妹妹祢豆子亦异变成凶暴的鬼。 在猎鬼人的指引下，立志成为猎鬼人的炭治郎与变成鬼却尚存理智的祢豆子踏上了旅程。通过艰苦的剑术修行与赌命试炼，炭治郎成为了猎鬼人组织“鬼杀队”的一员。 为了让妹妹祢豆子变回人类，为了讨伐杀害家人的恶鬼，为了斩断悲伤的连锁，少年与鬼的战斗不曾停歇。 幸福被破坏之时，总是弥漫着鲜血的味道。纵然我身俱灭，定将恶鬼斩杀！血风剑戟冒险谭，开幕！ 动画 动作冒险 Sci-Fi & Fantasy Japan 花江夏树 鬼头明里 下野纮 松冈祯丞 sibling relationship swordplay sword magic training supernatural undead tragedy coming of age based on manga demon mutilation dark fantasy demon hunter anachronism shounen breathing anime time skip taisho period tv 2019"
     },
     {
+      "key": "tmdb:movie:614945",
+      "tmdbID": 614945,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "真爱留声",
+      "originalTitle": "Voicemails for Isabelle",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-20",
+      "overview": "年轻女子给已故姐姐发送的搞笑自白语音留言无意中被转给了陌生人，而这个陌生人竟隔着遥远的距离爱上了她。",
+      "genres": [
+        "爱情",
+        "喜剧"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Leah McKendrick",
+        "David Bloomfield",
+        "Galen Fletcher"
+      ],
+      "cast": [
+        "佐伊·达奇",
+        "尼克·罗宾森",
+        "席亚拉·博拉沃",
+        "尼克·奥弗曼",
+        "Leah McKendrick",
+        "岑勇康",
+        "卢卡斯·盖奇",
+        "Toby Sandeman",
+        "Tanis Dolman",
+        "吉尔·贝罗斯"
+      ],
+      "keywords": [
+        "san francisco, california",
+        "romcom",
+        "voicemail",
+        "lighthearted",
+        "romantic",
+        "adoring"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.4,
+          "count": 564,
+          "url": "https://www.themoviedb.org/movie/614945"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 64.445
+      },
+      "sourceRanks": {
+        "top_rated": 52,
+        "popular": 54,
+        "recent": 26
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/2WU6Y6aonzD6uAaCmNnEFlesxxJ.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/7F3XaVBrMLRAbMadwM8A9MViQkA.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.4,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 104.3911,
+      "searchableText": "真爱留声 Voicemails for Isabelle 年轻女子给已故姐姐发送的搞笑自白语音留言无意中被转给了陌生人，而这个陌生人竟隔着遥远的距离爱上了她。 爱情 喜剧 United States of America Leah McKendrick David Bloomfield Galen Fletcher 佐伊·达奇 尼克·罗宾森 席亚拉·博拉沃 尼克·奥弗曼 Leah McKendrick 岑勇康 卢卡斯·盖奇 Toby Sandeman Tanis Dolman 吉尔·贝罗斯 san francisco, california romcom voicemail lighthearted romantic adoring movie 2026"
+    },
+    {
       "key": "tmdb:tv:200709",
       "tmdbID": 200709,
       "doubanSubjectID": "",
@@ -11807,73 +11953,6 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 104.352,
       "searchableText": "弱小英雄 약한영웅 在意想不到的朋友的帮助下，一名富有天赋却内向的学生对抗霸凌者和暴力的敌人，却不知他的世界将会变得多么危险。 动作冒险 剧情 South Korea 朴丹熙 You Su-min 古天乐 陈可辛 朴志训 崔显旭 红炅 厉云 崔民英 刘秀彬 车宇民 裴奈拏 李珉载 李濬荣 male friendship friendship bullying gang bromance high school student skilled fighter based on webcomic or webtoon youth school bullying violence enthusiastic tv 2022"
-    },
-    {
-      "key": "tmdb:tv:322430",
-      "tmdbID": 322430,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "众妻之夫",
-      "originalTitle": "The Polygamist",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-06-12",
-      "overview": "网红乔伊丝有着看似完美的婚姻，但出轨丈夫的一系列“成就”浮出水面后，她在丑闻的打击之下面临情绪崩溃。",
-      "genres": [
-        "剧情",
-        "肥皂剧"
-      ],
-      "countries": [
-        "South Africa"
-      ],
-      "originalLanguage": "zu",
-      "creators": [],
-      "cast": [
-        "古古·古梅德",
-        "斯迪莫·姆查利",
-        "夸内勒·姆特瓦",
-        "Kenneth Nkosi",
-        "Noluthando Shabalala",
-        "Wonder Ndlovu",
-        "Celeste Ntuli",
-        "Lwazie Keith Tsebesha",
-        "Luyanda Zwane",
-        "S'Thandiwe Kgoroge"
-      ],
-      "keywords": [
-        "based on novel or book",
-        "scandal",
-        "emotional"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 8.7,
-          "count": 127,
-          "url": "https://www.themoviedb.org/tv/322430"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 124.666
-      },
-      "sourceRanks": {
-        "popular": 65
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/hGCQ0tsJMpKjfrnCyYY0kMY2kY1.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/a7cg0krQZS30UuGNafSS4l6N9DL.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 8.7,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 104.3393,
-      "searchableText": "众妻之夫 The Polygamist 网红乔伊丝有着看似完美的婚姻，但出轨丈夫的一系列“成就”浮出水面后，她在丑闻的打击之下面临情绪崩溃。 剧情 肥皂剧 South Africa 古古·古梅德 斯迪莫·姆查利 夸内勒·姆特瓦 Kenneth Nkosi Noluthando Shabalala Wonder Ndlovu Celeste Ntuli Lwazie Keith Tsebesha Luyanda Zwane S'Thandiwe Kgoroge based on novel or book scandal emotional tv 2026"
     },
     {
       "key": "tmdb:tv:219246",
@@ -12013,100 +12092,11 @@
         "poster": "https://image.tmdb.org/t/p/w780/2R1F6QbSefVGTwUgpDTRgFUAZin.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 104.2522,
       "searchableText": "哆啦A梦 ドラえもん 水田山葵版电视动画（水田わさび版）简称水田版动画，又称朝日电视台版《哆啦A梦》第二季动画、第三代《哆啦A梦》动画、《哆啦A梦》动画第三版、《哆啦A梦》第三版动画、第三代《哆啦A梦》动画等。自2005年4月15日开始，在朝日电视台上映的电视动画，目前仍持续播映中，因哆啦A梦声优为水田山葵而得名。日语中将前作大山版简称作“のぶドラ”（直译：羡代哆啦/Nobu Dora），本作水田版简称作“わさドラ”（直译：山葵哆啦/Wasa Dora）。 台湾华视在播出时为了与称为《哆啦A梦》的大山版分别，将其称作《新哆啦A梦》；在中国常称《哆啦A梦新番》；在香港则不做任何分别续用《多啦A梦》，然而在英文版电子节目表或播放平台上则使用了《New Doraemon》。 动作冒险 动画 喜剧 Sci-Fi & Fantasy 儿童 家庭 Japan Zenso Ichiro 大原惠美 水田山葵 嘉数由美 关智一 木村昴 藤本千秋 三石琴乃 松本保典 萩野志保子 高木涉 gadget time travel remake based on manga anime animal robot tv 2005"
-    },
-    {
-      "key": "tmdb:movie:1301421",
-      "tmdbID": 1301421,
-      "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "绵羊侦探团",
-      "originalTitle": "The Sheep Detectives",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-04-30",
-      "overview": "影片改编自莱奥妮·斯万的畅销小说。牧羊人乔治最爱给羊群读侦探小说，没想到自己有一天会离奇死亡。他留下的3000万巨额遗产，让每个人貌似都有犯罪动机。警察毫无头绪之时，羊群们决定“不务正业”迈出牧场，追查牧羊人“躺平”真相！它们秉承着遇见麻烦就吃草，嗅到危险就躺倒的哲学，却迎来了一个意想不到的结果……",
-      "genres": [
-        "喜剧",
-        "家庭",
-        "悬疑"
-      ],
-      "countries": [
-        "United States of America",
-        "United Kingdom"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "Tim Wellspring",
-        "菲尔·洛德",
-        "Aditya Sood",
-        "凯尔·巴尔达",
-        "克雷格·马津",
-        "克里斯托弗·米勒",
-        "Tyson Hesse",
-        "Amelia Granger"
-      ],
-      "cast": [
-        "休·杰克曼",
-        "尼古拉斯·布朗",
-        "尼古拉斯·加利齐纳",
-        "莫莉·戈登",
-        "朱莉娅·路易斯·德雷福斯",
-        "布莱恩·克兰斯顿",
-        "克里斯·奥多德",
-        "雷吉娜·赫尔",
-        "帕特里克·斯图尔特",
-        "贝拉·拉姆齐"
-      ],
-      "keywords": [
-        "shepherd",
-        "based on novel or book",
-        "investigation",
-        "murder",
-        "aftercreditsstinger",
-        "murder mystery",
-        "investigate",
-        "talking animal",
-        "adoring",
-        "comforting",
-        "whodunnit",
-        "animal adventure",
-        "bumbling detective"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 7.9,
-          "count": 914,
-          "url": "https://www.themoviedb.org/movie/1301421"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 87.808
-      },
-      "sourceRanks": {
-        "popular": 34,
-        "trending_week": 18
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/n4hv5lQvuXBdNyJAAelDnwv6Emw.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 7.9,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 104.1247,
-      "searchableText": "绵羊侦探团 The Sheep Detectives 影片改编自莱奥妮·斯万的畅销小说。牧羊人乔治最爱给羊群读侦探小说，没想到自己有一天会离奇死亡。他留下的3000万巨额遗产，让每个人貌似都有犯罪动机。警察毫无头绪之时，羊群们决定“不务正业”迈出牧场，追查牧羊人“躺平”真相！它们秉承着遇见麻烦就吃草，嗅到危险就躺倒的哲学，却迎来了一个意想不到的结果…… 喜剧 家庭 悬疑 United States of America United Kingdom Tim Wellspring 菲尔·洛德 Aditya Sood 凯尔·巴尔达 克雷格·马津 克里斯托弗·米勒 Tyson Hesse Amelia Granger 休·杰克曼 尼古拉斯·布朗 尼古拉斯·加利齐纳 莫莉·戈登 朱莉娅·路易斯·德雷福斯 布莱恩·克兰斯顿 克里斯·奥多德 雷吉娜·赫尔 帕特里克·斯图尔特 贝拉·拉姆齐 shepherd based on novel or book investigation murder aftercreditsstinger murder mystery investigate talking animal adoring comforting whodunnit animal adventure bumbling detective movie 2026"
     },
     {
       "key": "douban:3011091",
@@ -12237,6 +12227,95 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 104.0781,
       "searchableText": "巅峰对决 Heated Rivalry 该剧以职业冰球联赛为背景，改编自Rachel Reid的同名小说，讲述了肖恩·霍兰德与伊利亚·罗扎诺夫长达八年的复杂关系；两人自17岁相识后，在赛场屡次交锋对抗，私下却因隐秘情愫陷入纠结，最终不得不在竞技荣耀与禁忌情感间作出抉择的故事。 剧情 Canada Jacob Tierney Brendan Brady Justin Stockman 哈德森·威廉姆斯 康纳·斯托瑞 François Arnaud based on novel or book affectation ice hockey rivalry romance lgbt gay liberation secret relationship frantic candid professional athlete rival closeted homosexual loving gay theme homosexual athlete inspirational rivals to lovers boys' love (bl) tv 2025"
+    },
+    {
+      "key": "tmdb:movie:1301421",
+      "tmdbID": 1301421,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "绵羊侦探团",
+      "originalTitle": "The Sheep Detectives",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-04-30",
+      "overview": "影片改编自莱奥妮·斯万的畅销小说。牧羊人乔治最爱给羊群读侦探小说，没想到自己有一天会离奇死亡。他留下的3000万巨额遗产，让每个人貌似都有犯罪动机。警察毫无头绪之时，羊群们决定“不务正业”迈出牧场，追查牧羊人“躺平”真相！它们秉承着遇见麻烦就吃草，嗅到危险就躺倒的哲学，却迎来了一个意想不到的结果……",
+      "genres": [
+        "喜剧",
+        "家庭",
+        "悬疑"
+      ],
+      "countries": [
+        "United States of America",
+        "United Kingdom"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Tim Wellspring",
+        "菲尔·洛德",
+        "Aditya Sood",
+        "凯尔·巴尔达",
+        "克雷格·马津",
+        "克里斯托弗·米勒",
+        "Tyson Hesse",
+        "Amelia Granger"
+      ],
+      "cast": [
+        "休·杰克曼",
+        "尼古拉斯·布朗",
+        "尼古拉斯·加利齐纳",
+        "莫莉·戈登",
+        "朱莉娅·路易斯·德雷福斯",
+        "布莱恩·克兰斯顿",
+        "克里斯·奥多德",
+        "雷吉娜·赫尔",
+        "帕特里克·斯图尔特",
+        "贝拉·拉姆齐"
+      ],
+      "keywords": [
+        "shepherd",
+        "based on novel or book",
+        "investigation",
+        "murder",
+        "aftercreditsstinger",
+        "murder mystery",
+        "investigate",
+        "talking animal",
+        "adoring",
+        "comforting",
+        "whodunnit",
+        "animal adventure",
+        "bumbling detective"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.9,
+          "count": 914,
+          "url": "https://www.themoviedb.org/movie/1301421"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 87.808
+      },
+      "sourceRanks": {
+        "popular": 34,
+        "trending_week": 19
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/n4hv5lQvuXBdNyJAAelDnwv6Emw.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.9,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 103.9739,
+      "searchableText": "绵羊侦探团 The Sheep Detectives 影片改编自莱奥妮·斯万的畅销小说。牧羊人乔治最爱给羊群读侦探小说，没想到自己有一天会离奇死亡。他留下的3000万巨额遗产，让每个人貌似都有犯罪动机。警察毫无头绪之时，羊群们决定“不务正业”迈出牧场，追查牧羊人“躺平”真相！它们秉承着遇见麻烦就吃草，嗅到危险就躺倒的哲学，却迎来了一个意想不到的结果…… 喜剧 家庭 悬疑 United States of America United Kingdom Tim Wellspring 菲尔·洛德 Aditya Sood 凯尔·巴尔达 克雷格·马津 克里斯托弗·米勒 Tyson Hesse Amelia Granger 休·杰克曼 尼古拉斯·布朗 尼古拉斯·加利齐纳 莫莉·戈登 朱莉娅·路易斯·德雷福斯 布莱恩·克兰斯顿 克里斯·奥多德 雷吉娜·赫尔 帕特里克·斯图尔特 贝拉·拉姆齐 shepherd based on novel or book investigation murder aftercreditsstinger murder mystery investigate talking animal adoring comforting whodunnit animal adventure bumbling detective movie 2026"
     },
     {
       "key": "tmdb:movie:290098",
@@ -12941,7 +13020,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/fAKE5cezL6eOezlNCz8U2coDd86.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.2,
       "qualityScoreSource": "tmdb",
       "rankingScore": 103.4329,
@@ -13824,7 +13903,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/gRi80SuiWoTlmBwkznXOSjo8bTS.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.4,
       "qualityScoreSource": "tmdb",
       "rankingScore": 102.9768,
@@ -13973,7 +14052,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/6yRBwqaKcFlp9TBIuZgLvJip8hA.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.8,
       "qualityScoreSource": "tmdb",
       "rankingScore": 102.7346,
@@ -14051,7 +14130,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/eNvZwtRpfdCFRECiaRfuC1DrVIu.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.6,
       "qualityScoreSource": "tmdb",
       "rankingScore": 102.7283,
@@ -14504,81 +14583,6 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 102.4276,
       "searchableText": "犬夜叉 犬夜叉 日暮戈薇是就读于国中三年级的15岁普通小女生，某日，她偶然通过家中神社的枯井来到了500年前的战国时代。时狼烟四起，妖怪横行，世间大地生灵涂炭。戈薇在御神木那里邂逅了被封印的半妖犬夜叉。50年前，意欲变成真正妖怪的犬夜叉，为了得到四魂之玉结识拥有强大灵力的巫女桔梗。经过一段时间相处，两人之间产生了感情。犬夜叉因此希望变成人类，而桔梗也打算在净化完四魂之玉后过回普通人的生活。然而，对桔梗心存邪念的盗贼鬼蜘蛛将灵魂和肉体献给妖怪，继而转生变成邪恶的半妖奈落。在他的一番挑拨下，犬夜叉被桔梗封印在神木之上，重伤的桔梗也在悲伤绝望中死去。 桔梗转生的戈薇解救了犬夜叉，却不慎将四魂之玉射成碎片。为了找回碎片，她和犬夜叉以及随后遇到的伙伴：七宝、弥勒、珊瑚踏上了充满艰难险阻的旅途…… 动画 动作冒险 Sci-Fi & Fantasy Japan 山口胜平 雪野五月 辻谷耕史 桑岛法子 成田剑 能登麻美子 日高范子 森川智之 大神泉 草尾毅 love triangle martial arts swordplay magic time travel supernatural romance based on manga demon historical parallel world super power youkai feudal japan shounen anime isekai adventure tv 2000"
-    },
-    {
-      "key": "tmdb:movie:614945",
-      "tmdbID": 614945,
-      "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "真爱留声",
-      "originalTitle": "Voicemails for Isabelle",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-06-20",
-      "overview": "年轻女子给已故姐姐发送的搞笑自白语音留言无意中被转给了陌生人，而这个陌生人竟隔着遥远的距离爱上了她。",
-      "genres": [
-        "爱情",
-        "喜剧"
-      ],
-      "countries": [
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "Leah McKendrick",
-        "David Bloomfield",
-        "Galen Fletcher"
-      ],
-      "cast": [
-        "佐伊·达奇",
-        "尼克·罗宾森",
-        "席亚拉·博拉沃",
-        "尼克·奥弗曼",
-        "Leah McKendrick",
-        "岑勇康",
-        "卢卡斯·盖奇",
-        "Toby Sandeman",
-        "Tanis Dolman",
-        "吉尔·贝罗斯"
-      ],
-      "keywords": [
-        "san francisco, california",
-        "romcom",
-        "voicemail",
-        "lighthearted",
-        "romantic",
-        "adoring"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 8.4,
-          "count": 559,
-          "url": "https://www.themoviedb.org/movie/614945"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 64.445
-      },
-      "sourceRanks": {
-        "top_rated": 52,
-        "popular": 54
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/2WU6Y6aonzD6uAaCmNnEFlesxxJ.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/7F3XaVBrMLRAbMadwM8A9MViQkA.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 8.4,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 102.4145,
-      "searchableText": "真爱留声 Voicemails for Isabelle 年轻女子给已故姐姐发送的搞笑自白语音留言无意中被转给了陌生人，而这个陌生人竟隔着遥远的距离爱上了她。 爱情 喜剧 United States of America Leah McKendrick David Bloomfield Galen Fletcher 佐伊·达奇 尼克·罗宾森 席亚拉·博拉沃 尼克·奥弗曼 Leah McKendrick 岑勇康 卢卡斯·盖奇 Toby Sandeman Tanis Dolman 吉尔·贝罗斯 san francisco, california romcom voicemail lighthearted romantic adoring movie 2026"
     },
     {
       "key": "douban:25662329",
@@ -18004,7 +18008,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/d5jW601WKpT1yTwWsJcYvUwl8cB.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.6,
       "qualityScoreSource": "tmdb",
       "rankingScore": 100.8452,
@@ -18075,7 +18079,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/15SMnscZqd7HZ0bzruatOcKUlOV.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.2,
       "qualityScoreSource": "tmdb",
       "rankingScore": 100.8245,
@@ -18613,7 +18617,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/lI6PP0ct9PV87MQweejpBIPzWOU.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 100.5481,
@@ -18954,89 +18958,6 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 100.465,
       "searchableText": "发条橙 A Clockwork Orange 阿利斯是一位无恶不作的少年，他的特殊喜好是边听贝多芬的交响曲边奸淫女性，某次他进入一所别墅抢劫一番后，打残了该别墅的主人——一名小说家，并用特殊喜好蹂躏了其妻子。后来因为杀了一名单身女子，阿利斯入狱并接受了特殊的人格治疗，出狱后，他对淫乐之事产生彻底的厌倦。但当阿利斯回到家时，周围人群没改变对他的旧看法，在种种歧视的重压下，他跑到郊外一所别墅想喘口气，不想这所别墅正是他以前抢劫过的小说家的那所。而作为反政府组织首领的该小说家为了达到某种目的，软禁了阿利斯。当这件事暴露小说家被捕时，其手下为了对抗政府，扬言要把阿利斯恢复原来的性情，完全不理一旁的阿利斯大叫“我完全好了”。 科幻 犯罪 United Kingdom United States of America 斯坦利·库布里克 Si Litvinoff Max L. Raab 马尔科姆·麦克道威尔 帕特里克·马吉 卡罗尔·杜瑞 迈克尔·贝茨 沃伦·克拉克 詹姆斯·马库斯 迈克尔·塔恩 米里亚姆·卡林 阿德琳妮·柯瑞 Sheila Raynor london, england police brutality robbery street gang great britain based on novel or book nihilism parent child relationship society sexuality social worker psychopath dystopia dark comedy satire beating juvenile delinquent home invasion sex crime futuristic society movie 1971"
-    },
-    {
-      "key": "tmdb:tv:65942",
-      "tmdbID": 65942,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "Re：从零开始的异世界生活",
-      "originalTitle": "Re:ゼロから始める異世界生活",
-      "alternateTitles": [],
-      "year": 2016,
-      "releaseDate": "2016-04-04",
-      "overview": "在异世界陷入迷茫的普通高中生菜月昴，邂逅了一位银发的美少女。但想助她一臂之力的昴，却一次次地遭遇敌袭，背叛、暴力，甚至是死亡……“死亡回归”——无力的少年拥有的唯一能力，能将死后时间倒转回一开始。使用了这般力量，便会失去过去的回忆，可为了守护最重要的人们，昴必须抗争到底。“即使你忘却了我，我也不会遗忘你。”",
-      "genres": [
-        "动画",
-        "剧情",
-        "悬疑",
-        "动作冒险",
-        "Sci-Fi & Fantasy"
-      ],
-      "countries": [
-        "Japan"
-      ],
-      "originalLanguage": "ja",
-      "creators": [],
-      "cast": [
-        "小林裕介",
-        "高桥李依",
-        "内山夕实",
-        "村川梨衣",
-        "水濑祈",
-        "新井里美"
-      ],
-      "keywords": [
-        "magic",
-        "trauma",
-        "time travel",
-        "reincarnation",
-        "supernatural",
-        "gore",
-        "tragedy",
-        "time loop",
-        "fate",
-        "parallel world",
-        "death",
-        "mutilation",
-        "medieval",
-        "angst",
-        "loop",
-        "anime",
-        "bishoujo",
-        "butterfly effect",
-        "isekai",
-        "parallel universe"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 8.0,
-          "count": 709,
-          "url": "https://www.themoviedb.org/tv/65942"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 61.206
-      },
-      "sourceRanks": {
-        "trending_week": 18
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/zTAJk1ERMticlZeXaKTq6UozgxC.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 8.0,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 100.4622,
-      "searchableText": "Re：从零开始的异世界生活 Re:ゼロから始める異世界生活 在异世界陷入迷茫的普通高中生菜月昴，邂逅了一位银发的美少女。但想助她一臂之力的昴，却一次次地遭遇敌袭，背叛、暴力，甚至是死亡……“死亡回归”——无力的少年拥有的唯一能力，能将死后时间倒转回一开始。使用了这般力量，便会失去过去的回忆，可为了守护最重要的人们，昴必须抗争到底。“即使你忘却了我，我也不会遗忘你。” 动画 剧情 悬疑 动作冒险 Sci-Fi & Fantasy Japan 小林裕介 高桥李依 内山夕实 村川梨衣 水濑祈 新井里美 magic trauma time travel reincarnation supernatural gore tragedy time loop fate parallel world death mutilation medieval angst loop anime bishoujo butterfly effect isekai parallel universe tv 2016"
     },
     {
       "key": "tmdb:tv:61663",
@@ -19436,6 +19357,89 @@
       "searchableText": "保护者 Protector 退役军人尼基与女儿克洛伊平静生活，却在废弃工厂醒来后发现女儿遭绑架，她必须重返黑暗世界，对抗人贩子、警察与军方，在72小时黄金救援期内救回女儿。 动作 惊悚 United States of America 阿德里安·格鲁伯格 Mun-Bong Seub Matthew Helderman Joshua Harris Jina Panebianco R. Wesley Sierk Sandy S. Solowitz John D. Straley 米拉·乔沃维奇 马修·莫迪恩 伊莎贝尔·迈尔斯 D·B·斯威尼 唐·哈维 迈克尔·斯塔尔-大卫 莉迪亚·赫尔 Chase Kim 布鲁克林·苏丹诺 加布里埃尔·斯洛耶 kidnapping rescue mission war hero underworld action movie 2026"
     },
     {
+      "key": "tmdb:tv:65942",
+      "tmdbID": 65942,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "Re：从零开始的异世界生活",
+      "originalTitle": "Re:ゼロから始める異世界生活",
+      "alternateTitles": [],
+      "year": 2016,
+      "releaseDate": "2016-04-04",
+      "overview": "在异世界陷入迷茫的普通高中生菜月昴，邂逅了一位银发的美少女。但想助她一臂之力的昴，却一次次地遭遇敌袭，背叛、暴力，甚至是死亡……“死亡回归”——无力的少年拥有的唯一能力，能将死后时间倒转回一开始。使用了这般力量，便会失去过去的回忆，可为了守护最重要的人们，昴必须抗争到底。“即使你忘却了我，我也不会遗忘你。”",
+      "genres": [
+        "动画",
+        "剧情",
+        "悬疑",
+        "动作冒险",
+        "Sci-Fi & Fantasy"
+      ],
+      "countries": [
+        "Japan"
+      ],
+      "originalLanguage": "ja",
+      "creators": [],
+      "cast": [
+        "小林裕介",
+        "高桥李依",
+        "内山夕实",
+        "村川梨衣",
+        "水濑祈",
+        "新井里美"
+      ],
+      "keywords": [
+        "magic",
+        "trauma",
+        "time travel",
+        "reincarnation",
+        "supernatural",
+        "gore",
+        "tragedy",
+        "time loop",
+        "fate",
+        "parallel world",
+        "death",
+        "mutilation",
+        "medieval",
+        "angst",
+        "loop",
+        "anime",
+        "bishoujo",
+        "butterfly effect",
+        "isekai",
+        "parallel universe"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.0,
+          "count": 709,
+          "url": "https://www.themoviedb.org/tv/65942"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 61.206
+      },
+      "sourceRanks": {
+        "trending_week": 19
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/zTAJk1ERMticlZeXaKTq6UozgxC.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.0,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 100.3113,
+      "searchableText": "Re：从零开始的异世界生活 Re:ゼロから始める異世界生活 在异世界陷入迷茫的普通高中生菜月昴，邂逅了一位银发的美少女。但想助她一臂之力的昴，却一次次地遭遇敌袭，背叛、暴力，甚至是死亡……“死亡回归”——无力的少年拥有的唯一能力，能将死后时间倒转回一开始。使用了这般力量，便会失去过去的回忆，可为了守护最重要的人们，昴必须抗争到底。“即使你忘却了我，我也不会遗忘你。” 动画 剧情 悬疑 动作冒险 Sci-Fi & Fantasy Japan 小林裕介 高桥李依 内山夕实 村川梨衣 水濑祈 新井里美 magic trauma time travel reincarnation supernatural gore tragedy time loop fate parallel world death mutilation medieval angst loop anime bishoujo butterfly effect isekai parallel universe tv 2016"
+    },
+    {
       "key": "tmdb:tv:62914",
       "tmdbID": 62914,
       "doubanSubjectID": "",
@@ -19660,7 +19664,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/dcb3KTCA3LDLB0tiZBQQKCoT3tK.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 8.2,
       "qualityScoreSource": "tmdb",
       "rankingScore": 100.1489,
@@ -20279,7 +20283,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/tMTQxYo55LqJDXdN0uTNmpP0qq1.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.6,
       "qualityScoreSource": "tmdb",
       "rankingScore": 99.9596,
@@ -20751,6 +20755,94 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 99.8635,
       "searchableText": "灵能百分百 モブサイコ100 平凡的中学二年级少年影山茂夫，因其微弱的存在感与名字茂夫的谐音被周遭人称为龙套（モブ），但不起眼的他其实是强大的天生超能力者。历经每一次的成长，龙套开始认为自己的超能力是危险的存在，为了不让超能力失控，龙套无意识的压抑著情感。虽然只想平凡的度过每一天，但各种麻烦却接二连三找上他，随着被压抑的情感在内心一点点膨胀，龙套体内积累的力量似乎也正蠢蠢欲动...... 动画 动作冒险 喜剧 Sci-Fi & Fantasy Japan 伊藤节生 樱井孝宏 入野自由 大冢明夫 supernatural based on comic psychic power slice of life coming of age sibling rivalry based on manga super power occult extrasensory perception high school rivalry school life shounen anime japanese high school based on webcomic or webtoon sentimental amused cheerful empathetic tv 2016"
+    },
+    {
+      "key": "tmdb:tv:220102",
+      "tmdbID": 220102,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "暗影蜘蛛侠",
+      "originalTitle": "Spider-Noir",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-25",
+      "overview": "私家侦探本·莱利接下几桩看似单纯的案子，没想到黑帮分子、怪物，以及一位神秘的蛇蝎美人织起一张阴谋之网，让他必须面对过去，那个纽约唯一超级英雄的身份：蜘蛛侠。",
+      "genres": [
+        "剧情",
+        "悬疑",
+        "犯罪"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "奥伦·尤济尔",
+        "菲尔·洛德",
+        "克里斯托弗·米勒",
+        "艾米·帕斯卡尔",
+        "Steve Lightfoot",
+        "尼古拉斯·凯奇",
+        "Pavlina Hatoupis",
+        "Dan Shear"
+      ],
+      "cast": [
+        "尼古拉斯·凯奇",
+        "拉莫恩·莫里斯",
+        "李丽君",
+        "Karen Rodriguez",
+        "亚伯拉罕·波波拉",
+        "杰克·休斯頓",
+        "布莱丹·格里森"
+      ],
+      "keywords": [
+        "new york city",
+        "detective",
+        "great depression",
+        "femme fatale",
+        "superhero",
+        "based on comic",
+        "film noir",
+        "private investigator",
+        "mobster",
+        "black and white",
+        "period drama",
+        "supervillain",
+        "mysterious",
+        "1930s",
+        "admiring",
+        "euphoric"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.4,
+          "count": 689,
+          "url": "https://www.themoviedb.org/tv/220102"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 35.569
+      },
+      "sourceRanks": {
+        "top_rated": 196,
+        "recent": 36
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/6t2FvBr9DS8MOq0m5FAwPBCdAW5.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/f2dyNx2eWY8Ccmko94DPEfeE361.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.4,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 99.8553,
+      "searchableText": "暗影蜘蛛侠 Spider-Noir 私家侦探本·莱利接下几桩看似单纯的案子，没想到黑帮分子、怪物，以及一位神秘的蛇蝎美人织起一张阴谋之网，让他必须面对过去，那个纽约唯一超级英雄的身份：蜘蛛侠。 剧情 悬疑 犯罪 United States of America 奥伦·尤济尔 菲尔·洛德 克里斯托弗·米勒 艾米·帕斯卡尔 Steve Lightfoot 尼古拉斯·凯奇 Pavlina Hatoupis Dan Shear 尼古拉斯·凯奇 拉莫恩·莫里斯 李丽君 Karen Rodriguez 亚伯拉罕·波波拉 杰克·休斯頓 布莱丹·格里森 new york city detective great depression femme fatale superhero based on comic film noir private investigator mobster black and white period drama supervillain mysterious 1930s admiring euphoric tv 2026"
     },
     {
       "key": "tmdb:tv:86031",
@@ -22573,6 +22665,81 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 99.2472,
       "searchableText": "出租车司机 Taxi Driver 这部马丁·斯科塞斯1976年的杰作，讲述了一位精神濒临崩溃的纽约出租车司机，为解救一名未成年妓女而走上暴力之路的过于真实的故事。 犯罪 剧情 movie 1976"
+    },
+    {
+      "key": "tmdb:tv:278178",
+      "tmdbID": 278178,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "我会找到你",
+      "originalTitle": "I Will Find You",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-18",
+      "overview": "一名父亲因被误判杀害亲生儿子而入狱，却在得知儿子可能仍然活着后，展开一场绝望的救子行动。",
+      "genres": [
+        "剧情",
+        "悬疑",
+        "犯罪"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "哈兰·科本",
+        "Robert Hull",
+        "Bryan Wynbrandt",
+        "Steven Lilien",
+        "John Weber",
+        "布拉德·安德森"
+      ],
+      "cast": [
+        "萨姆·沃辛顿",
+        "布丽特·洛薇尔",
+        "齐·麦克布赖德",
+        "罗根·布朗宁",
+        "艾琳·理查兹",
+        "乔纳森·塔克",
+        "米洛·文提米利亞"
+      ],
+      "keywords": [
+        "prison",
+        "based on novel or book",
+        "murder",
+        "miniseries",
+        "false imprisonment",
+        "thriller"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.2,
+          "count": 270,
+          "url": "https://www.themoviedb.org/tv/278178"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 85.057
+      },
+      "sourceRanks": {
+        "recent": 13
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/yOna5ZGXrvWO2HdOCKcahx2sCDN.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/xlmw7sjlcnBGpp8NK18YBD6soz3.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.2,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 99.2308,
+      "searchableText": "我会找到你 I Will Find You 一名父亲因被误判杀害亲生儿子而入狱，却在得知儿子可能仍然活着后，展开一场绝望的救子行动。 剧情 悬疑 犯罪 United States of America 哈兰·科本 Robert Hull Bryan Wynbrandt Steven Lilien John Weber 布拉德·安德森 萨姆·沃辛顿 布丽特·洛薇尔 齐·麦克布赖德 罗根·布朗宁 艾琳·理查兹 乔纳森·塔克 米洛·文提米利亞 prison based on novel or book murder miniseries false imprisonment thriller tv 2026"
     },
     {
       "key": "tmdb:tv:96462",
@@ -25603,7 +25770,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/d38UrBjS5QgECryNeaf58jkLSsv.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 98.391,
@@ -26198,57 +26365,6 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 98.1915,
       "searchableText": "社内相亲 사내맞선 夏莉假扮闺蜜去相亲，试图将对方吓跑。但出乎意料的是，相亲对象是她任职公司的代表，而且还向她求婚。 喜剧 剧情 tv 2022"
-    },
-    {
-      "key": "tmdb:tv:220102",
-      "tmdbID": 220102,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "暗影蜘蛛侠",
-      "originalTitle": "Spider-Noir",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-05-25",
-      "overview": "私家侦探本·莱利接下几桩看似单纯的案子，没想到黑帮分子、怪物，以及一位神秘的蛇蝎美人织起一张阴谋之网，让他必须面对过去，那个纽约唯一超级英雄的身份：蜘蛛侠。",
-      "genres": [
-        "剧情",
-        "悬疑",
-        "犯罪"
-      ],
-      "countries": [],
-      "originalLanguage": "en",
-      "creators": [],
-      "cast": [],
-      "keywords": [],
-      "ratings": {
-        "tmdb": {
-          "score": 8.4,
-          "count": 688,
-          "url": "https://www.themoviedb.org/tv/220102"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 35.569
-      },
-      "sourceRanks": {
-        "top_rated": 196
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/6t2FvBr9DS8MOq0m5FAwPBCdAW5.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/f2dyNx2eWY8Ccmko94DPEfeE361.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 8.4,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 98.1861,
-      "searchableText": "暗影蜘蛛侠 Spider-Noir 私家侦探本·莱利接下几桩看似单纯的案子，没想到黑帮分子、怪物，以及一位神秘的蛇蝎美人织起一张阴谋之网，让他必须面对过去，那个纽约唯一超级英雄的身份：蜘蛛侠。 剧情 悬疑 犯罪 tv 2026"
     },
     {
       "key": "tmdb:tv:43",
@@ -27364,7 +27480,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/w2BQXaaRkmq2l5M7wt7yIeOzPF1.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.9,
       "qualityScoreSource": "tmdb",
       "rankingScore": 97.8054,
@@ -29883,7 +29999,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/o25Tk1FYQi2BLk0OEAvx2h69QvB.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.9,
       "qualityScoreSource": "tmdb",
       "rankingScore": 97.052,
@@ -31059,7 +31175,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/7kelotRA447lTaBviPrw2jom9cr.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.7,
       "qualityScoreSource": "tmdb",
       "rankingScore": 96.7135,
@@ -31176,7 +31292,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/naOC89qeEygU44xM9EIot1m5AUQ.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 96.6018,
@@ -31712,7 +31828,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/8dUcTbuYgqUd3Yp88zA7x6w3Zrm.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.7,
       "qualityScoreSource": "tmdb",
       "rankingScore": 96.4875,
@@ -32202,7 +32318,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/8RtwL5gxUvh9YViqjhNlVRvJpum.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.4,
       "qualityScoreSource": "tmdb",
       "rankingScore": 96.4269,
@@ -37085,7 +37201,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/lAFBd4y5aTPj9GskvvO4osloSsR.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.5,
       "qualityScoreSource": "tmdb",
       "rankingScore": 94.7373,
@@ -38104,6 +38220,79 @@
       "searchableText": "无人知晓 / 誰も知らない / 誰も知らない 导演: 是枝裕和 Hirokazu Koreeda 主演: 柳乐优弥 Yûya Yagira / 北浦爱... 2004 / 日本 / 剧情 movie 2004"
     },
     {
+      "key": "tmdb:tv:260592",
+      "tmdbID": 260592,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "每个夏天之后",
+      "originalTitle": "Every Year After",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-10",
+      "overview": "卡莉·福琼的《每个夏天之后》是一部充满浪漫与怀旧色彩的故事，讲述了初恋以及那些在我们生命中留下永久印记的人与选择。",
+      "genres": [
+        "剧情"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Carley Fortune",
+        "艾米·哈里斯",
+        "Lindsey Liberatore",
+        "Amy Rardin",
+        "John Stephens",
+        "Grace Gilroy"
+      ],
+      "cast": [
+        "赛迪·斯欧维奥",
+        "马特·科内特",
+        "Aurora Perrineau",
+        "阿比盖尔·考恩",
+        "Michael Bradway",
+        "Joseph Chiu",
+        "伊丽莎·库斯伯特"
+      ],
+      "keywords": [
+        "based on novel or book",
+        "romance",
+        "first love",
+        "wonder",
+        "lighthearted"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.4,
+          "count": 68,
+          "url": "https://www.themoviedb.org/tv/260592"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 23.989
+      },
+      "sourceRanks": {
+        "recent": 51
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/to5eI3AWbT4spz1K58mIK5HQRbD.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/fWKRF6XzqPHB6SZJmBd8VSaXoiH.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.4,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 94.0884,
+      "searchableText": "每个夏天之后 Every Year After 卡莉·福琼的《每个夏天之后》是一部充满浪漫与怀旧色彩的故事，讲述了初恋以及那些在我们生命中留下永久印记的人与选择。 剧情 United States of America Canada Carley Fortune 艾米·哈里斯 Lindsey Liberatore Amy Rardin John Stephens Grace Gilroy 赛迪·斯欧维奥 马特·科内特 Aurora Perrineau 阿比盖尔·考恩 Michael Bradway Joseph Chiu 伊丽莎·库斯伯特 based on novel or book romance first love wonder lighthearted tv 2026"
+    },
+    {
       "key": "tmdb:movie:1160164",
       "tmdbID": 1160164,
       "doubanSubjectID": "",
@@ -38426,6 +38615,82 @@
       "searchableText": "GIVEN 被赠与的未来 剧场版 映画 ギヴン 高中生上山立夏热爱演奏吉他，与春树和秋彦合组一个小乐队。某个午休，他意外帮佐藤真冬修好吉他弦后，被真冬拜托教吉他，而后又在听到真冬的歌声后邀请他加入乐队。立夏在相处的过程中渐渐喜欢上真冬，真冬有一个彼此互相喜欢并支持的青梅竹马，但那个人却自杀了，因那个人喜欢吉他，真冬才一直很想学。那个人没有做到的事，没有坚持的陪伴，立夏都帮他实现了，真冬也开始慢慢喜欢上立夏。另外一对CP春树和秋彦，春树一直默默喜欢着秋彦，为他留着长发，但秋彦却与极具音乐才华的小提琴家雨月同居在一起。动画影集以高中生的真冬与立夏两人间悲伤恬淡的爱情为主轴，首部剧场版则为大人组三人的春树、秋彦、雨月，炽热的三角恋拉开序幕。 动画 剧情 音乐 爱情 Japan 绫奈由仁子 山口光 江口拓也 中泽匡智 矢野奖吾 内田雄马 浅沼晋太郎 high school love triangle bisexuality slice of life tragedy based on manga relationship lgbt anime gay relationship boys' love (bl) band movie 2020"
     },
     {
+      "key": "tmdb:tv:308014",
+      "tmdbID": 308014,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "柏林：抱银貂的女子",
+      "originalTitle": "Berlín y la dama del armiño",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-15",
+      "overview": "又想干一票的柏林召集团伙前往塞维利亚，打算盗取达芬奇的杰作，并将野心勃勃的公爵从该计划的受益人变为受害者。",
+      "genres": [
+        "剧情",
+        "犯罪",
+        "动作冒险"
+      ],
+      "countries": [
+        "Spain"
+      ],
+      "originalLanguage": "es",
+      "creators": [
+        "Cristina López Ferraz",
+        "Esther Martínez Lobato",
+        "Albert Pintó",
+        "亚历克斯·皮纳"
+      ],
+      "cast": [
+        "佩德罗·阿隆索",
+        "米歇尔·珍娜",
+        "特里斯坦·乌略亚",
+        "Begoña Vargas",
+        "胡利奥·佩纳",
+        "Joel Sánchez",
+        "何塞·路易斯·加西亚·佩雷斯",
+        "Marta Nieto",
+        "茵玛·库艾斯塔"
+      ],
+      "keywords": [
+        "blackmail",
+        "gang of thieves",
+        "sequel",
+        "thief",
+        "heist",
+        "globetrotting",
+        "art heist"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 8.2,
+          "count": 187,
+          "url": "https://www.themoviedb.org/tv/308014"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 23.081
+      },
+      "sourceRanks": {
+        "recent": 55
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/hbJuN7fmve77vyhE7X7H6kBDSnp.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/qMLS5MvvU1VW8i6am2MO2qyQXlV.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 8.2,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 93.7273,
+      "searchableText": "柏林：抱银貂的女子 Berlín y la dama del armiño 又想干一票的柏林召集团伙前往塞维利亚，打算盗取达芬奇的杰作，并将野心勃勃的公爵从该计划的受益人变为受害者。 剧情 犯罪 动作冒险 Spain Cristina López Ferraz Esther Martínez Lobato Albert Pintó 亚历克斯·皮纳 佩德罗·阿隆索 米歇尔·珍娜 特里斯坦·乌略亚 Begoña Vargas 胡利奥·佩纳 Joel Sánchez 何塞·路易斯·加西亚·佩雷斯 Marta Nieto 茵玛·库艾斯塔 blackmail gang of thieves sequel thief heist globetrotting art heist tv 2026"
+    },
+    {
       "key": "douban:5322596",
       "tmdbID": null,
       "doubanSubjectID": "5322596",
@@ -38700,6 +38965,90 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 93.6543,
       "searchableText": "泰勒·斯威夫特：“举世盛名”巡回演唱会 Taylor Swift: Reputation Stadium Tour 您已读过头条，听过传闻，而现在她将用红唇唱出真相。泰勒·斯威夫特将赠予全世界观众近距离观赏“泰勒·斯威夫特的名誉体育场巡回演唱会”在美国最后一场表演的机会，该巡回演唱会是美国历史以来销售额最高的巡演，现在仅在 Netflix 上放映！这部传奇的演唱会电影将展示火焰特技、烟花、数个场景以及 63 英尺的眼镜蛇卡林。《泰勒·斯威夫特的名誉体育场巡回演唱会》将从 12 月 31 日起在 Netflix 上面向全球上线，您可以随处观看这场销售一空并追高清囊括 6 万人的表演——无论是在家庭聚会上，东区的酒吧里，还是在沙发上和猫一起看。无论如何，这都将是一个最佳的新年夜计划。你准备好了吗？ 音乐 United States of America Andrea Swift Robert Allen Jesse Ignjatovic Chris Choun Evan Prager Jay Schaudies Austin Fish Jaidam Kirpich 泰勒·斯威夫特 查莉XCX 卡米拉·卡贝洛 大卫·库克 阿莫斯·海勒 埃利奥特·伍德福德 杰斯林·戈尔曼 卡米拉·马歇尔 马特·比林斯利 马克斯·伯恩斯坦 concert live performance concert film movie 2018"
+    },
+    {
+      "key": "tmdb:tv:252107",
+      "tmdbID": 252107,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "星城",
+      "originalTitle": "Star City",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-28",
+      "overview": "踏进受《为全人类》启发的惊险新篇章，同一个架空历史，却从苏联的角度出发，讲述铁幕背后一众宇航员、工程师和情报人员铤而走险，在登月竞赛中取胜求存。",
+      "genres": [
+        "剧情",
+        "Sci-Fi & Fantasy",
+        "War & Politics"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Maril Davis",
+        "Matt Wolpert",
+        "Ben Nedivi",
+        "罗纳德·D·摩尔",
+        "Andrew Chambliss",
+        "Steve Oster"
+      ],
+      "cast": [
+        "瑞斯·伊凡斯",
+        "安娜·麦克西维尔·马丁",
+        "Agnes O'Casey",
+        "Alice Englert",
+        "索利·麦克劳德",
+        "亚当·纳盖蒂斯",
+        "鲁比·阿什伯恩·瑟金斯",
+        "Josef Davies",
+        "普里亚·坎萨拉"
+      ],
+      "keywords": [
+        "cold war",
+        "soviet union",
+        "moon landing",
+        "alternate history",
+        "astronaut",
+        "spin off",
+        "space race",
+        "cosmonaut",
+        "paranoid thriller",
+        "space program",
+        "surveillance state",
+        "thriller"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.6,
+          "count": 57,
+          "url": "https://www.themoviedb.org/tv/252107"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 39.389
+      },
+      "sourceRanks": {
+        "trending_week": 13,
+        "recent": 33
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/1tbUKieOUaqiafxDnEwchd9KfDo.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.6,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 93.6392,
+      "searchableText": "星城 Star City 踏进受《为全人类》启发的惊险新篇章，同一个架空历史，却从苏联的角度出发，讲述铁幕背后一众宇航员、工程师和情报人员铤而走险，在登月竞赛中取胜求存。 剧情 Sci-Fi & Fantasy War & Politics United States of America Maril Davis Matt Wolpert Ben Nedivi 罗纳德·D·摩尔 Andrew Chambliss Steve Oster 瑞斯·伊凡斯 安娜·麦克西维尔·马丁 Agnes O'Casey Alice Englert 索利·麦克劳德 亚当·纳盖蒂斯 鲁比·阿什伯恩·瑟金斯 Josef Davies 普里亚·坎萨拉 cold war soviet union moon landing alternate history astronaut spin off space race cosmonaut paranoid thriller space program surveillance state thriller tv 2026"
     },
     {
       "key": "douban:1292679",
@@ -40525,89 +40874,6 @@
       "searchableText": "我对你电影版：S先生的报仇 Me contro Te: Il film - La vendetta del Signor S 路易和索菲再次与可怕的S先生展开战斗，这一次他将向公众揭露真面目。 家庭 奇幻 movie 2020"
     },
     {
-      "key": "tmdb:tv:252107",
-      "tmdbID": 252107,
-      "doubanSubjectID": "",
-      "mediaType": "tv",
-      "title": "星城",
-      "originalTitle": "Star City",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-05-28",
-      "overview": "踏进受《为全人类》启发的惊险新篇章，同一个架空历史，却从苏联的角度出发，讲述铁幕背后一众宇航员、工程师和情报人员铤而走险，在登月竞赛中取胜求存。",
-      "genres": [
-        "剧情",
-        "Sci-Fi & Fantasy",
-        "War & Politics"
-      ],
-      "countries": [
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "Maril Davis",
-        "Matt Wolpert",
-        "Ben Nedivi",
-        "罗纳德·D·摩尔",
-        "Andrew Chambliss",
-        "Steve Oster"
-      ],
-      "cast": [
-        "瑞斯·伊凡斯",
-        "安娜·麦克西维尔·马丁",
-        "Agnes O'Casey",
-        "Alice Englert",
-        "索利·麦克劳德",
-        "亚当·纳盖蒂斯",
-        "鲁比·阿什伯恩·瑟金斯",
-        "Josef Davies",
-        "普里亚·坎萨拉"
-      ],
-      "keywords": [
-        "cold war",
-        "soviet union",
-        "moon landing",
-        "alternate history",
-        "astronaut",
-        "spin off",
-        "space race",
-        "cosmonaut",
-        "paranoid thriller",
-        "space program",
-        "surveillance state",
-        "thriller"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 7.6,
-          "count": 57,
-          "url": "https://www.themoviedb.org/tv/252107"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 39.389
-      },
-      "sourceRanks": {
-        "trending_week": 11
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/1tbUKieOUaqiafxDnEwchd9KfDo.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 7.6,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 92.4783,
-      "searchableText": "星城 Star City 踏进受《为全人类》启发的惊险新篇章，同一个架空历史，却从苏联的角度出发，讲述铁幕背后一众宇航员、工程师和情报人员铤而走险，在登月竞赛中取胜求存。 剧情 Sci-Fi & Fantasy War & Politics United States of America Maril Davis Matt Wolpert Ben Nedivi 罗纳德·D·摩尔 Andrew Chambliss Steve Oster 瑞斯·伊凡斯 安娜·麦克西维尔·马丁 Agnes O'Casey Alice Englert 索利·麦克劳德 亚当·纳盖蒂斯 鲁比·阿什伯恩·瑟金斯 Josef Davies 普里亚·坎萨拉 cold war soviet union moon landing alternate history astronaut spin off space race cosmonaut paranoid thriller space program surveillance state thriller tv 2026"
-    },
-    {
       "key": "douban:1305164",
       "tmdbID": null,
       "doubanSubjectID": "1305164",
@@ -40819,7 +41085,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/cO4raNOhKSHA2UMNiXkcYgr6Qrm.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 92.36,
@@ -43297,7 +43563,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/uSvET5YUvHNDIeoCpErrbSmasFb.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.5,
       "qualityScoreSource": "tmdb",
       "rankingScore": 90.9457,
@@ -43941,7 +44207,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/1HdIIUkc8zs7npBqreuBT74BURb.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.4,
       "qualityScoreSource": "tmdb",
       "rankingScore": 90.5913,
@@ -44194,6 +44460,83 @@
       "qualityScoreSource": "douban",
       "rankingScore": 90.3028,
       "searchableText": "罗生门 / 羅生門 / 羅生門 导演: 黑泽明 Akira Kurosawa 主演: 三船敏郎 Toshirô Mifune / 京町子 ... 1950 / 日本 / 剧情 犯罪 悬疑 movie 1950"
+    },
+    {
+      "key": "tmdb:movie:1477317",
+      "tmdbID": 1477317,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "是你的错：伦敦",
+      "originalTitle": "Your Fault: London",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-17",
+      "overview": "尼克和诺亚都踏上了足以改变人生的冒险之旅，但这趟旅程却威胁着他们的命运——尼克与父亲共同经营生意，而诺亚则在牛津大学开启人生新篇章。如今，他们各自过着不同的生活，结识了新的朋友，却发现自己深陷诱惑、竞争和背叛的漩涡之中，彼此的感情也面临着前所未有的考验。随着秘密的揭开和诱惑的加剧，他们必须竭尽全力守护彼此——否则，他们将失去一切。",
+      "genres": [
+        "爱情",
+        "剧情"
+      ],
+      "countries": [
+        "Spain",
+        "United Kingdom",
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Dani Girdwood",
+        "Charlotte Fassler",
+        "亚历杭德罗·德·拉·伊格莱西亚",
+        "Carolina Bang",
+        "Kari Hatfield",
+        "多明戈·冈萨雷斯"
+      ],
+      "cast": [
+        "Asha Banks",
+        "Matthew Broome",
+        "Louisa Binder",
+        "Joel Nankervis",
+        "Scarlett Rayner",
+        "Orlando Norman",
+        "雷·费隆",
+        "Enva Lewis",
+        "伊芙·麦克林",
+        "Nicole Ansari-Cox"
+      ],
+      "keywords": [
+        "based on novel or book",
+        "sequel",
+        "romance"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.5,
+          "count": 165,
+          "url": "https://www.themoviedb.org/movie/1477317"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 47.917
+      },
+      "sourceRanks": {
+        "popular": 72,
+        "recent": 29
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/wQOhbCP6H8bO5ddlXDZT207orew.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/pf5OhZdGCE7r2fQKNGTfHSSG3GO.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.5,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 90.2851,
+      "searchableText": "是你的错：伦敦 Your Fault: London 尼克和诺亚都踏上了足以改变人生的冒险之旅，但这趟旅程却威胁着他们的命运——尼克与父亲共同经营生意，而诺亚则在牛津大学开启人生新篇章。如今，他们各自过着不同的生活，结识了新的朋友，却发现自己深陷诱惑、竞争和背叛的漩涡之中，彼此的感情也面临着前所未有的考验。随着秘密的揭开和诱惑的加剧，他们必须竭尽全力守护彼此——否则，他们将失去一切。 爱情 剧情 Spain United Kingdom United States of America Dani Girdwood Charlotte Fassler 亚历杭德罗·德·拉·伊格莱西亚 Carolina Bang Kari Hatfield 多明戈·冈萨雷斯 Asha Banks Matthew Broome Louisa Binder Joel Nankervis Scarlett Rayner Orlando Norman 雷·费隆 Enva Lewis 伊芙·麦克林 Nicole Ansari-Cox based on novel or book sequel romance movie 2026"
     },
     {
       "key": "douban:2222996",
@@ -44923,7 +45266,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/paRFRd11WlFOxVbGnzjjCBym7FW.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.6,
       "qualityScoreSource": "tmdb",
       "rankingScore": 89.6261,
@@ -46234,82 +46577,6 @@
       "searchableText": "花束般的恋爱 / 花束みたいな恋をした / 花束みたいな恋をした 导演: 土井裕泰 Nobuhiro Doi 主演: 菅田将晖 Masaki Suda / 有村架纯 Kasu... 2021 / 日本 / 剧情 爱情 movie 2021"
     },
     {
-      "key": "tmdb:movie:1477317",
-      "tmdbID": 1477317,
-      "doubanSubjectID": "",
-      "mediaType": "movie",
-      "title": "是你的错：伦敦",
-      "originalTitle": "Your Fault: London",
-      "alternateTitles": [],
-      "year": 2026,
-      "releaseDate": "2026-06-17",
-      "overview": "尼克和诺亚都踏上了足以改变人生的冒险之旅，但这趟旅程却威胁着他们的命运——尼克与父亲共同经营生意，而诺亚则在牛津大学开启人生新篇章。如今，他们各自过着不同的生活，结识了新的朋友，却发现自己深陷诱惑、竞争和背叛的漩涡之中，彼此的感情也面临着前所未有的考验。随着秘密的揭开和诱惑的加剧，他们必须竭尽全力守护彼此——否则，他们将失去一切。",
-      "genres": [
-        "爱情",
-        "剧情"
-      ],
-      "countries": [
-        "Spain",
-        "United Kingdom",
-        "United States of America"
-      ],
-      "originalLanguage": "en",
-      "creators": [
-        "Dani Girdwood",
-        "Charlotte Fassler",
-        "亚历杭德罗·德·拉·伊格莱西亚",
-        "Carolina Bang",
-        "Kari Hatfield",
-        "多明戈·冈萨雷斯"
-      ],
-      "cast": [
-        "Asha Banks",
-        "Matthew Broome",
-        "Louisa Binder",
-        "Joel Nankervis",
-        "Scarlett Rayner",
-        "Orlando Norman",
-        "雷·费隆",
-        "Enva Lewis",
-        "伊芙·麦克林",
-        "Nicole Ansari-Cox"
-      ],
-      "keywords": [
-        "based on novel or book",
-        "sequel",
-        "romance"
-      ],
-      "ratings": {
-        "tmdb": {
-          "score": 7.5,
-          "count": 165,
-          "url": "https://www.themoviedb.org/movie/1477317"
-        },
-        "douban": {
-          "score": null,
-          "count": null,
-          "url": "",
-          "top250Rank": null
-        }
-      },
-      "popularity": {
-        "tmdb": 47.917
-      },
-      "sourceRanks": {
-        "popular": 72
-      },
-      "images": {
-        "backdrop": "https://image.tmdb.org/t/p/original/wQOhbCP6H8bO5ddlXDZT207orew.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/pf5OhZdGCE7r2fQKNGTfHSSG3GO.jpg"
-      },
-      "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
-      "qualityScore": 7.5,
-      "qualityScoreSource": "tmdb",
-      "rankingScore": 88.4281,
-      "searchableText": "是你的错：伦敦 Your Fault: London 尼克和诺亚都踏上了足以改变人生的冒险之旅，但这趟旅程却威胁着他们的命运——尼克与父亲共同经营生意，而诺亚则在牛津大学开启人生新篇章。如今，他们各自过着不同的生活，结识了新的朋友，却发现自己深陷诱惑、竞争和背叛的漩涡之中，彼此的感情也面临着前所未有的考验。随着秘密的揭开和诱惑的加剧，他们必须竭尽全力守护彼此——否则，他们将失去一切。 爱情 剧情 Spain United Kingdom United States of America Dani Girdwood Charlotte Fassler 亚历杭德罗·德·拉·伊格莱西亚 Carolina Bang Kari Hatfield 多明戈·冈萨雷斯 Asha Banks Matthew Broome Louisa Binder Joel Nankervis Scarlett Rayner Orlando Norman 雷·费隆 Enva Lewis 伊芙·麦克林 Nicole Ansari-Cox based on novel or book sequel romance movie 2026"
-    },
-    {
       "key": "douban:5300054",
       "tmdbID": null,
       "doubanSubjectID": "5300054",
@@ -46734,7 +47001,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/rfI8LZB2BrBbIiO0lY4pIqXaA2H.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 88.3237,
@@ -47013,7 +47280,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/fqwwPwdpKpgTWXmo16wjleJDalX.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 88.2037,
@@ -47080,6 +47347,83 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 87.5697,
       "searchableText": "柯南秀 Conan 柯南·奥布莱恩和他的搭档安迪·里希特讨论当前的新闻话题，采访名人和名人。 脱口秀 喜剧 新闻 United States of America 柯南·奥布莱恩 Jeff Ross 柯南·奥布莱恩 安迪·里克特 celebrity late-night show tv 2010"
+    },
+    {
+      "key": "tmdb:tv:254420",
+      "tmdbID": 254420,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "艾丽",
+      "originalTitle": "Elle",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-07-01",
+      "overview": "在艾丽·伍兹离开舒适圈入学哈佛前，我们回到 1995 年，看她在波涛汹涌的高中校园生活中，面对假面闺密、禁忌恋情，留下让人不敢直视的时尚黑历史。并看这段青涩岁月的意外插曲，如何把艾丽塑造成我们熟知并热爱的经典女主角。",
+      "genres": [
+        "喜剧",
+        "剧情"
+      ],
+      "countries": [
+        "United States of America",
+        "Canada"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Amanda Brown",
+        "杰森·摩尔",
+        "Brad Van Arragon",
+        "Caroline Dries",
+        "Lauren Neustadter",
+        "Marc Platt",
+        "瑞茜·威瑟斯彭",
+        "Laura Kittrell"
+      ],
+      "cast": [
+        "Lexi Minetree",
+        "琼·黛安·拉斐尔",
+        "托马斯·埃弗雷特·斯科特",
+        "Gabrielle Policano",
+        "Jacob Moskovitz",
+        "钱德勒·金尼",
+        "Zac Looker",
+        "艾米·皮茨"
+      ],
+      "keywords": [
+        "high school",
+        "prequel",
+        "based on movie",
+        "teenage romance",
+        "1990s"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.6,
+          "count": 52,
+          "url": "https://www.themoviedb.org/tv/254420"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 46.265
+      },
+      "sourceRanks": {
+        "recent": 23
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/truh4rtTUdRVYGeT0n17dxvdv41.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/kWlGge7cWOTp0qZnYCRfUo0BTP9.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.6,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 87.5525,
+      "searchableText": "艾丽 Elle 在艾丽·伍兹离开舒适圈入学哈佛前，我们回到 1995 年，看她在波涛汹涌的高中校园生活中，面对假面闺密、禁忌恋情，留下让人不敢直视的时尚黑历史。并看这段青涩岁月的意外插曲，如何把艾丽塑造成我们熟知并热爱的经典女主角。 喜剧 剧情 United States of America Canada Amanda Brown 杰森·摩尔 Brad Van Arragon Caroline Dries Lauren Neustadter Marc Platt 瑞茜·威瑟斯彭 Laura Kittrell Lexi Minetree 琼·黛安·拉斐尔 托马斯·埃弗雷特·斯科特 Gabrielle Policano Jacob Moskovitz 钱德勒·金尼 Zac Looker 艾米·皮茨 high school prequel based on movie teenage romance 1990s tv 2026"
     },
     {
       "key": "douban:3011051",
@@ -47382,6 +47726,171 @@
       "searchableText": "冰雪奇缘 / Frozen / Frozen 导演: 克里斯·巴克 Chris Buck / 珍妮弗·李 Jennifer Lee 主演: 克里斯汀... 2013 / 美国 / 喜剧 动画 奇幻 歌舞 movie 2013"
     },
     {
+      "key": "tmdb:tv:277439",
+      "tmdbID": 277439,
+      "doubanSubjectID": "",
+      "mediaType": "tv",
+      "title": "恐怖角",
+      "originalTitle": "Cape Fear",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-06-04",
+      "overview": "一名来自他们过去、恶名昭彰的杀手获释之际，一对婚姻美满律师夫妇的生活即将陷入风暴。",
+      "genres": [
+        "剧情",
+        "犯罪"
+      ],
+      "countries": [
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Nick Antosca",
+        "史蒂文·斯皮尔伯格",
+        "马丁·斯科塞斯",
+        "Alex Hedlund",
+        "哈维尔·巴登",
+        "Darryl Frank",
+        "Justin Falvey",
+        "艾米·亚当斯"
+      ],
+      "cast": [
+        "艾米·亚当斯",
+        "哈维尔·巴登",
+        "帕特里克·威尔森",
+        "Joe Anders",
+        "Lily Collias",
+        "Malia Pyles",
+        "希·庞德"
+      ],
+      "keywords": [
+        "based on novel or book",
+        "stalker",
+        "revenge",
+        "dysfunctional family",
+        "psychological thriller",
+        "ex-con",
+        "troubled teen",
+        "revenge thriller",
+        "attorney",
+        "assertive"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.0,
+          "count": 70,
+          "url": "https://www.themoviedb.org/tv/277439"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 43.602
+      },
+      "sourceRanks": {
+        "trending_week": 20,
+        "recent": 30
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/rvMmQj3nMZbJmoW6QrzU0nq9Xky.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/a4B0RX5XFOl3nsrG4DxTTntk1gZ.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.0,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 87.0197,
+      "searchableText": "恐怖角 Cape Fear 一名来自他们过去、恶名昭彰的杀手获释之际，一对婚姻美满律师夫妇的生活即将陷入风暴。 剧情 犯罪 United States of America Nick Antosca 史蒂文·斯皮尔伯格 马丁·斯科塞斯 Alex Hedlund 哈维尔·巴登 Darryl Frank Justin Falvey 艾米·亚当斯 艾米·亚当斯 哈维尔·巴登 帕特里克·威尔森 Joe Anders Lily Collias Malia Pyles 希·庞德 based on novel or book stalker revenge dysfunctional family psychological thriller ex-con troubled teen revenge thriller attorney assertive tv 2026"
+    },
+    {
+      "key": "tmdb:movie:1318413",
+      "tmdbID": 1318413,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "诺曼底72小时",
+      "originalTitle": "Pressure",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-25",
+      "overview": "聚焦诺曼底登陆前夕的紧张局势，围绕盟军远征军最高司令部首席气象学家詹姆斯·斯塔格上尉展开，他的职责是向盟军最高指挥官德怀特·戴维·艾森豪威尔通报决定成败的天气状况。",
+      "genres": [
+        "惊悚",
+        "历史",
+        "战争"
+      ],
+      "countries": [
+        "United Kingdom",
+        "France"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "安东尼·马拉斯",
+        "Joe Naftalin",
+        "Anna Marsh",
+        "Ron Halpern",
+        "大卫·海格",
+        "Angela Moneke",
+        "Sheeraz Shah"
+      ],
+      "cast": [
+        "安德鲁·斯科特",
+        "布兰登·费舍",
+        "凯瑞·康顿",
+        "克里斯·梅西纳",
+        "戴米恩·路易斯",
+        "塔姆馨·托波尔斯基",
+        "糾糾·馬卡里",
+        "罗伯特·奥尼尔",
+        "Alexander Hanson",
+        "Robert Portal"
+      ],
+      "keywords": [
+        "weather forecast",
+        "world war ii",
+        "metereologist",
+        "d-day",
+        "historical drama",
+        "1940s",
+        "extreme weather",
+        "matter of fact",
+        "unexpected problems",
+        "high‑stakes mission"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.5,
+          "count": 139,
+          "url": "https://www.themoviedb.org/movie/1318413"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 31.716
+      },
+      "sourceRanks": {
+        "recent": 36
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/vNHIJncQMkFsDdgzAbg1lcgPfyg.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.5,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 87.0132,
+      "searchableText": "诺曼底72小时 Pressure 聚焦诺曼底登陆前夕的紧张局势，围绕盟军远征军最高司令部首席气象学家詹姆斯·斯塔格上尉展开，他的职责是向盟军最高指挥官德怀特·戴维·艾森豪威尔通报决定成败的天气状况。 惊悚 历史 战争 United Kingdom France 安东尼·马拉斯 Joe Naftalin Anna Marsh Ron Halpern 大卫·海格 Angela Moneke Sheeraz Shah 安德鲁·斯科特 布兰登·费舍 凯瑞·康顿 克里斯·梅西纳 戴米恩·路易斯 塔姆馨·托波尔斯基 糾糾·馬卡里 罗伯特·奥尼尔 Alexander Hanson Robert Portal weather forecast world war ii metereologist d-day historical drama 1940s extreme weather matter of fact unexpected problems high‑stakes mission movie 2026"
+    },
+    {
       "key": "douban:25934014",
       "tmdbID": null,
       "doubanSubjectID": "25934014",
@@ -47501,7 +48010,7 @@
         "poster": "https://image.tmdb.org/t/p/w780/2tJxkkvDtzVa4YibhpCDwtQrTP9.jpg"
       },
       "firstSeenAt": "2026-07-14T10:05:14.486771Z",
-      "lastSeenAt": "2026-07-14T10:05:14.486771Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
       "qualityScore": 7.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 86.3619,
@@ -47593,6 +48102,101 @@
       "qualityScoreSource": "tmdb",
       "rankingScore": 86.0214,
       "searchableText": "洛杉矶劫案 Crime 101 当多年来从未失手的珠宝大盗（克里斯·海姆斯沃斯 饰）决心干票大的就金盆洗手时，人生失意的保险公司高管（哈莉·贝瑞 饰）却意外加入，两人被迫联手。与此同时，一位警探（马克·鲁法洛 饰）正通过蛛丝马迹的线索将矛头对准他们。监守自盗的内鬼，黑吃黑的争斗，交错的阴谋下谁将成为这场惊天劫案的最终赢家？ 影片改编自《纽约时报》榜首畅销书作者唐·温斯洛同名小说。 犯罪 惊悚 United Kingdom United States of America Bart Layton Joely Fether Bergen Swanson Sarah-Jane Wright Amelia Granger 彼得·斯特劳汉 克里斯·海姆斯沃斯 马克·鲁法洛 哈莉·贝瑞 巴里·基奥恩 莫妮卡·巴巴罗 尼克·诺尔蒂 科里·霍金斯 詹妮弗·杰森·李 Peter Banifaz Babak Tafti robbery based on novel or book jewelry heist police chase los angeles, california police detective diamond heist insurance lapd motorcycle chase jewel robbery ford mustang amused antwerp diamonds movie 2026"
+    },
+    {
+      "key": "tmdb:movie:1340206",
+      "tmdbID": 1340206,
+      "doubanSubjectID": "",
+      "mediaType": "movie",
+      "title": "调音师",
+      "originalTitle": "Tuner",
+      "alternateTitles": [],
+      "year": 2026,
+      "releaseDate": "2026-05-21",
+      "overview": "　　一位才华横溢的钢琴调音师，发现自己精湛的钢琴调音技艺可以用于破解保险箱，由此他的生活发生了翻天覆地的变化。",
+      "genres": [
+        "犯罪",
+        "剧情",
+        "惊悚"
+      ],
+      "countries": [
+        "Canada",
+        "United States of America"
+      ],
+      "originalLanguage": "en",
+      "creators": [
+        "Daniel Roher",
+        "罗伯特·拉姆齐",
+        "Noah Segal",
+        "Christina Piovesan",
+        "Courtney L. Cunniff",
+        "John Friedberg",
+        "Andrew Golov",
+        "Mary Anne Waterhouse"
+      ],
+      "cast": [
+        "利奥·伍德尔",
+        "哈瓦娜·罗丝·刘",
+        "达斯汀·霍夫曼",
+        "利奥·拉兹",
+        "托芙·菲尔德舒",
+        "让·雷诺",
+        "Jonnie Park",
+        "Rek Lee",
+        "Jean Yoon",
+        "李升熙"
+      ],
+      "keywords": [
+        "robbery",
+        "mentor",
+        "child prodigy",
+        "romance",
+        "theft",
+        "pianist",
+        "disability",
+        "headphones",
+        "tuner",
+        "piano",
+        "hearing impaired",
+        "lyrical",
+        "noise",
+        "piano tuner",
+        "safecracking",
+        "hyperacusis",
+        "medical bills",
+        "hearing condition",
+        "hearing disorder",
+        "perfect pitch"
+      ],
+      "ratings": {
+        "tmdb": {
+          "score": 7.2,
+          "count": 170,
+          "url": "https://www.themoviedb.org/movie/1340206"
+        },
+        "douban": {
+          "score": null,
+          "count": null,
+          "url": "",
+          "top250Rank": null
+        }
+      },
+      "popularity": {
+        "tmdb": 22.998
+      },
+      "sourceRanks": {
+        "recent": 44
+      },
+      "images": {
+        "backdrop": "https://image.tmdb.org/t/p/original/rwqQn4F32WTyl1kRob86rRBCj90.jpg",
+        "poster": "https://image.tmdb.org/t/p/w780/29YqkGW6ztW3jbe0Nse6TwcXbhs.jpg"
+      },
+      "firstSeenAt": "2026-07-14T10:50:08.561324Z",
+      "lastSeenAt": "2026-07-14T10:50:08.561324Z",
+      "qualityScore": 7.2,
+      "qualityScoreSource": "tmdb",
+      "rankingScore": 83.7172,
+      "searchableText": "调音师 Tuner 一位才华横溢的钢琴调音师，发现自己精湛的钢琴调音技艺可以用于破解保险箱，由此他的生活发生了翻天覆地的变化。 犯罪 剧情 惊悚 Canada United States of America Daniel Roher 罗伯特·拉姆齐 Noah Segal Christina Piovesan Courtney L. Cunniff John Friedberg Andrew Golov Mary Anne Waterhouse 利奥·伍德尔 哈瓦娜·罗丝·刘 达斯汀·霍夫曼 利奥·拉兹 托芙·菲尔德舒 让·雷诺 Jonnie Park Rek Lee Jean Yoon 李升熙 robbery mentor child prodigy romance theft pianist disability headphones tuner piano hearing impaired lyrical noise piano tuner safecracking hyperacusis medical bills hearing condition hearing disorder perfect pitch movie 2026"
     }
   ]
 }

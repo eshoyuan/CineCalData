@@ -3,6 +3,7 @@ import tempfile
 import unittest
 from datetime import date
 from pathlib import Path
+from unittest.mock import patch
 
 from PIL import Image
 
@@ -15,11 +16,57 @@ from cinecal_agent import (
     render_crop,
 )
 from merge_cards import merge_cards
+from media_provider import TMDBProvider, douban_lookup, title_without_season
 from plan_calendar import build_matrix, merge_batches
 from publish_today import choose_entry, publish
 
 
 class AgentTests(unittest.TestCase):
+    def test_season_suffix_is_removed_for_api_search(self):
+        self.assertEqual(title_without_season("龙之家族 第三季"), ("龙之家族", 3))
+
+    @patch("media_provider.request_json")
+    def test_douban_rating_is_parsed_mechanically(self, request):
+        request.return_value = {
+            "cards": [{
+                "title": "花样年华",
+                "url": "https://movie.douban.com/subject/1291557/",
+                "year": "2000",
+                "card_subtitle": "8.8分 / 2000 / 中国香港 / 剧情 爱情",
+                "type": "movie",
+            }]
+        }
+        result = douban_lookup("花样年华", 2000)
+        self.assertEqual(result["rating"], "8.8")
+        self.assertEqual(result["doubanURL"], "https://movie.douban.com/subject/1291557/")
+
+    @patch("media_provider.request_json")
+    def test_tmdb_resolver_returns_ranked_landscape_candidates(self, request):
+        request.side_effect = [
+            {"results": [{
+                "id": 123,
+                "media_type": "movie",
+                "title": "花样年华",
+                "original_title": "花樣年華",
+                "release_date": "2000-09-29",
+                "popularity": 10,
+            }]},
+            {
+                "id": 123,
+                "title": "花样年华",
+                "original_title": "花樣年華",
+                "release_date": "2000-09-29",
+                "overview": "简介",
+                "images": {"backdrops": [
+                    {"file_path": "/low.jpg", "width": 1280, "height": 720, "vote_count": 1, "vote_average": 7},
+                    {"file_path": "/best.jpg", "width": 1920, "height": 1080, "vote_count": 9, "vote_average": 8},
+                ]},
+            },
+        ]
+        result = TMDBProvider("test-token").resolve("花样年华", release_year=2000)
+        self.assertEqual(result["tmdbID"], 123)
+        self.assertEqual(result["imageCandidates"][0]["imageURL"], "https://image.tmdb.org/t/p/original/best.jpg")
+
     def test_extracts_fenced_json(self):
         self.assertEqual(parse_json_object('```json\n{"ok": true}\n```'), {"ok": True})
 

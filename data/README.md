@@ -29,11 +29,15 @@ The client checks the exact entry for today. If the network request fails, it us
 
 ## Daily editorial agent
 
-The heavy editor workflows use Meta's Responses API in focused stages:
+The materializer deliberately separates mechanical retrieval from editorial judgment:
 
-1. Narrow `web_search` calls separately verify the Douban metadata and find image candidates;
-   original copy is generated without search. The raw search results and cited URLs are retained.
-2. Image understanding localizes subjects on Meta's normalized 0–1000 coordinate grid and proposes
+1. The long-range planning agent uses search only to choose a date-appropriate work and retain the
+   sourced reason for that choice.
+2. TMDB's API resolves the exact movie/series, metadata, and a ranked set of stable landscape
+   backdrops. Douban's structured suggestion endpoint supplies the rating and subject link.
+3. Meta generates only the original CineCal sentence. It does not invent metadata, ratings, or
+   image URLs.
+4. Image understanding localizes subjects on Meta's normalized 0–1000 coordinate grid and proposes
    separate 1:1 and 2.128:1 crops. A second vision pass sees translucent overlays representing the
    real widget text zones and must approve both crops with a score of at least 7/10.
 
@@ -41,9 +45,10 @@ If grounding is absent, a source cannot be verified, an image is invalid, or eit
 the workflow exits before modifying `calendar.json`. Approved outputs are written to `data/images`,
 and the research/crop report is written to `data/reports`.
 
-Create a GitHub Actions repository secret named `META_AI_API_KEY`. The workflow exposes it to the
-process as `MODEL_API_KEY`; never put an API key in source code, workflow YAML, issue text, or logs.
-The workflow uses `muse-spark-1.1` and `https://api.meta.ai/v1`.
+Create GitHub Actions repository secrets named `META_AI_API_KEY` and `TMDB_API_TOKEN`. The workflow
+exposes the former as `MODEL_API_KEY`; never put either credential in source code, workflow YAML,
+issue text, or logs. The editorial/vision steps use `muse-spark-1.1` and
+`https://api.meta.ai/v1`.
 
 Prototype mode requires grounded provenance and records the rights basis. Production mode also
 requires an inspectable license allowing public display, commercial use, and modification. See

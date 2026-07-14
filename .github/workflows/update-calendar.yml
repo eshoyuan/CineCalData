@@ -25,6 +25,7 @@ jobs:
     timeout-minutes: 30
     env:
       MODEL_API_KEY: ${{ secrets.META_AI_API_KEY }}
+      TMDB_API_TOKEN: ${{ secrets.TMDB_API_TOKEN }}
       CINECAL_MODEL: muse-spark-1.1
       CINECAL_RIGHTS_MODE: prototype
       CINECAL_MOVIE: ${{ inputs.movie }}

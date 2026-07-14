@@ -101,6 +101,8 @@ Return JSON only:
       "date": "YYYY-MM-DD",
       "title": "official Chinese title",
       "originalTitle": "original or international title",
+      "releaseYear": 2000,
+      "mediaType": "movie or tv",
       "selectionScore": 0,
       "reason": "one concise Chinese editorial reason",
       "signals": [
@@ -160,13 +162,21 @@ connection, cultural value, visual potential, and audience interest.
 
         try:
             score = max(0, min(100, int(raw.get("selectionScore", 0))))
+            release_year = int(raw.get("releaseYear", 0))
         except (TypeError, ValueError) as error:
-            raise PublicationError(f"Plan entry {entry_date} had an invalid score.") from error
+            raise PublicationError(f"Plan entry {entry_date} had invalid numeric metadata.") from error
+        if not 1880 <= release_year <= date.today().year + 5:
+            raise PublicationError(f"Plan entry {entry_date} had an invalid release year.")
+        media_type = str(raw.get("mediaType", "")).strip().lower()
+        if media_type not in {"movie", "tv"}:
+            raise PublicationError(f"Plan entry {entry_date} had an invalid media type.")
         approved.append(
             {
                 "date": entry_date,
                 "title": title,
                 "originalTitle": str(raw.get("originalTitle", "")),
+                "releaseYear": release_year,
+                "mediaType": media_type,
                 "selectionScore": score,
                 "reason": str(raw.get("reason", "")),
                 "signals": grounded_signals,

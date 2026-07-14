@@ -13,6 +13,8 @@ short original editorial sentence and a link to its Douban subject page.
 - `.github/workflows/update-calendar.yml` is the manual one-card editor/debug workflow.
 - `META_AI_API_KEY` is stored only as an encrypted GitHub Actions secret and
   is never included in this repository or its generated JSON.
+- `TMDB_API_TOKEN` is the encrypted read-only API token used to resolve exact
+  works, metadata, and stable landscape artwork.
 
 ## Content and copyright
 
@@ -33,13 +35,15 @@ owners. CineCal is not affiliated with or endorsed by Douban or any studio.
 
 ## Cache strategy
 
-The daily job does no search, copywriting, or image processing. Heavy model work
+The daily job does no search, copywriting, or image processing. Preparation
 runs separately and ahead of time:
 
 1. Bootstrap or monthly planning caches date-specific selections for up to 730
    days using holidays, release anniversaries, notable people, festivals,
    seasonal mood, and sourced cultural events.
 2. Weekly materialization prepares the next uncached seven-day slice at least
-   30 days ahead, including both widget crops.
+   30 days ahead. TMDB supplies structured metadata and backdrop candidates;
+   Douban's structured suggestion response supplies the rating and subject URL.
+   The model only writes original copy and judges the two crops.
 3. At 00:05 Asia/Shanghai, the daily publisher only points `today.json` at the
    already cached card and records whether it is complete.

@@ -26,6 +26,8 @@ from typing import Any, Iterable
 from openai import OpenAI
 from PIL import Image, ImageDraw, ImageOps
 
+from media_provider import MediaProviderError, resolve_media
+
 
 ROOT = Path(__file__).resolve().parents[1]
 CALENDAR_PATH = ROOT / "data" / "calendar.json"
@@ -159,7 +161,7 @@ def recent_titles(feed: dict[str, Any], limit: int = 30) -> list[str]:
     return [str(item.get("title", "")) for item in entries[:limit] if item.get("title")]
 
 
-def planned_selection(target_date: str) -> tuple[str, list[str]] | None:
+def planned_selection(target_date: str) -> tuple[dict[str, Any], list[str]] | None:
     if not PLAN_PATH.exists():
         return None
     with PLAN_PATH.open("r", encoding="utf-8") as handle:
@@ -179,7 +181,7 @@ def planned_selection(target_date: str) -> tuple[str, list[str]] | None:
             for url in entry.get("researchSources", [])
             if str(url).startswith("https://")
         )
-        return str(entry["title"]), list(dict.fromkeys(sources))
+        return entry, list(dict.fromkeys(sources))
     return None
 
 
@@ -201,73 +203,26 @@ Return JSON only:
     return title, sources
 
 
-def lookup_metadata(
-    client: OpenAI, title: str, target_date: str, *, retry: bool = False
-) -> tuple[dict[str, Any], list[str]]:
-    phase = "Retrying" if retry else "Looking up"
-    print(f"[1/5] {phase} Douban metadata for {title}...", flush=True)
-    metadata_prompt = f"""
-Find the exact Douban subject page and current Douban rating for “{title}” on {target_date}.
-Use live web search. This is a focused factual lookup. Never invent a rating; return "暂无" if the
-work is not rated. ratingSourceURL must be an exact URL you actually found in this search's
-evidence; never normalize, guess, or synthesize it. Return JSON only:
-{{
-  "id": "lowercase-ascii-slug",
-  "title": "official Chinese title",
-  "rating": "8.5 or 暂无",
-  "ratingSourceURL": "https://...",
-  "doubanURL": "https://movie.douban.com/subject/.../",
-  "ratingRetrievedAt": "ISO-8601 timestamp"
-}}
-""".strip()
-    return grounded_json(client, metadata_prompt, search_context_size="low")
-
-
-def search_image_candidates(
+def research_title(
     client: OpenAI,
     title: str,
-    excluded_urls: list[str] | None = None,
-    douban_url: str = "",
+    *,
+    original_title: str = "",
+    release_year: int | None = None,
+    media_type: str = "",
 ) -> tuple[dict[str, Any], list[str]]:
-    excluded = excluded_urls or []
-    print("[3/5] Searching for grounded image candidates...", flush=True)
-    image_prompt = f"""
-Find 4–8 different landscape images that are genuine stills or official promotional images from
-the exact screen work “{title}”, identified by this Douban subject: {douban_url}. Use live web
-search. Reject stage adaptations, remakes with a different subject, paintings, fan art, generic
-thematic images, title-word associations, and unrelated works with a similar name. Each candidate
-must have a direct HTTPS image URL that is stable and publicly
-downloadable without login or expiring query parameters, plus a real source page, credit, and
-rights holder. Do not return search-engine thumbnails. Prefer official promotional/press stills,
-Wikimedia Commons, stable public image CDNs, public-domain material, or Creative Commons material;
-avoid fan uploads, pirated-video screenshots, posters with typography, watermarks, collages, and
-logos. Report the actual rights basis honestly; never claim attribution is a license.
-Do not return any of these previously rejected URLs:
-{json.dumps(excluded, ensure_ascii=False)}
-Return JSON only:
-{{
-  "imageCandidates": [
-    {{
-      "imageURL": "https://...jpg",
-      "sourcePageURL": "https://...",
-      "credit": "...",
-      "rightsHolder": "...",
-      "rightsStatus": "official_promotional, public_domain, cc0, cc_by, cc_by_sa, or unknown",
-      "licenseName": "...",
-      "licenseURL": "https://...",
-      "commercialUseAllowed": true,
-      "modificationAllowed": true
-    }}
-  ]
-}}
-""".strip()
-    return grounded_json(client, image_prompt, search_context_size="medium")
+    print(f"[1/4] Resolving structured metadata and backdrops for {title}...", flush=True)
+    try:
+        metadata, metadata_sources = resolve_media(
+            title,
+            original_title=original_title,
+            release_year=release_year,
+            media_type=media_type,
+        )
+    except MediaProviderError as error:
+        raise PublicationError(str(error)) from error
 
-
-def research_title(client: OpenAI, title: str, target_date: str) -> tuple[dict[str, Any], list[str]]:
-    metadata, metadata_sources = lookup_metadata(client, title, target_date)
-
-    print("[2/5] Writing original editorial copy...", flush=True)
+    print("[2/4] Writing original editorial copy...", flush=True)
     quote_prompt = f"""
 Write one original CineCal editorial sentence in Chinese for “{title}”, under 42 Chinese
 characters. It should feel literary and emotionally specific, but must not quote or closely
@@ -281,11 +236,7 @@ Return JSON only:
 """.strip()
     quote = text_json(client, quote_prompt)
 
-    images, image_sources = search_image_candidates(
-        client, title, douban_url=str(metadata.get("doubanURL", ""))
-    )
-    research = {**metadata, **quote, **images}
-    return research, list(dict.fromkeys(metadata_sources + image_sources))
+    return {**metadata, **quote}, metadata_sources
 
 
 def validate_research(item: dict[str, Any]) -> None:
@@ -608,9 +559,9 @@ def select_and_crop_image(
     client: OpenAI, research: dict[str, Any]
 ) -> tuple[Image.Image, Image.Image, dict[str, Any], dict[str, Any], dict[str, Any]]:
     failures: list[str] = []
-    for index, candidate in enumerate(research["imageCandidates"][:6], start=1):
+    for index, candidate in enumerate(research["imageCandidates"][:12], start=1):
         try:
-            print(f"[4/5] Reviewing image candidate {index}...", flush=True)
+            print(f"[3/4] Reviewing API image candidate {index}...", flush=True)
             image_url = str(candidate["imageURL"])
             image = download_image(image_url, str(candidate.get("sourcePageURL", "")))
             plan = crop_plan(client, image, str(research["title"]))
@@ -693,6 +644,10 @@ def publish(
         "imageLicenseURL": str(candidate.get("licenseURL", "")),
         "editorReportURL": raw_github_url(repository, branch, report_rel),
         "doubanURL": str(research["doubanURL"]),
+        "tmdbID": research.get("tmdbID"),
+        "tmdbURL": str(research.get("tmdbURL", "")),
+        "mediaType": str(research.get("mediaType", "")),
+        "releaseDate": str(research.get("releaseDate", "")),
     }
     feed["entries"] = [item for item in feed["entries"] if item.get("date") != target_date]
     feed["entries"].append(entry)
@@ -727,54 +682,32 @@ def main() -> int:
     )
     if args.movie:
         title = args.movie
+        plan_entry: dict[str, Any] = {}
         discovery_sources: list[str] = []
     elif planned := planned_selection(target_date):
-        title, discovery_sources = planned
+        plan_entry, discovery_sources = planned
+        title = str(plan_entry["title"])
         print(f"Using cached editorial plan: {title}", flush=True)
     else:
+        plan_entry = {}
         print("No cached plan entry; discovering a title from the live web...", flush=True)
         title, discovery_sources = discover_title(client, target_date, recent_titles(feed))
 
-    research, research_sources = research_title(client, title, target_date)
+    raw_year = plan_entry.get("releaseYear")
+    try:
+        release_year = int(raw_year) if raw_year else None
+    except (TypeError, ValueError):
+        release_year = None
+    research, research_sources = research_title(
+        client,
+        title,
+        original_title=str(plan_entry.get("originalTitle", "")),
+        release_year=release_year,
+        media_type=str(plan_entry.get("mediaType", "")),
+    )
     validate_research(research)
-    try:
-        enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
-    except PublicationError as error:
-        if "ratingSourceURL" not in str(error):
-            raise
-        metadata, metadata_sources = lookup_metadata(client, title, target_date, retry=True)
-        research.update(metadata)
-        research_sources = list(dict.fromkeys(research_sources + metadata_sources))
-        validate_research(research)
-        enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
-    try:
-        small, medium, candidate, plan, review = select_and_crop_image(client, research)
-    except PublicationError as first_image_error:
-        rejected_urls = [
-            str(item.get("imageURL", ""))
-            for item in research.get("imageCandidates", [])
-            if isinstance(item, dict)
-        ]
-        print(
-            "[3/5] First image set failed; searching once for different candidates...",
-            flush=True,
-        )
-        images, retry_sources = search_image_candidates(
-            client,
-            title,
-            rejected_urls,
-            douban_url=str(research.get("doubanURL", "")),
-        )
-        research.update(images)
-        research_sources = list(dict.fromkeys(research_sources + retry_sources))
-        validate_research(research)
-        try:
-            enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
-            small, medium, candidate, plan, review = select_and_crop_image(client, research)
-        except PublicationError as retry_error:
-            raise PublicationError(
-                f"Both image searches failed. First: {first_image_error}\nRetry: {retry_error}"
-            ) from retry_error
+    enforce_grounded_provenance(research, research_sources, RIGHTS_MODE)
+    small, medium, candidate, plan, review = select_and_crop_image(client, research)
     publish(
         feed,
         target_date,
@@ -787,7 +720,7 @@ def main() -> int:
         plan,
         review,
     )
-    print("[5/5] Saved feed, image crops, and provenance report.", flush=True)
+    print("[4/4] Saved feed, image crops, and provenance report.", flush=True)
     print(f"Published {research['title']} for {target_date}.")
     return 0
 

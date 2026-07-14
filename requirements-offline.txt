@@ -1,0 +1,3 @@
+Pillow>=11.0.0,<13
+mlx-embeddings==0.1.0
+numpy>=2.0.0,<3

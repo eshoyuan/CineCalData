@@ -1,12 +1,3 @@
-.DS_Store
+.cache/
 __pycache__/
-*.py[cod]
-.venv/
-**/xcuserdata/
-
-# Local prototype stills are intentionally not published. They may only be
-# added after their redistribution and crop rights have been documented.
-**/Assets.xcassets/HouseOfDragonS3.imageset/
-**/Assets.xcassets/MovieBus.imageset/
-**/Assets.xcassets/MovieCinema.imageset/
-**/Assets.xcassets/MovieCoast.imageset/
+*.pyc

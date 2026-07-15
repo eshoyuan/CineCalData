@@ -23,6 +23,7 @@ class DoubanLookupTests(unittest.TestCase):
         requested_url = request.call_args.args[0]
         self.assertIn("q=%E5%85%AC%E6%B0%91%E5%87%AF%E6%81%A9", requested_url)
         self.assertNotIn("1941", requested_url)
+        self.assertEqual(request.call_args.kwargs["timeout"], 8)
 
     def test_rejects_same_year_but_nonexact_title(self):
         payload = {

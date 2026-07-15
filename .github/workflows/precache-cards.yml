@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: cinecal-card-precache
+  group: cinecal-calendar-writer
   cancel-in-progress: false
 
 jobs:
@@ -129,5 +129,10 @@ jobs:
           git config user.name "CineCal Card Agent"
           git config user.email "actions@users.noreply.github.com"
           git add data/calendar.json data/images data/reports
+          if git diff --cached --quiet; then
+            echo "No complete cards were produced"
+            exit 0
+          fi
           git commit -m "Precache complete CineCal cards"
+          git pull --rebase origin main
           git push

@@ -134,6 +134,44 @@ class CatalogBuilderTests(unittest.TestCase):
         self.assertEqual(merged[0]["ratings"]["douban"]["count"], 3300000)
         self.assertEqual(merged[0]["sourceRanks"]["popular"], 20)
 
+    def test_incremental_merge_preserves_editorial_and_materialized_crops(self):
+        previous = {
+            "key": "tmdb:movie:278",
+            "tmdbID": 278,
+            "doubanSubjectID": "1292052",
+            "mediaType": "movie",
+            "quote": "在漫长的黑夜里，也要替自己留一束光。",
+            "recommendationEligible": True,
+            "images": {
+                "backdrop": "https://old.example/backdrop.jpg",
+                "small": "https://cdn.example/small.jpg",
+                "medium": "https://cdn.example/medium.jpg",
+            },
+            "sourceRanks": {},
+            "ratings": {
+                "tmdb": {"score": 8.7, "count": 30000, "url": ""},
+                "douban": {"score": 9.7, "count": 3300000, "url": "https://movie.douban.com/subject/1292052/", "top250Rank": 1},
+            },
+        }
+        refreshed = {
+            "key": "tmdb:movie:278",
+            "tmdbID": 278,
+            "doubanSubjectID": "1292052",
+            "mediaType": "movie",
+            "images": {"backdrop": "https://new.example/backdrop.jpg", "poster": ""},
+            "sourceRanks": {"popular": 5},
+            "ratings": {
+                "tmdb": {"score": 8.8, "count": 30100, "url": ""},
+                "douban": {"score": 9.7, "count": None, "url": "https://movie.douban.com/subject/1292052/", "top250Rank": None},
+            },
+        }
+        merged = merge_existing([refreshed], [previous], "2026-07-14T00:00:00Z")[0]
+        self.assertEqual(merged["quote"], previous["quote"])
+        self.assertTrue(merged["recommendationEligible"])
+        self.assertEqual(merged["images"]["small"], "https://cdn.example/small.jpg")
+        self.assertEqual(merged["images"]["medium"], "https://cdn.example/medium.jpg")
+        self.assertEqual(merged["images"]["backdrop"], "https://new.example/backdrop.jpg")
+
 
 if __name__ == "__main__":
     unittest.main()

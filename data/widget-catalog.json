@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-14T21:51:05.021659Z",
-  "count": 997,
+  "generatedAt": "2026-07-15T00:32:20.780012Z",
+  "count": 996,
   "items": [
     {
       "key": "tmdb:movie:278",
@@ -7032,16 +7032,6 @@
       "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/81358-small.jpg",
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/81358-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27621754/"
-    },
-    {
-      "key": "douban:1395091",
-      "doubanSubjectID": "1395091",
-      "title": "未麻的部屋",
-      "rating": 9.1,
-      "quote": "聚光灯熄后镜中人未散，偶像在窥视里一寸寸剥落自我。",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10494-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10494-medium.jpg",
-      "doubanURL": "https://movie.douban.com/subject/1395091/"
     },
     {
       "key": "tmdb:tv:1457",

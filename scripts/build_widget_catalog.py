@@ -5,8 +5,18 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
+
+
+def douban_subject_id(source: dict) -> str:
+    explicit = str(source.get("doubanSubjectID") or "").strip()
+    if explicit:
+        return explicit
+    url = str(source.get("ratings", {}).get("douban", {}).get("url") or "")
+    match = re.search(r"/subject/(\d+)", url)
+    return match.group(1) if match else ""
 
 
 def main() -> None:
@@ -17,6 +27,7 @@ def main() -> None:
 
     catalog = json.loads(args.catalog.read_text(encoding="utf-8"))
     items: list[dict[str, object]] = []
+    seen_subjects: set[str] = set()
 
     for source in catalog.get("items", []):
         douban = source.get("ratings", {}).get("douban", {})
@@ -26,6 +37,7 @@ def main() -> None:
         quote = source.get("quote")
         small = images.get("small")
         medium = images.get("medium")
+        subject_id = douban_subject_id(source)
 
         if (
             source.get("recommendationEligible") is False
@@ -36,13 +48,16 @@ def main() -> None:
             or not isinstance(quote, str)
             or not quote.strip()
             or not (small or medium)
+            or not subject_id
+            or subject_id in seen_subjects
         ):
             continue
 
+        seen_subjects.add(subject_id)
         items.append(
             {
                 "key": source["key"],
-                "doubanSubjectID": source.get("doubanSubjectID", ""),
+                "doubanSubjectID": subject_id,
                 "title": source["title"],
                 "rating": round(float(score), 1),
                 "quote": quote,

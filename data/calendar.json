@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-15T00:30:07.317427Z",
+  "updatedAt": "2026-07-15T00:34:44.173915Z",
   "horizon": {
-    "start": "2026-07-13",
-    "end": "2028-07-13",
+    "start": "2026-07-14",
+    "end": "2028-07-14",
     "days": 732
   },
   "entries": [
@@ -11050,6 +11050,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/504253-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27107140/",
       "doubanSubjectID": "27107140",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-14",
+      "id": "tmdb:tv:74387",
+      "title": "太空终界",
+      "rating": "8.4",
+      "quote": "孤独宇航员与弑星萌物，驶向宇宙尽头的温柔谜团",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74387-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74387-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74387-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/27046666/",
+      "doubanSubjectID": "27046666",
       "source": "widget-catalog"
     }
   ]

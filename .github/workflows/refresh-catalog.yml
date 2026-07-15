@@ -35,8 +35,8 @@ jobs:
             --mode incremental \
             --movie-pages 3 \
             --tv-pages 3 \
-            --detail-limit 120 \
-            --douban-enrich-limit 80 \
+            --detail-limit 60 \
+            --douban-enrich-limit 20 \
             --skip-douban-top250
 
       - name: Rebuild the compact client catalog

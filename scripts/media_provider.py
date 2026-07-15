@@ -21,11 +21,16 @@ class MediaProviderError(RuntimeError):
     """Raised when structured media sources cannot resolve a requested work."""
 
 
-def request_json(url: str, headers: dict[str, str] | None = None) -> dict[str, Any]:
+def request_json(
+    url: str,
+    headers: dict[str, str] | None = None,
+    *,
+    timeout: float = 30,
+) -> dict[str, Any]:
     request_headers = {"User-Agent": USER_AGENT, "Accept": "application/json"}
     request_headers.update(headers or {})
     request = urllib.request.Request(url, headers=request_headers)
-    with urllib.request.urlopen(request, timeout=30) as response:
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         if response.headers.get_content_type() not in {"application/json", "text/json"}:
             raise MediaProviderError(f"Structured source returned {response.headers.get_content_type()}.")
         return json.loads(response.read())
@@ -53,7 +58,9 @@ def douban_lookup(title: str, release_year: int | None = None) -> dict[str, Any]
     # similarly named works.
     query = query_title
     url = f"{DOUBAN_SUGGEST}?{urllib.parse.urlencode({'debug': 'true', 'q': query})}"
-    payload = request_json(url, {"Referer": "https://www.douban.com/"})
+    # This public suggestion endpoint is optional incremental enrichment. A
+    # slow response must not stall the entire daily catalog refresh.
+    payload = request_json(url, {"Referer": "https://www.douban.com/"}, timeout=8)
     cards = [card for card in payload.get("cards", []) if card.get("type") in {"movie", "tv"}]
     if not cards:
         raise MediaProviderError(f"Douban suggestion API returned no match for {title}.")

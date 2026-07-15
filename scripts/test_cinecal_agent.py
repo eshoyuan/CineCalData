@@ -18,7 +18,6 @@ from cinecal_agent import (
 from merge_cards import merge_cards
 from media_provider import MediaProviderError, TMDBProvider, douban_lookup, title_without_season
 from plan_calendar import build_matrix, merge_batches
-from publish_today import choose_entry, publish
 
 
 class AgentTests(unittest.TestCase):
@@ -228,15 +227,6 @@ class AgentTests(unittest.TestCase):
             merged = json.loads(plan.read_text(encoding="utf-8"))
             self.assertEqual([entry["title"] for entry in merged["entries"]], ["Locked", "New"])
             self.assertEqual(merged["horizonDays"], 730)
-
-    def test_lightweight_today_publisher_uses_cached_entry(self):
-        entries = [
-            {"date": "2026-01-01", "title": "Earlier"},
-            {"date": "2026-01-02", "title": "Today"},
-        ]
-        entry, fallback = choose_entry(entries, "2026-01-02")
-        self.assertEqual(entry["title"], "Today")
-        self.assertFalse(fallback)
 
     def test_card_merge_accepts_flat_downloaded_artifact_layout(self):
         with tempfile.TemporaryDirectory() as directory:

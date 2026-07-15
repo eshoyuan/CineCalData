@@ -8,8 +8,8 @@ principal cast/creator anniversary, festival, seasonal theme, or cultural event.
 be generated 365–730 days ahead; complete image cards are materialized only for the near-term
 window so volatile ratings and topical context do not go stale.
 
-`today.json` is generated from the already cached card by a model-free daily workflow. It exposes
-`complete`, `usedFallback`, and `missingFields` for operational health checks.
+There is intentionally no global “today” pointer. `calendar.json` contains a complete rolling
+date horizon, and each iPhone selects the exact `YYYY-MM-DD` key using its own system timezone.
 
 `catalog.json` is the larger model-free recommendation pool. It merges high-quality stable titles
 with recent popularity signals, deduplicates primarily by TMDB ID and secondarily by normalized
@@ -42,7 +42,9 @@ when a complete live response is unavailable. The daily incremental job never re
   `imageRightsStatus`, `imageLicenseName`, and `imageLicenseURL`. Attribution alone is not
   permission; the license must allow public display, commercial use, and cropping.
 
-The client checks the exact entry for today. If the network request fails, it uses the last cached JSON and image; if no cache exists, it uses the bundled sample movies.
+The client derives today's key from its local system calendar and checks that exact entry. If the
+network request fails, it uses the last cached JSON and image; if no cache exists, it uses the
+bundled sample movies.
 
 ## Daily editorial agent
 

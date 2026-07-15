@@ -23,7 +23,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: cinecal-catalog
+  group: cinecal-catalog-writer
   cancel-in-progress: false
 
 jobs:

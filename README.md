@@ -6,12 +6,11 @@ short original editorial sentence and a link to its Douban subject page.
 
 - `data/calendar.json` is the public feed read by the app and widget.
 - `data/plan.json` is the 365–730 day date-specific editorial plan.
-- `data/today.json` is the tiny pointer published each day without calling a model.
 - `data/catalog.json` is the model-free, deduplicated recommendation pool used for
   future search and embedding-based personalization.
 - `.github/workflows/precache-plan.yml` builds the long-range plan in parallel batches.
 - `.github/workflows/precache-cards.yml` prepares complete cards 30+ days ahead.
-- `.github/workflows/publish-today.yml` performs the lightweight daily publish.
+- `.github/workflows/extend-calendar.yml` keeps a complete 732-day date-keyed feed.
 - `.github/workflows/update-calendar.yml` is the manual one-card editor/debug workflow.
 - `.github/workflows/bootstrap-catalog.yml` builds the initial high-quality movie and
   television catalog from Douban Top 250 plus TMDB rating/popularity lists.
@@ -47,8 +46,8 @@ owners. CineCal is not affiliated with or endorsed by Douban or any studio.
 
 ## Cache strategy
 
-The daily job does no search, copywriting, or image processing. Preparation
-runs separately and ahead of time:
+The daily calendar job does no search, copywriting, or image processing.
+Preparation runs separately and ahead of time:
 
 1. Bootstrap or monthly planning caches date-specific selections for up to 730
    days using holidays, release anniversaries, notable people, festivals,
@@ -57,8 +56,9 @@ runs separately and ahead of time:
    30 days ahead. TMDB supplies structured metadata and backdrop candidates;
    Douban's structured suggestion response supplies the rating and subject URL.
    The model only writes original copy and judges the two crops.
-3. At 00:05 Asia/Shanghai, the daily publisher only points `today.json` at the
-   already cached card and records whether it is complete.
+3. The lightweight daily job extends `calendar.json` to a complete 732-day
+   horizon. The iPhone derives `YYYY-MM-DD` from its own system calendar and
+   timezone; there is intentionally no global “today” pointer.
 
 ## Recommendation catalog
 

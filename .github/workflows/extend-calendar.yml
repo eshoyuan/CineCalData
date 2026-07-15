@@ -1,0 +1,95 @@
+name: Extend date-keyed calendar
+
+on:
+  schedule:
+    # The feed contains every date, so clients in all timezones choose locally.
+    - cron: "5 16 * * *"
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "Optional first date (YYYY-MM-DD)"
+        required: false
+        type: string
+      days:
+        description: "Rolling horizon length"
+        required: false
+        default: "732"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cinecal-calendar-writer
+  cancel-in-progress: false
+
+jobs:
+  extend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Test date-keyed calendar logic
+        run: python -m unittest discover -s scripts -p 'test_extend_calendar.py'
+
+      - name: Choose globally safe horizon
+        id: horizon
+        env:
+          REQUESTED_START: ${{ inputs.start_date }}
+          REQUESTED_DAYS: ${{ inputs.days || '732' }}
+        run: |
+          if [ -n "$REQUESTED_START" ]; then
+            START="$REQUESTED_START"
+          else
+            START="$(date -u -d 'yesterday' +%F)"
+          fi
+          echo "start=$START" >> "$GITHUB_OUTPUT"
+          echo "days=$REQUESTED_DAYS" >> "$GITHUB_OUTPUT"
+
+      - name: Fill complete cards by date key
+        run: >-
+          python scripts/extend_calendar.py
+          --start "${{ steps.horizon.outputs.start }}"
+          --days "${{ steps.horizon.outputs.days }}"
+
+      - name: Validate and publish calendar
+        env:
+          START: ${{ steps.horizon.outputs.start }}
+          DAYS: ${{ steps.horizon.outputs.days }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import date, timedelta
+          from pathlib import Path
+
+          payload = json.loads(Path("data/calendar.json").read_text())
+          entries = {entry["date"]: entry for entry in payload["entries"]}
+          start = date.fromisoformat(os.environ["START"])
+          required = ("title", "rating", "quote", "doubanURL", "imageURLSmall", "imageURLMedium")
+          subjects = []
+          for offset in range(int(os.environ["DAYS"])):
+              key = (start + timedelta(days=offset)).isoformat()
+              assert key in entries, f"missing date {key}"
+              missing = [field for field in required if not entries[key].get(field)]
+              assert not missing, {"date": key, "missing": missing}
+              subjects.append(entries[key]["doubanSubjectID"])
+          assert len(subjects) == len(set(subjects)), "duplicate Douban subjects in active horizon"
+          print({"start": start.isoformat(), "days": len(subjects), "uniqueSubjects": len(set(subjects))})
+          PY
+          git config user.name "CineCal Calendar Builder"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/calendar.json
+          if git diff --cached --quiet; then
+            echo "Calendar horizon is already complete"
+            exit 0
+          fi
+          git commit -m "Extend date-keyed calendar"
+          git pull --rebase origin main
+          git push

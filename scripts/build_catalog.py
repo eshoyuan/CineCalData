@@ -314,6 +314,27 @@ def merge_existing(new_items: list[dict[str, Any]], existing_items: Iterable[dic
         key = catalog_key(item)
         previous = merged.get(key)
         if previous:
+            # Incremental TMDB refreshes intentionally rebuild only mechanical
+            # metadata. Keep locally materialized crops, verified Douban links,
+            # editorial copy and eligibility decisions unless the refresh
+            # explicitly replaces them.
+            old_images = previous.get("images", {})
+            new_images = item.setdefault("images", {})
+            for image_key, image_value in old_images.items():
+                if image_key not in new_images or not new_images.get(image_key):
+                    new_images[image_key] = image_value
+            for preserved_field in (
+                "quote",
+                "quoteType",
+                "quoteAttribution",
+                "editorial",
+                "editorialStatus",
+                "editorialEvidence",
+                "recommendationEligible",
+                "recommendationIneligibleReason",
+            ):
+                if preserved_field not in item and preserved_field in previous:
+                    item[preserved_field] = previous[preserved_field]
             item["firstSeenAt"] = previous.get("firstSeenAt", generated_at)
             old_ranks = previous.get("sourceRanks", {})
             item["sourceRanks"] = {**old_ranks, **item.get("sourceRanks", {})}

@@ -26,7 +26,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: cinecal-editorial-enrichment
+  group: cinecal-catalog-writer
   cancel-in-progress: false
 
 jobs:
@@ -64,11 +64,20 @@ jobs:
           --batch-size "$BATCH_SIZE"
           --review-batch-size "$REVIEW_BATCH_SIZE"
 
+      - name: Rebuild the compact client catalog
+        run: |
+          python -m unittest discover -s scripts -p 'test_build_widget_catalog.py'
+          python scripts/build_widget_catalog.py
+
       - name: Commit verified enrichment cache
         run: |
           git config user.name "CineCal Editorial Enricher"
           git config user.email "actions@users.noreply.github.com"
-          git add data/catalog.json
+          git add data/catalog.json data/widget-catalog.json
+          if git diff --cached --quiet; then
+            echo "No verified enrichment was added"
+            exit 0
+          fi
           git commit -m "Enrich Douban links and editorial lines"
           git pull --rebase origin main
           git push

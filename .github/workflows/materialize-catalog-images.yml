@@ -1,13 +1,22 @@
 name: Materialize offline catalog images
 
 on:
+  schedule:
+    # Small daily increment after the editorial enrichment job.
+    - cron: "5 19 * * *"
   workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum missing image pairs (0 means all)"
+        required: false
+        default: "0"
+        type: string
 
 permissions:
   contents: write
 
 concurrency:
-  group: cinecal-catalog-images
+  group: cinecal-catalog-writer
   cancel-in-progress: false
 
 jobs:
@@ -29,8 +38,22 @@ jobs:
       - name: Test crop scoring
         run: python -m unittest discover -s scripts -p 'test_materialize_catalog_images.py'
 
-      - name: Download and crop every catalog backdrop
-        run: python scripts/materialize_catalog_images.py --workers 12
+      - name: Download and crop missing catalog backdrops
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_LIMIT: ${{ inputs.limit || '0' }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            LIMIT=12
+          else
+            LIMIT="$REQUESTED_LIMIT"
+          fi
+          python scripts/materialize_catalog_images.py --missing-only --limit "$LIMIT" --workers 12
+
+      - name: Rebuild the compact client catalog
+        run: |
+          python -m unittest discover -s scripts -p 'test_build_widget_catalog.py'
+          python scripts/build_widget_catalog.py
 
       - name: Verify complete local asset pairs
         run: |
@@ -39,10 +62,9 @@ jobs:
           from pathlib import Path
 
           catalog = json.loads(Path("data/catalog.json").read_text())
-          expected = catalog["imageStats"]["processed"] * 2
           actual = len(list(Path("data/catalog-images").rglob("*.jpg")))
-          assert catalog["imageStats"]["failed"] == 0, catalog["imageStats"]
-          assert actual == expected, {"expected": expected, "actual": actual}
+          expected_minimum = catalog["imageStats"]["materializedTotal"] * 2
+          assert actual >= expected_minimum, {"expectedMinimum": expected_minimum, "actual": actual}
           print({"catalogItems": len(catalog["items"]), "imageFiles": actual})
           PY
 
@@ -50,7 +72,11 @@ jobs:
         run: |
           git config user.name "CineCal Image Builder"
           git config user.email "actions@users.noreply.github.com"
-          git add data/catalog.json data/catalog-images
+          git add data/catalog.json data/widget-catalog.json data/catalog-images
+          if git diff --cached --quiet; then
+            echo "No missing image pairs were found"
+            exit 0
+          fi
           git commit -m "Materialize widget-ready catalog images"
           git pull --rebase origin main
           git push

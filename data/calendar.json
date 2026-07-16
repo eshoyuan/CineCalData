@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-15T17:34:16.688646Z",
+  "updatedAt": "2026-07-16T17:35:57.234887Z",
   "horizon": {
-    "start": "2026-07-14",
-    "end": "2028-07-14",
+    "start": "2026-07-15",
+    "end": "2028-07-15",
     "days": 732
   },
   "entries": [
@@ -11065,6 +11065,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74387-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27046666/",
       "doubanSubjectID": "27046666",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-15",
+      "id": "tmdb:tv:31910",
+      "title": "火影忍者：疾风传",
+      "rating": "9.3",
+      "quote": "离别三年后重逢，疾风裹着羁绊与旧誓掠过木叶屋脊",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/31910-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/31910-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/31910-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/2053598/",
+      "doubanSubjectID": "2053598",
       "source": "widget-catalog"
     }
   ]

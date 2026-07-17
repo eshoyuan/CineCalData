@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-16T17:35:57.234887Z",
+  "updatedAt": "2026-07-17T17:20:29.979052Z",
   "horizon": {
-    "start": "2026-07-15",
-    "end": "2028-07-15",
+    "start": "2026-07-16",
+    "end": "2028-07-16",
     "days": 732
   },
   "entries": [
@@ -11080,6 +11080,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/31910-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/2053598/",
       "doubanSubjectID": "2053598",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-16",
+      "id": "douban:1291579",
+      "title": "怪兽电力公司",
+      "rating": "8.8",
+      "quote": "毛绒巨兽以尖叫打卡，却被小女孩眼神绊软了步伐。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/585-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/585-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/585-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291579/",
+      "doubanSubjectID": "1291579",
       "source": "widget-catalog"
     }
   ]

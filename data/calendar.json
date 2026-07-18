@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-17T17:20:29.979052Z",
+  "updatedAt": "2026-07-18T17:08:27.725700Z",
   "horizon": {
-    "start": "2026-07-16",
-    "end": "2028-07-16",
+    "start": "2026-07-17",
+    "end": "2028-07-17",
     "days": 732
   },
   "entries": [
@@ -11095,6 +11095,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/585-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291579/",
       "doubanSubjectID": "1291579",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-17",
+      "id": "douban:21937445",
+      "title": "辩护人",
+      "rating": "9.2",
+      "quote": "法庭之外是时代的寒潮，一句辩护烫热良心。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/242452-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/242452-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/242452-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/21937445/",
+      "doubanSubjectID": "21937445",
       "source": "widget-catalog"
     }
   ]

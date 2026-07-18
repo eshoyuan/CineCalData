@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T18:39:12.888704Z",
-  "count": 996,
+  "generatedAt": "2026-07-18T19:57:26.496462Z",
+  "count": 997,
   "items": [
     {
       "key": "tmdb:movie:278",
@@ -792,6 +792,16 @@
       "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1431-small.jpg",
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1431-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1310172/"
+    },
+    {
+      "key": "tmdb:movie:1280738",
+      "doubanSubjectID": "36877245",
+      "title": "火遮眼",
+      "rating": 7.8,
+      "quote": "暗巷吞没女儿后，铁拳裹着父爱凿向无边黑夜。",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1280738-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1280738-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36877245/"
     },
     {
       "key": "tmdb:movie:936075",

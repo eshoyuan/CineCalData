@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-18T17:08:27.725700Z",
+  "updatedAt": "2026-07-19T17:10:52.849181Z",
   "horizon": {
-    "start": "2026-07-17",
-    "end": "2028-07-17",
+    "start": "2026-07-18",
+    "end": "2028-07-18",
     "days": 732
   },
   "entries": [
@@ -11110,6 +11110,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/242452-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/21937445/",
       "doubanSubjectID": "21937445",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-18",
+      "id": "tmdb:tv:92621",
+      "title": "穷卵打板",
+      "rating": "7.8",
+      "quote": "穷到只剩义气，他们用偷来的日子拼出自由。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/92621-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/92621-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/92621-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/34805730/",
+      "doubanSubjectID": "34805730",
       "source": "widget-catalog"
     }
   ]

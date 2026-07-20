@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-19T19:58:08.662887Z",
+  "updatedAt": "2026-07-20T18:13:12.060211Z",
   "horizon": {
-    "start": "2026-07-18",
-    "end": "2028-07-18",
+    "start": "2026-07-19",
+    "end": "2028-07-19",
     "days": 732
   },
   "entries": [
@@ -636,33 +636,23 @@
       "tmdbID": 372058,
       "tmdbURL": "https://www.themoviedb.org/movie/372058",
       "mediaType": "movie",
-      "releaseDate": "2016-07-01"
+      "releaseDate": "2016-07-01",
+      "doubanSubjectID": "26683290"
     },
     {
       "date": "2026-08-19",
-      "id": "tmdb-movie-372058",
-      "title": "你的名字。",
-      "rating": "8.5",
-      "ratingSourceURL": "https://www.douban.com/j/search_suggest?debug=true&q=%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%E3%80%82",
-      "ratingRetrievedAt": "2026-07-19T19:34:56.631778Z",
-      "quote": "以整个青春的距离，去记住一个终将忘记的名字。",
+      "id": "tmdb:tv:655",
+      "title": "星际迷航：下一代",
+      "rating": "8.8",
+      "quote": "企业号划破星海，舰桥众人以好奇丈量未知边疆。",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/images/2026-08-19-tmdb-movie-372058-medium.jpg",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/images/2026-08-19-tmdb-movie-372058-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/images/2026-08-19-tmdb-movie-372058-medium.jpg",
-      "imageSourcePageURL": "https://www.themoviedb.org/movie/372058",
-      "imageCredit": "The Movie Database (TMDB)",
-      "imageRightsHolder": "respective production/rightsholder",
-      "imageRightsStatus": "official_promotional",
-      "imageLicenseName": "TMDB-hosted promotional artwork; verify production rights",
-      "imageLicenseURL": "",
-      "editorReportURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/reports/2026-08-19-tmdb-movie-372058.json",
-      "doubanURL": "https://movie.douban.com/subject/26683290/",
-      "tmdbID": 372058,
-      "tmdbURL": "https://www.themoviedb.org/movie/372058",
-      "mediaType": "movie",
-      "releaseDate": "2016-07-01"
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/655-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/655-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/655-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1738970/",
+      "doubanSubjectID": "1738970",
+      "source": "widget-catalog"
     },
     {
       "date": "2026-08-20",
@@ -733,7 +723,8 @@
       "tmdbID": 10515,
       "tmdbURL": "https://www.themoviedb.org/movie/10515",
       "mediaType": "movie",
-      "releaseDate": "1986-08-02"
+      "releaseDate": "1986-08-02",
+      "doubanSubjectID": "1291583"
     },
     {
       "date": "2026-08-24",
@@ -759,7 +750,8 @@
       "tmdbID": 489999,
       "tmdbURL": "https://www.themoviedb.org/movie/489999",
       "mediaType": "movie",
-      "releaseDate": "2018-08-24"
+      "releaseDate": "2018-08-24",
+      "doubanSubjectID": "27615441"
     },
     {
       "date": "2026-08-25",
@@ -1048,17 +1040,17 @@
     },
     {
       "date": "2026-09-13",
-      "id": "tmdb:movie:10515",
-      "title": "天空之城",
-      "rating": "9.2",
-      "quote": "少女颈间的飞行石，轻轻系住天空与矿井的仰望",
+      "id": "tmdb:movie:424",
+      "title": "辛德勒的名单",
+      "rating": "9.5",
+      "quote": "一份赦免名单，以工厂的名义对抗整座时代的黑夜。",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-medium.jpg",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-medium.jpg",
-      "doubanURL": "https://movie.douban.com/subject/1291583/",
-      "doubanSubjectID": "1291583",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/424-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/424-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/424-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1295124/",
+      "doubanSubjectID": "1295124",
       "source": "widget-catalog"
     },
     {
@@ -5098,17 +5090,17 @@
     },
     {
       "date": "2027-06-10",
-      "id": "tmdb:movie:372058",
-      "title": "你的名字。",
-      "rating": "8.5",
-      "quote": "彗星划过时，我在你身体里醒来，追一句未说出的名字。",
+      "id": "tmdb:tv:66732",
+      "title": "怪奇物语",
+      "rating": "9.1",
+      "quote": "自行车灯划破八十年代的浓雾，地下室电台守着失踪的回声。",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/372058-medium.jpg",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/372058-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/372058-medium.jpg",
-      "doubanURL": "https://movie.douban.com/subject/26683290/",
-      "doubanSubjectID": "26683290",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/66732-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/66732-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/66732-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/26359270/",
+      "doubanSubjectID": "26359270",
       "source": "widget-catalog"
     },
     {
@@ -11169,6 +11161,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/92621-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/34805730/",
       "doubanSubjectID": "34805730",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-19",
+      "id": "tmdb:tv:62560",
+      "title": "黑客军团",
+      "rating": "7.8",
+      "quote": "失眠的眼睛盯着代码，社恐工程师在世界漏洞里寻找正义。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/62560-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/62560-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/62560-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/26290409/",
+      "doubanSubjectID": "26290409",
       "source": "widget-catalog"
     }
   ]

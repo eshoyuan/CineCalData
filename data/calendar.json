@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-20T18:13:12.060211Z",
+  "updatedAt": "2026-07-21T17:40:00.570654Z",
   "horizon": {
-    "start": "2026-07-19",
-    "end": "2028-07-19",
+    "start": "2026-07-20",
+    "end": "2028-07-20",
     "days": 732
   },
   "entries": [
@@ -11176,6 +11176,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/62560-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/26290409/",
       "doubanSubjectID": "26290409",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-20",
+      "id": "tmdb:movie:740937",
+      "title": "西蒙娜：世纪之旅",
+      "rating": "7.6",
+      "quote": "集中营的寒潮在味觉闪回，法案的墨迹为后来者撑伞。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/740937-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/740937-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/740937-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/34964175/",
+      "doubanSubjectID": "34964175",
       "source": "widget-catalog"
     }
   ]

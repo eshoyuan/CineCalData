@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-21T17:40:00.570654Z",
+  "updatedAt": "2026-07-22T17:36:54.644080Z",
   "horizon": {
-    "start": "2026-07-20",
-    "end": "2028-07-20",
+    "start": "2026-07-21",
+    "end": "2028-07-21",
     "days": 732
   },
   "entries": [
@@ -11191,6 +11191,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/740937-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/34964175/",
       "doubanSubjectID": "34964175",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-21",
+      "id": "tmdb:movie:11645",
+      "title": "乱",
+      "rating": "8.9",
+      "quote": "浓云压城的战国原野，老父分封后看血缘在烽火里崩塌。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11645-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11645-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11645-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1296196/",
+      "doubanSubjectID": "1296196",
       "source": "widget-catalog"
     }
   ]

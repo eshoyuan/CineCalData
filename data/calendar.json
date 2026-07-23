@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-22T17:36:54.644080Z",
+  "updatedAt": "2026-07-23T17:42:21.264028Z",
   "horizon": {
-    "start": "2026-07-21",
-    "end": "2028-07-21",
+    "start": "2026-07-22",
+    "end": "2028-07-22",
     "days": 732
   },
   "entries": [
@@ -11206,6 +11206,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11645-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1296196/",
       "doubanSubjectID": "1296196",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-22",
+      "id": "douban:1291549",
+      "title": "放牛班的春天",
+      "rating": "9.3",
+      "quote": "走调的教室里，一支合唱把野草唱成了诗行。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5528-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5528-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5528-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291549/",
+      "doubanSubjectID": "1291549",
       "source": "widget-catalog"
     }
   ]

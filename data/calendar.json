@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-23T17:42:21.264028Z",
+  "updatedAt": "2026-07-24T17:46:30.816460Z",
   "horizon": {
-    "start": "2026-07-22",
-    "end": "2028-07-22",
+    "start": "2026-07-23",
+    "end": "2028-07-23",
     "days": 732
   },
   "entries": [
@@ -11221,6 +11221,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5528-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291549/",
       "doubanSubjectID": "1291549",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-23",
+      "id": "tmdb:movie:5156",
+      "title": "偷自行车的人",
+      "rating": "9.1",
+      "quote": "战后罗马街头，父亲牵着幼子追一辆养活全家的自行车",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5156-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5156-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5156-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1295873/",
+      "doubanSubjectID": "1295873",
       "source": "widget-catalog"
     }
   ]

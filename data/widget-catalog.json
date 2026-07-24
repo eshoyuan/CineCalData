@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-24T19:05:44.786221Z",
-  "count": 997,
+  "generatedAt": "2026-07-24T20:27:24.032743Z",
+  "count": 998,
   "items": [
     {
       "key": "tmdb:movie:278",
@@ -12,6 +12,16 @@
       "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/278-small.jpg",
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/278-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292052/"
+    },
+    {
+      "key": "tmdb:movie:1368337",
+      "doubanSubjectID": "36808876",
+      "title": "奥德赛",
+      "rating": 8.2,
+      "quote": "诺兰以深海为砚，写尽归人逆着诸神风浪的孤勇归途。",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1368337-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1368337-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36808876/"
     },
     {
       "key": "tmdb:tv:94997",

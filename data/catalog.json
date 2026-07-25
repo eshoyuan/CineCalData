@@ -140787,5 +140787,37 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-07-25T19:38:48.311497Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1201,
+    "directDoubanAtLeastSixTotal": 1017,
+    "imagePairTotal": 1195,
+    "editorialTotal": 1009,
+    "completeCardTotal": 1009,
+    "uniqueCompleteQuoteTotal": 1009,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 0,
+      "failed": 12,
+      "failures": {
+        "tmdb:movie:1339713": "request failed: Request timed out.",
+        "tmdb:tv:5920": "request failed: Request timed out.",
+        "tmdb:tv:37854": "request failed: Request timed out.",
+        "tmdb:movie:1632181": "request failed: Request timed out.",
+        "tmdb:tv:94664": "request failed: Request timed out.",
+        "tmdb:movie:931285": "request failed: Request timed out.",
+        "tmdb:tv:1402": "request failed: Request timed out.",
+        "tmdb:tv:320315": "request failed: Request timed out.",
+        "tmdb:tv:1429": "request failed: Request timed out.",
+        "tmdb:tv:13916": "request failed: Request timed out.",
+        "tmdb:tv:82684": "request failed: Request timed out.",
+        "tmdb:tv:34307": "request failed: Request timed out."
+      }
+    }
+  }
 }

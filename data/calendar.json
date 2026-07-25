@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-24T17:46:30.816460Z",
+  "updatedAt": "2026-07-25T17:11:29.991750Z",
   "horizon": {
-    "start": "2026-07-23",
-    "end": "2028-07-23",
+    "start": "2026-07-24",
+    "end": "2028-07-24",
     "days": 732
   },
   "entries": [
@@ -11236,6 +11236,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/5156-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1295873/",
       "doubanSubjectID": "1295873",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-24",
+      "id": "tmdb:movie:872585",
+      "title": "奥本海默",
+      "rating": "8.8",
+      "quote": "沙漠起爆瞬间照亮人心，造火者从此背负永恒余烬。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/872585-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/872585-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/872585-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35593344/",
+      "doubanSubjectID": "35593344",
       "source": "widget-catalog"
     }
   ]

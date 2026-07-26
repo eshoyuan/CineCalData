@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-25T17:11:29.991750Z",
+  "updatedAt": "2026-07-26T17:11:58.813927Z",
   "horizon": {
-    "start": "2026-07-24",
-    "end": "2028-07-24",
+    "start": "2026-07-25",
+    "end": "2028-07-25",
     "days": 732
   },
   "entries": [
@@ -11251,6 +11251,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/872585-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35593344/",
       "doubanSubjectID": "35593344",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-25",
+      "id": "tmdb:movie:20532",
+      "title": "山椒大夫",
+      "rating": "8.1",
+      "quote": "乱世拆散母子，山椒的庄园里，人性在苦役中仍向光。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20532-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20532-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20532-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1303573/",
+      "doubanSubjectID": "1303573",
       "source": "widget-catalog"
     }
   ]

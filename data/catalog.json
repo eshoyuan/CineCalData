@@ -3851,7 +3851,31 @@
       "qualityScore": 7.5,
       "qualityScoreSource": "douban",
       "rankingScore": 121.9375,
-      "searchableText": "金特务：本色回归 김부장 改编自同名网络漫画，讲述的是原本只想平凡当个父亲的金部长，在挚爱的女儿突然失踪后，不得不揭开自己极力隐藏的真实身份，为了救回女儿不惜一切的故事。 动作冒险 犯罪 剧情 South Korea 南大中 李胜英 이소은 苏志燮 崔代勋 尹敬浩 朱相昱 孙娜恩 徐秀敏 朴镇宇 元贤俊 spy secret agent martial artist single father veteran based on webcomic or webtoon suspenseful based on manhwa tv 2026"
+      "searchableText": "金特务：本色回归 김부장 改编自同名网络漫画，讲述的是原本只想平凡当个父亲的金部长，在挚爱的女儿突然失踪后，不得不揭开自己极力隐藏的真实身份，为了救回女儿不惜一切的故事。 动作冒险 犯罪 剧情 South Korea 南大中 李胜英 이소은 苏志燮 崔代勋 尹敬浩 朱相昱 孙娜恩 徐秀敏 朴镇宇 元贤俊 spy secret agent martial artist single father veteran based on webcomic or webtoon suspenseful based on manhwa tv 2026",
+      "quote": "想用余生笨拙学做父亲，一声失联，却让他重拾最锋利的身份。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "想用余生笨拙学做父亲，一声失联，却让他重拾最锋利的身份。",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://movie.douban.com/subject/37523009/",
+        "confidence": 0.95,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-07-26T19:40:03.984675Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 8.0,
+            "specificity": 9.0,
+            "spoilerSafety": 8.0,
+            "widgetFit": 9.0
+          },
+          "reason": "父职笨拙与锋利身份张力具体，失联点出转折未泄结局与生死"
+        }
+      },
+      "recommendationEligible": false
     },
     {
       "key": "tmdb:movie:10681",
@@ -140968,5 +140992,36 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-07-26T19:40:03.984675Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1206,
+    "directDoubanAtLeastSixTotal": 1018,
+    "imagePairTotal": 1195,
+    "editorialTotal": 1010,
+    "completeCardTotal": 1009,
+    "uniqueCompleteQuoteTotal": 1009,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 1,
+      "failed": 11,
+      "failures": {
+        "tmdb:movie:1632181": "request failed: Request timed out.",
+        "tmdb:movie:931285": "request failed: Request timed out.",
+        "tmdb:tv:1402": "request failed: Request timed out.",
+        "tmdb:tv:108978": "request failed: Request timed out.",
+        "tmdb:movie:1339713": "research unresolved",
+        "tmdb:movie:980431": "invalid score or confidence",
+        "tmdb:tv:5920": "Douban subject was not present in grounded evidence",
+        "tmdb:tv:37854": "confidence below 0.85",
+        "tmdb:tv:34307": "confidence below 0.85",
+        "tmdb:tv:320315": "research unresolved",
+        "tmdb:tv:1429": "confidence below 0.85"
+      }
+    }
+  }
 }

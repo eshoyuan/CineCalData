@@ -141376,5 +141376,37 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-07-27T20:00:03.168693Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1207,
+    "directDoubanAtLeastSixTotal": 1018,
+    "imagePairTotal": 1206,
+    "editorialTotal": 1010,
+    "completeCardTotal": 1010,
+    "uniqueCompleteQuoteTotal": 1010,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 0,
+      "failed": 12,
+      "failures": {
+        "tmdb:movie:980431": "request failed: Request timed out.",
+        "tmdb:movie:1339713": "request failed: Request timed out.",
+        "tmdb:tv:5920": "request failed: Request timed out.",
+        "tmdb:tv:37854": "request failed: Request timed out.",
+        "tmdb:movie:1632181": "research unresolved",
+        "tmdb:tv:108978": "Douban subject was not present in grounded evidence",
+        "tmdb:movie:931285": "Douban subject was not present in grounded evidence",
+        "tmdb:movie:1375646": "Douban subject was not present in grounded evidence",
+        "tmdb:tv:1402": "confidence below 0.85",
+        "tmdb:tv:34307": "research unresolved",
+        "tmdb:tv:320315": "research unresolved",
+        "tmdb:tv:1429": "Douban subject was not present in grounded evidence"
+      }
+    }
+  }
 }

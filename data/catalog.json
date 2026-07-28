@@ -67221,7 +67221,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/z67lpMtm8YGykJO4p89meuNMvj8.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/7qBrY88hNwMrMb75PkBZjhFolbL.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/7qBrY88hNwMrMb75PkBZjhFolbL.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/30983-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/30983-medium.jpg",
+        "cropSmall": {
+          "x": 0.109375,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.032757,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 0,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-07-28T18:58:03.232727Z",
       "lastSeenAt": "2026-07-28T18:58:03.232727Z",
@@ -97036,7 +97055,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/veIrzS2AkYm0UaYYcVw9ziWkJoB.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/gPNWVCp0zrHRmwfovUpUQO44sts.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/gPNWVCp0zrHRmwfovUpUQO44sts.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/91555-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/91555-medium.jpg",
+        "cropSmall": {
+          "x": 0.317188,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.0,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 5,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-07-28T18:58:03.232727Z",
       "lastSeenAt": "2026-07-28T18:58:03.232727Z",
@@ -141513,5 +141551,12 @@
         "tmdb:tv:34307": "research unresolved"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-07-28T20:22:01.038126Z",
+  "imageStats": {
+    "requested": 2,
+    "processed": 2,
+    "failed": 0,
+    "materializedTotal": 1209
   }
 }

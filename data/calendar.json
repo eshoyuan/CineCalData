@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-27T17:50:52.336959Z",
+  "updatedAt": "2026-07-28T17:43:13.321724Z",
   "horizon": {
-    "start": "2026-07-26",
-    "end": "2028-07-26",
+    "start": "2026-07-27",
+    "end": "2028-07-27",
     "days": 732
   },
   "entries": [
@@ -11341,6 +11341,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1330021-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/37005312/",
       "doubanSubjectID": "37005312",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-27",
+      "id": "tmdb:movie:12761",
+      "title": "秋日奏鸣曲",
+      "rating": "9.0",
+      "quote": "母女久别重逢，客厅的肖邦像刀，剖开七年沉默的痂。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12761-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12761-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12761-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1297268/",
+      "doubanSubjectID": "1297268",
       "source": "widget-catalog"
     }
   ]

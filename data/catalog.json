@@ -18045,7 +18045,7 @@
     {
       "key": "tmdb:tv:108978",
       "tmdbID": 108978,
-      "doubanSubjectID": "",
+      "doubanSubjectID": "30378897",
       "mediaType": "tv",
       "title": "侠探杰克",
       "originalTitle": "Reacher",
@@ -18091,9 +18091,9 @@
           "url": "https://www.themoviedb.org/tv/108978"
         },
         "douban": {
-          "score": null,
+          "score": 8.1,
           "count": null,
-          "url": "",
+          "url": "https://movie.douban.com/subject/30378897/",
           "top250Rank": null
         }
       },
@@ -18132,7 +18132,31 @@
       "qualityScore": 8.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 111.098,
-      "searchableText": "侠探杰克 Reacher 退役宪兵警察杰克雷彻被误认为是谋杀嫌疑人而被捕，他发现自己卷入了一场致命的阴谋之中。这桩阴谋涉及了黑警、奸商以及狡诈的政客。他只能凭借自己的机智将佐治亚州马格雷夫的案件查个水落石出。 动作冒险 剧情 犯罪 United States of America 艾伦·瑞奇森 尼克·桑托拉 艾伦·瑞奇森 Anggun assassin based on novel or book gun police newfoundland and labrador conspiracy agent blunt reboot absurd cliché doubtful tv 2022"
+      "searchableText": "侠探杰克 Reacher 退役宪兵警察杰克雷彻被误认为是谋杀嫌疑人而被捕，他发现自己卷入了一场致命的阴谋之中。这桩阴谋涉及了黑警、奸商以及狡诈的政客。他只能凭借自己的机智将佐治亚州马格雷夫的案件查个水落石出。 动作冒险 剧情 犯罪 United States of America 艾伦·瑞奇森 尼克·桑托拉 艾伦·瑞奇森 Anggun assassin based on novel or book gun police newfoundland and labrador conspiracy agent blunt reboot absurd cliché doubtful tv 2022",
+      "quote": "独行巨影踏入死寂小镇，以孤勇撬开谎言的铁门",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "独行巨影踏入死寂小镇，以孤勇撬开谎言的铁门",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://movie.douban.com/subject/30378897/",
+        "confidence": 0.92,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-07-28T19:56:39.845834Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 9.0,
+            "specificity": 9.0,
+            "spoilerSafety": 9.0,
+            "widgetFit": 9.0
+          },
+          "reason": "巨影与死寂小镇精准对应人设与氛围，动感足无结局泄露。"
+        }
+      },
+      "recommendationEligible": true
     },
     {
       "key": "tmdb:movie:598",
@@ -18265,7 +18289,7 @@
     {
       "key": "tmdb:movie:1375646",
       "tmdbID": 1375646,
-      "doubanSubjectID": "",
+      "doubanSubjectID": "37096700",
       "mediaType": "movie",
       "title": "群体",
       "originalTitle": "군체",
@@ -18309,9 +18333,9 @@
           "url": "https://www.themoviedb.org/movie/1375646"
         },
         "douban": {
-          "score": null,
+          "score": 6.2,
           "count": null,
-          "url": "",
+          "url": "https://movie.douban.com/subject/37096700/",
           "top250Rank": null
         }
       },
@@ -18350,7 +18374,31 @@
       "qualityScore": 8.0,
       "qualityScoreSource": "tmdb",
       "rankingScore": 111.023,
-      "searchableText": "群体 군체 因不明感染事件被封锁在一栋大楼内的幸存者们，与以不可预测形态进化的感染者展开殊死搏斗。随着感染不断扩散，幸存者被迫在有限空间中寻找生路，同时面对越来越聪明、越来越危险的感染者。全智贤在片中饰演生命工程学教授兼幸存者领袖权世贞。她不仅要带领众人逃出生天，更试图破解感染者不断进化的规律，在绝境中寻找唯一的生机。 如果说《釜山行》让观众见识了高速奔袭的感染者，那么延尚昊导演的新作《群体》，则把恐惧再次升级。影片于2026年5月21日在韩国上映，仅4天突破100万观影人次，随后迅速突破500万人次，不仅成功跨越损益平衡点，也成为今年韩国最具话题性的商业电影之一。彻底颠覆了传统丧尸设定。电影中的感染者不再只是凭本能行动，而是会不断进化，并逐渐形成拥有群体智慧（Hive Mind）”的全新生命体。他们会集结、协同行动，甚至能够根据环境不断改变攻击方式，让每一次逃亡都充满未知。 动作 恐怖 科幻 South Korea 延尚昊 최규석 양유민 全智贤 具教焕 池昌旭 金信禄 申铉彬 高洙 李仲玉 金宗泰 黄在烈 이담희 zombie movie 2026"
+      "searchableText": "群体 군체 因不明感染事件被封锁在一栋大楼内的幸存者们，与以不可预测形态进化的感染者展开殊死搏斗。随着感染不断扩散，幸存者被迫在有限空间中寻找生路，同时面对越来越聪明、越来越危险的感染者。全智贤在片中饰演生命工程学教授兼幸存者领袖权世贞。她不仅要带领众人逃出生天，更试图破解感染者不断进化的规律，在绝境中寻找唯一的生机。 如果说《釜山行》让观众见识了高速奔袭的感染者，那么延尚昊导演的新作《群体》，则把恐惧再次升级。影片于2026年5月21日在韩国上映，仅4天突破100万观影人次，随后迅速突破500万人次，不仅成功跨越损益平衡点，也成为今年韩国最具话题性的商业电影之一。彻底颠覆了传统丧尸设定。电影中的感染者不再只是凭本能行动，而是会不断进化，并逐渐形成拥有群体智慧（Hive Mind）”的全新生命体。他们会集结、协同行动，甚至能够根据环境不断改变攻击方式，让每一次逃亡都充满未知。 动作 恐怖 科幻 South Korea 延尚昊 최규석 양유민 全智贤 具教焕 池昌旭 金信禄 申铉彬 高洙 李仲玉 金宗泰 黄在烈 이담희 zombie movie 2026",
+      "quote": "封楼孤岛中，群智进化的阴影下她举灯寻生路",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "封楼孤岛中，群智进化的阴影下她举灯寻生路",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://en.wikipedia.org/wiki/Colony_(2026_film)",
+        "confidence": 0.9,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-07-28T19:56:39.845834Z",
+        "review": {
+          "scores": {
+            "relevance": 10.0,
+            "literary": 8.0,
+            "specificity": 9.0,
+            "spoilerSafety": 9.0,
+            "widgetFit": 9.0
+          },
+          "reason": "封楼与群智进化贴合设定，举灯意象有张力且安全。"
+        }
+      },
+      "recommendationEligible": true
     },
     {
       "key": "douban:3395373",
@@ -141435,5 +141483,35 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-07-28T19:56:39.845834Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1209,
+    "directDoubanAtLeastSixTotal": 1020,
+    "imagePairTotal": 1207,
+    "editorialTotal": 1012,
+    "completeCardTotal": 1012,
+    "uniqueCompleteQuoteTotal": 1012,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 2,
+      "failed": 10,
+      "failures": {
+        "tmdb:movie:980431": "invalid score or confidence",
+        "tmdb:movie:1339713": "research unresolved",
+        "tmdb:tv:5920": "research unresolved",
+        "tmdb:tv:37854": "research unresolved",
+        "tmdb:movie:1632181": "research unresolved",
+        "tmdb:movie:931285": "Douban score is missing or below the catalog threshold",
+        "tmdb:tv:1402": "confidence below 0.85",
+        "tmdb:movie:634649": "confidence below 0.85",
+        "tmdb:tv:320315": "research unresolved",
+        "tmdb:tv:34307": "research unresolved"
+      }
+    }
+  }
 }

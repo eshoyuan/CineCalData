@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-28T18:58:34.888902Z",
-  "count": 998,
+  "generatedAt": "2026-07-28T20:09:19.016507Z",
+  "count": 1000,
   "items": [
     {
       "key": "tmdb:movie:278",
@@ -1354,6 +1354,16 @@
       "doubanURL": "https://movie.douban.com/subject/11525673/"
     },
     {
+      "key": "tmdb:tv:108978",
+      "doubanSubjectID": "30378897",
+      "title": "侠探杰克",
+      "rating": 8.1,
+      "quote": "独行巨影踏入死寂小镇，以孤勇撬开谎言的铁门",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/108978-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/108978-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30378897/"
+    },
+    {
       "key": "tmdb:movie:598",
       "doubanSubjectID": "1292208",
       "title": "上帝之城",
@@ -1362,6 +1372,16 @@
       "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/598-small.jpg",
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/598-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292208/"
+    },
+    {
+      "key": "tmdb:movie:1375646",
+      "doubanSubjectID": "37096700",
+      "title": "群体",
+      "rating": 6.2,
+      "quote": "封楼孤岛中，群智进化的阴影下她举灯寻生路",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1375646-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1375646-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/37096700/"
     },
     {
       "key": "douban:3395373",

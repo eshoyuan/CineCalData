@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-28T17:43:13.321724Z",
+  "updatedAt": "2026-07-29T17:24:24.682209Z",
   "horizon": {
-    "start": "2026-07-27",
-    "end": "2028-07-27",
+    "start": "2026-07-28",
+    "end": "2028-07-28",
     "days": 732
   },
   "entries": [
@@ -11356,6 +11356,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12761-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1297268/",
       "doubanSubjectID": "1297268",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-28",
+      "id": "tmdb:movie:20803",
+      "title": "伊凡雷帝：回到未来",
+      "rating": "7.6",
+      "quote": "古老权杖与公寓停电相撞，时空在惊愕里错位成喜剧。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20803-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20803-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20803-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/3021842/",
+      "doubanSubjectID": "3021842",
       "source": "widget-catalog"
     }
   ]

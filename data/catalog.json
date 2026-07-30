@@ -483,7 +483,31 @@
       "qualityScore": 7.8,
       "qualityScoreSource": "douban",
       "rankingScore": 143.4864,
-      "searchableText": "蜘蛛侠：崭新之日 Spider-Man: Brand New Day 重建普通生活后，彼得一边在大学完成学业、一边从事兼职以维持生计，同时仍肩负着守护纽约街头的蜘蛛侠责任。然而，当一个神秘力量从内部腐蚀这座城市的安全与秩序，彼得被迫再次披上战衣。他必须在强大的敌人与昔日纽带之间找到平衡，并重新定义英雄的意义。 科幻 动作 冒险 United States of America Louis D'Esposito 德斯汀·丹尼尔·克雷顿 埃里克·萨默斯 克里斯·麦肯纳 David Cain 汤姆·赫兰德 赞达亚·科尔曼 萨迪·辛克 雅各布·贝塔隆 乔·博恩瑟 特拉梅尔·提尔曼 迈克尔·曼多 马克·鲁法洛 丽莎·科伦-萨亚斯 Marvin Jones III mind control new york city hero mutation secret identity superhero spider villain based on comic sequel ninja super power masked vigilante aftercreditsstinger marvel cinematic universe (mcu) masked superhero fight for justice genetic mutation wonder amused movie 2026"
+      "searchableText": "蜘蛛侠：崭新之日 Spider-Man: Brand New Day 重建普通生活后，彼得一边在大学完成学业、一边从事兼职以维持生计，同时仍肩负着守护纽约街头的蜘蛛侠责任。然而，当一个神秘力量从内部腐蚀这座城市的安全与秩序，彼得被迫再次披上战衣。他必须在强大的敌人与昔日纽带之间找到平衡，并重新定义英雄的意义。 科幻 动作 冒险 United States of America Louis D'Esposito 德斯汀·丹尼尔·克雷顿 埃里克·萨默斯 克里斯·麦肯纳 David Cain 汤姆·赫兰德 赞达亚·科尔曼 萨迪·辛克 雅各布·贝塔隆 乔·博恩瑟 特拉梅尔·提尔曼 迈克尔·曼多 马克·鲁法洛 丽莎·科伦-萨亚斯 Marvin Jones III mind control new york city hero mutation secret identity superhero spider villain based on comic sequel ninja super power masked vigilante aftercreditsstinger marvel cinematic universe (mcu) masked superhero fight for justice genetic mutation wonder amused movie 2026",
+      "quote": "世界忘了彼得·帕克，他仍在课业与零工的缝隙里织住纽约",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "世界忘了彼得·帕克，他仍在课业与零工的缝隙里织住纽约",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://movie.douban.com/subject/36246195/",
+        "confidence": 0.95,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-07-30T19:56:56.103048Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 9.0,
+            "specificity": 9.0,
+            "spoilerSafety": 9.0,
+            "widgetFit": 9.0
+          },
+          "reason": "保留被遗忘后重建日常的孤独底色，用课业零工点出本作特性，织住一词兼具文学性与蛛丝意象，无剧透且长度适中。"
+        }
+      },
+      "recommendationEligible": false
     },
     {
       "key": "tmdb:tv:60625",
@@ -142077,5 +142101,36 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-07-30T19:56:56.103048Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1219,
+    "directDoubanAtLeastSixTotal": 1021,
+    "imagePairTotal": 1214,
+    "editorialTotal": 1013,
+    "completeCardTotal": 1012,
+    "uniqueCompleteQuoteTotal": 1012,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 1,
+      "failed": 11,
+      "failures": {
+        "tmdb:movie:1632181": "request failed: Request timed out.",
+        "tmdb:tv:94664": "request failed: Request timed out.",
+        "tmdb:movie:634649": "request failed: Request timed out.",
+        "tmdb:tv:1405": "request failed: Request timed out.",
+        "tmdb:movie:931285": "request failed: Request timed out.",
+        "tmdb:tv:34307": "request failed: Request timed out.",
+        "tmdb:tv:320315": "request failed: Request timed out.",
+        "tmdb:movie:980431": "research unresolved",
+        "tmdb:movie:1339713": "research unresolved",
+        "tmdb:tv:5920": "research unresolved",
+        "tmdb:tv:37854": "research unresolved"
+      }
+    }
+  }
 }

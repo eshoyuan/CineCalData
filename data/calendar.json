@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-29T17:24:24.682209Z",
+  "updatedAt": "2026-07-30T17:43:41.963260Z",
   "horizon": {
-    "start": "2026-07-28",
-    "end": "2028-07-28",
+    "start": "2026-07-29",
+    "end": "2028-07-29",
     "days": 732
   },
   "entries": [
@@ -11371,6 +11371,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/20803-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/3021842/",
       "doubanSubjectID": "3021842",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-29",
+      "id": "tmdb:tv:77721",
+      "title": "三次元女友",
+      "rating": "6.9",
+      "quote": "只信二次元的宅少年，被现实野蛮生长的告白撞得手足无措",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/77721-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/77721-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/77721-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/27197216/",
+      "doubanSubjectID": "27197216",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-30T17:43:41.963260Z",
+  "updatedAt": "2026-07-31T17:48:37.265806Z",
   "horizon": {
-    "start": "2026-07-29",
-    "end": "2028-07-29",
+    "start": "2026-07-30",
+    "end": "2028-07-30",
     "days": 732
   },
   "entries": [
@@ -11386,6 +11386,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/77721-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27197216/",
       "doubanSubjectID": "27197216",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-30",
+      "id": "tmdb:movie:324857",
+      "title": "蜘蛛侠：平行宇宙",
+      "rating": "8.6",
+      "quote": "布鲁克林的少年纵身一跃，蛛网在多重宇宙间绽放",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/324857-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/324857-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/324857-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/26374197/",
+      "doubanSubjectID": "26374197",
       "source": "widget-catalog"
     }
   ]

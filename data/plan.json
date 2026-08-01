@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "horizonDays": 730,
-  "updatedAt": "2026-07-14T07:12:33.258191Z",
+  "updatedAt": "2026-08-01T18:39:43.141347Z",
   "entries": [
     {
       "date": "2026-07-14",
@@ -141,6 +141,185 @@
       ],
       "locked": false,
       "generatedAt": "2026-07-14T07:12:07.349820Z"
+    },
+    {
+      "date": "2026-11-21",
+      "title": "弗兰肯斯坦",
+      "originalTitle": "Frankenstein",
+      "releaseYear": 1931,
+      "mediaType": "movie",
+      "selectionScore": 92,
+      "reason": "1931年今日纽约首映95周年，环球哥特恐怖开山之作，肃冷初冬氛围与馆藏影史地位兼具。",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "1931年11月21日美国首映",
+          "sourceURL": "https://en.wikipedia.org/wiki/Frankenstein_(1931_film)"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Frankenstein_(1931_film)"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.782915Z"
+    },
+    {
+      "date": "2026-11-22",
+      "title": "寻梦环游记",
+      "originalTitle": "Coco",
+      "releaseYear": 2017,
+      "mediaType": "movie",
+      "selectionScore": 94,
+      "reason": "小雪节气当日，皮克斯亡灵节家宴动画9周年上映，团聚与追忆主题契合感恩季。",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "2017年11月22日美国公映",
+          "sourceURL": "https://en.wikipedia.org/wiki/Coco_(2017_film)"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Coco_(2017_film)"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.783677Z"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "妙趣圣诞",
+      "originalTitle": "Scrooged",
+      "releaseYear": 1988,
+      "mediaType": "movie",
+      "selectionScore": 86,
+      "reason": "1988年今日上映的黑色圣诞喜剧，比尔·墨瑞版现代版圣诞颂歌，开启感恩至圣诞档期转换。",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "1988年11月23日首映的圣诞经典",
+          "sourceURL": "https://www.thathashtagshow.com/movie-news/4k-ultra-hd-or-blu-ray-releases/the-bill-murray-classic-scrooged-celebrates-35th-anniversary-with-new-4k-release/"
+        }
+      ],
+      "researchSources": [
+        "https://www.thathashtagshow.com/movie-news/4k-ultra-hd-or-blu-ray-releases/the-bill-murray-classic-scrooged-celebrates-35th-anniversary-with-new-4k-release/"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.783852Z"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "黑猫白猫",
+      "originalTitle": "Black Cat, White Cat",
+      "releaseYear": 1998,
+      "mediaType": "movie",
+      "selectionScore": 84,
+      "reason": "塞尔维亚鬼才埃米尔·库斯图里卡生日，巴尔干狂欢喜剧平衡美式感恩叙事。",
+      "signals": [
+        {
+          "type": "person_anniversary",
+          "label": "导演埃米尔·库斯图里卡生于1954年11月24日",
+          "sourceURL": "https://www.calendarz.com/on-this-day/november/24/emir-kusturica"
+        }
+      ],
+      "researchSources": [
+        "https://www.calendarz.com/on-this-day/november/24/emir-kusturica"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.785631Z"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "落难见真情",
+      "originalTitle": "Planes, Trains and Automobiles",
+      "releaseYear": 1987,
+      "mediaType": "movie",
+      "selectionScore": 96,
+      "reason": "感恩节公路喜剧影史第一，1987年今日上映，雪夜归家路正是感恩节母题。",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "1987年11月25日美国上映",
+          "sourceURL": "https://en.wikipedia.org/wiki/Planes,_Trains_and_Automobiles"
+        },
+        {
+          "type": "holiday",
+          "label": "影片情节为感恩节前两天归家",
+          "sourceURL": "https://en.wikipedia.org/wiki/Planes,_Trains_and_Automobiles"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Planes,_Trains_and_Automobiles"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.789357Z"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "饮食男女",
+      "originalTitle": "Eat Drink Man Woman",
+      "releaseYear": 1994,
+      "mediaType": "movie",
+      "selectionScore": 90,
+      "reason": "感恩节正日用中式家宴电影致敬团聚，呼应本年感恩档魔幻大作纳尼亚IMAX合家欢氛围。",
+      "signals": [
+        {
+          "type": "holiday",
+          "label": "2026年感恩节为11月26日星期四",
+          "sourceURL": "https://www.almanac.com/thanksgiving-day"
+        },
+        {
+          "type": "cultural_moment",
+          "label": "格蕾塔·葛韦格版纳尼亚定档2026感恩节IMAX全球上映",
+          "sourceURL": "https://www.sportskeeda.com/us/movies/greta-gerwig-s-narnia-aims-thanksgiving-2026-theatrical-release"
+        }
+      ],
+      "researchSources": [
+        "https://www.almanac.com/thanksgiving-day",
+        "https://www.sportskeeda.com/us/movies/greta-gerwig-s-narnia-aims-thanksgiving-2026-theatrical-release"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.791072Z"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "冰雪奇缘",
+      "originalTitle": "Frozen",
+      "releaseYear": 2013,
+      "mediaType": "movie",
+      "selectionScore": 95,
+      "reason": "迪士尼冬日现象级动画13周年，2013年感恩档今日全美公映，开启初雪季仪式感。",
+      "signals": [
+        {
+          "type": "release_anniversary",
+          "label": "2013年11月27日美国广泛公映",
+          "sourceURL": "https://en.wikipedia.org/wiki/Frozen_(2013_film)"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Frozen_(2013_film)"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.791557Z"
+    },
+    {
+      "date": "2026-11-28",
+      "title": "地心引力",
+      "originalTitle": "Gravity",
+      "releaseYear": 2013,
+      "mediaType": "movie",
+      "selectionScore": 93,
+      "reason": "墨西哥导演阿方索·卡隆生日代表作，太空史诗视效仍具大银幕号召力。",
+      "signals": [
+        {
+          "type": "person_anniversary",
+          "label": "阿方索·卡隆生于1961年11月28日墨西哥城",
+          "sourceURL": "https://en.wikipedia.org/wiki/Alfonso_Cuar%C3%B3n"
+        }
+      ],
+      "researchSources": [
+        "https://en.wikipedia.org/wiki/Alfonso_Cuar%C3%B3n"
+      ],
+      "locked": false,
+      "generatedAt": "2026-08-01T18:39:10.792899Z"
     }
   ]
 }

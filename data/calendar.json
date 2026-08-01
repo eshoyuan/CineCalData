@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-31T17:48:37.265806Z",
+  "updatedAt": "2026-08-01T17:10:41.087062Z",
   "horizon": {
-    "start": "2026-07-30",
-    "end": "2028-07-30",
+    "start": "2026-07-31",
+    "end": "2028-07-31",
     "days": 732
   },
   "entries": [
@@ -11401,6 +11401,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/324857-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/26374197/",
       "doubanSubjectID": "26374197",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-07-31",
+      "id": "douban:10437779",
+      "title": "新世界",
+      "rating": "8.9",
+      "quote": "刀锋与忠诚在暗夜里对峙，谁能走出自己的新世界",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/165213-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/165213-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/165213-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/10437779/",
+      "doubanSubjectID": "10437779",
       "source": "widget-catalog"
     }
   ]

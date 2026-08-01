@@ -6082,7 +6082,7 @@
     {
       "key": "tmdb:tv:37854",
       "tmdbID": 37854,
-      "doubanSubjectID": "",
+      "doubanSubjectID": "1453238",
       "mediaType": "tv",
       "title": "航海王",
       "originalTitle": "ワンピース",
@@ -6141,9 +6141,9 @@
           "url": "https://www.themoviedb.org/tv/37854"
         },
         "douban": {
-          "score": null,
+          "score": 9.5,
           "count": null,
-          "url": "",
+          "url": "https://movie.douban.com/subject/1453238/",
           "top250Rank": null
         }
       },
@@ -6182,7 +6182,31 @@
       "qualityScore": 8.7,
       "qualityScoreSource": "tmdb",
       "rankingScore": 118.7094,
-      "searchableText": "航海王 ワンピース 拥有财富、名声、势力，拥有整个世界的海贼王 – 哥尔·D·罗杰，他在临刑前的一句话，让人们趋之若鹜奔向大海。“想要我的财宝吗？想要的话可以全部给你，去找吧！我把所有财宝都放在那里。”于是所有男子汉航向伟大的航路追逐梦想，世界开始迎接“大海贼时代”。 动作冒险 喜剧 动画 Japan 田中真弓 中井和哉 矢口真里 冈村明美 山口胜平 平田广明 大谷育江 山口由里子 矢尾一树 宝龟克寿 ocean sea boat treasure fight liberation ship friendship friends pirate based on manga super power adventurer shounen sea adventure anime wonder fantasy adventure defiant tv 1999"
+      "searchableText": "航海王 ワンピース 拥有财富、名声、势力，拥有整个世界的海贼王 – 哥尔·D·罗杰，他在临刑前的一句话，让人们趋之若鹜奔向大海。“想要我的财宝吗？想要的话可以全部给你，去找吧！我把所有财宝都放在那里。”于是所有男子汉航向伟大的航路追逐梦想，世界开始迎接“大海贼时代”。 动作冒险 喜剧 动画 Japan 田中真弓 中井和哉 矢口真里 冈村明美 山口胜平 平田广明 大谷育江 山口由里子 矢尾一树 宝龟克寿 ocean sea boat treasure fight liberation ship friendship friends pirate based on manga super power adventurer shounen sea adventure anime wonder fantasy adventure defiant tv 1999",
+      "quote": "把草帽抛向风口，少年们用笑声把大海走成归途",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "把草帽抛向风口，少年们用笑声把大海走成归途",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://zh.wikipedia.org/wiki/ONE_PIECE",
+        "confidence": 0.96,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-08-01T19:39:12.582082Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 9.0,
+            "specificity": 9.0,
+            "spoilerSafety": 10.0,
+            "widgetFit": 9.0
+          },
+          "reason": "草帽意象高度专属，笑声与归途兼具冒险诗意"
+        }
+      },
+      "recommendationEligible": true
     },
     {
       "key": "tmdb:tv:1408",
@@ -34283,7 +34307,7 @@
     {
       "key": "tmdb:tv:1402",
       "tmdbID": 1402,
-      "doubanSubjectID": "",
+      "doubanSubjectID": "502251",
       "mediaType": "tv",
       "title": "行尸走肉",
       "originalTitle": "The Walking Dead",
@@ -34308,9 +34332,9 @@
           "url": "https://www.themoviedb.org/tv/1402"
         },
         "douban": {
-          "score": null,
+          "score": 8.9,
           "count": null,
-          "url": "",
+          "url": "https://movie.douban.com/subject/502251/",
           "top250Rank": null
         }
       },
@@ -34348,7 +34372,31 @@
       "qualityScore": 8.1,
       "qualityScoreSource": "tmdb",
       "rankingScore": 106.8822,
-      "searchableText": "行尸走肉 The Walking Dead 镇治安官瑞克·格莱姆斯在一次行动中遭受枪击，当他从昏迷中醒来时，发现小镇上阴气沉沉，死尸遍地。更为恐怖的是，有的死尸游走于街头巷尾，嗜血如命，早已化作恐怖的丧尸。从一对幸存的父子口中得知，大批的幸存者早已疏散到亚特兰大市的避难所。为了 找到失踪的妻儿，瑞克只身上路。然而亚特兰大早已沦陷成为死城，丧尸在此占有绝对的统治地位。被丧尸围攻的瑞克得到数名幸存者的救助，经过一番奋力厮杀，他们最终返回到野外的营地。在接下来的日子里，他们不仅要面临丧尸的威胁，更要承受来自灵魂深处的巨大考验…… 动作冒险 剧情 Sci-Fi & Fantasy tv 2010"
+      "searchableText": "行尸走肉 The Walking Dead 镇治安官瑞克·格莱姆斯在一次行动中遭受枪击，当他从昏迷中醒来时，发现小镇上阴气沉沉，死尸遍地。更为恐怖的是，有的死尸游走于街头巷尾，嗜血如命，早已化作恐怖的丧尸。从一对幸存的父子口中得知，大批的幸存者早已疏散到亚特兰大市的避难所。为了 找到失踪的妻儿，瑞克只身上路。然而亚特兰大早已沦陷成为死城，丧尸在此占有绝对的统治地位。被丧尸围攻的瑞克得到数名幸存者的救助，经过一番奋力厮杀，他们最终返回到野外的营地。在接下来的日子里，他们不仅要面临丧尸的威胁，更要承受来自灵魂深处的巨大考验…… 动作冒险 剧情 Sci-Fi & Fantasy tv 2010",
+      "quote": "在空城的死寂里醒来，听见活人的心跳也算光亮",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "在空城的死寂里醒来，听见活人的心跳也算光亮",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://www.wikidata.org/wiki/Q232737",
+        "confidence": 0.88,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-08-01T19:39:12.582082Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 9.0,
+            "specificity": 9.0,
+            "spoilerSafety": 9.0,
+            "widgetFit": 9.0
+          },
+          "reason": "以空城醒来切入行尸末世氛围，活人心跳兼具温度与恐惧"
+        }
+      },
+      "recommendationEligible": true
     },
     {
       "key": "tmdb:movie:25538",
@@ -142479,5 +142527,35 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-08-01T19:39:12.582082Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1223,
+    "directDoubanAtLeastSixTotal": 1024,
+    "imagePairTotal": 1221,
+    "editorialTotal": 1015,
+    "completeCardTotal": 1015,
+    "uniqueCompleteQuoteTotal": 1015,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 2,
+      "failed": 10,
+      "failures": {
+        "tmdb:movie:980431": "invalid score or confidence",
+        "tmdb:movie:1339713": "research unresolved",
+        "tmdb:tv:5920": "editorial context source was not grounded",
+        "tmdb:tv:94664": "confidence below 0.85",
+        "tmdb:movie:634649": "Douban subject was not present in grounded evidence",
+        "tmdb:movie:1632181": "research unresolved",
+        "tmdb:tv:1405": "research unresolved",
+        "tmdb:movie:931285": "research unresolved",
+        "tmdb:tv:320315": "research unresolved",
+        "tmdb:tv:1429": "research unresolved"
+      }
+    }
+  }
 }

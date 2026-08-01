@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T18:42:59.968584Z",
-  "count": 1000,
+  "generatedAt": "2026-08-01T20:01:10.792974Z",
+  "count": 1002,
   "items": [
     {
       "key": "tmdb:movie:278",
@@ -452,6 +452,16 @@
       "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/209867-small.jpg",
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/209867-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36093351/"
+    },
+    {
+      "key": "tmdb:tv:37854",
+      "doubanSubjectID": "1453238",
+      "title": "航海王",
+      "rating": 9.5,
+      "quote": "把草帽抛向风口，少年们用笑声把大海走成归途",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/37854-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/37854-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1453238/"
     },
     {
       "key": "tmdb:tv:1408",
@@ -2672,6 +2682,16 @@
       "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1430-small.jpg",
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1430-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1422169/"
+    },
+    {
+      "key": "tmdb:tv:1402",
+      "doubanSubjectID": "502251",
+      "title": "行尸走肉",
+      "rating": 8.9,
+      "quote": "在空城的死寂里醒来，听见活人的心跳也算光亮",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1402-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1402-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/502251/"
     },
     {
       "key": "tmdb:movie:25538",

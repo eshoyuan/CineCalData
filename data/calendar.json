@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-02T19:54:26.146612Z",
+  "updatedAt": "2026-08-03T18:00:54.795470Z",
   "horizon": {
-    "start": "2026-08-01",
-    "end": "2028-08-01",
+    "start": "2026-08-02",
+    "end": "2028-08-02",
     "days": 732
   },
   "entries": [
@@ -942,7 +942,8 @@
       "tmdbID": 671,
       "tmdbURL": "https://www.themoviedb.org/movie/671",
       "mediaType": "movie",
-      "releaseDate": "2001-11-16"
+      "releaseDate": "2001-11-16",
+      "doubanSubjectID": "1295038"
     },
     {
       "date": "2026-09-02",
@@ -968,7 +969,8 @@
       "tmdbID": 603,
       "tmdbURL": "https://www.themoviedb.org/movie/603",
       "mediaType": "movie",
-      "releaseDate": "1999-03-31"
+      "releaseDate": "1999-03-31",
+      "doubanSubjectID": "1291843"
     },
     {
       "date": "2026-09-03",
@@ -994,7 +996,8 @@
       "tmdbID": 194,
       "tmdbURL": "https://www.themoviedb.org/movie/194",
       "mediaType": "movie",
-      "releaseDate": "2001-04-25"
+      "releaseDate": "2001-04-25",
+      "doubanSubjectID": "1292215"
     },
     {
       "date": "2026-09-04",
@@ -1035,7 +1038,8 @@
       "tmdbID": 3059,
       "tmdbURL": "https://www.themoviedb.org/movie/3059",
       "mediaType": "movie",
-      "releaseDate": "1916-09-04"
+      "releaseDate": "1916-09-04",
+      "doubanSubjectID": "1295287"
     },
     {
       "date": "2026-09-06",
@@ -1076,7 +1080,8 @@
       "tmdbID": 2108,
       "tmdbURL": "https://www.themoviedb.org/movie/2108",
       "mediaType": "movie",
-      "releaseDate": "1985-02-15"
+      "releaseDate": "1985-02-15",
+      "doubanSubjectID": "1295728"
     },
     {
       "date": "2026-09-08",
@@ -2130,17 +2135,17 @@
     },
     {
       "date": "2026-11-17",
-      "id": "tmdb:movie:671",
-      "title": "哈利·波特与魔法石",
-      "rating": "9.2",
-      "quote": "猫头鹰送来十一岁的邀请碗橱少年推开石墙后的星图",
+      "id": "tmdb:tv:3750",
+      "title": "整容室",
+      "rating": "7.6",
+      "quote": "刀锋修饰众生的脸，却缝不住自己生活里裂开的口子。",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/671-medium.jpg",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/671-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/671-medium.jpg",
-      "doubanURL": "https://movie.douban.com/subject/1295038/",
-      "doubanSubjectID": "1295038",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/3750-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/3750-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/3750-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1401375/",
+      "doubanSubjectID": "1401375",
       "source": "widget-catalog"
     },
     {
@@ -2865,17 +2870,17 @@
     },
     {
       "date": "2027-01-05",
-      "id": "tmdb:movie:194",
-      "title": "天使爱美丽",
-      "rating": "8.7",
-      "quote": "蒙马特的咖啡冒热气时，羞怯女孩正笨拙拼凑他人的小确幸。",
+      "id": "tmdb:movie:149871",
+      "title": "辉夜姬物语",
+      "rating": "8.6",
+      "quote": "竹中瞬长的月之公主，在水墨摇晃中学会尘世悲欢。",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/194-medium.jpg",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/194-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/194-medium.jpg",
-      "doubanURL": "https://movie.douban.com/subject/1292215/",
-      "doubanSubjectID": "1292215",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/149871-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/149871-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/149871-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/4099231/",
+      "doubanSubjectID": "4099231",
       "source": "widget-catalog"
     },
     {
@@ -4050,17 +4055,17 @@
     },
     {
       "date": "2027-03-25",
-      "id": "tmdb:movie:603",
-      "title": "黑客帝国",
-      "rating": "9.1",
-      "quote": "绿码雨下落的瞬间你选红色药丸还是安稳的梦境",
+      "id": "douban:1306861",
+      "title": "我是山姆",
+      "rating": "9.0",
+      "quote": "他用七岁的纯粹，去证明父爱的刻度不止智商",
       "quoteType": "editorial",
       "quoteAttribution": "CineCal 原创编辑文案",
-      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/603-medium.jpg",
-      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/603-small.jpg",
-      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/603-medium.jpg",
-      "doubanURL": "https://movie.douban.com/subject/1291843/",
-      "doubanSubjectID": "1291843",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10950-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10950-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10950-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1306861/",
+      "doubanSubjectID": "1306861",
       "source": "widget-catalog"
     },
     {
@@ -11486,6 +11491,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/240-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1299131/",
       "doubanSubjectID": "1299131",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-02",
+      "id": "tmdb:movie:8422",
+      "title": "洛可兄弟",
+      "rating": "8.3",
+      "quote": "南方五兄弟北漂米兰，贫穷的拳台上亲情被欲望击碎。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/8422-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/8422-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/8422-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1303558/",
+      "doubanSubjectID": "1303558",
       "source": "widget-catalog"
     }
   ]

@@ -11179,7 +11179,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/yQIdU11DYQQp0neGtGtGxbGfRer.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/i2mfUWIoxbBuNVn71ALVhC7F7Lo.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/i2mfUWIoxbBuNVn71ALVhC7F7Lo.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/454639-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/454639-medium.jpg",
+        "cropSmall": {
+          "x": 0.153125,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.016379,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 1,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-04T19:13:25.409720Z",
       "lastSeenAt": "2026-08-04T19:13:25.409720Z",
@@ -70820,7 +70839,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/zftF4KDGuhAGIA50bywcCXPjz5f.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/HL66OjtWDju94OXDa0qayHYcfj.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/HL66OjtWDju94OXDa0qayHYcfj.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/289763-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/289763-medium.jpg",
+        "cropSmall": {
+          "x": 0.207813,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.036852,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 2,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-04T19:13:25.409720Z",
       "lastSeenAt": "2026-08-04T19:13:25.409720Z",
@@ -109449,7 +109487,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/vJGTgRfMOgiuXQGkvo7uJR53C6P.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/vJGTgRfMOgiuXQGkvo7uJR53C6P.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1212763-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1212763-medium.jpg",
+        "cropSmall": {
+          "x": 0.153125,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.057325,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 0,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-04T19:13:25.409720Z",
       "lastSeenAt": "2026-08-04T19:13:25.409720Z",
@@ -142930,5 +142987,12 @@
         "tmdb:tv:1405": "Douban subject was not present in grounded evidence"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-08-04T20:38:42.692176Z",
+  "imageStats": {
+    "requested": 3,
+    "processed": 3,
+    "failed": 0,
+    "materializedTotal": 1230
   }
 }

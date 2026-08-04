@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-03T18:00:54.795470Z",
+  "updatedAt": "2026-08-04T18:00:20.851044Z",
   "horizon": {
-    "start": "2026-08-02",
-    "end": "2028-08-02",
+    "start": "2026-08-03",
+    "end": "2028-08-03",
     "days": 732
   },
   "entries": [
@@ -11506,6 +11506,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/8422-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1303558/",
       "doubanSubjectID": "1303558",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-03",
+      "id": "douban:1297518",
+      "title": "九品芝麻官",
+      "rating": "8.8",
+      "quote": "芝麻小官把公堂当戏台，用痞笑去撬动权贵的牙关。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/55156-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/55156-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/55156-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1297518/",
+      "doubanSubjectID": "1297518",
       "source": "widget-catalog"
     }
   ]

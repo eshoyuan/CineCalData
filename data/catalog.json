@@ -74741,7 +74741,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/5mcc7J07f680Q88xeLClf5SIZtt.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/w8p5MkntL1bTI94INGLya1pHmTP.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/w8p5MkntL1bTI94INGLya1pHmTP.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/207333-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/207333-medium.jpg",
+        "cropSmall": {
+          "x": 0.185938,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.028663,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 1,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-05T19:06:50.052623Z",
       "lastSeenAt": "2026-08-05T19:06:50.052623Z",
@@ -129879,7 +129898,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/nk8d3sG4ODp68U1CV0eh12E6Q8W.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/9XOJpyalPs43SuU9hbcvKnAwKPs.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/9XOJpyalPs43SuU9hbcvKnAwKPs.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/77826-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/77826-medium.jpg",
+        "cropSmall": {
+          "x": 0.30625,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.118745,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 15,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-05T19:06:50.052623Z",
       "lastSeenAt": "2026-08-05T19:06:50.052623Z",
@@ -143158,5 +143196,12 @@
         "tmdb:tv:278624": "research unresolved"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-08-05T20:36:56.281178Z",
+  "imageStats": {
+    "requested": 2,
+    "processed": 2,
+    "failed": 0,
+    "materializedTotal": 1232
   }
 }

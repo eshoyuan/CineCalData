@@ -6310,7 +6310,7 @@
     {
       "key": "tmdb:tv:97546",
       "tmdbID": 97546,
-      "doubanSubjectID": "",
+      "doubanSubjectID": "34843220",
       "mediaType": "tv",
       "title": "Ted Lasso",
       "originalTitle": "Ted Lasso",
@@ -6370,9 +6370,9 @@
           "url": "https://www.themoviedb.org/tv/97546"
         },
         "douban": {
-          "score": null,
+          "score": 9.0,
           "count": null,
-          "url": "",
+          "url": "https://movie.douban.com/subject/34843220/",
           "top250Rank": null
         }
       },
@@ -6411,7 +6411,31 @@
       "qualityScore": 8.3,
       "qualityScoreSource": "tmdb",
       "rankingScore": 119.1442,
-      "searchableText": "Ted Lasso Ted Lasso 一位美国橄榄球教练受聘执教一支英国足球队；他虽然缺乏足球知识，但他乐观、坚定，而且带了很多饼干。 剧情 喜剧 United States of America Leann Bowen 布雷特·戈德斯坦 Jack Burditt Jamie Lee Liza Katzer Jane Becker Brendan Hunt Joe Kelly 杰森·苏戴奇斯 汉娜·沃丁厄姆 Jeremy Swift 布雷特·戈德斯坦 Brendan Hunt 朱诺·坦普尔 坦雅·雷諾茲 england male friendship friendship fish out of water football (soccer) american abroad teammate professional sports football (soccer) team workplace comedy team owner football (soccer) coach optimist coaching nice guy premier league tv 2020"
+      "searchableText": "Ted Lasso Ted Lasso 一位美国橄榄球教练受聘执教一支英国足球队；他虽然缺乏足球知识，但他乐观、坚定，而且带了很多饼干。 剧情 喜剧 United States of America Leann Bowen 布雷特·戈德斯坦 Jack Burditt Jamie Lee Liza Katzer Jane Becker Brendan Hunt Joe Kelly 杰森·苏戴奇斯 汉娜·沃丁厄姆 Jeremy Swift 布雷特·戈德斯坦 Brendan Hunt 朱诺·坦普尔 坦雅·雷諾茲 england male friendship friendship fish out of water football (soccer) american abroad teammate professional sports football (soccer) team workplace comedy team owner football (soccer) coach optimist coaching nice guy premier league tv 2020",
+      "quote": "把曲奇当战术板，用笨拙的真诚把嘘声熬成掌声。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "把曲奇当战术板，用笨拙的真诚把嘘声熬成掌声。",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://en.wikipedia.org/wiki/Ted_Lasso",
+        "confidence": 0.92,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-08-05T19:59:22.736217Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 9.0,
+            "specificity": 9.0,
+            "spoilerSafety": 10.0,
+            "widgetFit": 9.0
+          },
+          "reason": "原句后半为通用鸡汤，重写以曲奇战术板与嘘声转掌声提升专属性"
+        }
+      },
+      "recommendationEligible": true
     },
     {
       "key": "tmdb:movie:603",
@@ -14003,7 +14027,31 @@
       "qualityScore": 7.4,
       "qualityScoreSource": "douban",
       "rankingScore": 112.8719,
-      "searchableText": "安昂传奇：最后的气宗 Avatar Aang: The Last Airbender 派拉蒙和尼克宣布“降世神通”系列开发三部新的电影，仍是动画形式。第一部由《降世神通：最后的气宗》导演Lauren Montgomery执导，《最后的气宗》主创Bryan Konietzko和Michael DiMartino担任制片人。 动画 动作 冒险 奇幻 United States of America South Korea Australia 劳伦·蒙哥马利 Eric Coleman Tim Hedrick 克里斯托弗·L·约斯特 에릭 남 戴夫·巴蒂斯塔 杰西卡·马滕 Román Zaragoza 史蒂文·元 Dionne Quan 迪·布拉雷·贝克尔 芙蕾达·平托 关继威 塔伊加·维迪提 martial arts extinction cultural identity based on tv series amused comforting hopeful movie 2026"
+      "searchableText": "安昂传奇：最后的气宗 Avatar Aang: The Last Airbender 派拉蒙和尼克宣布“降世神通”系列开发三部新的电影，仍是动画形式。第一部由《降世神通：最后的气宗》导演Lauren Montgomery执导，《最后的气宗》主创Bryan Konietzko和Michael DiMartino担任制片人。 动画 动作 冒险 奇幻 United States of America South Korea Australia 劳伦·蒙哥马利 Eric Coleman Tim Hedrick 克里斯托弗·L·约斯特 에릭 남 戴夫·巴蒂斯塔 杰西卡·马滕 Román Zaragoza 史蒂文·元 Dionne Quan 迪·布拉雷·贝克尔 芙蕾达·平托 关继威 塔伊加·维迪提 martial arts extinction cultural identity based on tv series amused comforting hopeful movie 2026",
+      "quote": "最后的风仍不愿熄灭，在少年掌心重新学会呼吸",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "editorial": {
+        "quote": "最后的风仍不愿熄灭，在少年掌心重新学会呼吸",
+        "type": "editorial",
+        "attribution": "CineCal 原创编辑文案",
+        "contextSourceURL": "https://movie.douban.com/subject/35930978/",
+        "confidence": 0.95,
+        "model": "muse-spark-1.1",
+        "promptVersion": "catalog-editorial-v2",
+        "generatedAt": "2026-08-05T19:59:22.736217Z",
+        "review": {
+          "scores": {
+            "relevance": 9.0,
+            "literary": 9.0,
+            "specificity": 9.0,
+            "spoilerSafety": 10.0,
+            "widgetFit": 9.0
+          },
+          "reason": "原句已具呼吸感与掌风意象，贴合气宗核心，予以保留"
+        }
+      },
+      "recommendationEligible": true
     },
     {
       "key": "tmdb:movie:429",
@@ -143080,5 +143128,35 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-08-05T19:59:22.736217Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1232,
+    "directDoubanAtLeastSixTotal": 1026,
+    "imagePairTotal": 1230,
+    "editorialTotal": 1017,
+    "completeCardTotal": 1017,
+    "uniqueCompleteQuoteTotal": 1017,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 2,
+      "failed": 10,
+      "failures": {
+        "tmdb:movie:1339713": "research unresolved",
+        "tmdb:tv:5920": "research unresolved",
+        "tmdb:tv:113962": "research unresolved",
+        "tmdb:movie:634649": "confidence below 0.85",
+        "tmdb:movie:1212763": "research unresolved",
+        "tmdb:movie:1632181": "research unresolved",
+        "tmdb:movie:454639": "research unresolved",
+        "tmdb:tv:65930": "research unresolved",
+        "tmdb:tv:94664": "research unresolved",
+        "tmdb:tv:278624": "research unresolved"
+      }
+    }
+  }
 }

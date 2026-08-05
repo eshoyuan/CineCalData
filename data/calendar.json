@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-04T18:00:20.851044Z",
+  "updatedAt": "2026-08-05T17:50:54.066783Z",
   "horizon": {
-    "start": "2026-08-03",
-    "end": "2028-08-03",
+    "start": "2026-08-04",
+    "end": "2028-08-04",
     "days": 732
   },
   "entries": [
@@ -11521,6 +11521,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/55156-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1297518/",
       "doubanSubjectID": "1297518",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-04",
+      "id": "tmdb:tv:87739",
+      "title": "后翼弃兵",
+      "rating": "9.0",
+      "quote": "六十四格里，孤女用冷静计算对抗混乱的童年余烬。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87739-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87739-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87739-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/32579283/",
+      "doubanSubjectID": "32579283",
       "source": "widget-catalog"
     }
   ]

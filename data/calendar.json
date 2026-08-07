@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-05T17:50:54.066783Z",
+  "updatedAt": "2026-08-07T17:03:26.259025Z",
   "horizon": {
-    "start": "2026-08-04",
-    "end": "2028-08-04",
+    "start": "2026-08-06",
+    "end": "2028-08-06",
     "days": 732
   },
   "entries": [
@@ -11536,6 +11536,36 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87739-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/32579283/",
       "doubanSubjectID": "32579283",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-05",
+      "id": "tmdb:tv:136369",
+      "title": "还有明天",
+      "rating": "8.1",
+      "quote": "阴间成立抢救小组，在坠落前一秒递出一封迟来的邀请函。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/136369-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/136369-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/136369-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35426372/",
+      "doubanSubjectID": "35426372",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-06",
+      "id": "tmdb:tv:222766",
+      "title": "豺狼的日子",
+      "rating": "8.8",
+      "quote": "假面游走欧洲暗影，捕猎与被捕猎仅一线之差。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/222766-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/222766-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/222766-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36323224/",
+      "doubanSubjectID": "36323224",
       "source": "widget-catalog"
     }
   ]

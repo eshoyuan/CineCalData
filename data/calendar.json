@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-07T17:03:26.259025Z",
+  "updatedAt": "2026-08-08T16:47:44.558814Z",
   "horizon": {
-    "start": "2026-08-06",
-    "end": "2028-08-06",
+    "start": "2026-08-07",
+    "end": "2028-08-07",
     "days": 732
   },
   "entries": [
@@ -11566,6 +11566,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/222766-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36323224/",
       "doubanSubjectID": "36323224",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-07",
+      "id": "tmdb:tv:87461",
+      "title": "贤惠幼妻仙狐小姐",
+      "rating": "7.8",
+      "quote": "八百岁的狐耳落在疲惫社畜肩头，家务声里煮出温柔。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87461-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87461-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87461-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30394582/",
+      "doubanSubjectID": "30394582",
       "source": "widget-catalog"
     }
   ]

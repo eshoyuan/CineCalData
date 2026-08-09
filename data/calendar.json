@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-08T16:47:44.558814Z",
+  "updatedAt": "2026-08-09T16:48:33.075009Z",
   "horizon": {
-    "start": "2026-08-07",
-    "end": "2028-08-07",
+    "start": "2026-08-08",
+    "end": "2028-08-08",
     "days": 732
   },
   "entries": [
@@ -11581,6 +11581,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/87461-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/30394582/",
       "doubanSubjectID": "30394582",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-08",
+      "id": "tmdb:movie:1184918",
+      "title": "荒野机器人",
+      "rating": "8.2",
+      "quote": "荒岛风雨中，落难的机器以笨拙的代码学会了做母亲。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1184918-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1184918-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1184918-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36689857/",
+      "doubanSubjectID": "36689857",
       "source": "widget-catalog"
     }
   ]

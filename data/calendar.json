@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-09T16:48:33.075009Z",
+  "updatedAt": "2026-08-10T17:03:30.656578Z",
   "horizon": {
-    "start": "2026-08-08",
-    "end": "2028-08-08",
+    "start": "2026-08-09",
+    "end": "2028-08-09",
     "days": 732
   },
   "entries": [
@@ -11596,6 +11596,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1184918-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36689857/",
       "doubanSubjectID": "36689857",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-09",
+      "id": "tmdb:tv:74682",
+      "title": "不是机器人啊",
+      "rating": "7.5",
+      "quote": "过敏的孤岛上，她成了唯一不蜇人的温度",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74682-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74682-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/74682-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/27126334/",
+      "doubanSubjectID": "27126334",
       "source": "widget-catalog"
     }
   ]

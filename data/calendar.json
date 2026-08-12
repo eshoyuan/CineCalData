@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-11T17:08:23.068013Z",
+  "updatedAt": "2026-08-12T17:07:24.408736Z",
   "horizon": {
-    "start": "2026-08-10",
-    "end": "2028-08-10",
+    "start": "2026-08-11",
+    "end": "2028-08-11",
     "days": 732
   },
   "entries": [
@@ -11626,6 +11626,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/348-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1300868/",
       "doubanSubjectID": "1300868",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-11",
+      "id": "tmdb:tv:125988",
+      "title": "末日地堡",
+      "rating": "7.8",
+      "quote": "深埋百层的筒仓里，每级阶梯都回荡着被掩埋的真相。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/125988-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/125988-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/125988-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35468745/",
+      "doubanSubjectID": "35468745",
       "source": "widget-catalog"
     }
   ]

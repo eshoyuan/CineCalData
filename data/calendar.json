@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-12T17:07:24.408736Z",
+  "updatedAt": "2026-08-13T17:07:10.343282Z",
   "horizon": {
-    "start": "2026-08-11",
-    "end": "2028-08-11",
+    "start": "2026-08-12",
+    "end": "2028-08-12",
     "days": 732
   },
   "entries": [
@@ -11641,6 +11641,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/125988-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35468745/",
       "doubanSubjectID": "35468745",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-12",
+      "id": "tmdb:movie:15383",
+      "title": "影子部队",
+      "rating": "8.5",
+      "quote": "没有番号的暗夜里，忠诚比枪口更沉重冰冷。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15383-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15383-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15383-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1466419/",
+      "doubanSubjectID": "1466419",
       "source": "widget-catalog"
     }
   ]

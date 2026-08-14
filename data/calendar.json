@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-13T17:07:10.343282Z",
+  "updatedAt": "2026-08-14T17:05:00.087215Z",
   "horizon": {
-    "start": "2026-08-12",
-    "end": "2028-08-12",
+    "start": "2026-08-13",
+    "end": "2028-08-13",
     "days": 732
   },
   "entries": [
@@ -11656,6 +11656,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15383-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1466419/",
       "doubanSubjectID": "1466419",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-13",
+      "id": "tmdb:movie:14836",
+      "title": "鬼妈妈",
+      "rating": "8.4",
+      "quote": "纽扣眼的温柔乡比现实更甜，也更舍不得你离开",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14836-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14836-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14836-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1919245/",
+      "doubanSubjectID": "1919245",
       "source": "widget-catalog"
     }
   ]

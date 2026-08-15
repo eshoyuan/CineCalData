@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-14T17:05:00.087215Z",
+  "updatedAt": "2026-08-15T16:36:13.908791Z",
   "horizon": {
-    "start": "2026-08-13",
-    "end": "2028-08-13",
+    "start": "2026-08-14",
+    "end": "2028-08-14",
     "days": 732
   },
   "entries": [
@@ -11671,6 +11671,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14836-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1919245/",
       "doubanSubjectID": "1919245",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-14",
+      "id": "tmdb:movie:15244",
+      "title": "死囚越狱",
+      "rating": "8.5",
+      "quote": "死囚牢房里勺声轻敲，自由在方寸缝隙中一寸寸凿开。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15244-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15244-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15244-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1303562/",
+      "doubanSubjectID": "1303562",
       "source": "widget-catalog"
     }
   ]

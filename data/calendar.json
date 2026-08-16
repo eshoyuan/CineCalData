@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-15T16:36:13.908791Z",
+  "updatedAt": "2026-08-16T16:36:28.300006Z",
   "horizon": {
-    "start": "2026-08-14",
-    "end": "2028-08-14",
+    "start": "2026-08-15",
+    "end": "2028-08-15",
     "days": 732
   },
   "entries": [
@@ -11686,6 +11686,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/15244-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1303562/",
       "doubanSubjectID": "1303562",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-15",
+      "id": "tmdb:movie:11104",
+      "title": "重庆森林",
+      "rating": "8.8",
+      "quote": "失恋警察与快餐店女孩的时差爱情，都在过期的凤梨罐头里发酵。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11104-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11104-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11104-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291999/",
+      "doubanSubjectID": "1291999",
       "source": "widget-catalog"
     }
   ]

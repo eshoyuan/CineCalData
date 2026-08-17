@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-16T16:36:28.300006Z",
+  "updatedAt": "2026-08-17T16:38:59.272114Z",
   "horizon": {
-    "start": "2026-08-15",
-    "end": "2028-08-15",
+    "start": "2026-08-16",
+    "end": "2028-08-16",
     "days": 732
   },
   "entries": [
@@ -11701,6 +11701,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11104-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291999/",
       "doubanSubjectID": "1291999",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-16",
+      "id": "tmdb:movie:9277",
+      "title": "骗中骗",
+      "rating": "8.7",
+      "quote": "芝加哥风中设下连环套，用幽默复仇洗劫银行家的保险库。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9277-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9277-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9277-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292269/",
+      "doubanSubjectID": "1292269",
       "source": "widget-catalog"
     }
   ]

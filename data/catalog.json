@@ -6705,7 +6705,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/5ZmOP60VIEfM2cnt7CpAK1j9mEv.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/5ZmOP60VIEfM2cnt7CpAK1j9mEv.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/95350-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/95350-medium.jpg",
+        "cropSmall": {
+          "x": 0.207813,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.0,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 2,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-17T18:13:51.660830Z",
       "lastSeenAt": "2026-08-17T18:13:51.660830Z",
@@ -107531,7 +107550,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/7t6f6VxA2ZXbbZSVctgt7bZG2DI.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/3IOTIAJcL9GXG5gGnf3EDDCYRHj.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/3IOTIAJcL9GXG5gGnf3EDDCYRHj.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1307118-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1307118-medium.jpg",
+        "cropSmall": {
+          "x": 0.164062,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.155597,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 1,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-17T18:13:51.660830Z",
       "lastSeenAt": "2026-08-17T18:13:51.660830Z",
@@ -144157,5 +144195,12 @@
         "tmdb:tv:1405": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-08-17T19:34:57.470098Z",
+  "imageStats": {
+    "requested": 2,
+    "processed": 2,
+    "failed": 0,
+    "materializedTotal": 1245
   }
 }

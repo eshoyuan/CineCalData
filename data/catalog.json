@@ -144233,5 +144233,37 @@
       },
       "embeddingRow": 741
     }
-  ]
+  ],
+  "editorialEnrichment": {
+    "updatedAt": "2026-08-18T19:03:04.760227Z",
+    "model": "muse-spark-1.1",
+    "promptVersion": "catalog-editorial-v2",
+    "catalogTotal": 1247,
+    "directDoubanAtLeastSixTotal": 1027,
+    "imagePairTotal": 1245,
+    "editorialTotal": 1017,
+    "completeCardTotal": 1017,
+    "uniqueCompleteQuoteTotal": 1017,
+    "invalidQuoteLengthTotal": 0,
+    "failedReviewTotal": 0,
+    "lastRun": {
+      "requested": 12,
+      "verified": 0,
+      "failed": 12,
+      "failures": {
+        "tmdb:movie:1315772": "local draft failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:95350": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:113962": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:movie:1339713": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:5920": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:movie:634649": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:movie:1212763": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:movie:1632181": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:94664": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:65930": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:320315": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}",
+        "tmdb:tv:1405": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
+      }
+    }
+  }
 }

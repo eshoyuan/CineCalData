@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-17T16:38:59.272114Z",
+  "updatedAt": "2026-08-18T16:49:27.829442Z",
   "horizon": {
-    "start": "2026-08-16",
-    "end": "2028-08-16",
+    "start": "2026-08-17",
+    "end": "2028-08-17",
     "days": 732
   },
   "entries": [
@@ -11716,6 +11716,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9277-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292269/",
       "doubanSubjectID": "1292269",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-17",
+      "id": "tmdb:movie:11778",
+      "title": "猎鹿人",
+      "rating": "8.3",
+      "quote": "钢铁镇的猎歌被战火撕裂，归来的人们在沉默里对望伤痕。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11778-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11778-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11778-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292403/",
+      "doubanSubjectID": "1292403",
       "source": "widget-catalog"
     }
   ]

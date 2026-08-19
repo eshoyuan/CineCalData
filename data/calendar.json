@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-18T16:49:27.829442Z",
+  "updatedAt": "2026-08-19T16:47:43.846077Z",
   "horizon": {
-    "start": "2026-08-17",
-    "end": "2028-08-17",
+    "start": "2026-08-18",
+    "end": "2028-08-18",
     "days": 732
   },
   "entries": [
@@ -11731,6 +11731,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/11778-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292403/",
       "doubanSubjectID": "1292403",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-18",
+      "id": "tmdb:movie:526702",
+      "title": "黑神驹",
+      "rating": "7.2",
+      "quote": "荒原上少女与黑马相依，孤独有了并肩的回响。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/526702-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/526702-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/526702-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/33437777/",
+      "doubanSubjectID": "33437777",
       "source": "widget-catalog"
     }
   ]

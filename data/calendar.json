@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-19T16:47:43.846077Z",
+  "updatedAt": "2026-08-20T16:46:49.342365Z",
   "horizon": {
-    "start": "2026-08-18",
-    "end": "2028-08-18",
+    "start": "2026-08-19",
+    "end": "2028-08-19",
     "days": 732
   },
   "entries": [
@@ -11746,6 +11746,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/526702-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/33437777/",
       "doubanSubjectID": "33437777",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-19",
+      "id": "tmdb:tv:76747",
+      "title": "我的街区",
+      "rating": "8.1",
+      "quote": "破旧街区的午后，四个少年的友谊在高中门前摇晃。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/76747-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/76747-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/76747-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/27605680/",
+      "doubanSubjectID": "27605680",
       "source": "widget-catalog"
     }
   ]

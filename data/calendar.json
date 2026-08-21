@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-20T16:46:49.342365Z",
+  "updatedAt": "2026-08-21T16:46:49.600861Z",
   "horizon": {
-    "start": "2026-08-19",
-    "end": "2028-08-19",
+    "start": "2026-08-20",
+    "end": "2028-08-20",
     "days": 732
   },
   "entries": [
@@ -11761,6 +11761,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/76747-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27605680/",
       "doubanSubjectID": "27605680",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-20",
+      "id": "tmdb:tv:301507",
+      "title": "巅峰对决",
+      "rating": "8.8",
+      "quote": "冰场对撞八年，心跳在敌意与眷恋的缝隙中失速滑行",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/301507-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/301507-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/301507-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/37202886/",
+      "doubanSubjectID": "37202886",
       "source": "widget-catalog"
     }
   ]

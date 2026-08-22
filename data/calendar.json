@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-21T16:46:49.600861Z",
+  "updatedAt": "2026-08-22T16:35:26.969043Z",
   "horizon": {
-    "start": "2026-08-20",
-    "end": "2028-08-20",
+    "start": "2026-08-21",
+    "end": "2028-08-21",
     "days": 732
   },
   "entries": [
@@ -11776,6 +11776,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/301507-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/37202886/",
       "doubanSubjectID": "37202886",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-21",
+      "id": "douban:1291992",
+      "title": "末路狂花",
+      "rating": "9.0",
+      "quote": "公路抛开规训，两颗被辜负的心并肩燃烧",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1541-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1541-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1541-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291992/",
+      "doubanSubjectID": "1291992",
       "source": "widget-catalog"
     }
   ]

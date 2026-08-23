@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-22T16:35:26.969043Z",
+  "updatedAt": "2026-08-23T16:37:25.997204Z",
   "horizon": {
-    "start": "2026-08-21",
-    "end": "2028-08-21",
+    "start": "2026-08-22",
+    "end": "2028-08-22",
     "days": 732
   },
   "entries": [
@@ -11791,6 +11791,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1541-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291992/",
       "doubanSubjectID": "1291992",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-22",
+      "id": "tmdb:movie:76",
+      "title": "爱在黎明破晓前",
+      "rating": "8.8",
+      "quote": "维也纳一夜的漫游，把火车偶遇拉长成日出前的永恒。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/76-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/76-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/76-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1296339/",
+      "doubanSubjectID": "1296339",
       "source": "widget-catalog"
     }
   ]

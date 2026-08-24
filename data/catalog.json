@@ -68997,7 +68997,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/p9tpGftvG18M5y5wsBmPrQpVBsd.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/k4Hwekr1WC2jqZq71jnZmGF6G6Y.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/k4Hwekr1WC2jqZq71jnZmGF6G6Y.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/298610-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/298610-medium.jpg",
+        "cropSmall": {
+          "x": 0.175,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.085988,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 2,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-24T18:15:16.252261Z",
       "lastSeenAt": "2026-08-24T18:15:16.252261Z",
@@ -94703,7 +94722,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/PqIW7PA74YBURz5slZkxc0K5Pl.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/5v1SOaiBIoT05qFe53KPlQYssNo.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/5v1SOaiBIoT05qFe53KPlQYssNo.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/236235-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/236235-medium.jpg",
+        "cropSmall": {
+          "x": 0.0875,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.0,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 5,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-24T18:15:16.252261Z",
       "lastSeenAt": "2026-08-24T18:15:16.252261Z",
@@ -144750,5 +144788,12 @@
         "tmdb:tv:34307": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-08-24T19:37:06.848985Z",
+  "imageStats": {
+    "requested": 2,
+    "processed": 2,
+    "failed": 0,
+    "materializedTotal": 1254
   }
 }

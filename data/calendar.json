@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-23T16:37:25.997204Z",
+  "updatedAt": "2026-08-24T16:50:28.652201Z",
   "horizon": {
-    "start": "2026-08-22",
-    "end": "2028-08-22",
+    "start": "2026-08-23",
+    "end": "2028-08-23",
     "days": 732
   },
   "entries": [
@@ -11806,6 +11806,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/76-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1296339/",
       "doubanSubjectID": "1296339",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-23",
+      "id": "douban:1297880",
+      "title": "芙蓉镇",
+      "rating": "9.3",
+      "quote": "芙蓉小镇豆腐香里，个体命运被时代洪流反复揉搓。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122973-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122973-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122973-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1297880/",
+      "doubanSubjectID": "1297880",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-24T16:50:28.652201Z",
+  "updatedAt": "2026-08-25T16:49:55.943992Z",
   "horizon": {
-    "start": "2026-08-23",
-    "end": "2028-08-23",
+    "start": "2026-08-24",
+    "end": "2028-08-24",
     "days": 732
   },
   "entries": [
@@ -11821,6 +11821,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122973-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1297880/",
       "doubanSubjectID": "1297880",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-24",
+      "id": "tmdb:tv:96713",
+      "title": "午夜福音",
+      "rating": "9.0",
+      "quote": "戴上宇宙模拟器，他把末日当作聊生死的录音棚",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96713-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96713-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96713-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/34996025/",
+      "doubanSubjectID": "34996025",
       "source": "widget-catalog"
     }
   ]

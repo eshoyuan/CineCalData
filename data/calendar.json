@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25T16:49:55.943992Z",
+  "updatedAt": "2026-08-26T16:55:04.087472Z",
   "horizon": {
-    "start": "2026-08-24",
-    "end": "2028-08-24",
+    "start": "2026-08-25",
+    "end": "2028-08-25",
     "days": 732
   },
   "entries": [
@@ -11836,6 +11836,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96713-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/34996025/",
       "doubanSubjectID": "34996025",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-25",
+      "id": "douban:2149806",
+      "title": "入殓师",
+      "rating": "8.9",
+      "quote": "大提琴换成入殓箱，他以指尖为亡者化妆，也为生者调音。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/16804-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/16804-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/16804-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/2149806/",
+      "doubanSubjectID": "2149806",
       "source": "widget-catalog"
     }
   ]

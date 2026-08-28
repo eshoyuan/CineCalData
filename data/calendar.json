@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-26T16:55:04.087472Z",
+  "updatedAt": "2026-08-28T00:50:38.216130Z",
   "horizon": {
-    "start": "2026-08-25",
-    "end": "2028-08-25",
+    "start": "2026-08-27",
+    "end": "2028-08-27",
     "days": 732
   },
   "entries": [
@@ -11851,6 +11851,36 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/16804-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/2149806/",
       "doubanSubjectID": "2149806",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-26",
+      "id": "tmdb:movie:606856",
+      "title": "多哥",
+      "rating": "8.8",
+      "quote": "风暴雪原上的血清接力，瘦小领头犬以忠勇踏出生命航线。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/606856-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/606856-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/606856-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30271841/",
+      "doubanSubjectID": "30271841",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-27",
+      "id": "tmdb:movie:775",
+      "title": "月球旅行记",
+      "rating": "9.1",
+      "quote": "炮弹撞进月亮的右眼，梦境自此拥有了航行的形状",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/775-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/775-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/775-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1304310/",
+      "doubanSubjectID": "1304310",
       "source": "widget-catalog"
     }
   ]

@@ -53969,7 +53969,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/i0GjCWo5X8br9GUR54afsoCmhWd.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/i0GjCWo5X8br9GUR54afsoCmhWd.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/246246-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/246246-medium.jpg",
+        "cropSmall": {
+          "x": 0.142187,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.0,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 2,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-29T01:11:04.612364Z",
       "lastSeenAt": "2026-08-29T01:11:04.612364Z",
@@ -54183,7 +54202,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/lcyaTfX6KEMpWNnzPoGPKp7LwwC.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/wdOwBBz4tV3msGtyN72uwS90TmW.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/wdOwBBz4tV3msGtyN72uwS90TmW.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/196322-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/196322-medium.jpg",
+        "cropSmall": {
+          "x": 0.196875,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.085988,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 0,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-08-29T01:11:04.612364Z",
       "lastSeenAt": "2026-08-29T01:11:04.612364Z",
@@ -145124,5 +145162,12 @@
         "tmdb:tv:298610": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-08-29T02:04:33.941398Z",
+  "imageStats": {
+    "requested": 2,
+    "processed": 2,
+    "failed": 0,
+    "materializedTotal": 1260
   }
 }

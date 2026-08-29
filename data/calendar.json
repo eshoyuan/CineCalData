@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T00:50:38.216130Z",
+  "updatedAt": "2026-08-29T00:31:56.843479Z",
   "horizon": {
-    "start": "2026-08-27",
-    "end": "2028-08-27",
+    "start": "2026-08-28",
+    "end": "2028-08-28",
     "days": 732
   },
   "entries": [
@@ -11881,6 +11881,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/775-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1304310/",
       "doubanSubjectID": "1304310",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-28",
+      "id": "tmdb:movie:24",
+      "title": "杀死比尔",
+      "rating": "8.4",
+      "quote": "黄白婚纱染血四年后，刀锋一路劈开旧日誓约与杀机。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/24-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/24-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/24-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291580/",
+      "doubanSubjectID": "1291580",
       "source": "widget-catalog"
     }
   ]

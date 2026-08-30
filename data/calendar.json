@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T19:22:37.772875Z",
+  "updatedAt": "2026-08-30T19:17:01.483858Z",
   "horizon": {
-    "start": "2026-08-28",
-    "end": "2028-08-28",
+    "start": "2026-08-29",
+    "end": "2028-08-29",
     "days": 732
   },
   "entries": [
@@ -11896,6 +11896,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/24-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291580/",
       "doubanSubjectID": "1291580",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-29",
+      "id": "tmdb:movie:531428",
+      "title": "燃烧女子的肖像",
+      "rating": "8.8",
+      "quote": "画布未干的注视里，爱在禁忌边缘自燃成光。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/531428-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/531428-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/531428-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30257175/",
+      "doubanSubjectID": "30257175",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-30T19:17:01.483858Z",
+  "updatedAt": "2026-08-31T21:26:35.974971Z",
   "horizon": {
-    "start": "2026-08-29",
-    "end": "2028-08-29",
+    "start": "2026-08-30",
+    "end": "2028-08-30",
     "days": 732
   },
   "entries": [
@@ -11911,6 +11911,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/531428-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/30257175/",
       "doubanSubjectID": "30257175",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-30",
+      "id": "tmdb:movie:31414",
+      "title": "撒旦探戈",
+      "rating": "8.7",
+      "quote": "牛群穿过泥泞农庄，七小时探戈踏出信仰崩塌后长调。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/31414-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/31414-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/31414-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1422088/",
+      "doubanSubjectID": "1422088",
       "source": "widget-catalog"
     }
   ]

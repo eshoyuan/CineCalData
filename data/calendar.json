@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-31T21:26:35.974971Z",
+  "updatedAt": "2026-09-01T19:21:28.078859Z",
   "horizon": {
-    "start": "2026-08-30",
-    "end": "2028-08-30",
+    "start": "2026-08-31",
+    "end": "2028-08-31",
     "days": 732
   },
   "entries": [
@@ -11926,6 +11926,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/31414-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1422088/",
       "doubanSubjectID": "1422088",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-08-31",
+      "id": "tmdb:movie:77",
+      "title": "记忆碎片",
+      "rating": "8.7",
+      "quote": "十分钟即是永恒，文身与拍立得拼凑破碎的复仇地图。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/77-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/77-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/77-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1304447/",
+      "doubanSubjectID": "1304447",
       "source": "widget-catalog"
     }
   ]

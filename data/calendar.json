@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-01T19:21:28.078859Z",
+  "updatedAt": "2026-09-02T19:21:43.405732Z",
   "horizon": {
-    "start": "2026-08-31",
-    "end": "2028-08-31",
+    "start": "2026-09-01",
+    "end": "2028-09-01",
     "days": 732
   },
   "entries": [
@@ -11941,6 +11941,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/77-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1304447/",
       "doubanSubjectID": "1304447",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-01",
+      "id": "tmdb:movie:10376",
+      "title": "海上钢琴师",
+      "rating": "9.3",
+      "quote": "生于船长于琴八十八个键就是他不敢下锚的整个世界",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10376-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10376-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10376-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292001/",
+      "doubanSubjectID": "1292001",
       "source": "widget-catalog"
     }
   ]

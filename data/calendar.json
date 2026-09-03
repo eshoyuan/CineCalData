@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-02T19:21:43.405732Z",
+  "updatedAt": "2026-09-03T19:16:16.592886Z",
   "horizon": {
-    "start": "2026-09-01",
-    "end": "2028-09-01",
+    "start": "2026-09-02",
+    "end": "2028-09-02",
     "days": 732
   },
   "entries": [
@@ -11956,6 +11956,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10376-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292001/",
       "doubanSubjectID": "1292001",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-02",
+      "id": "tmdb:movie:1280738",
+      "title": "火遮眼",
+      "rating": "7.8",
+      "quote": "暗巷吞没女儿后，铁拳裹着父爱凿向无边黑夜。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1280738-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1280738-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1280738-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36877245/",
+      "doubanSubjectID": "36877245",
       "source": "widget-catalog"
     }
   ]

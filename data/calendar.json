@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-03T19:16:16.592886Z",
+  "updatedAt": "2026-09-04T18:58:01.193353Z",
   "horizon": {
-    "start": "2026-09-02",
-    "end": "2028-09-02",
+    "start": "2026-09-03",
+    "end": "2028-09-03",
     "days": 732
   },
   "entries": [
@@ -11971,6 +11971,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1280738-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36877245/",
       "doubanSubjectID": "36877245",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-03",
+      "id": "tmdb:tv:2038",
+      "title": "麻吉向前冲",
+      "rating": "7.7",
+      "quote": "继兄弟的客厅战场，用笨拙与吉他声谱成青春噪响。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2038-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2038-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2038-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/2073694/",
+      "doubanSubjectID": "2073694",
       "source": "widget-catalog"
     }
   ]

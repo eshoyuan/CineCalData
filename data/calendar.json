@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-04T18:58:01.193353Z",
+  "updatedAt": "2026-09-05T18:11:39.284202Z",
   "horizon": {
-    "start": "2026-09-03",
-    "end": "2028-09-03",
+    "start": "2026-09-04",
+    "end": "2028-09-04",
     "days": 732
   },
   "entries": [
@@ -11986,6 +11986,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2038-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/2073694/",
       "doubanSubjectID": "2073694",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-04",
+      "id": "tmdb:movie:490132",
+      "title": "绿皮书",
+      "rating": "8.9",
+      "quote": "一本绿色手册指引的公路，钢琴与三明治学会了同频共振。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/490132-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/490132-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/490132-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/27060077/",
+      "doubanSubjectID": "27060077",
       "source": "widget-catalog"
     }
   ]

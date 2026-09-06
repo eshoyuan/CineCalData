@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-05T18:11:39.284202Z",
+  "updatedAt": "2026-09-06T18:13:49.491126Z",
   "horizon": {
-    "start": "2026-09-04",
-    "end": "2028-09-04",
+    "start": "2026-09-05",
+    "end": "2028-09-05",
     "days": 732
   },
   "entries": [
@@ -12001,6 +12001,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/490132-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27060077/",
       "doubanSubjectID": "27060077",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-05",
+      "id": "tmdb:movie:10515",
+      "title": "天空之城",
+      "rating": "9.2",
+      "quote": "少女颈间的飞行石，轻轻系住天空与矿井的仰望",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291583/",
+      "doubanSubjectID": "1291583",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-06T18:13:49.491126Z",
+  "updatedAt": "2026-09-07T19:52:38.355952Z",
   "horizon": {
-    "start": "2026-09-05",
-    "end": "2028-09-05",
+    "start": "2026-09-06",
+    "end": "2028-09-06",
     "days": 732
   },
   "entries": [
@@ -12016,6 +12016,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10515-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291583/",
       "doubanSubjectID": "1291583",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-06",
+      "id": "tmdb:movie:18148",
+      "title": "东京物语",
+      "rating": "9.1",
+      "quote": "老夫妇的东京探亲路，日常絮语间漏出亲情疏离的凉意。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/18148-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/18148-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/18148-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291568/",
+      "doubanSubjectID": "1291568",
       "source": "widget-catalog"
     }
   ]

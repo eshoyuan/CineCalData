@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-07T19:52:38.355952Z",
+  "updatedAt": "2026-09-08T19:24:21.286736Z",
   "horizon": {
-    "start": "2026-09-06",
-    "end": "2028-09-06",
+    "start": "2026-09-07",
+    "end": "2028-09-07",
     "days": 732
   },
   "entries": [
@@ -12031,6 +12031,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/18148-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291568/",
       "doubanSubjectID": "1291568",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-07",
+      "id": "douban:1292402",
+      "title": "西西里的美丽传说",
+      "rating": "8.9",
+      "quote": "海风掀起她的裙摆，整个小镇的嫉妒与欲望随之起伏",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10867-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10867-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10867-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292402/",
+      "doubanSubjectID": "1292402",
       "source": "widget-catalog"
     }
   ]

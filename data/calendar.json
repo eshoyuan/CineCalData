@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-08T19:24:21.286736Z",
+  "updatedAt": "2026-09-09T19:14:22.785623Z",
   "horizon": {
-    "start": "2026-09-07",
-    "end": "2028-09-07",
+    "start": "2026-09-08",
+    "end": "2028-09-08",
     "days": 732
   },
   "entries": [
@@ -12046,6 +12046,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10867-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292402/",
       "doubanSubjectID": "1292402",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-08",
+      "id": "tmdb:tv:246",
+      "title": "降世神通",
+      "rating": "9.2",
+      "quote": "冰封百年的风，醒来后要重新学会驭动四季。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/246-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/246-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/246-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1938084/",
+      "doubanSubjectID": "1938084",
       "source": "widget-catalog"
     }
   ]

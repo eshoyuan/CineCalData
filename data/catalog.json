@@ -137590,7 +137590,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/qtMVO0McAXN4IV30SMFAVmXraBL.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/qNKynDcVVsOQPQpC3I41ZCLZpKw.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/qNKynDcVVsOQPQpC3I41ZCLZpKw.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/253941-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/253941-medium.jpg",
+        "cropSmall": {
+          "x": 0.229687,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.0,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 9,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-09-09T20:02:02.435949Z",
       "lastSeenAt": "2026-09-09T20:02:02.435949Z",
@@ -145884,5 +145903,12 @@
         "tmdb:tv:246246": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-09-09T21:38:33.840827Z",
+  "imageStats": {
+    "requested": 1,
+    "processed": 1,
+    "failed": 0,
+    "materializedTotal": 1269
   }
 }

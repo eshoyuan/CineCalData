@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T19:05:40.867283Z",
+  "updatedAt": "2026-09-11T19:07:47.832550Z",
   "horizon": {
-    "start": "2026-09-09",
-    "end": "2028-09-09",
+    "start": "2026-09-10",
+    "end": "2028-09-10",
     "days": 732
   },
   "entries": [
@@ -12076,6 +12076,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/475557-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27119724/",
       "doubanSubjectID": "27119724",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-10",
+      "id": "tmdb:movie:829",
+      "title": "唐人街",
+      "rating": "8.4",
+      "quote": "烈日下的洛城水渠，映出欲望与正义一同干涸的倒影。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/829-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/829-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/829-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1293889/",
+      "doubanSubjectID": "1293889",
       "source": "widget-catalog"
     }
   ]

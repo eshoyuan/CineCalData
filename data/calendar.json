@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T19:07:47.832550Z",
+  "updatedAt": "2026-09-12T18:18:37.534080Z",
   "horizon": {
-    "start": "2026-09-10",
-    "end": "2028-09-10",
+    "start": "2026-09-11",
+    "end": "2028-09-11",
     "days": 732
   },
   "entries": [
@@ -12091,6 +12091,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/829-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1293889/",
       "doubanSubjectID": "1293889",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-11",
+      "id": "tmdb:movie:575813",
+      "title": "少年的你",
+      "rating": "8.2",
+      "quote": "高考倒计时的铁栏后，两个影子互相递刀也递伞。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/575813-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/575813-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/575813-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30166972/",
+      "doubanSubjectID": "30166972",
       "source": "widget-catalog"
     }
   ]

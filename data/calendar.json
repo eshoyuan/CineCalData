@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T18:18:37.534080Z",
+  "updatedAt": "2026-09-13T18:44:47.525314Z",
   "horizon": {
-    "start": "2026-09-11",
-    "end": "2028-09-11",
+    "start": "2026-09-12",
+    "end": "2028-09-12",
     "days": 732
   },
   "entries": [
@@ -12106,6 +12106,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/575813-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/30166972/",
       "doubanSubjectID": "30166972",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-12",
+      "id": "tmdb:movie:458302",
+      "title": "雷米奇遇记",
+      "rating": "7.5",
+      "quote": "被卖掉的十岁歌声，在流浪路上学认字与爱。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/458302-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/458302-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/458302-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/27046645/",
+      "doubanSubjectID": "27046645",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T18:44:47.525314Z",
+  "updatedAt": "2026-09-14T20:16:41.558321Z",
   "horizon": {
-    "start": "2026-09-12",
-    "end": "2028-09-12",
+    "start": "2026-09-13",
+    "end": "2028-09-13",
     "days": 732
   },
   "entries": [
@@ -12121,6 +12121,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/458302-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/27046645/",
       "doubanSubjectID": "27046645",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-13",
+      "id": "douban:4920389",
+      "title": "头号玩家",
+      "rating": "8.6",
+      "quote": "彩蛋藏在像素绿洲，童年掌机重启对现实的勇气。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/333339-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/333339-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/333339-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/4920389/",
+      "doubanSubjectID": "4920389",
       "source": "widget-catalog"
     }
   ]

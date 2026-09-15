@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-14T20:16:41.558321Z",
+  "updatedAt": "2026-09-15T19:40:03.131036Z",
   "horizon": {
-    "start": "2026-09-13",
-    "end": "2028-09-13",
+    "start": "2026-09-14",
+    "end": "2028-09-14",
     "days": 732
   },
   "entries": [
@@ -12136,6 +12136,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/333339-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/4920389/",
       "doubanSubjectID": "4920389",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-14",
+      "id": "tmdb:movie:33",
+      "title": "不可饶恕",
+      "rating": "8.5",
+      "quote": "最后一匹瘦马踏进镇子，枪声埋葬了所有的传奇注脚。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/33-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/33-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/33-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1293566/",
+      "doubanSubjectID": "1293566",
       "source": "widget-catalog"
     }
   ]

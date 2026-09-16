@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T19:40:03.131036Z",
+  "updatedAt": "2026-09-16T19:31:02.384020Z",
   "horizon": {
-    "start": "2026-09-14",
-    "end": "2028-09-14",
+    "start": "2026-09-15",
+    "end": "2028-09-15",
     "days": 732
   },
   "entries": [
@@ -12151,6 +12151,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/33-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1293566/",
       "doubanSubjectID": "1293566",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-15",
+      "id": "tmdb:tv:32415",
+      "title": "柯南秀",
+      "rating": "9.1",
+      "quote": "红发小丑的深夜自嘲，荒诞采访里藏着温柔的诚恳。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/32415-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/32415-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/32415-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/4804581/",
+      "doubanSubjectID": "4804581",
       "source": "widget-catalog"
     }
   ]

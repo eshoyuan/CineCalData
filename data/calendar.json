@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T19:31:02.384020Z",
+  "updatedAt": "2026-09-17T19:41:42.115972Z",
   "horizon": {
-    "start": "2026-09-15",
-    "end": "2028-09-15",
+    "start": "2026-09-16",
+    "end": "2028-09-16",
     "days": 732
   },
   "entries": [
@@ -12166,6 +12166,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/32415-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/4804581/",
       "doubanSubjectID": "4804581",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-16",
+      "id": "tmdb:tv:100088",
+      "title": "最后生还者",
+      "rating": "9.0",
+      "quote": "废墟长满青苔的公路上，沉默的护送成了唯一的温柔",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/100088-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/100088-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/100088-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/25848328/",
+      "doubanSubjectID": "25848328",
       "source": "widget-catalog"
     }
   ]

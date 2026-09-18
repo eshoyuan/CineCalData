@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T19:41:42.115972Z",
+  "updatedAt": "2026-09-18T18:59:58.269868Z",
   "horizon": {
-    "start": "2026-09-16",
-    "end": "2028-09-16",
+    "start": "2026-09-17",
+    "end": "2028-09-17",
     "days": 732
   },
   "entries": [
@@ -12181,6 +12181,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/100088-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/25848328/",
       "doubanSubjectID": "25848328",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-17",
+      "id": "tmdb:tv:40008",
+      "title": "汉尼拔",
+      "rating": "8.6",
+      "quote": "以餐桌为祭坛，凝视在共犯边缘正优雅摇晃。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/40008-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/40008-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/40008-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/10539856/",
+      "doubanSubjectID": "10539856",
       "source": "widget-catalog"
     }
   ]

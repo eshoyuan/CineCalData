@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T18:59:58.269868Z",
+  "updatedAt": "2026-09-19T18:33:53.691875Z",
   "horizon": {
-    "start": "2026-09-17",
-    "end": "2028-09-17",
+    "start": "2026-09-18",
+    "end": "2028-09-18",
     "days": 732
   },
   "entries": [
@@ -12196,6 +12196,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/40008-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/10539856/",
       "doubanSubjectID": "10539856",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-18",
+      "id": "tmdb:movie:980431",
+      "title": "安昂传奇：最后的气宗",
+      "rating": "7.2",
+      "quote": "最后的风仍不愿熄灭，在少年掌心重新学会呼吸",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/980431-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/980431-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/980431-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35930978/",
+      "doubanSubjectID": "35930978",
       "source": "widget-catalog"
     }
   ]

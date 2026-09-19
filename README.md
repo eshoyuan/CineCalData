@@ -67,18 +67,17 @@ Douban Top 250, TMDB top-rated movies and series, popular titles, and weekly
 trending titles. Incremental mode checks stable TMDB IDs before merging popular,
 trending, and recently released titles into the existing snapshot.
 
-The current snapshot contains 1,183 unique recommendations, including the stable
-offline pool, the complete Douban Top 250, and the latest incremental additions.
-1,173 titles have separate widget-ready small and medium images; 1,002 complete
-public cards also have a canonical Douban subject,
-a Douban score of at least 6.0, and independently reviewed original editorial copy.
-Every recommendation has a source quality score of at least 7.0. A known Douban
-score below 6.0 always excludes the title, even when its TMDB score is higher. Rich
-records retain genres, creators, cast, keywords, overview, rating counts,
-popularity signals, images, source ranks, and a normalized `searchableText` field
-that is embedded locally with the 300M-parameter EmbeddingGemma MLX model. The
-first 128 Matryoshka dimensions are re-normalized and stored as compact float16
-rows for on-device cosine ranking.
+As of 2026-07-14, the compact embedding snapshot contains 1,183 rows and the
+current structured catalog contains 1,170 records. Of those records, 1,159 have
+separate materialized small and medium images. The client-facing widget catalog
+contains 996 complete cards with canonical Douban subjects, processed images,
+and original editorial copy. A known Douban score below 6.0 excludes a title
+from the widget catalog, even when its TMDB score is higher. Rich records retain
+genres, creators, cast, keywords, overview, rating counts, popularity signals,
+images, source ranks, and a normalized `searchableText` field that is embedded
+locally with the 300M-parameter EmbeddingGemma MLX model. The first 128
+Matryoshka dimensions are re-normalized and stored as compact float16 rows for
+on-device cosine ranking.
 
 ## Offline assets and embeddings
 
@@ -93,3 +92,7 @@ The image job downloads each source backdrop once, uses Apple Vision face and
 attention saliency analysis, and writes independent 760×760 and 1080×508 JPEGs
 under `data/catalog-images`. The embedding job writes `data/embeddings.f16` plus
 `data/embeddings-index.json`; no model or image analysis runs on the iPhone.
+
+Maintainers and coding agents should read [AGENTS.md](AGENTS.md) and
+[docs/MAINTAINER_MEMORY.md](docs/MAINTAINER_MEMORY.md) before changing the data
+contract or workflows.

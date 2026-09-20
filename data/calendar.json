@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T18:33:53.691875Z",
+  "updatedAt": "2026-09-20T18:42:44.641693Z",
   "horizon": {
-    "start": "2026-09-18",
-    "end": "2028-09-18",
+    "start": "2026-09-19",
+    "end": "2028-09-19",
     "days": 732
   },
   "entries": [
@@ -12211,6 +12211,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/980431-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35930978/",
       "doubanSubjectID": "35930978",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-19",
+      "id": "tmdb:movie:205596",
+      "title": "模仿游戏",
+      "rating": "8.8",
+      "quote": "他破译了战争的密码，却解不开时代对他的误读。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/205596-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/205596-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/205596-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/10463953/",
+      "doubanSubjectID": "10463953",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-20T18:42:44.641693Z",
+  "updatedAt": "2026-09-21T20:23:48.129021Z",
   "horizon": {
-    "start": "2026-09-19",
-    "end": "2028-09-19",
+    "start": "2026-09-20",
+    "end": "2028-09-20",
     "days": 732
   },
   "entries": [
@@ -12226,6 +12226,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/205596-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/10463953/",
       "doubanSubjectID": "10463953",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-20",
+      "id": "tmdb:tv:105556",
+      "title": "不要欺负我，长瀞同学",
+      "rating": "7.7",
+      "quote": "捉弄是笨拙的靠近，内向学长在戏笑中被拉出书页。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/105556-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/105556-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/105556-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35128771/",
+      "doubanSubjectID": "35128771",
       "source": "widget-catalog"
     }
   ]

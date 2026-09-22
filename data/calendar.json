@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-21T20:23:48.129021Z",
+  "updatedAt": "2026-09-22T19:43:35.873957Z",
   "horizon": {
-    "start": "2026-09-20",
-    "end": "2028-09-20",
+    "start": "2026-09-21",
+    "end": "2028-09-21",
     "days": 732
   },
   "entries": [
@@ -12241,6 +12241,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/105556-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35128771/",
       "doubanSubjectID": "35128771",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-21",
+      "id": "tmdb:tv:82728",
+      "title": "布鲁伊",
+      "rating": "9.7",
+      "quote": "六岁小蓝狗的想象游戏，把客厅变成宇宙探险场",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/82728-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/82728-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/82728-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/34819530/",
+      "doubanSubjectID": "34819530",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23T19:38:21.257847Z",
+  "updatedAt": "2026-09-24T20:00:09.379711Z",
   "horizon": {
-    "start": "2026-09-22",
-    "end": "2028-09-22",
+    "start": "2026-09-23",
+    "end": "2028-09-23",
     "days": 732
   },
   "entries": [
@@ -12271,6 +12271,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10775-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1307914/",
       "doubanSubjectID": "1307914",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-23",
+      "id": "tmdb:movie:527641",
+      "title": "五尺天涯",
+      "rating": "7.1",
+      "quote": "五尺是生死的刻度，却量不出靠近的渴望。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/527641-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/527641-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/527641-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30135110/",
+      "doubanSubjectID": "30135110",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24T20:00:09.379711Z",
+  "updatedAt": "2026-09-25T19:59:43.071209Z",
   "horizon": {
-    "start": "2026-09-23",
-    "end": "2028-09-23",
+    "start": "2026-09-24",
+    "end": "2028-09-24",
     "days": 732
   },
   "entries": [
@@ -12286,6 +12286,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/527641-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/30135110/",
       "doubanSubjectID": "30135110",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-24",
+      "id": "tmdb:tv:1438",
+      "title": "火线",
+      "rating": "9.4",
+      "quote": "巴尔的摩街灯不灭，粉袋与卷宗共同书写城市的无声史诗",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1438-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1438-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1438-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1418199/",
+      "doubanSubjectID": "1418199",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-25T19:59:43.071209Z",
+  "updatedAt": "2026-09-26T19:11:00.811221Z",
   "horizon": {
-    "start": "2026-09-24",
-    "end": "2028-09-24",
+    "start": "2026-09-25",
+    "end": "2028-09-25",
     "days": 732
   },
   "entries": [
@@ -12301,6 +12301,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1438-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1418199/",
       "doubanSubjectID": "1418199",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-25",
+      "id": "tmdb:movie:574074",
+      "title": "小野猫与斗牛犬",
+      "rating": "8.3",
+      "quote": "纸箱角落的哈气与铁链后的低吼，试探出同一颗心。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/574074-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/574074-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/574074-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30463542/",
+      "doubanSubjectID": "30463542",
       "source": "widget-catalog"
     }
   ]

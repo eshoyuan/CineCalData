@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-27T19:43:52.831630Z",
+  "updatedAt": "2026-09-28T21:52:12.269101Z",
   "horizon": {
-    "start": "2026-09-26",
-    "end": "2028-09-26",
+    "start": "2026-09-27",
+    "end": "2028-09-27",
     "days": 732
   },
   "entries": [
@@ -12331,6 +12331,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/113268-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35131277/",
       "doubanSubjectID": "35131277",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-27",
+      "id": "tmdb:tv:96162",
+      "title": "梨泰院 Class",
+      "rating": "7.2",
+      "quote": "出狱青年在梨泰院窄巷点燃酒馆，以倔强对抗资本的傲慢围墙。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96162-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96162-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96162-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/34617196/",
+      "doubanSubjectID": "34617196",
       "source": "widget-catalog"
     }
   ]

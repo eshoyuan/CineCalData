@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-28T21:52:12.269101Z",
+  "updatedAt": "2026-09-29T20:41:25.846523Z",
   "horizon": {
-    "start": "2026-09-27",
-    "end": "2028-09-27",
+    "start": "2026-09-28",
+    "end": "2028-09-28",
     "days": 732
   },
   "entries": [
@@ -12346,6 +12346,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/96162-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/34617196/",
       "doubanSubjectID": "34617196",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-28",
+      "id": "tmdb:tv:2098",
+      "title": "蝙蝠侠动画",
+      "rating": "9.2",
+      "quote": "哥谭长夜如墨，他以凡人之躯守护破碎的灯火",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2098-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2098-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2098-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/2272384/",
+      "doubanSubjectID": "2272384",
       "source": "widget-catalog"
     }
   ]

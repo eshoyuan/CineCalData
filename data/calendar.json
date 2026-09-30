@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T20:41:25.846523Z",
+  "updatedAt": "2026-09-30T20:45:19.695022Z",
   "horizon": {
-    "start": "2026-09-28",
-    "end": "2028-09-28",
+    "start": "2026-09-29",
+    "end": "2028-09-29",
     "days": 732
   },
   "entries": [
@@ -12361,6 +12361,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2098-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/2272384/",
       "doubanSubjectID": "2272384",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-29",
+      "id": "tmdb:tv:204154",
+      "title": "拾荒者统治",
+      "rating": "9.2",
+      "quote": "坠毁后，幸存者在无人的瑰丽星球学会被自然重新塑造",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/204154-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/204154-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/204154-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35932858/",
+      "doubanSubjectID": "35932858",
       "source": "widget-catalog"
     }
   ]

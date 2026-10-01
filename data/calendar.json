@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T20:45:19.695022Z",
+  "updatedAt": "2026-10-01T20:59:02.023367Z",
   "horizon": {
-    "start": "2026-09-29",
-    "end": "2028-09-29",
+    "start": "2026-09-30",
+    "end": "2028-09-30",
     "days": 732
   },
   "entries": [
@@ -12376,6 +12376,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/204154-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35932858/",
       "doubanSubjectID": "35932858",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-09-30",
+      "id": "tmdb:movie:521",
+      "title": "电话谋杀案",
+      "rating": "8.9",
+      "quote": "一枚钥匙，一通电话，费尽心机编织的不在场沦为圈套自缚。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/521-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/521-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/521-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1301231/",
+      "doubanSubjectID": "1301231",
       "source": "widget-catalog"
     }
   ]

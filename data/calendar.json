@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T20:59:02.023367Z",
+  "updatedAt": "2026-10-02T20:39:15.901275Z",
   "horizon": {
-    "start": "2026-09-30",
-    "end": "2028-09-30",
+    "start": "2026-10-01",
+    "end": "2028-10-01",
     "days": 732
   },
   "entries": [
@@ -12391,6 +12391,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/521-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1301231/",
       "doubanSubjectID": "1301231",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-01",
+      "id": "tmdb:movie:508965",
+      "title": "克劳斯：圣诞节的秘密",
+      "rating": "8.7",
+      "quote": "北极孤岛邮差与隐居木匠，用礼物缝合世代仇隙。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/508965-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/508965-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/508965-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/26858510/",
+      "doubanSubjectID": "26858510",
       "source": "widget-catalog"
     }
   ]

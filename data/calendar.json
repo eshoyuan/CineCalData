@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T20:39:15.901275Z",
+  "updatedAt": "2026-10-03T19:10:38.514077Z",
   "horizon": {
-    "start": "2026-10-01",
-    "end": "2028-10-01",
+    "start": "2026-10-02",
+    "end": "2028-10-02",
     "days": 732
   },
   "entries": [
@@ -12406,6 +12406,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/508965-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/26858510/",
       "doubanSubjectID": "26858510",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-02",
+      "id": "tmdb:tv:131378",
+      "title": "探险活宝：菲奥娜与蛋糕",
+      "rating": "9.1",
+      "quote": "粉彩宇宙之外，少女与猫在裂缝间寻回自己。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/131378-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/131378-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/131378-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35586022/",
+      "doubanSubjectID": "35586022",
       "source": "widget-catalog"
     }
   ]

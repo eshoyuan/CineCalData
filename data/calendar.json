@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T19:10:38.514077Z",
+  "updatedAt": "2026-10-04T19:32:37.056797Z",
   "horizon": {
-    "start": "2026-10-02",
-    "end": "2028-10-02",
+    "start": "2026-10-03",
+    "end": "2028-10-03",
     "days": 732
   },
   "entries": [
@@ -12421,6 +12421,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/131378-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35586022/",
       "doubanSubjectID": "35586022",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-03",
+      "id": "douban:2353023",
+      "title": "驯龙高手",
+      "rating": "8.8",
+      "quote": "当少年轻抚龙鳞，偏见坠落，友情学会了飞翔。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10191-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10191-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10191-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/2353023/",
+      "doubanSubjectID": "2353023",
       "source": "widget-catalog"
     }
   ]

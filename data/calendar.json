@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T19:32:37.056797Z",
+  "updatedAt": "2026-10-05T22:33:25.318126Z",
   "horizon": {
-    "start": "2026-10-03",
-    "end": "2028-10-03",
+    "start": "2026-10-04",
+    "end": "2028-10-04",
     "days": 732
   },
   "entries": [
@@ -12436,6 +12436,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/10191-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/2353023/",
       "doubanSubjectID": "2353023",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-04",
+      "id": "tmdb:movie:29264",
+      "title": "泯灭天使",
+      "rating": "8.2",
+      "quote": "晚宴曲终人未散，体面的枷锁困住满屋宾客。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/29264-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/29264-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/29264-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1303556/",
+      "doubanSubjectID": "1303556",
       "source": "widget-catalog"
     }
   ]

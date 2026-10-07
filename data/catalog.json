@@ -4476,7 +4476,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/5hzLh3TS8XLZpNDlQ6fZGc2TPCn.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/5hzLh3TS8XLZpNDlQ6fZGc2TPCn.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1291595-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1291595-medium.jpg",
+        "cropSmall": {
+          "x": 0.30625,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.094177,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 0,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-10-07T22:17:03.292508Z",
       "lastSeenAt": "2026-10-07T22:17:03.292508Z",
@@ -27495,7 +27514,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/u7LWdKmEdEr6Ui3GZMsFGlKZQBd.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/u7LWdKmEdEr6Ui3GZMsFGlKZQBd.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/94664-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/94664-medium.jpg",
+        "cropSmall": {
+          "x": 0.240625,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.05323,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 1,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-10-07T22:17:03.292508Z",
       "lastSeenAt": "2026-10-07T22:17:03.292508Z",
@@ -83635,7 +83673,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/cPCgLDNCCUwtsedr181DtrlaDWx.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/nsihyCiAHotJ3G4NTSJcBuWLbzg.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/nsihyCiAHotJ3G4NTSJcBuWLbzg.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1101412-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1101412-medium.jpg",
+        "cropSmall": {
+          "x": 0.284375,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.0,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 1,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-10-07T22:17:03.292508Z",
       "lastSeenAt": "2026-10-07T22:17:03.292508Z",
@@ -135869,7 +135926,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/qIJQIHYFR6c0mqwjG0Wgs1cdbSf.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/qIJQIHYFR6c0mqwjG0Wgs1cdbSf.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1607127-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1607127-medium.jpg",
+        "cropSmall": {
+          "x": 0.21875,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.090082,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 3,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-10-07T22:17:03.292508Z",
       "lastSeenAt": "2026-10-07T22:17:03.292508Z",
@@ -149322,5 +149398,12 @@
         "tmdb:tv:95480": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-10-07T23:33:14.671659Z",
+  "imageStats": {
+    "requested": 4,
+    "processed": 4,
+    "failed": 0,
+    "materializedTotal": 1311
   }
 }

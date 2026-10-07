@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T20:55:13.202076Z",
+  "updatedAt": "2026-10-07T21:13:55.330434Z",
   "horizon": {
-    "start": "2026-10-05",
-    "end": "2028-10-05",
+    "start": "2026-10-06",
+    "end": "2028-10-06",
     "days": 732
   },
   "entries": [
@@ -12466,6 +12466,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/100757-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/34454230/",
       "doubanSubjectID": "34454230",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-06",
+      "id": "tmdb:tv:83639",
+      "title": "禁忌女孩",
+      "rating": "8.3",
+      "quote": "新校服飘过处，欲望的底牌被她瞬间轻轻掀开。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/83639-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/83639-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/83639-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/30327894/",
+      "doubanSubjectID": "30327894",
       "source": "widget-catalog"
     }
   ]

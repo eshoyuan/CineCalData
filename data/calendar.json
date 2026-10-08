@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T21:13:55.330434Z",
+  "updatedAt": "2026-10-08T21:15:29.291399Z",
   "horizon": {
-    "start": "2026-10-06",
-    "end": "2028-10-06",
+    "start": "2026-10-07",
+    "end": "2028-10-07",
     "days": 732
   },
   "entries": [
@@ -12481,6 +12481,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/83639-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/30327894/",
       "doubanSubjectID": "30327894",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-07",
+      "id": "douban:1428175",
+      "title": "血钻",
+      "rating": "8.7",
+      "quote": "钻石血色渗透指缝，贪婪与救赎在非洲大地对峙。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1372-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1372-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1372-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1428175/",
+      "doubanSubjectID": "1428175",
       "source": "widget-catalog"
     }
   ]

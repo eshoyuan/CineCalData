@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T21:15:29.291399Z",
+  "updatedAt": "2026-10-09T20:48:25.472317Z",
   "horizon": {
-    "start": "2026-10-07",
-    "end": "2028-10-07",
+    "start": "2026-10-08",
+    "end": "2028-10-08",
     "days": 732
   },
   "entries": [
@@ -12496,6 +12496,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1372-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1428175/",
       "doubanSubjectID": "1428175",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-08",
+      "id": "tmdb:movie:122906",
+      "title": "时空恋旅人",
+      "rating": "8.8",
+      "quote": "不能改写历史，却能一次次回到雨天只为吻对的人。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122906-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122906-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122906-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/10577869/",
+      "doubanSubjectID": "10577869",
       "source": "widget-catalog"
     }
   ]

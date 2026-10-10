@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T20:48:25.472317Z",
+  "updatedAt": "2026-10-10T20:00:19.575508Z",
   "horizon": {
-    "start": "2026-10-08",
-    "end": "2028-10-08",
+    "start": "2026-10-09",
+    "end": "2028-10-09",
     "days": 732
   },
   "entries": [
@@ -12511,6 +12511,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/122906-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/10577869/",
       "doubanSubjectID": "10577869",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-09",
+      "id": "tmdb:tv:2309",
+      "title": "幻影丹尼",
+      "rating": "9.3",
+      "quote": "十四岁少年的课后作业，一半是考试，一半是捉鬼救世",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2309-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2309-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2309-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/2079165/",
+      "doubanSubjectID": "2079165",
       "source": "widget-catalog"
     }
   ]

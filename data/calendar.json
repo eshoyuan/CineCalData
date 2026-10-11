@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T20:00:19.575508Z",
+  "updatedAt": "2026-10-11T20:11:33.372246Z",
   "horizon": {
-    "start": "2026-10-09",
-    "end": "2028-10-09",
+    "start": "2026-10-10",
+    "end": "2028-10-10",
     "days": 732
   },
   "entries": [
@@ -12526,6 +12526,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/2309-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/2079165/",
       "doubanSubjectID": "2079165",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-10",
+      "id": "tmdb:tv:229480",
+      "title": "因为不想吃亏",
+      "rating": "7.6",
+      "quote": "精算爱情的得失表，假婚约里算出真心跳动。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/229480-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/229480-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/229480-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36467402/",
+      "doubanSubjectID": "36467402",
       "source": "widget-catalog"
     }
   ]

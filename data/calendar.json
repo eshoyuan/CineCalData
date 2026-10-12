@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T20:11:33.372246Z",
+  "updatedAt": "2026-10-12T22:53:49.082995Z",
   "horizon": {
-    "start": "2026-10-10",
-    "end": "2028-10-10",
+    "start": "2026-10-11",
+    "end": "2028-10-11",
     "days": 732
   },
   "entries": [
@@ -12541,6 +12541,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/229480-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36467402/",
       "doubanSubjectID": "36467402",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-11",
+      "id": "tmdb:movie:599",
+      "title": "日落大道",
+      "rating": "8.8",
+      "quote": "过气影后宅邸如陵墓，暮年光环吞噬闯入的年轻笔尖。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/599-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/599-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/599-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1298733/",
+      "doubanSubjectID": "1298733",
       "source": "widget-catalog"
     }
   ]

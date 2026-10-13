@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T22:53:49.082995Z",
+  "updatedAt": "2026-10-13T21:11:04.522106Z",
   "horizon": {
-    "start": "2026-10-11",
-    "end": "2028-10-11",
+    "start": "2026-10-12",
+    "end": "2028-10-12",
     "days": 732
   },
   "entries": [
@@ -12556,6 +12556,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/599-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1298733/",
       "doubanSubjectID": "1298733",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-12",
+      "id": "douban:1292213",
+      "title": "大话西游之大圣娶亲",
+      "rating": "9.2",
+      "quote": "月光宝盒翻转间，笑与泪同坠进跨时空的痴缠。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/21835-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/21835-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/21835-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292213/",
+      "doubanSubjectID": "1292213",
       "source": "widget-catalog"
     }
   ]

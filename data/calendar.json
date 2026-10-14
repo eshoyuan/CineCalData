@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T21:11:04.522106Z",
+  "updatedAt": "2026-10-14T20:09:31.165481Z",
   "horizon": {
-    "start": "2026-10-12",
-    "end": "2028-10-12",
+    "start": "2026-10-13",
+    "end": "2028-10-13",
     "days": 732
   },
   "entries": [
@@ -12571,6 +12571,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/21835-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292213/",
       "doubanSubjectID": "1292213",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-13",
+      "id": "tmdb:movie:422",
+      "title": "八部半",
+      "rating": "8.6",
+      "quote": "片场坍成内心废墟，导演在梦与回忆里剪自己",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/422-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/422-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/422-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1361276/",
+      "doubanSubjectID": "1361276",
       "source": "widget-catalog"
     }
   ]

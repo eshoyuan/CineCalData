@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T20:09:31.165481Z",
+  "updatedAt": "2026-10-15T19:50:40.369356Z",
   "horizon": {
-    "start": "2026-10-13",
-    "end": "2028-10-13",
+    "start": "2026-10-14",
+    "end": "2028-10-14",
     "days": 732
   },
   "entries": [
@@ -12586,6 +12586,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/422-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1361276/",
       "doubanSubjectID": "1361276",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-14",
+      "id": "tmdb:movie:14",
+      "title": "美国丽人",
+      "rating": "8.6",
+      "quote": "郊区玫瑰园里，每个体面笑容下都藏着一团想破窗的闷火。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292062/",
+      "doubanSubjectID": "1292062",
       "source": "widget-catalog"
     }
   ]

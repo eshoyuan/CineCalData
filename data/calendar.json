@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T19:50:40.369356Z",
+  "updatedAt": "2026-10-16T19:31:19.769653Z",
   "horizon": {
-    "start": "2026-10-14",
-    "end": "2028-10-14",
+    "start": "2026-10-15",
+    "end": "2028-10-15",
     "days": 732
   },
   "entries": [
@@ -12601,6 +12601,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/14-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1292062/",
       "doubanSubjectID": "1292062",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-15",
+      "id": "tmdb:tv:1430",
+      "title": "卡尔·萨根的宇宙",
+      "rating": "9.4",
+      "quote": "以个人航程丈量百亿光年，让宇宙诗意成为可触摸的乡愁。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1430-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1430-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1430-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1422169/",
+      "doubanSubjectID": "1422169",
       "source": "widget-catalog"
     }
   ]

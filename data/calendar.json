@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-16T19:31:19.769653Z",
+  "updatedAt": "2026-10-17T18:24:47.293628Z",
   "horizon": {
-    "start": "2026-10-15",
-    "end": "2028-10-15",
+    "start": "2026-10-16",
+    "end": "2028-10-16",
     "days": 732
   },
   "entries": [
@@ -12616,6 +12616,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1430-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1422169/",
       "doubanSubjectID": "1422169",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-16",
+      "id": "douban:10808442",
+      "title": "爱在午夜降临前",
+      "rating": "8.8",
+      "quote": "九年后的酒店长廊，一对璧人把爱情煮成争吵的午夜。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/132344-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/132344-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/132344-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/10808442/",
+      "doubanSubjectID": "10808442",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T18:24:47.293628Z",
+  "updatedAt": "2026-10-18T18:34:47.709309Z",
   "horizon": {
-    "start": "2026-10-16",
-    "end": "2028-10-16",
+    "start": "2026-10-17",
+    "end": "2028-10-17",
     "days": 732
   },
   "entries": [
@@ -12631,6 +12631,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/132344-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/10808442/",
       "doubanSubjectID": "10808442",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-17",
+      "id": "douban:1298624",
+      "title": "闻香识女人",
+      "rating": "9.1",
+      "quote": "盲眼辨香气，探戈一步踏回尊严的悬崖边上",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9475-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9475-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9475-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1298624/",
+      "doubanSubjectID": "1298624",
       "source": "widget-catalog"
     }
   ]

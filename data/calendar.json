@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T18:34:47.709309Z",
+  "updatedAt": "2026-10-19T20:59:38.358908Z",
   "horizon": {
-    "start": "2026-10-17",
-    "end": "2028-10-17",
+    "start": "2026-10-18",
+    "end": "2028-10-18",
     "days": 732
   },
   "entries": [
@@ -12646,6 +12646,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/9475-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1298624/",
       "doubanSubjectID": "1298624",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-18",
+      "id": "tmdb:movie:1297842",
+      "title": "奇迹梦之队",
+      "rating": "6.7",
+      "quote": "小山羊闯进猛兽球场，用弹跳把偏见顶翻在地。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1297842-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1297842-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1297842-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36910970/",
+      "doubanSubjectID": "36910970",
       "source": "widget-catalog"
     }
   ]

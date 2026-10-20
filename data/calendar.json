@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-19T20:59:38.358908Z",
+  "updatedAt": "2026-10-20T19:58:03.400133Z",
   "horizon": {
-    "start": "2026-10-18",
-    "end": "2028-10-18",
+    "start": "2026-10-19",
+    "end": "2028-10-19",
     "days": 732
   },
   "entries": [
@@ -12661,6 +12661,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1297842-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36910970/",
       "doubanSubjectID": "36910970",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-19",
+      "id": "tmdb:movie:37797",
+      "title": "侧耳倾听",
+      "rating": "8.9",
+      "quote": "借书卡上的名字引路，少女在琴声与稿纸间初次听见梦想的回响。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/37797-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/37797-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/37797-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1297052/",
+      "doubanSubjectID": "1297052",
       "source": "widget-catalog"
     }
   ]

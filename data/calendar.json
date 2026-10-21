@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T19:58:03.400133Z",
+  "updatedAt": "2026-10-21T20:04:08.794832Z",
   "horizon": {
-    "start": "2026-10-19",
-    "end": "2028-10-19",
+    "start": "2026-10-20",
+    "end": "2028-10-20",
     "days": 732
   },
   "entries": [
@@ -12676,6 +12676,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/37797-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1297052/",
       "doubanSubjectID": "1297052",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-20",
+      "id": "tmdb:movie:1314481",
+      "title": "穿普拉达的女王2",
+      "rating": "6.5",
+      "quote": "时尚帝国的版图缩小，她与昔日学徒为余烬而战。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1314481-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1314481-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1314481-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36956594/",
+      "doubanSubjectID": "36956594",
       "source": "widget-catalog"
     }
   ]

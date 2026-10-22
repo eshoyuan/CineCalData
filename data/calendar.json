@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T20:04:08.794832Z",
+  "updatedAt": "2026-10-22T19:59:30.450344Z",
   "horizon": {
-    "start": "2026-10-20",
-    "end": "2028-10-20",
+    "start": "2026-10-21",
+    "end": "2028-10-21",
     "days": 732
   },
   "entries": [
@@ -12691,6 +12691,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1314481-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36956594/",
       "doubanSubjectID": "36956594",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-21",
+      "id": "tmdb:movie:359724",
+      "title": "极速车王",
+      "rating": "8.5",
+      "quote": "两个偏执狂用扳手与时速，向法拉利王座发起美式冲锋",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/359724-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/359724-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/359724-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/6538866/",
+      "doubanSubjectID": "6538866",
       "source": "widget-catalog"
     }
   ]

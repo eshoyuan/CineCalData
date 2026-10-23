@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22T19:59:30.450344Z",
+  "updatedAt": "2026-10-23T19:55:31.565325Z",
   "horizon": {
-    "start": "2026-10-21",
-    "end": "2028-10-21",
+    "start": "2026-10-22",
+    "end": "2028-10-22",
     "days": 732
   },
   "entries": [
@@ -12706,6 +12706,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/359724-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/6538866/",
       "doubanSubjectID": "6538866",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-22",
+      "id": "tmdb:tv:1433",
+      "title": "美国老爹",
+      "rating": "8.8",
+      "quote": "兰利小镇的忠诚老爸，餐桌旁挤满严肃与外星絮叨。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1433-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1433-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1433-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1441001/",
+      "doubanSubjectID": "1441001",
       "source": "widget-catalog"
     }
   ]

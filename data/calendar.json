@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T19:55:31.565325Z",
+  "updatedAt": "2026-10-24T18:44:31.500496Z",
   "horizon": {
-    "start": "2026-10-22",
-    "end": "2028-10-22",
+    "start": "2026-10-23",
+    "end": "2028-10-23",
     "days": 732
   },
   "entries": [
@@ -12721,6 +12721,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/1433-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1441001/",
       "doubanSubjectID": "1441001",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-23",
+      "id": "tmdb:movie:70",
+      "title": "百万美元宝贝",
+      "rating": "8.8",
+      "quote": "拳台边迟暮师徒，把一生未说出的温柔都砸进那记重拳",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/70-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/70-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/70-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1309016/",
+      "doubanSubjectID": "1309016",
       "source": "widget-catalog"
     }
   ]

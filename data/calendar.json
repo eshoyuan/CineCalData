@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-24T18:44:31.500496Z",
+  "updatedAt": "2026-10-25T18:56:41.228280Z",
   "horizon": {
-    "start": "2026-10-23",
-    "end": "2028-10-23",
+    "start": "2026-10-24",
+    "end": "2028-10-24",
     "days": 732
   },
   "entries": [
@@ -12736,6 +12736,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/70-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1309016/",
       "doubanSubjectID": "1309016",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-24",
+      "id": "tmdb:movie:916224",
+      "title": "铃芽之旅",
+      "rating": "7.2",
+      "quote": "废墟里推开一扇旧门，风把整个列岛的呢喃吹进旅途",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/916224-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/916224-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/916224-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/35371261/",
+      "doubanSubjectID": "35371261",
       "source": "widget-catalog"
     }
   ]

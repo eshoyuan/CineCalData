@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T18:56:41.228280Z",
+  "updatedAt": "2026-10-26T20:59:14.539685Z",
   "horizon": {
-    "start": "2026-10-24",
-    "end": "2028-10-24",
+    "start": "2026-10-25",
+    "end": "2028-10-25",
     "days": 732
   },
   "entries": [
@@ -12751,6 +12751,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/916224-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/35371261/",
       "doubanSubjectID": "35371261",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-25",
+      "id": "tmdb:tv:849",
+      "title": "巨蟒剧团之飞翔的马戏团",
+      "rating": "9.3",
+      "quote": "英伦式的胡闹把常识踩进泥里，却开出荒诞而自由的花。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/849-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/849-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/849-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1485976/",
+      "doubanSubjectID": "1485976",
       "source": "widget-catalog"
     }
   ]

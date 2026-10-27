@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-26T20:59:14.539685Z",
+  "updatedAt": "2026-10-27T20:37:28.795029Z",
   "horizon": {
-    "start": "2026-10-25",
-    "end": "2028-10-25",
+    "start": "2026-10-26",
+    "end": "2028-10-26",
     "days": 732
   },
   "entries": [
@@ -12766,6 +12766,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/849-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1485976/",
       "doubanSubjectID": "1485976",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-26",
+      "id": "tmdb:movie:12493",
+      "title": "天国与地狱",
+      "rating": "8.9",
+      "quote": "云端的豪宅与地狱的街巷，一笔赎金切开阶级的断层。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12493-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12493-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12493-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1293663/",
+      "doubanSubjectID": "1293663",
       "source": "widget-catalog"
     }
   ]

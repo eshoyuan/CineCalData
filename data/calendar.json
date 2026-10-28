@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T20:37:28.795029Z",
+  "updatedAt": "2026-10-28T20:58:35.732562Z",
   "horizon": {
-    "start": "2026-10-26",
-    "end": "2028-10-26",
+    "start": "2026-10-27",
+    "end": "2028-10-27",
     "days": 732
   },
   "entries": [
@@ -12781,6 +12781,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/12493-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1293663/",
       "doubanSubjectID": "1293663",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-27",
+      "id": "douban:1291545",
+      "title": "大鱼",
+      "rating": "8.8",
+      "quote": "父亲把一生酿成童话，听者尝出温柔与逞强。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/587-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/587-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/587-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291545/",
+      "doubanSubjectID": "1291545",
       "source": "widget-catalog"
     }
   ]

@@ -5423,7 +5423,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/z5MMAxbQO2nCvBU8BqHgoY1zKdD.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/z5MMAxbQO2nCvBU8BqHgoY1zKdD.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/791523-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/791523-medium.jpg",
+        "cropSmall": {
+          "x": 0.120313,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.073704,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 0,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-10-29T22:01:40.441228Z",
       "lastSeenAt": "2026-10-29T22:01:40.441228Z",
@@ -79426,7 +79445,26 @@
       },
       "images": {
         "backdrop": "https://image.tmdb.org/t/p/original/rN9xHDp83kZ3cOr82JR1b4rFIFk.jpg",
-        "poster": "https://image.tmdb.org/t/p/w780/gcFiVo7LHh0uk2Z4mH74ifgTe3r.jpg"
+        "poster": "https://image.tmdb.org/t/p/w780/gcFiVo7LHh0uk2Z4mH74ifgTe3r.jpg",
+        "small": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/289423-small.jpg",
+        "medium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/289423-medium.jpg",
+        "cropSmall": {
+          "x": 0.426563,
+          "y": 0,
+          "width": 0.5625,
+          "height": 1
+        },
+        "cropMedium": {
+          "x": 0,
+          "y": 0.045041,
+          "width": 1,
+          "height": 0.836214
+        },
+        "composition": {
+          "faces": 2,
+          "salientRegions": 1,
+          "analyzer": "Apple Vision attention+faces v1"
+        }
       },
       "firstSeenAt": "2026-10-29T22:01:40.441228Z",
       "lastSeenAt": "2026-10-29T22:01:40.441228Z",
@@ -153316,5 +153354,12 @@
         "tmdb:tv:120911": "request failed: Error code: 401 - {'error': {'code': 'invalid_api_key', 'message': 'Unauthorized', 'param': None, 'type': 'authentication_error'}}"
       }
     }
+  },
+  "imagesMaterializedAt": "2026-10-29T23:13:44.064427Z",
+  "imageStats": {
+    "requested": 2,
+    "processed": 2,
+    "failed": 0,
+    "materializedTotal": 1369
   }
 }

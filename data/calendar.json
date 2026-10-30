@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T21:01:18.613295Z",
+  "updatedAt": "2026-10-30T20:41:16.814703Z",
   "horizon": {
-    "start": "2026-10-28",
-    "end": "2028-10-28",
+    "start": "2026-10-29",
+    "end": "2028-10-29",
     "days": 732
   },
   "entries": [
@@ -12811,6 +12811,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/843-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291557/",
       "doubanSubjectID": "1291557",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-29",
+      "id": "tmdb:movie:1955",
+      "title": "象人",
+      "rating": "8.3",
+      "quote": "被当作奇观展览的畸形灵魂，在医生善意中寻回人的体温。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1955-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1955-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1955-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1293200/",
+      "doubanSubjectID": "1293200",
       "source": "widget-catalog"
     }
   ]

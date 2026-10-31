@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T20:41:16.814703Z",
+  "updatedAt": "2026-10-31T19:54:08.604853Z",
   "horizon": {
-    "start": "2026-10-29",
-    "end": "2028-10-29",
+    "start": "2026-10-30",
+    "end": "2028-10-30",
     "days": 732
   },
   "entries": [
@@ -12826,6 +12826,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1955-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1293200/",
       "doubanSubjectID": "1293200",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-30",
+      "id": "douban:1291875",
+      "title": "阳光灿烂的日子",
+      "rating": "8.8",
+      "quote": "酷暑胡同里，荷尔蒙与躁动的年代一起蒸得发晃。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/161285-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/161285-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/161285-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1291875/",
+      "doubanSubjectID": "1291875",
       "source": "widget-catalog"
     }
   ]

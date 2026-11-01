@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T19:54:08.604853Z",
+  "updatedAt": "2026-11-01T20:26:28.643859Z",
   "horizon": {
-    "start": "2026-10-30",
-    "end": "2028-10-30",
+    "start": "2026-10-31",
+    "end": "2028-10-31",
     "days": 732
   },
   "entries": [
@@ -12841,6 +12841,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/161285-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1291875/",
       "doubanSubjectID": "1291875",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-10-31",
+      "id": "tmdb:tv:243881",
+      "title": "大卫王朝",
+      "rating": "7.2",
+      "quote": "牧羊少年的投石尚未掷出，王座已在骄矜中悄然松动。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/243881-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/243881-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/243881-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36747789/",
+      "doubanSubjectID": "36747789",
       "source": "widget-catalog"
     }
   ]

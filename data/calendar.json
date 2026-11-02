@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T20:26:28.643859Z",
+  "updatedAt": "2026-11-02T23:26:08.381764Z",
   "horizon": {
-    "start": "2026-10-31",
-    "end": "2028-10-31",
+    "start": "2026-11-01",
+    "end": "2028-11-01",
     "days": 732
   },
   "entries": [
@@ -12856,6 +12856,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/243881-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36747789/",
       "doubanSubjectID": "36747789",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-11-01",
+      "id": "tmdb:tv:250307",
+      "title": "匹兹堡医护前线",
+      "rating": "9.5",
+      "quote": "匹兹堡急诊的每一分钟，都在个人裂缝与生命重量之间抢夺。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/250307-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/250307-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/250307-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/36831851/",
+      "doubanSubjectID": "36831851",
       "source": "widget-catalog"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T23:26:08.381764Z",
+  "updatedAt": "2026-11-03T21:44:40.047001Z",
   "horizon": {
-    "start": "2026-11-01",
-    "end": "2028-11-01",
+    "start": "2026-11-02",
+    "end": "2028-11-02",
     "days": 732
   },
   "entries": [
@@ -12871,6 +12871,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/tv/250307-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/36831851/",
       "doubanSubjectID": "36831851",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-11-02",
+      "id": "douban:1419936",
+      "title": "战争之王",
+      "rating": "8.7",
+      "quote": "军火在世界地图上开花，独白里听见良心的迟钝回响。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1830-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1830-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1830-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1419936/",
+      "doubanSubjectID": "1419936",
       "source": "widget-catalog"
     }
   ]

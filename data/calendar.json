@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T21:44:40.047001Z",
+  "updatedAt": "2026-11-04T21:50:27.023553Z",
   "horizon": {
-    "start": "2026-11-02",
-    "end": "2028-11-02",
+    "start": "2026-11-03",
+    "end": "2028-11-03",
     "days": 732
   },
   "entries": [
@@ -12886,6 +12886,21 @@
       "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/1830-medium.jpg",
       "doubanURL": "https://movie.douban.com/subject/1419936/",
       "doubanSubjectID": "1419936",
+      "source": "widget-catalog"
+    },
+    {
+      "date": "2028-11-03",
+      "id": "tmdb:movie:185",
+      "title": "发条橙",
+      "rating": "8.6",
+      "quote": "贝多芬伴着暴力狂欢，自由意志在矫正疗法里颤抖。",
+      "quoteType": "editorial",
+      "quoteAttribution": "CineCal 原创编辑文案",
+      "imageURL": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/185-medium.jpg",
+      "imageURLSmall": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/185-small.jpg",
+      "imageURLMedium": "https://raw.githubusercontent.com/eshoyuan/CineCalData/main/data/catalog-images/tmdb/movie/185-medium.jpg",
+      "doubanURL": "https://movie.douban.com/subject/1292233/",
+      "doubanSubjectID": "1292233",
       "source": "widget-catalog"
     }
   ]
